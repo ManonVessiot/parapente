@@ -1,0 +1,200 @@
+let questions = [];
+let current = 0;
+let stopFlag = false; // global
+
+async function start() {
+    stopFlag = false;
+    document.getElementById('startBtn').classList.add('hidden'); // cache Démarrer
+    document.getElementById('stopBtn').classList.remove('hidden'); // affiche Stop
+
+    const res = await fetch('qcm.json');
+    json = res.json ? await res.json() : [];
+    questions = json.data;
+    shuffle(questions);
+    current = 0;
+    nextQuestion();
+}
+
+function stop() {
+    stopFlag = true;
+
+    // cacher Stop et réafficher Démarrer
+    document.getElementById('stopBtn').classList.add('hidden');
+    document.getElementById('startBtn').classList.remove('hidden');
+
+    // arrêter le TTS en cours
+    speechSynthesis.cancel();
+
+    // tu peux aussi reset l'affichage si tu veux
+    document.getElementById('question').textContent = '';
+    document.getElementById('answers').innerHTML = '';
+    document.getElementById('explanation').classList.add('hidden');
+}
+
+async function nextQuestion() {
+    if (stopFlag) return;
+    if (current >= questions.length) {
+        speak("Fin de l'entraînement");
+        return;
+    }
+
+    const q = questions[current];
+    shuffle(q.answers);
+
+    // Reset UI
+    document.getElementById('question').textContent = q.question;
+    document.getElementById('answers').innerHTML = '';
+    document.getElementById('explanation').classList.add('hidden');
+
+    // Affichage réponses
+    q.answers.forEach((a, i) => {
+        const div = document.createElement('div');
+        div.className = 'answer';
+        div.textContent = `${letter(i)}. ${a.text}`;
+        document.getElementById('answers').appendChild(div);
+    });
+
+    // TTS question + réponses
+    await speak(q.question);
+    if (stopFlag) return;
+    await speak(
+        q.answers
+            .map((a, i) => `${letter(i)}. ${a.text}`)
+            .join('. ')
+    );
+    if (stopFlag) return;
+
+    // Temps de réflexion
+    const waitInput = document.getElementById('waitTime');
+    const reflectionTime = parseInt(waitInput.value) || 10; // fallback à 10s si vide
+    await wait(reflectionTime);
+
+    if (stopFlag) return;
+
+    // Affichage correction
+    document.querySelectorAll('.answer').forEach((el, i) => {
+        el.classList.add(
+            q.answers[i].points > 0 ? 'good' : 'bad'
+        );
+    });
+
+    // récupérer les bonnes réponses avec leur index
+    const goodAnswers = q.answers
+        .map((a, i) => ({ ...a, index: i }))
+        .filter(a => a.points > 0);
+
+    if (goodAnswers.length > 0) {
+
+        // 1️⃣ dire les lettres ensemble : "A et B"
+        const lettersText = goodAnswers
+            .map(a => letter(a.index))
+            .join(' et ');
+
+        await speak(`Bonne réponse : ${lettersText}`);
+        if (stopFlag) return;
+
+        // 2️⃣ dire le texte de chaque bonne réponse
+        for (const a of goodAnswers) {
+            await speak(`${letter(a.index)}. ${a.text}`);
+            if (stopFlag) return;
+        }
+    }
+
+
+
+    // Explication
+    if (q.explanation) {
+        document.getElementById('explanation').textContent = q.explanation;
+        document.getElementById('explanation').classList.remove('hidden');
+        await speak(q.explanation);
+        if (stopFlag) return;
+    }
+
+    current++;
+    await wait(5);
+    if (stopFlag) return;
+    nextQuestion();
+}
+
+// ---------- Utils ----------
+
+function speak(text) {
+    return new Promise(resolve => {
+        const utter = new SpeechSynthesisUtterance(cleanForTTS(text));
+
+        const select = document.getElementById('voiceSelect');
+        const voices = speechSynthesis.getVoices().filter(v => v.lang.startsWith('fr'));
+        const voiceIndex = select.selectedIndex || 0;
+        if (voices[voiceIndex]) utter.voice = voices[voiceIndex];
+
+
+        utter.lang = 'fr-FR';
+        utter.onend = resolve;
+        speechSynthesis.speak(utter);
+    });
+}
+
+function wait(seconds) {
+    return new Promise(r => setTimeout(r, seconds * 1000));
+}
+
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+function letter(index) {
+    return String.fromCharCode(65 + index);
+}
+
+function cleanForTTS(text) {
+    if (!text) return '';
+    return text
+        // remplacer les guillemets typographiques par simples
+        .replace(/[“”«»„‟]/g, '"')
+        // remplacer les apostrophes courbes par simple quote
+        .replace(/[‘’‚‛]/g, "'")
+        // supprimer symboles copyright/trademark/etc.
+        .replace(/[©®™]/g, '')
+        // remplacer multiples espaces et retours à la ligne
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function getFrenchVoice() {
+    const voices = speechSynthesis.getVoices();
+
+    // chercher une voix française naturelle
+    const frVoices = voices.filter(v => v.lang.startsWith('fr'));
+
+    // exemple : prendre la première
+    return frVoices.length ? frVoices[0] : null;
+}
+
+
+function populateVoices() {
+    const select = document.getElementById('voiceSelect');
+    const voices = speechSynthesis.getVoices();
+
+    // ne garder que les voix françaises
+    const frVoices = voices.filter(v => v.lang.startsWith('fr'));
+
+    select.innerHTML = ''; // vider le dropdown
+
+    frVoices.forEach((v, i) => {
+        const option = document.createElement('option');
+        option.value = i; // index dans frVoices
+        option.textContent = `${v.name} (${v.lang})`;
+        select.appendChild(option);
+    });
+
+    // optionnel : pré-sélectionner la première voix
+    if (frVoices.length) select.value = 0;
+}
+
+// appel initial et écoute du changement de voix
+speechSynthesis.onvoiceschanged = populateVoices;
+populateVoices();
+
