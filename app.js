@@ -3,9 +3,6 @@ let current = 0;
 let stopFlag = false; // global
 
 async function start() {
-    stopFlag = false;
-    document.getElementById('startBtn').classList.add('hidden'); // cache Démarrer
-    document.getElementById('stopBtn').classList.remove('hidden'); // affiche Stop
 
     const levelSelect = document.getElementById('levelSelect');
     const jsonFile = levelSelect.value; // bpi.json, bp.json ou bpc.json
@@ -15,6 +12,9 @@ async function start() {
         questions = json.data;
         shuffle(questions);
         current = 0;
+        stopFlag = false;
+        document.getElementById('startBtn').classList.add('hidden'); // cache Démarrer
+        document.getElementById('stopBtn').classList.remove('hidden'); // affiche Stop
         nextQuestion();
     } catch (err) {
         console.error("Erreur lors du chargement du JSON :", err);
