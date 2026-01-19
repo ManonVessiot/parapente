@@ -80,11 +80,16 @@ async function nextQuestion() {
     // TTS question + réponses
     await speak(q.question);
     if (stopFlag) return;
-    await speak(
-        q.answers
-            .map((a, i) => `${letter(i)}. ${a.text}`)
-            .join('. ')
-    );
+    await wait(1);
+    if (stopFlag) return;
+    for (let i = 0; i < q.answers.length; i++) {
+        await speak(letter(i));
+        await wait(0.3); // 300ms pause
+        if (stopFlag) return;
+        await speak(`${q.answers[i].text}`);
+        await wait(0.1);
+        if (stopFlag) return;
+    }
     if (stopFlag) return;
 
     // Temps de réflexion
@@ -118,12 +123,18 @@ async function nextQuestion() {
             .map(a => letter(a.index))
             .join(' et ');
 
-        await speak(`Bonne réponse : ${lettersText}`);
+        await speak(`Bonne réponse :`);
+        if (stopFlag) return;
+        if (goodAnswers.length > 1) await speak(lettersText);
         if (stopFlag) return;
 
         // 2️⃣ dire le texte de chaque bonne réponse
         for (const a of goodAnswers) {
-            await speak(`${letter(a.index)}. ${a.text}`);
+            await speak(letter(a.index));
+            await wait(0.3); // 300ms pause
+            if (stopFlag) return;
+            await speak(a.text);
+            await wait(0.1);
             if (stopFlag) return;
         }
     }
