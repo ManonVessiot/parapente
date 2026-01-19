@@ -261,6 +261,8 @@ document.getElementById('waitTime').addEventListener('change', savePreferences);
 
 
 window.addEventListener('DOMContentLoaded', () => {
+
+    speechSynthesis.cancel();
     // niveau
     const savedLevel = localStorage.getItem('qcmLevel');
     if (savedLevel) document.getElementById('levelSelect').value = savedLevel;
