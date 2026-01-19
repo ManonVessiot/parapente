@@ -7,12 +7,19 @@ async function start() {
     document.getElementById('startBtn').classList.add('hidden'); // cache Démarrer
     document.getElementById('stopBtn').classList.remove('hidden'); // affiche Stop
 
-    const res = await fetch('qcm.json');
-    json = res.json ? await res.json() : [];
-    questions = json.data;
-    shuffle(questions);
-    current = 0;
-    nextQuestion();
+    const levelSelect = document.getElementById('levelSelect');
+    const jsonFile = levelSelect.value; // bpi.json, bp.json ou bpc.json
+    try {
+        const res = await fetch(jsonFile);
+        json = res.json ? await res.json() : [];
+        questions = json.data;
+        shuffle(questions);
+        current = 0;
+        nextQuestion();
+    } catch (err) {
+        console.error("Erreur lors du chargement du JSON :", err);
+        alert("Impossible de charger le QCM. Vérifie que le fichier existe.");
+    }
 }
 
 function stop() {
