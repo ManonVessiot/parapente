@@ -100,6 +100,11 @@ async function nextQuestion() {
             q.answers[i].points > 0 ? 'good' : 'bad'
         );
     });
+    // Explication
+    if (q.explanation) {
+        document.getElementById('explanation').textContent = q.explanation;
+        document.getElementById('explanation').classList.remove('hidden');
+    }
 
     // récupérer les bonnes réponses avec leur index
     const goodAnswers = q.answers
@@ -124,17 +129,15 @@ async function nextQuestion() {
     }
 
 
-
     // Explication
     if (q.explanation) {
-        document.getElementById('explanation').textContent = q.explanation;
-        document.getElementById('explanation').classList.remove('hidden');
+        await wait(1);
         await speak(q.explanation);
         if (stopFlag) return;
     }
 
     current++;
-    await wait(5);
+    await wait(1);
     if (stopFlag) return;
     nextQuestion();
 }
@@ -213,11 +216,48 @@ function populateVoices() {
         select.appendChild(option);
     });
 
-    // optionnel : pré-sélectionner la première voix
-    if (frVoices.length) select.value = 0;
+    // Pré-selection : Google français si disponible
+    const googleIndex = frVoices.findIndex(v => v.name.includes('Google'));
+    if (googleIndex >= 0) {
+        select.value = googleIndex;
+    } else {
+        select.value = 0; // fallback à la première voix française
+    }
 }
 
 // appel initial et écoute du changement de voix
 speechSynthesis.onvoiceschanged = populateVoices;
 populateVoices();
 
+function savePreferences() {
+    const level = document.getElementById('levelSelect').value;
+    const voice = document.getElementById('voiceSelect').value;
+    const delay = document.getElementById('waitTime').value;
+
+    localStorage.setItem('qcmLevel', level);
+    localStorage.setItem('ttsVoice', voice);
+    localStorage.setItem('thinkingTime', delay);
+}
+
+// appeler à chaque changement
+document.getElementById('levelSelect').addEventListener('change', savePreferences);
+document.getElementById('voiceSelect').addEventListener('change', savePreferences);
+document.getElementById('waitTime').addEventListener('change', savePreferences);
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    // niveau
+    const savedLevel = localStorage.getItem('qcmLevel');
+    if (savedLevel) document.getElementById('levelSelect').value = savedLevel;
+
+    // temps de réflexion
+    const savedDelay = localStorage.getItem('thinkingTime');
+    if (savedDelay) document.getElementById('waitTime').value = savedDelay;
+
+    // voix TTS (après avoir rempli le dropdown)
+    const savedVoice = localStorage.getItem('ttsVoice');
+    speechSynthesis.onvoiceschanged = () => {
+        populateVoices();
+        if (savedVoice) document.getElementById('voiceSelect').value = savedVoice;
+    };
+});
