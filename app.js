@@ -3,6 +3,11 @@ let current = 0;
 let stopFlag = false; // global
 
 async function start() {
+    stopFlag = true;
+
+    // arrêter le TTS en cours
+    speechSynthesis.cancel();
+    await wait(1); // 300ms pause
 
     const levelSelect = document.getElementById('levelSelect');
     const jsonFile = levelSelect.value; // bpi.json, bp.json ou bpc.json
@@ -11,7 +16,7 @@ async function start() {
         json = res.json ? await res.json() : [];
         questions = json.data;
         shuffle(questions);
-        current = 0;
+        current = -1;
         stopFlag = false;
 
         document.getElementById('startBtn').classList.add('hidden'); // cache Démarrer
@@ -61,13 +66,16 @@ async function nextQuestion() {
         return;
     }
 
+    current++;
     const q = questions[current];
+    console.log(q);
     shuffle(q.answers);
 
     // Reset UI
-    document.getElementById('question').textContent = q.question;
+    document.getElementById('question').textContent = `${(current + 1)}.  ${q.question}`;
     document.getElementById('answers').innerHTML = '';
     document.getElementById('explanation').classList.add('hidden');
+    document.getElementById('nextBtn').classList.add('hidden');
 
     // Affichage réponses
     q.answers.forEach((a, i) => {
@@ -105,11 +113,10 @@ async function nextQuestion() {
             q.answers[i].points > 0 ? 'good' : 'bad'
         );
     });
-    // Explication
-    if (q.explanation) {
-        document.getElementById('explanation').textContent = q.explanation;
-        document.getElementById('explanation').classList.remove('hidden');
-    }
+    document.getElementById('explanation').textContent = `Explications : ${q.explanation}`;
+    document.getElementById('explanation').classList.remove('hidden');
+
+    document.getElementById('nextBtn').classList.remove('hidden');
 
     // récupérer les bonnes réponses avec leur index
     const goodAnswers = q.answers
@@ -143,14 +150,11 @@ async function nextQuestion() {
     // Explication
     if (q.explanation) {
         await wait(1);
+        await speak("Explications :");
+        await wait(0.1);
         await speak(q.explanation);
         if (stopFlag) return;
     }
-
-    current++;
-    await wait(1);
-    if (stopFlag) return;
-    nextQuestion();
 }
 
 // ---------- Utils ----------
