@@ -1,0 +1,3468 @@
+{
+    "data": [
+        {
+            "question": "On peut trouver les informations sur les zones de protection :",
+            "answers": [
+                {
+                    "text": "sur les panneaux FFVL des sites",
+                    "points": 2
+                },
+                {
+                    "text": "sur les cartes aériennes pour les zones réglementaires",
+                    "points": 2
+                },
+                {
+                    "text": "en s'informant auprès du club local",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quels facteurs peuvent diminuer la performance d'un pilote de parapente ?",
+            "answers": [
+                {
+                    "text": "Le manque de sommeil",
+                    "points": 3
+                },
+                {
+                    "text": "La connaissance approfondie des règles de vol",
+                    "points": -3
+                },
+                {
+                    "text": "La consommation d'alcool avant le vol",
+                    "points": 3
+                },
+                {
+                    "text": "L'entraînement régulier",
+                    "points": -3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le centre de poussée d'une aile stabilisée se trouve :",
+            "answers": [
+                {
+                    "text": "dans la partie arrière de l'aile",
+                    "points": -6
+                },
+                {
+                    "text": "dans la partie avant de l'aile",
+                    "points": 6
+                },
+                {
+                    "text": "au centre géométrique de l'aile",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La zone d'ascendance dynamique varie avec :",
+            "answers": [
+                {
+                    "text": "la force du vent",
+                    "points": 2
+                },
+                {
+                    "text": "la forme de la pente",
+                    "points": 2
+                },
+                {
+                    "text": "l'orientation de la pente par rapport au vent",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Appliquer la règle des additions c'est :",
+            "answers": [
+                {
+                    "text": "éviter le cumul de facteurs stressants qui, pris séparément, ne conduiraient pas à l'accident mais qui, additionnés, rendent le risque inacceptable",
+                    "points": 2
+                },
+                {
+                    "text": "identifier les éléments nouveaux d'une situation et n'en accepter qu'un à la fois",
+                    "points": 2
+                },
+                {
+                    "text": "mesurer les risques et ne pas les additionner",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En vol de pente, le virage face à la pente est :",
+            "answers": [
+                {
+                    "text": "est difficile à contrôler et dangereux du fait du défilement rapide du sol en vent arrière",
+                    "points": 2
+                },
+                {
+                    "text": "à recommander",
+                    "points": -6
+                },
+                {
+                    "text": "est celui qui impose la plus forte inclinaison pour le même rayon de virage par rapport au sol",
+                    "points": 2
+                },
+                {
+                    "text": "à éviter",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un rideau d'arbres face au vent provoque des turbulences :",
+            "answers": [
+                {
+                    "text": "à sa verticale",
+                    "points": 0
+                },
+                {
+                    "text": "côté au vent",
+                    "points": -6
+                },
+                {
+                    "text": "côté sous le vent",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le brevet initial :",
+            "answers": [
+                {
+                    "text": "valide le niveau vert de la progression",
+                    "points": 3
+                },
+                {
+                    "text": "permet de participer à des sorties club encadrées par un accompagnateur",
+                    "points": 3
+                },
+                {
+                    "text": "est obligatoire pour prendre une licence en club",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "L'assiette est l'angle entre :",
+            "answers": [
+                {
+                    "text": "le plan de l'aile et l'horizontale",
+                    "points": 6
+                },
+                {
+                    "text": "le vent relatif et l'horizontale",
+                    "points": -6
+                },
+                {
+                    "text": "le plan de l'aile et le vent relatif",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La visite prévol ne doit pas oublier :",
+            "answers": [
+                {
+                    "text": "vérification visuelle de la bonne marche des instruments",
+                    "points": 0
+                },
+                {
+                    "text": "vérification visuelle des lacets de chaussure",
+                    "points": 1
+                },
+                {
+                    "text": "vérification visuelle de la bonne fermeture du container parachute",
+                    "points": 2
+                },
+                {
+                    "text": "le harnais, notamment les cuissardes et la vérification de la bonne fermeture des boucles automatiques",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "L'assiette d'un parapente :",
+            "answers": [
+                {
+                    "text": "permet de distinguer si un parapente cabre ou s'il pique",
+                    "points": 2
+                },
+                {
+                    "text": "est l'angle compris entre l'horizontale et sa corde",
+                    "points": 2
+                },
+                {
+                    "text": "est une référence spatiale et non aérodynamique",
+                    "points": 2
+                },
+                {
+                    "text": "varie peu au cours d'un vol thermique",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le vent peut devenir dangereux notamment :",
+            "answers": [
+                {
+                    "text": "dès que sa vitesse se rapproche de celle de l'aile",
+                    "points": 2
+                },
+                {
+                    "text": "près des crêtes (risque d'être emporté sous le vent)",
+                    "points": 2
+                },
+                {
+                    "text": "dans le fond de vallée, là où il s'accélère (venturi)",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Vous achetez un parapente, vous vous assurez :",
+            "answers": [
+                {
+                    "text": "qu'il correspond à votre niveau de pilotage",
+                    "points": 2
+                },
+                {
+                    "text": "qu'il correspond à votre poids",
+                    "points": 2
+                },
+                {
+                    "text": "qu'il a déjà été testé en vol (dans le cas d'une voile neuve)",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quelles règles de vol s'appliquent aux aéronefs ultralégers non motorisés ?",
+            "answers": [
+                {
+                    "text": "CTR",
+                    "points": -6
+                },
+                {
+                    "text": "VFR",
+                    "points": 6
+                },
+                {
+                    "text": "IFR",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le gradient de vent à l'atterrissage :",
+            "answers": [
+                {
+                    "text": "dépend de l'état du sol",
+                    "points": 2
+                },
+                {
+                    "text": "augmente le taux de chute",
+                    "points": 2
+                },
+                {
+                    "text": "vous oblige à voler plus lentement",
+                    "points": -6
+                },
+                {
+                    "text": "dépend de la vitesse du vent",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quel facteur humain peut affecter la prise de décision d'un pilote de parapente ?",
+            "answers": [
+                {
+                    "text": "L'expérience de vol",
+                    "points": 3
+                },
+                {
+                    "text": "La couleur de l'aile",
+                    "points": -3
+                },
+                {
+                    "text": "La température extérieure",
+                    "points": -3
+                },
+                {
+                    "text": "Le stress",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Après une course de décollage à l'arraché, vous réussissez à décoller de justesse :",
+            "answers": [
+                {
+                    "text": "pas immédiatement assez lucide pour me sentir être trop lent ou trop rapide, dans le doute je m'écarte du relief",
+                    "points": 3
+                },
+                {
+                    "text": "vous volez certainement avec beaucoup trop de vitesse, vous pouvez donc ralentir pour vous mettre au taux de chute mini",
+                    "points": -6
+                },
+                {
+                    "text": "pas immédiatement assez lucide pour me sentir être trop lent ou trop rapide, dans le doute je prends de la vitesse",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Vous allez croiser une autre aile, vous vous devez d'analyser et de prévoir d'agir :",
+            "answers": [
+                {
+                    "text": "c'est un biplace vous calculez de passer juste derrière lui à une altitude équivalente",
+                    "points": -6
+                },
+                {
+                    "text": "vous évaluez si vos trajectoires vont devenir convergentes",
+                    "points": 2
+                },
+                {
+                    "text": "elle semble arrêtée. J'arrive vent arrière à grande vitesse. J'anticipe et calcule ma trajectoire longtemps en avance",
+                    "points": 2
+                },
+                {
+                    "text": "elle a le relief à droite, je prévois de m'écarter vers la vallée pour la laisser passer",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Lors d'une mise en virage en parapente, l'aile s'incline du côté désiré, parce que :",
+            "answers": [
+                {
+                    "text": "la traînée diminue du côté de la commande abaissée",
+                    "points": -6
+                },
+                {
+                    "text": "la traînée augmente du côté de la commande abaissée",
+                    "points": 2
+                },
+                {
+                    "text": "la charge augmente du côté de la commande abaissée",
+                    "points": 4
+                },
+                {
+                    "text": "la charge diminue du côté de la commande abaissée",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le statut de conservation d'une espèce :",
+            "answers": [
+                {
+                    "text": "définit si une espèce est protégée ou non",
+                    "points": -3
+                },
+                {
+                    "text": "est déterminé par des ONG comme l'UICN",
+                    "points": 3
+                },
+                {
+                    "text": "définit si une espèce est menacée d'extinction",
+                    "points": 3
+                },
+                {
+                    "text": "est déterminé en France par l'Etat",
+                    "points": -3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un casque de vol libre doit :",
+            "answers": [
+                {
+                    "text": "permettre une bonne audition et une bonne visibilité",
+                    "points": 2
+                },
+                {
+                    "text": "être solide et pouvoir absorber les chocs",
+                    "points": 2
+                },
+                {
+                    "text": "être léger pour ne pas fatiguer le cou",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La F.A. (Force Aérodynamique) en vol rectiligne stabilisé est :",
+            "answers": [
+                {
+                    "text": "perpendiculaire à la direction du vent relatif",
+                    "points": -6
+                },
+                {
+                    "text": "directement opposée au poids total aile + pilote",
+                    "points": 6
+                },
+                {
+                    "text": "perpendiculaire au profil de l'aile",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Une brise de vallée :",
+            "answers": [
+                {
+                    "text": "augmente quand on descend dans la basse couche",
+                    "points": 2
+                },
+                {
+                    "text": "peut dépasser facilement les 30 km\/h en été",
+                    "points": 2
+                },
+                {
+                    "text": "est particulièrement inquiétante l'hiver lorsque les massifs sont enneigés",
+                    "points": -6
+                },
+                {
+                    "text": "accélère quand la vallée se resserre",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En vol de pente :",
+            "answers": [
+                {
+                    "text": "vous virez face à la pente",
+                    "points": -6
+                },
+                {
+                    "text": "vous conservez une marge de vitesse pour être prêt à vous éloigner de la pente en cas d'urgence",
+                    "points": 2
+                },
+                {
+                    "text": "vous faites attention au gradient de vent près du relief",
+                    "points": 1
+                },
+                {
+                    "text": "vous virez dos à la pente",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Comment est annoncé un exercice militaire ?",
+            "answers": [
+                {
+                    "text": "Par la presse spécialisée",
+                    "points": -6
+                },
+                {
+                    "text": "Par NOTAM ou SUP AIP sur le site du SIA",
+                    "points": 6
+                },
+                {
+                    "text": "Par lettre d'information aux usagers",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les animaux suivants peuvent être dérangés par la pratique du vol libre :",
+            "answers": [
+                {
+                    "text": "la petite faune de montagne (marmottes, lagopèdes…)",
+                    "points": 2
+                },
+                {
+                    "text": "les ongulés de montagne (bouquetins, chamois, isards…)",
+                    "points": 2
+                },
+                {
+                    "text": "les poissons",
+                    "points": -6
+                },
+                {
+                    "text": "les rapaces",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un cumulonimbus :",
+            "answers": [
+                {
+                    "text": "présente un risque plusieurs kilomètres autour",
+                    "points": 3
+                },
+                {
+                    "text": "est dangereux dedans",
+                    "points": 3
+                },
+                {
+                    "text": "peut être approché par-dessous avec prudence",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le Poids Total Volant :",
+            "answers": [
+                {
+                    "text": "correspond au poids du pilote en vol",
+                    "points": -6
+                },
+                {
+                    "text": "est à diviser par la surface de l'aile pour déterminer la charge alaire",
+                    "points": 3
+                },
+                {
+                    "text": "divise la surface de l'aile pour déterminer la charge alaire",
+                    "points": -6
+                },
+                {
+                    "text": "est le poids de l'ensemble pilote + matériel de vol",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Je suis sur mon second stage encadré, mon moniteur me donne le feu vert pour décoller, c'est mon troisième plouf et je suis un peu fatigué et moins concentré :",
+            "answers": [
+                {
+                    "text": "j'essaye de passer le dernier du groupe pour refaire un point avec moi-même à ce moment-là, et voir si je décolle ou pas",
+                    "points": 0
+                },
+                {
+                    "text": "je prends sur moi, je ne veux ni retarder le groupe ni passer pour un peureux",
+                    "points": -6
+                },
+                {
+                    "text": "j'en parle à mon moniteur pour avoir son avis et prendre une décision réfléchie",
+                    "points": 6
+                },
+                {
+                    "text": "je fais totalement confiance à mon moniteur, c'est lui le pro et il ne peut rien m'arriver",
+                    "points": 0
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Une bonne approche implique une finale :",
+            "answers": [
+                {
+                    "text": "face au vent en bout de terrain",
+                    "points": -6
+                },
+                {
+                    "text": "tout dépend des conditions",
+                    "points": -6
+                },
+                {
+                    "text": "face au vent en entrée de terrain",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un Planeur Ultra Léger (PUL)",
+            "answers": [
+                {
+                    "text": "vole grâce à l'énergie potentielle",
+                    "points": 2
+                },
+                {
+                    "text": "n'est pas soumis à l'immatriculation",
+                    "points": 2
+                },
+                {
+                    "text": "vole en utilisant l'énergie musculaire du pilote",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Cirrus, cirrocumulus et cirrostratus sont des nuages :",
+            "answers": [
+                {
+                    "text": "de l'étage supérieur",
+                    "points": 6
+                },
+                {
+                    "text": "de l'étage moyen",
+                    "points": -6
+                },
+                {
+                    "text": "de l'étage inférieur",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le vol à vitesse lente en finale :",
+            "answers": [
+                {
+                    "text": "est nécessaire pour ne pas se faire embarquer",
+                    "points": -6
+                },
+                {
+                    "text": "est nécessaire pour préparer l'arrondi",
+                    "points": -6
+                },
+                {
+                    "text": "est dangereux car il rend l'aile vulnérable à tous les pièges aérologiques",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Par vent nul, pour vous poser en douceur :",
+            "answers": [
+                {
+                    "text": "en cours de finale vous privilégiez les corrections de cap à la sellette plutôt qu'avec vos commandes",
+                    "points": 3
+                },
+                {
+                    "text": "vous attendez d'être à 2 m\/sol pour prendre la vitesse voulue et pour vous relever",
+                    "points": -6
+                },
+                {
+                    "text": "vous faites une finale mains au niveau du nombril",
+                    "points": -6
+                },
+                {
+                    "text": "vous privilégiez une prise de vitesse en début de finale après vous être relevé dans la sellette",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le piétinement de la flore :",
+            "answers": [
+                {
+                    "text": "peut concerner le libériste lors des marches à proximité des sites de décollage et d'atterrissage ou lors de sessions de gonflage",
+                    "points": 2
+                },
+                {
+                    "text": "ne concerne pas le libériste",
+                    "points": -3
+                },
+                {
+                    "text": "peut conduire à une accélération des phénomènes d'érosion et de ravinement",
+                    "points": 2
+                },
+                {
+                    "text": "peut conduire à la disparition complète des végétaux sur la zone piétinée en quelques jours",
+                    "points": 2
+                },
+                {
+                    "text": "n'a d'impact qu'au bout de plusieurs années de piétinement répété",
+                    "points": -3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quelle est la meilleure méthode pour gérer la fatigue lors de vols successifs ?",
+            "answers": [
+                {
+                    "text": "Prendre des pauses régulières",
+                    "points": 6
+                },
+                {
+                    "text": "Voler plus rapidement",
+                    "points": -6
+                },
+                {
+                    "text": "Consommer des stimulants",
+                    "points": -6
+                },
+                {
+                    "text": "Ignorer la fatigue",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Lors de la mise en virage en parapente, l'aile pivote sur l'axe de lacet parce que :",
+            "answers": [
+                {
+                    "text": "la traînée augmente du côté de la commande abaissée",
+                    "points": 6
+                },
+                {
+                    "text": "la traînée diminue du côté de la commande abaissée",
+                    "points": -6
+                },
+                {
+                    "text": "la charge diminue du côté de la commande abaissée",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le réglage des freins sur un parapente",
+            "answers": [
+                {
+                    "text": "doit tenir compte qu'à fond d'accélérateur et « bras hauts », l'aile ne soit pas bridée",
+                    "points": 3
+                },
+                {
+                    "text": "doit permettre d'obtenir le décrochage avec les mains à hauteur de nombril",
+                    "points": -6
+                },
+                {
+                    "text": "doit être vérifié régulièrement d'autant qu'ils sont réglés avec peu de « garde »",
+                    "points": 3
+                },
+                {
+                    "text": "peut être systématiquement raccourcis de 15 cm lors de sa mise en service",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En montagne, les brises de pente :",
+            "answers": [
+                {
+                    "text": "apparaissent avec les brises de vallée",
+                    "points": 1
+                },
+                {
+                    "text": "peuvent être renforcées ou détournées par les vents météo",
+                    "points": 2
+                },
+                {
+                    "text": "sont turbulentes lorsque passent des thermiques",
+                    "points": 1
+                },
+                {
+                    "text": "se déclenchent sur les versants ensoleillés",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "On appelle angle de plané, l'angle entre :",
+            "answers": [
+                {
+                    "text": "l'horizontale et la corde de l'aile",
+                    "points": -6
+                },
+                {
+                    "text": "la corde de l'aile et la trajectoire",
+                    "points": -6
+                },
+                {
+                    "text": "la trajectoire et l'horizontale",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La vitesse du vent relatif est :",
+            "answers": [
+                {
+                    "text": "toujours la même",
+                    "points": -6
+                },
+                {
+                    "text": "égale à la vitesse de l'appareil sur sa trajectoire-air",
+                    "points": 6
+                },
+                {
+                    "text": "influencée par le vent météo",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Par beau temps, la brise de mer souffle lorsque :",
+            "answers": [
+                {
+                    "text": "le continent est plus froid que la mer",
+                    "points": -6
+                },
+                {
+                    "text": "la marée est montante",
+                    "points": -6
+                },
+                {
+                    "text": "la marée est descendante",
+                    "points": -6
+                },
+                {
+                    "text": "le continent est plus chaud que la mer",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "L'angle entre le plan de l'aile et le vent relatif est appelé :",
+            "answers": [
+                {
+                    "text": "assiette",
+                    "points": -6
+                },
+                {
+                    "text": "angle d'incidence",
+                    "points": 6
+                },
+                {
+                    "text": "angle de plané",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La phase d'accélération après la temporisation nécessite :",
+            "answers": [
+                {
+                    "text": "de se pencher en avant pour trouver un appui équilibré sur la ventrale et avoir une prise de vitesse efficace",
+                    "points": 3
+                },
+                {
+                    "text": "de se pencher en arrière pour mieux contrôler l'aile",
+                    "points": -6
+                },
+                {
+                    "text": "de porter son regard en avant vers la sortie du décollage",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quelle attitude mentale est la plus dangereuse pour un parapentiste ?",
+            "answers": [
+                {
+                    "text": "Le déni des risques",
+                    "points": 6
+                },
+                {
+                    "text": "La prudence excessive",
+                    "points": -6
+                },
+                {
+                    "text": "La curiosité scientifique",
+                    "points": -6
+                },
+                {
+                    "text": "L'auto-critique",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les cumulonimbus sont dangereux car :",
+            "answers": [
+                {
+                    "text": "ils engendrent des brises au sol rendant l'approche et l'atterrissage problématiques",
+                    "points": 2
+                },
+                {
+                    "text": "ils sont le siège d'ascendance puissantes pouvant aspirer l'aile à l'intérieur du nuage",
+                    "points": 2
+                },
+                {
+                    "text": "ils engendrent de violentes turbulences",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Lors du stockage ou du transport, un parapente ou un parachute de secours doit être protégé du voisinage ou du contact :",
+            "answers": [
+                {
+                    "text": "du rayonnement solaire",
+                    "points": 3
+                },
+                {
+                    "text": "de l'humidité et de la chaleur",
+                    "points": 1
+                },
+                {
+                    "text": "des solvants et des corps gras",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La réglementation des sites prévoit :",
+            "answers": [
+                {
+                    "text": "la déclaration en préfecture avec plan de vol",
+                    "points": -6
+                },
+                {
+                    "text": "les autorisations des propriétaires des aires de décollage et d'atterrissage et l'avis des maires des communes concernées",
+                    "points": 6
+                },
+                {
+                    "text": "la déclaration en mairie avec dépose d'un plan de vol",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le non respect des restrictions de survol d'une zone réglementaire :",
+            "answers": [
+                {
+                    "text": "n'a pas de conséquences légales",
+                    "points": -6
+                },
+                {
+                    "text": "peut constituer une contravention",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La temporisation :",
+            "answers": [
+                {
+                    "text": "est essentiellement utile pour stabiliser l'aile à la bonne incidence avant la course",
+                    "points": 3
+                },
+                {
+                    "text": "est facilitée par l'absence de vent au décollage",
+                    "points": -6
+                },
+                {
+                    "text": "pour les pilotes entraînés, peut se remplacer sans risque par un ressenti de l'appui ventral et des commandes",
+                    "points": -6
+                },
+                {
+                    "text": "est d'autant plus facile avec un minimum de vent et de pente",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Parmi les espaces naturels relevant de la protection réglementaire, on trouve :",
+            "answers": [
+                {
+                    "text": "les parcs naturels régionaux",
+                    "points": -3
+                },
+                {
+                    "text": "les réserves naturelles",
+                    "points": 3
+                },
+                {
+                    "text": "les parcs naturels nationaux",
+                    "points": 3
+                },
+                {
+                    "text": "les sites Natura 2000",
+                    "points": -3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Sur le site école, je m'apprête à effectuer mon premier vol en autonomie complète :",
+            "answers": [
+                {
+                    "text": "avant le vol je me renseigne sur les conditions météorologiques et sa faisabilité auprès de la structure école",
+                    "points": 2
+                },
+                {
+                    "text": "je me fie uniquement à mon intuition et ma connaissance de base",
+                    "points": -6
+                },
+                {
+                    "text": "mon niveau de concentration me permettra une check liste complète",
+                    "points": 2
+                },
+                {
+                    "text": "j'ai mentalisé les différentes phases du vol et répété les 3 temps du décollage",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le cône de suspentage :",
+            "answers": [
+                {
+                    "text": "ne met pas en cause l'assiette de l'aile",
+                    "points": -6
+                },
+                {
+                    "text": "ne varie jamais quand l'aile vieillit",
+                    "points": -6
+                },
+                {
+                    "text": "définit le calage du profil",
+                    "points": 3
+                },
+                {
+                    "text": "définit, au niveau de l'envergure, la forme de la voûte (ronde ou aplatie)",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Avant d'ouvrir un site, vous devez vous assurer que :",
+            "answers": [
+                {
+                    "text": "le district aéronautique a donné son accord",
+                    "points": -6
+                },
+                {
+                    "text": "les propriétaires des aires de décollage et d'atterrissage ont donné leur accord",
+                    "points": 3
+                },
+                {
+                    "text": "le maire de la commune a été avisé",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Votre aile est gonflée, stabilisée. Pour décoller :",
+            "answers": [
+                {
+                    "text": "vous chargez votre ventrale puis accélérez mains hautes jusqu'au décollage",
+                    "points": -6
+                },
+                {
+                    "text": "vous continuez d'accélérer en tenant fermement les élévateurs avants",
+                    "points": -6
+                },
+                {
+                    "text": "vous accélérez mains hautes en chargeant votre ventrale puis freinez franchement au moment du décollage",
+                    "points": -6
+                },
+                {
+                    "text": "vous chargez progressivement votre ventrale en même temps que votre course s'accélère et gardez un contact permanent avec vos commandes",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Par beau temps, en début d'après-midi, les brises de montagne :",
+            "answers": [
+                {
+                    "text": "diminuent",
+                    "points": -6
+                },
+                {
+                    "text": "descendent les pentes",
+                    "points": -6
+                },
+                {
+                    "text": "remontent les pentes",
+                    "points": 3
+                },
+                {
+                    "text": "se renforcent",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Lorsqu'une aile plane en ligne droite à vitesse constante, le Poids Total Volant est :",
+            "answers": [
+                {
+                    "text": "exactement compensé par la Force Aérodynamique",
+                    "points": 6
+                },
+                {
+                    "text": "inférieur à la Force Aérodynamique",
+                    "points": -6
+                },
+                {
+                    "text": "supérieur à la Force Aérodynamique",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Par beau temps la brise de terre souffle lorsque :",
+            "answers": [
+                {
+                    "text": "la marée est descendante",
+                    "points": -6
+                },
+                {
+                    "text": "le continent est plus chaud que la mer",
+                    "points": -6
+                },
+                {
+                    "text": "la marée est montante",
+                    "points": -6
+                },
+                {
+                    "text": "le continent est plus froid que la mer",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le centre de poussée est le point d'application :",
+            "answers": [
+                {
+                    "text": "des Forces de Pesanteur",
+                    "points": -6
+                },
+                {
+                    "text": "des Forces Aérodynamiques",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La sauvegarde des sites concerne :",
+            "answers": [
+                {
+                    "text": "le ministère de l'intérieur",
+                    "points": -6
+                },
+                {
+                    "text": "chaque pilote",
+                    "points": 4
+                },
+                {
+                    "text": "les ligues et les clubs",
+                    "points": 1
+                },
+                {
+                    "text": "la Fédération",
+                    "points": 1
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un gros cumulus isolé est toujours inoffensif :",
+            "answers": [
+                {
+                    "text": "faux ; il peut cacher d'autres aéronefs",
+                    "points": 2
+                },
+                {
+                    "text": "VRAI",
+                    "points": -6
+                },
+                {
+                    "text": "faux ; il peut entretenir une ascendance supérieure à vos possibilités de fuite et devenir un cumulonimbus",
+                    "points": 4
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La turbulence :",
+            "answers": [
+                {
+                    "text": "est due à des variations brusques de la vitesse de vol",
+                    "points": -6
+                },
+                {
+                    "text": "provoque des variations d'incidence et de vitesse de vol",
+                    "points": 2
+                },
+                {
+                    "text": "est comparable par analogie au bouillonnement de l'eau dans une rivière",
+                    "points": 2
+                },
+                {
+                    "text": "est due à des mouvements désordonnés de l'air",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La loi impose pour pratiquer le Vol Libre :",
+            "answers": [
+                {
+                    "text": "d'être assuré pour ses propres dommages corporels",
+                    "points": -6
+                },
+                {
+                    "text": "d'être assuré en responsabilité civile terrestre",
+                    "points": -6
+                },
+                {
+                    "text": "d'être assuré en responsabilité civile couvrant le risque aérien",
+                    "points": 6
+                },
+                {
+                    "text": "il n'y a pas d'obligation légale d'être assuré mais simplement une réglementation fédérale",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La turbulence du sillage d'une autre aile est dangereuse :",
+            "answers": [
+                {
+                    "text": "plusieurs minutes après son passage",
+                    "points": -6
+                },
+                {
+                    "text": "car elle rend le pilotage de l'aile momentanément délicat",
+                    "points": 2
+                },
+                {
+                    "text": "sur quelques dizaines de mètres en arrière et légèrement au-dessus",
+                    "points": 4
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les éléments constitutifs d'un nuage sont :",
+            "answers": [
+                {
+                    "text": "les cristaux de glace",
+                    "points": 3
+                },
+                {
+                    "text": "les gouttelettes d'eau",
+                    "points": 3
+                },
+                {
+                    "text": "l'eau sous forme gazeuse, soit de la vapeur d'eau",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quels éléments peuvent contribuer à la gestion du stress pour un pilote de parapente ?",
+            "answers": [
+                {
+                    "text": "Boire du café avant le vol",
+                    "points": -3
+                },
+                {
+                    "text": "Les techniques de respiration",
+                    "points": 3
+                },
+                {
+                    "text": "Écouter de la musique pendant le vol",
+                    "points": -6
+                },
+                {
+                    "text": "La mentalisation",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En vol rectiligne stabilisé :",
+            "answers": [
+                {
+                    "text": "la portance est perpendiculaire à la trajectoire-air",
+                    "points": 3
+                },
+                {
+                    "text": "la Force Aérodynamique est légèrement inférieure au Poids Total Volant",
+                    "points": -6
+                },
+                {
+                    "text": "la traînée s'oppose au déplacement de l'aile sur sa trajectoire-air",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Pour le vol libre, on peut se servir :",
+            "answers": [
+                {
+                    "text": "d'un casque de spéléologie",
+                    "points": -6
+                },
+                {
+                    "text": "d'un casque de VTT",
+                    "points": -6
+                },
+                {
+                    "text": "d'un casque spécial vol libre",
+                    "points": 6
+                },
+                {
+                    "text": "d'un casque de moto",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les rapaces :",
+            "answers": [
+                {
+                    "text": "nichent parfois en colonie",
+                    "points": 2
+                },
+                {
+                    "text": "sont tous sédentaires",
+                    "points": -6
+                },
+                {
+                    "text": "nichent souvent dans les falaises",
+                    "points": 2
+                },
+                {
+                    "text": "sont sédentaires ou migrateurs",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La polaire des vitesses est une courbe :",
+            "answers": [
+                {
+                    "text": "montrant les différentes vitesses que peut atteindre une aile donnée en vol rectiligne stabilisé pour une charge donnée",
+                    "points": 6
+                },
+                {
+                    "text": "montrant la forme d'un profil d'aile",
+                    "points": -6
+                },
+                {
+                    "text": "montrant les facteurs de charge d'une aile en virage engagé",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Sur un site ne faisant l'objet d'aucune restriction préfectorale particulière, un gendarme peut vous demander de présenter votre :",
+            "answers": [
+                {
+                    "text": "attestation d'assurance en Responsabilité Civile",
+                    "points": 6
+                },
+                {
+                    "text": "brevet fédéral",
+                    "points": -6
+                },
+                {
+                    "text": "licence fédérale",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le gradient de vent est sensible :",
+            "answers": [
+                {
+                    "text": "sur terrain lisse et dégagé",
+                    "points": 2
+                },
+                {
+                    "text": "par vent fort",
+                    "points": 2
+                },
+                {
+                    "text": "sur terrain accidenté où il se mélange aux turbulences",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En vol, en air calme et loin du relief, vous lâchez les commandes :",
+            "answers": [
+                {
+                    "text": "il est aisé d'infléchir votre trajectoire en appliquant votre poids d'un côté ou de l'autre de votre assise",
+                    "points": 2
+                },
+                {
+                    "text": "avec la plupart des ailes de parapente vous volez à finesse max",
+                    "points": 2
+                },
+                {
+                    "text": "vous êtes à vitesse maximale (sans accélérateur)",
+                    "points": 2
+                },
+                {
+                    "text": "pour des freins bien réglés, si vous regardez votre bord de fuite, il est très légèrement bridé",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le parapente :",
+            "answers": [
+                {
+                    "text": "est facile d'accès en aérologie calme et beaucoup plus exigeant en aérologie turbulente",
+                    "points": 3
+                },
+                {
+                    "text": "nécessite un apprentissage sérieux quand on l'utilise comme un planeur (cross) et un apprentissage beaucoup plus léger en paralpinisme",
+                    "points": -6
+                },
+                {
+                    "text": "pardonne la plupart des erreurs de pilotage car il se pratique sous un parachute",
+                    "points": -6
+                },
+                {
+                    "text": "répond aux mêmes lois de l'air et aux mêmes exigences que les autres sports aériens",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La protection conventionnelle d'espaces naturels :",
+            "answers": [
+                {
+                    "text": "concerne la FFVL et implique d'éventuelles restrictions pour ses licenciés",
+                    "points": 2
+                },
+                {
+                    "text": "concerne les parcs naturels régionaux",
+                    "points": 2
+                },
+                {
+                    "text": "permet une gestion concertée des espaces par les acteurs locaux",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un pilote non breveté ne volant pas régulièrement :",
+            "answers": [
+                {
+                    "text": "choisit sa voile selon les conditions aérologiques",
+                    "points": -6
+                },
+                {
+                    "text": "ne devrait voler qu'avec des voiles classées en « A »",
+                    "points": 6
+                },
+                {
+                    "text": "doit utiliser une voile classée en « C »",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En situation d'urgence, quel comportement humain est souvent observé et peut aggraver la situation ?",
+            "answers": [
+                {
+                    "text": "l'humour",
+                    "points": -6
+                },
+                {
+                    "text": "La panique",
+                    "points": 3
+                },
+                {
+                    "text": "Le calme absolu",
+                    "points": -6
+                },
+                {
+                    "text": "l'indifférence",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "L'angle d'incidence est défini par le plan de l'aile et :",
+            "answers": [
+                {
+                    "text": "la résultante des forces aérodynamiques",
+                    "points": -6
+                },
+                {
+                    "text": "l'horizontale",
+                    "points": -6
+                },
+                {
+                    "text": "le vent relatif",
+                    "points": 3
+                },
+                {
+                    "text": "la trajectoire",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En finale, quand le pilote se redresse, il :",
+            "answers": [
+                {
+                    "text": "augmente son taux de chute",
+                    "points": 2
+                },
+                {
+                    "text": "détériore sa pénétration",
+                    "points": 2
+                },
+                {
+                    "text": "améliore sa pénétration",
+                    "points": -6
+                },
+                {
+                    "text": "augmente sa traînée",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Une ascendance dynamique pure résulte :",
+            "answers": [
+                {
+                    "text": "de la déviation vers le haut du vent par un obstacle",
+                    "points": 6
+                },
+                {
+                    "text": "de l'accélération du vent au sommet d'une montagne",
+                    "points": -6
+                },
+                {
+                    "text": "de la dilatation de l'air lorsqu'il monte le long de la pente",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les particules d'air sur l'extrados :",
+            "answers": [
+                {
+                    "text": "vont plus vite que celles sous l'intrados",
+                    "points": 6
+                },
+                {
+                    "text": "vont plus lentement que celles sous l'intrados",
+                    "points": -6
+                },
+                {
+                    "text": "vont à la même vitesse que celles sous l'intrados",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Où peut être située une ZRT ?",
+            "answers": [
+                {
+                    "text": "Uniquement en bordure d'un aérodrome",
+                    "points": -6
+                },
+                {
+                    "text": "Uniquement en espace militaire",
+                    "points": -6
+                },
+                {
+                    "text": "N'importe où",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "L'envergure, c'est :",
+            "answers": [
+                {
+                    "text": "la distance entre le bord d'attaque et le bord de fuite",
+                    "points": -6
+                },
+                {
+                    "text": "la plus grande largeur de l'aile",
+                    "points": 6
+                },
+                {
+                    "text": "le nombre de cellules ou d'alvéoles",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "On appelle vent relatif, le vent :",
+            "answers": [
+                {
+                    "text": "dû au déplacement de l'appareil dans l'air",
+                    "points": 3
+                },
+                {
+                    "text": "dû à la vitesse-sol de l'appareil",
+                    "points": -6
+                },
+                {
+                    "text": "ressenti par le pilote sur son visage",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La direction du vent donnée par les services météo est toujours :",
+            "answers": [
+                {
+                    "text": "la direction où va le vent",
+                    "points": -6
+                },
+                {
+                    "text": "la direction d'où vient le vent",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le vent relatif :",
+            "answers": [
+                {
+                    "text": "a pour axe la trajectoire-air de l'aile",
+                    "points": 6
+                },
+                {
+                    "text": "ne varie jamais",
+                    "points": -6
+                },
+                {
+                    "text": "a pour axe la trajectoire-sol de l'aile",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En gonflage face voile :",
+            "answers": [
+                {
+                    "text": "faisceaux d'élévateurs croisés devant vous, le retournement sera dans le sens qui vous fera passer sous le faisceau supérieur",
+                    "points": 6
+                },
+                {
+                    "text": "faisceaux d'élévateurs croisés devant vous, le retournement sera dans le sens qui vous fera passer au-dessus du faisceau supérieur",
+                    "points": -6
+                },
+                {
+                    "text": "la prise de commande est différente de celle dos à l'aile",
+                    "points": -6
+                },
+                {
+                    "text": "le prégonflage est possible sans vent",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Comment la gestion du stress affecte-t-elle la performance en parapente ?",
+            "answers": [
+                {
+                    "text": "Elle améliore la concentration",
+                    "points": -6
+                },
+                {
+                    "text": "Elle peut conduire à des décisions hâtives",
+                    "points": 6
+                },
+                {
+                    "text": "Elle n'a aucun effet",
+                    "points": -6
+                },
+                {
+                    "text": "Elle augmente la confiance en soi",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les oiseaux que l'on peut rencontrer sur le littoral :",
+            "answers": [
+                {
+                    "text": "nichent souvent en colonie",
+                    "points": 3
+                },
+                {
+                    "text": "nichent exclusivement dans les zones rocheuses",
+                    "points": -3
+                },
+                {
+                    "text": "ne sont pas sensibles au dérangement",
+                    "points": -3
+                },
+                {
+                    "text": "ont besoin de conserver une certaine quiétude dans leur zone d'alimentation",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les turbulences peuvent être engendrées par :",
+            "answers": [
+                {
+                    "text": "des ascendances thermiques",
+                    "points": 2
+                },
+                {
+                    "text": "la rencontre de 2 vents différents",
+                    "points": 2
+                },
+                {
+                    "text": "le relief",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le décollage par vent nul :",
+            "answers": [
+                {
+                    "text": "oblige à courir au moins à la vitesse minimum de vol de l'aile",
+                    "points": 6
+                },
+                {
+                    "text": "est dangereux",
+                    "points": -6
+                },
+                {
+                    "text": "nécessite un enfoncement important des commandes",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La vitesse-air se définit par rapport :",
+            "answers": [
+                {
+                    "text": "au sol",
+                    "points": -6
+                },
+                {
+                    "text": "à l'air traversé",
+                    "points": 6
+                },
+                {
+                    "text": "au vent météo",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Une aile peut pivoter autour des axes de :",
+            "answers": [
+                {
+                    "text": "roulis",
+                    "points": 2
+                },
+                {
+                    "text": "corde",
+                    "points": -6
+                },
+                {
+                    "text": "lacet",
+                    "points": 2
+                },
+                {
+                    "text": "tangage",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les zones de protection définies autour des nids d'oiseau :",
+            "answers": [
+                {
+                    "text": "sont à éviter pendant la période de reproduction, sauf pour se refaire d'un point bas",
+                    "points": -3
+                },
+                {
+                    "text": "sont souvent proches d'un bon thermique utilisé par les oiseaux",
+                    "points": 3
+                },
+                {
+                    "text": "sont à éviter pendant la période de reproduction",
+                    "points": 3
+                },
+                {
+                    "text": "sont à éviter toute l'année",
+                    "points": -3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quels sont les effets de la fatigue sur un pilote de parapente ?",
+            "answers": [
+                {
+                    "text": "L'augmentation de la réactivité",
+                    "points": -3
+                },
+                {
+                    "text": "La diminution de la prise de décision",
+                    "points": 3
+                },
+                {
+                    "text": "La réduction de la vigilance",
+                    "points": 3
+                },
+                {
+                    "text": "L'amélioration de la concentration",
+                    "points": -3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un accompagnateur fédéral :",
+            "answers": [
+                {
+                    "text": "est un moniteur",
+                    "points": -6
+                },
+                {
+                    "text": "peut enseigner dans une école",
+                    "points": -6
+                },
+                {
+                    "text": "est un élève moniteur en formation",
+                    "points": -6
+                },
+                {
+                    "text": "peut encadrer des sorties club",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Stratus, stratocumulus et cumulus appartiennent généralement :",
+            "answers": [
+                {
+                    "text": "à l'étage supérieur",
+                    "points": -6
+                },
+                {
+                    "text": "à l'étage moyen",
+                    "points": -6
+                },
+                {
+                    "text": "à l'étage inférieur",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les turbulences d'une aile sont dangereuses pour un autre aéronef :",
+            "answers": [
+                {
+                    "text": "derrière",
+                    "points": 0
+                },
+                {
+                    "text": "dessous",
+                    "points": -6
+                },
+                {
+                    "text": "devant",
+                    "points": -6
+                },
+                {
+                    "text": "dans la trajectoire\/air",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "L'installation du parapente au sol dépend :",
+            "answers": [
+                {
+                    "text": "de la force et de la direction du vent",
+                    "points": 2
+                },
+                {
+                    "text": "de la pente",
+                    "points": 2
+                },
+                {
+                    "text": "du parapente lui-même",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Une brise de vallée :",
+            "answers": [
+                {
+                    "text": "n'est jamais turbulente",
+                    "points": -6
+                },
+                {
+                    "text": "peut atteindre des vitesses très importantes",
+                    "points": 3
+                },
+                {
+                    "text": "se renforce où la vallée se resserre",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Lors d'un gonflage dos à la voile, la temporisation :",
+            "answers": [
+                {
+                    "text": "est d'autant plus facile à réaliser que le vent est très fort ou très faible",
+                    "points": -6
+                },
+                {
+                    "text": "est un temps propre à coordonner la vitesse de l'aile et du pilote",
+                    "points": 2
+                },
+                {
+                    "text": "peut nécessiter parfois d'un freinage franc et momentané",
+                    "points": 2
+                },
+                {
+                    "text": "est nécessaire pour contrôler l'état de l'aile",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les causes principales de collision sont :",
+            "answers": [
+                {
+                    "text": "l'alcool et autres substances",
+                    "points": -6
+                },
+                {
+                    "text": "le téléphone portable",
+                    "points": -6
+                },
+                {
+                    "text": "ne pas regarder dans l'axe de sa trajectoire présente et future (ne pas regarder avant de tourner)",
+                    "points": 3
+                },
+                {
+                    "text": "la densité d'ailes et le non respect de marges de sécurité suffisantes",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les suspentes sont généralement constituées :",
+            "answers": [
+                {
+                    "text": "de fils polyéthylènes tressés",
+                    "points": 2
+                },
+                {
+                    "text": "de fibres de kevlar",
+                    "points": 2
+                },
+                {
+                    "text": "de gaines en polyester",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quels sont les signes de fatigue mentale chez un pilote ?",
+            "answers": [
+                {
+                    "text": "Les réactions rapides et précises",
+                    "points": -6
+                },
+                {
+                    "text": "La difficulté à se concentrer",
+                    "points": 3
+                },
+                {
+                    "text": "Les prise de décisions impulsives",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Après le gonflage, votre voile présente un déséquilibre et dévie vers la droite :",
+            "answers": [
+                {
+                    "text": "vous ralentissez votre course et agissez vigoureusement sur le frein droit",
+                    "points": -6
+                },
+                {
+                    "text": "vous freinez vigoureusement à droite puis à gauche en allant de l'avant et en résistant au déséquilibre",
+                    "points": -6
+                },
+                {
+                    "text": "vous suivez votre aile et la ramenez efficacement au frein sur la bonne trajectoire",
+                    "points": 3
+                },
+                {
+                    "text": "après avoir retrouvé le bon cap, vous vérifiez visuellement qu'aucune clé ou cravate n'est présente et engagez la course de votre envol",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Avant d'effectuer un virage, vous devez :",
+            "answers": [
+                {
+                    "text": "évaluer la perte d'altitude due au virage et votre nouvelle trajectoire",
+                    "points": 3
+                },
+                {
+                    "text": "vérifier que la voie est libre du côté où vous irez",
+                    "points": 3
+                },
+                {
+                    "text": "ralentir",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Pour un même volume d'air, l'air chaud :",
+            "answers": [
+                {
+                    "text": "tend à descendre par rapport à l'air froid",
+                    "points": -6
+                },
+                {
+                    "text": "se mélange volontiers à l'air froid",
+                    "points": -6
+                },
+                {
+                    "text": "est plus léger que l'air froid",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Je vole dans l'ascendance en longeant le relief sur ma droite, une aile arrive en face :",
+            "answers": [
+                {
+                    "text": "j'ai la priorité, mais l'autre pilote semble vouloir continuer tout droit, dans le doute je fais demi-tour",
+                    "points": 6
+                },
+                {
+                    "text": "je n'ai pas la priorité",
+                    "points": -6
+                },
+                {
+                    "text": "comme je suis assez débutant, je m'écarte légèrement pour le laisser passer entre moi et le relief",
+                    "points": -6
+                },
+                {
+                    "text": "j'ai la priorité, mais l'autre pilote semble vouloir continuer tout droit, j'impose ma priorité",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Une prise de vitesse avant l'atterrissage :",
+            "answers": [
+                {
+                    "text": "est dangereuse car appareil va faire une ressource au freinage",
+                    "points": -6
+                },
+                {
+                    "text": "est nécessaire pour améliorer la maniabilité près du sol",
+                    "points": 0
+                },
+                {
+                    "text": "est inutile",
+                    "points": -6
+                },
+                {
+                    "text": "est généralement préférable pour conserver une réserve de vitesse\/air en cas de gradient",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Cumulonimbus et nimbostratus appartiennent :",
+            "answers": [
+                {
+                    "text": "à l'étage moyen seulement",
+                    "points": -6
+                },
+                {
+                    "text": "à plusieurs étages à la fois",
+                    "points": 6
+                },
+                {
+                    "text": "à l'étage supérieur seulement",
+                    "points": -6
+                },
+                {
+                    "text": "à l'étage inférieur seulement",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Comment peut-on connaitre l'activité du RTBA ?",
+            "answers": [
+                {
+                    "text": "En lisant le message AZBA sur le site du SIA",
+                    "points": 6
+                },
+                {
+                    "text": "En parcourant le calendrier des exercices militaires",
+                    "points": -6
+                },
+                {
+                    "text": "En lisant la carte aéronautique",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La corde d'une aile désigne :",
+            "answers": [
+                {
+                    "text": "la mesure entre le bord d'attaque et le bord de fuite",
+                    "points": 6
+                },
+                {
+                    "text": "la hauteur du cône de suspentage",
+                    "points": -6
+                },
+                {
+                    "text": "l'épaisseur maximale du centre de l'aile",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Après ses premiers grands vols en école de vol libre, l'élève :",
+            "answers": [
+                {
+                    "text": "bénéficie de l'enseignement délivré par l'accompagnateur de club",
+                    "points": -3
+                },
+                {
+                    "text": "peut prendre une licence, voler en présence de l'accompagnateur de club s'il a validé le niveau vert, et se perfectionner en école dés que possible",
+                    "points": 6
+                },
+                {
+                    "text": "prend une licence et ne doit plus retourner en école",
+                    "points": -3
+                },
+                {
+                    "text": "se forme au pilotage biplace",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les restrictions de survol qui s'appliquent à certaines zones naturelles :",
+            "answers": [
+                {
+                    "text": "sont définies par rapport au niveau de la mer",
+                    "points": -6
+                },
+                {
+                    "text": "sont définies par rapport au sol",
+                    "points": 3
+                },
+                {
+                    "text": "peuvent être saisonnières",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Lors d'un gonflage sans vent face à la pente, après le troisième pas accéléré, vous ne sentez aucun affermissement de vos A :",
+            "answers": [
+                {
+                    "text": "vous tirez sur les avants",
+                    "points": -6
+                },
+                {
+                    "text": "vous accélérez à fond dans la pente",
+                    "points": -6
+                },
+                {
+                    "text": "vous ralentissez en espérant que cela aide l'aile à écoper et mesurez l'espace disponible avant d'abandonner",
+                    "points": 3
+                },
+                {
+                    "text": "vous vous arrêtez avant de vous trouver trop bas dans la pente et pour recommencer au plus vite",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Il fait beau sur la vallée (orientée nord-sud), le matin, par vent nul :",
+            "answers": [
+                {
+                    "text": "une brise montante va se développer sur les faces exposées à l'est",
+                    "points": 6
+                },
+                {
+                    "text": "une brise montante va se développer sur les faces exposées à l'ouest",
+                    "points": -6
+                },
+                {
+                    "text": "des ascendances vont se développer au centre de la vallée",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quels sont les avantages d'un débriefing après le vol ?",
+            "answers": [
+                {
+                    "text": "Augmentation de l'anxiété du pilote",
+                    "points": -6
+                },
+                {
+                    "text": "Partage des expériences avec d'autres pilotes",
+                    "points": 2
+                },
+                {
+                    "text": "Renforcement des bonnes pratiques de sécurité",
+                    "points": 2
+                },
+                {
+                    "text": "Identification des erreurs et des améliorations potentielles",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "L'accompagnateur fédéral :",
+            "answers": [
+                {
+                    "text": "donne son avis sur la possibilité de voler ou non pour les personnes qu'il accompagne",
+                    "points": 3
+                },
+                {
+                    "text": "s'occupe essentiellement de conduire la navette",
+                    "points": 0
+                },
+                {
+                    "text": "joue un rôle de conseil, soutien, suivi auprès de pilotes pas totalement autonomes",
+                    "points": 3
+                },
+                {
+                    "text": "peut retirer la licence à un pilote n'ayant pas respecté ses consignes",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Pendant une course au sol votre aile dévie votre trajectoire sur votre gauche, l'effet pendulaire vous demande :",
+            "answers": [
+                {
+                    "text": "de contrer avec le frein gauche",
+                    "points": -6
+                },
+                {
+                    "text": "d'accélérer sur votre gauche pour vous recentrer sous votre aile",
+                    "points": 3
+                },
+                {
+                    "text": "d'accélérer sur votre droite pour vous recentrer sous votre aile",
+                    "points": -6
+                },
+                {
+                    "text": "de contrer avec le frein droit",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La FFVL est une association :",
+            "answers": [
+                {
+                    "text": "dont les membres sont des clubs et des organismes à but lucratif",
+                    "points": 3
+                },
+                {
+                    "text": "dont les membres sont des individus",
+                    "points": -6
+                },
+                {
+                    "text": "loi 1901",
+                    "points": 3
+                },
+                {
+                    "text": "dont les membres sont des ligues régionales",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le brevet initial :",
+            "answers": [
+                {
+                    "text": "atteste de la capacité à évaluer et choisir les conditions aérologiques",
+                    "points": -6
+                },
+                {
+                    "text": "est validé par un moniteur et certifié par l'école",
+                    "points": 3
+                },
+                {
+                    "text": "atteste de la capacité à voler seul en conditions calme sur site connu",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les brises de pente sont descendantes :",
+            "answers": [
+                {
+                    "text": "plutôt le jour",
+                    "points": -6
+                },
+                {
+                    "text": "à tout moment puisque descendantes dans les basses couches",
+                    "points": -6
+                },
+                {
+                    "text": "plutôt la nuit",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quel est le service officiel en charge de l'information aéronautique ?",
+            "answers": [
+                {
+                    "text": "Le ministère des sports",
+                    "points": -6
+                },
+                {
+                    "text": "Le SIA",
+                    "points": 6
+                },
+                {
+                    "text": "La FFVL",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quel est le nom d'un réseau de zones militaires de basse altitude particulièrement dangereux ?",
+            "answers": [
+                {
+                    "text": "CTR",
+                    "points": -6
+                },
+                {
+                    "text": "RTBA",
+                    "points": 6
+                },
+                {
+                    "text": "ZIT",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les protections dorsales et latérales de votre sellette :",
+            "answers": [
+                {
+                    "text": "présentent des degrés de protection très variables",
+                    "points": 3
+                },
+                {
+                    "text": "vous garantissent une pratique en toute sécurité",
+                    "points": -6
+                },
+                {
+                    "text": "ne peuvent être considérées comme des protections parfaites dans tous les cas",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le dérangement répété de la faune par les libéristes :",
+            "answers": [
+                {
+                    "text": "n'a globalement pas de conséquences",
+                    "points": -6
+                },
+                {
+                    "text": "peut entraîner la chute d'animaux en fuite",
+                    "points": 3
+                },
+                {
+                    "text": "peut faire échouer la reproduction de certaines espèces",
+                    "points": 3
+                },
+                {
+                    "text": "n'a jamais de conséquences sur la reproduction des animaux",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Altocumulus et altostratus sont des nuages :",
+            "answers": [
+                {
+                    "text": "à l'étage supérieur",
+                    "points": -6
+                },
+                {
+                    "text": "à l'étage moyen",
+                    "points": 6
+                },
+                {
+                    "text": "de l'étage inférieur",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Citez un schéma possible, d'organisation des espaces, autour d'un aéroport :",
+            "answers": [
+                {
+                    "text": "CTR de classe E et TMA de classe D",
+                    "points": -6
+                },
+                {
+                    "text": "CTR de classe E et TMA de classe E",
+                    "points": -6
+                },
+                {
+                    "text": "CTR de classe D et TMA de classe D et E",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le passage du brevet de pilote initial (niveau vert) parapente nécessite une progression :",
+            "answers": [
+                {
+                    "text": "qui dure environ une semaine",
+                    "points": -6
+                },
+                {
+                    "text": "qui dure plusieurs semaines",
+                    "points": 3
+                },
+                {
+                    "text": "d'une trentaine de grands vols au minimum",
+                    "points": 3
+                },
+                {
+                    "text": "permettant d'accéder à une autonomie sur divers sites en aérologies variées",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Au cours d'un gonflage dos à l'aile, regard vers l'avant, vous sentez que votre aile vous dévie à droite :",
+            "answers": [
+                {
+                    "text": "c'est votre demi-aile droite qui est en train de s'élever en premier",
+                    "points": -6
+                },
+                {
+                    "text": "vous accélérez en avant et vers la droite puis, l'aile suffisamment haute, lâchez les A et utilisez le frein gauche pour la ramener dans l'axe du décollage",
+                    "points": 3
+                },
+                {
+                    "text": "vous accélérez en avant et vers la gauche puis, l'aile suffisamment haute, lâchez les A et utilisez le frein gauche pour la ramener dans l'axe du décollage",
+                    "points": -6
+                },
+                {
+                    "text": "c'est votre demi-aile gauche qui est en train de s'élever en premier",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Citez deux composantes principales de la réglementation aérienne internationale :",
+            "answers": [
+                {
+                    "text": "mesures en mètres et langue française en Europe",
+                    "points": -6
+                },
+                {
+                    "text": "horaires en temps universel et langue anglaise",
+                    "points": 6
+                },
+                {
+                    "text": "priorité aux vols internationaux et heure européenne",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quelles classes d'espace sont accessibles au vol libre ?",
+            "answers": [
+                {
+                    "text": "E et G",
+                    "points": 6
+                },
+                {
+                    "text": "A et D",
+                    "points": -6
+                },
+                {
+                    "text": "C et D",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le niveau du pilote est évalué :",
+            "answers": [
+                {
+                    "text": "à l'aide de la fiche de progression du passeport de vol libre",
+                    "points": 3
+                },
+                {
+                    "text": "par un moniteur",
+                    "points": 3
+                },
+                {
+                    "text": "par les copains",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Vous achetez un parapente, vous vous assurez :",
+            "answers": [
+                {
+                    "text": "que les limites d'utilisation de l'aile sont indiquées dans le manuel",
+                    "points": 2
+                },
+                {
+                    "text": "qu'un manuel de vol est fourni",
+                    "points": 2
+                },
+                {
+                    "text": "que le manuel décrit les manœuvres de descente rapide préconisées",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En France, les espèces menacées :",
+            "answers": [
+                {
+                    "text": "peuvent pour certaines être encore chassées",
+                    "points": 3
+                },
+                {
+                    "text": "ne sont pas toutes protégées",
+                    "points": 3
+                },
+                {
+                    "text": "sont toutes protégées",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les domaines de compétences techniques et non techniques du pilote :",
+            "answers": [
+                {
+                    "text": "évoluent tout au long de la formation du pilote",
+                    "points": 4
+                },
+                {
+                    "text": "sont acquis par le pilote à un moment donné et ne peuvent évoluer",
+                    "points": -6
+                },
+                {
+                    "text": "s'acquièrent par approfondissements pratiques et théoriques",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le PUL, parapente ou delta qui vole à proximité d'animaux sauvages :",
+            "answers": [
+                {
+                    "text": "peut être considéré comme un prédateur potentiel s'il est trop près",
+                    "points": 3
+                },
+                {
+                    "text": "peut effrayer les animaux",
+                    "points": 3
+                },
+                {
+                    "text": "est toujours ignoré car il est silencieux",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Si je relève rapidement mes mains pour reprendre de la vitesse le risque est :",
+            "answers": [
+                {
+                    "text": "en vol, d'obtenir une abattée non désirée",
+                    "points": 2
+                },
+                {
+                    "text": "à l'atterrissage, de voir le sol se rapprocher brutalement",
+                    "points": 2
+                },
+                {
+                    "text": "au décollage, pendant la course au sol, de perdre le soutien de l'aile car elle va me doubler",
+                    "points": 2
+                },
+                {
+                    "text": "d'entrer en phase parachutage",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le licencié de base peut infléchir la politique fédérale :",
+            "answers": [
+                {
+                    "text": "par ses lettres de réclamation dans les journaux spécialisés",
+                    "points": -6
+                },
+                {
+                    "text": "par son action volontaire dans les diverses commissions nationales, dans son comité départemental ou sa ligue",
+                    "points": 4
+                },
+                {
+                    "text": "par l'intermédiaire de son président de club pendant l'assemblée générale",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "A quelle altitude maximale peut évoluer un aéronef ultraléger non motorisé en plaine ?",
+            "answers": [
+                {
+                    "text": "4000 m",
+                    "points": -6
+                },
+                {
+                    "text": "2500 m",
+                    "points": -6
+                },
+                {
+                    "text": "3500m (FL115)",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un site peut être légalement utilisé si :",
+            "answers": [
+                {
+                    "text": "les maires concernés ont été avisés",
+                    "points": 3
+                },
+                {
+                    "text": "les propriétaires de terrains ont donné leur autorisation",
+                    "points": 3
+                },
+                {
+                    "text": "il est déclaré en préfecture (décollage et atterrissage)",
+                    "points": -6
+                },
+                {
+                    "text": "le président du club local a donné son accord",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Lors d'une sortie club, un pilote licencié peut voler avec un accompagnateur fédéral si :",
+            "answers": [
+                {
+                    "text": "il lui règle directement le prix des cours",
+                    "points": -6
+                },
+                {
+                    "text": "il a au moins le niveau vert du passeport de vol libre attesté par le brevet initial, délivré en école labellisée",
+                    "points": 6
+                },
+                {
+                    "text": "il a accompli préalablement une formation dans une école labellisée",
+                    "points": 0
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Sans avoir approfondi le bulletin météo du jour, j'arrive au décollage d'un site habituel :",
+            "answers": [
+                {
+                    "text": "je constate un léger vent de face, je me prépare rapidement et je décolle dans la foulée",
+                    "points": -4
+                },
+                {
+                    "text": "mon état de fatigue est toutefois moyen, j'y vais quand même",
+                    "points": -2
+                },
+                {
+                    "text": "je m'octroie un temps d'observation des conditions et une lecture du ciel",
+                    "points": 4
+                },
+                {
+                    "text": "j'essaie de confronter mon analyse auprès d'autres pilotes",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Quel aspect de la préparation mentale est crucial avant un vol en parapente ?",
+            "answers": [
+                {
+                    "text": "L'ignorance des risques",
+                    "points": -6
+                },
+                {
+                    "text": "La méditation",
+                    "points": 0
+                },
+                {
+                    "text": "La sur-confiance",
+                    "points": -6
+                },
+                {
+                    "text": "La visualisation du vol",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Parmi ces différentes compétences, quelles sont celles à développer pour devenir un pilote de parapente ?",
+            "answers": [
+                {
+                    "text": "L'humilité",
+                    "points": 2
+                },
+                {
+                    "text": "La sur-confiance en soi",
+                    "points": -6
+                },
+                {
+                    "text": "La connaissance de soi",
+                    "points": 2
+                },
+                {
+                    "text": "La capacité de prise de décision",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En vol la position mains hautes correspond :",
+            "answers": [
+                {
+                    "text": "approximativement à la finesse\/air max",
+                    "points": 3
+                },
+                {
+                    "text": "à la vitesse mini",
+                    "points": -6
+                },
+                {
+                    "text": "au taux de chute mini",
+                    "points": -6
+                },
+                {
+                    "text": "à la vitesse max sans utilisation de l'accélérateur",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En vol piqué, un faucon pèlerin peut atteindre :",
+            "answers": [
+                {
+                    "text": "250 km\/h",
+                    "points": -6
+                },
+                {
+                    "text": "150 km\/h",
+                    "points": -6
+                },
+                {
+                    "text": "350 km\/h",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les rapaces sont :",
+            "answers": [
+                {
+                    "text": "carnivores",
+                    "points": 3
+                },
+                {
+                    "text": "nécrophages pour certaines espèces",
+                    "points": 3
+                },
+                {
+                    "text": "carnivores ou fructivores selon les espèces",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Vous faites les oreilles :",
+            "answers": [
+                {
+                    "text": "en tirant les élévateurs avants",
+                    "points": -6
+                },
+                {
+                    "text": "en tirant une ou plusieurs suspentes extérieures de la ligne des A (lire la notice technique de votre aile)",
+                    "points": 4
+                },
+                {
+                    "text": "en gardant les freins dans les mains",
+                    "points": 2
+                },
+                {
+                    "text": "en tirant la suspente droite et gauche des deux extrémités de l'envergure (stabilo)",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Critères de choix d'une aile :",
+            "answers": [
+                {
+                    "text": "l'homologation",
+                    "points": 2
+                },
+                {
+                    "text": "la maniabilité, le comportement en turbulences, la stabilité",
+                    "points": 2
+                },
+                {
+                    "text": "la finesse max, le taux de chute mini, la pénétration",
+                    "points": 1
+                },
+                {
+                    "text": "la charge alaire",
+                    "points": 1
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Au sol, sans vent, votre aile dévie de la trajectoire prévue :",
+            "answers": [
+                {
+                    "text": "vous regardez votre aile pendant la correction",
+                    "points": 0
+                },
+                {
+                    "text": "vous vous opposez à l'aile avec votre corps en freinant du côté où vous voulez la ramener",
+                    "points": -6
+                },
+                {
+                    "text": "vous accélérez au devant de l'aile et vous la ramenez en freinant du côté où vous voulez aller",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un pilote en phase d'accès à l'autonomie, licencié « volant » pour la première année :",
+            "answers": [
+                {
+                    "text": "devrait voler sous une aile homologuée en « A » ou « B »",
+                    "points": 6
+                },
+                {
+                    "text": "devrait voler sous une aile classée « D »",
+                    "points": -6
+                },
+                {
+                    "text": "devrait voler sous une aile classée « C »",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La prise de vitesse avant l'atterrissage :",
+            "answers": [
+                {
+                    "text": "est nécessaire pour garder une bonne vitesse\/air car le vent diminue à l'approche du sol",
+                    "points": 3
+                },
+                {
+                    "text": "n'est pas nécessaire en parapente",
+                    "points": -6
+                },
+                {
+                    "text": "rend l'action de freinage plus efficace",
+                    "points": 3
+                },
+                {
+                    "text": "est dangereuse car l'appareil va faire une ressource au freinage",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un casque de vol libre doit présenter les qualités suivante :",
+            "answers": [
+                {
+                    "text": "une belle décoration",
+                    "points": -6
+                },
+                {
+                    "text": "un champ visuel non diminué et une taille adaptée",
+                    "points": 2
+                },
+                {
+                    "text": "une bonne audition pour évaluer la vitesse de vol",
+                    "points": 2
+                },
+                {
+                    "text": "une bonne absorption d'énergie en cas de choc",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Dos à la voile, le décollage en parapente se décompose en :",
+            "answers": [
+                {
+                    "text": "charge progressive de la ventrale coordonnée à une accélération de la course entretenue jusqu'au décollage (regards vers l'avant)",
+                    "points": 2
+                },
+                {
+                    "text": "en lâchant les commandes s'aider des mains pour une installation rapide et efficace dans la sellette, reprise des commandes",
+                    "points": -6
+                },
+                {
+                    "text": "gonflage de la voile (écopage, dosage de la poussée des jambes et regard vers l'avant)",
+                    "points": 2
+                },
+                {
+                    "text": "temporisation (contrôle du tangage et regard sur l'aile)",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Vous choisissez votre sellette pour :",
+            "answers": [
+                {
+                    "text": "son adaptation à votre morphologie",
+                    "points": 2
+                },
+                {
+                    "text": "l'emplacement du parachute sur la sellette est un critère de choix secondaire",
+                    "points": -6
+                },
+                {
+                    "text": "la possibilité qu'elle vous offre de vous mettre facilement debout",
+                    "points": 2
+                },
+                {
+                    "text": "la possibilité qu'elle vous offre de vous asseoir sans l'aide des mains",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Juste après le décollage, vous :",
+            "answers": [
+                {
+                    "text": "vous assurez d'avoir une vitesse suffisante pour être bien manœuvrant",
+                    "points": 3
+                },
+                {
+                    "text": "vous occupez de votre trajectoire et des autres ailes déjà en vol",
+                    "points": 3
+                },
+                {
+                    "text": "lâchez les commandes pour mieux vous asseoir",
+                    "points": -6
+                },
+                {
+                    "text": "vérifiez visuellement que votre parapente est bien gonflé",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "En vol, une turbulence soulève mon assise du côté droit",
+            "answers": [
+                {
+                    "text": "ma commande droite durcit",
+                    "points": 3
+                },
+                {
+                    "text": "pour garder mon cap, je résiste au déséquilibre en appliquant mon poids à droite et en freinant du côté gauche",
+                    "points": -6
+                },
+                {
+                    "text": "pour garder mon cap, je résiste au déséquilibre en appliquant mon poids à droite et en freinant du même côté",
+                    "points": 3
+                },
+                {
+                    "text": "cela va déséquilibrer ma trajectoire vers la droite",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "L'extrados de l'aile est la partie :",
+            "answers": [
+                {
+                    "text": "inférieure de l'aile",
+                    "points": -6
+                },
+                {
+                    "text": "avant de l'aile",
+                    "points": -6
+                },
+                {
+                    "text": "supérieure de l'aile",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La décision de décoller sera prise :",
+            "answers": [
+                {
+                    "text": "juste après la temporisation sur la base de la référence d'un contact avec l'aile aux commandes",
+                    "points": 3
+                },
+                {
+                    "text": "pendant la temporisation",
+                    "points": -6
+                },
+                {
+                    "text": "juste après la temporisation sur la base de la référence d'un appui ventral allant croissant avec la vitesse",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Citez les facteurs de vieillissement pour une aile :",
+            "answers": [
+                {
+                    "text": "les turbulences",
+                    "points": -6
+                },
+                {
+                    "text": "l'humidité",
+                    "points": 2
+                },
+                {
+                    "text": "le soleil",
+                    "points": 2
+                },
+                {
+                    "text": "les techniques de descente rapide",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le gonflage face à la voile :",
+            "answers": [
+                {
+                    "text": "demande une temporisation pour caler la bonne incidence de décollage",
+                    "points": 2
+                },
+                {
+                    "text": "permet d'observer le bon déploiement de l'aile et de ses suspentes",
+                    "points": 2
+                },
+                {
+                    "text": "permet de contrôler la vitesse et la trajectoire de l'ascension du profil",
+                    "points": 2
+                },
+                {
+                    "text": "est une pratique réservée pour le vent fort",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Les différents modèles de sellettes parapentes :",
+            "answers": [
+                {
+                    "text": "interchangés avec un autre modèle, peuvent modifier le comportement de votre aile",
+                    "points": 1
+                },
+                {
+                    "text": "ont des réglages pour que l'on puisse obtenir une posture de pilotage active et confortable",
+                    "points": 1
+                },
+                {
+                    "text": "ont une influence sur le pilotage",
+                    "points": 2
+                },
+                {
+                    "text": "sont conçus avec plus ou moins d'« instabilité »",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le passage au premier grand vol en parapente :",
+            "answers": [
+                {
+                    "text": "se fait le premier ou le deuxième jour de stage après quelques gonflages sur le plat",
+                    "points": -6
+                },
+                {
+                    "text": "nécessite un apprentissage technique et sérieux",
+                    "points": 3
+                },
+                {
+                    "text": "nécessite une adaptation progressive au vide ( petits vols, vols intermédiaires, biplaces pédagogiques)",
+                    "points": 3
+                },
+                {
+                    "text": "se fait directement vu les risques d'accident en pente école",
+                    "points": -6
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Lors du stockage et du transport, le parapente doit être protégé du voisinage ou du contact :",
+            "answers": [
+                {
+                    "text": "de l'humidité",
+                    "points": 2
+                },
+                {
+                    "text": "de l'ensoleillement",
+                    "points": 2
+                },
+                {
+                    "text": "des solvants et des corps gras",
+                    "points": 2
+                },
+                {
+                    "text": "des champs électriques",
+                    "points": 0
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Il y a 20 km\/h de vent à l'atterrissage ; vous vous préparez :",
+            "answers": [
+                {
+                    "text": "à enfoncer à fond les commandes au posé",
+                    "points": -6
+                },
+                {
+                    "text": "à faire quelques pas en arrière au moment où vous toucherez le sol pour décharger votre aile",
+                    "points": 2
+                },
+                {
+                    "text": "à freiner doucement pour ne pas être entraîné vers l'arrière",
+                    "points": 2
+                },
+                {
+                    "text": "à reculer en vous retournant dès le sol touché et à affaler votre parapente en avançant vers lui aidé par la traction de vos freins ou des D",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le calage de l'aile :",
+            "answers": [
+                {
+                    "text": "définit l'assiette de l'aile en vol",
+                    "points": 3
+                },
+                {
+                    "text": "peut être modifié sans risque par l'utilisateur puisqu'il est compensé par le poids du pilote en vol",
+                    "points": -6
+                },
+                {
+                    "text": "dépend du réglage des freins",
+                    "points": -6
+                },
+                {
+                    "text": "est directement lié aux longueurs des suspentes",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La réalisation d'un virage à 360° :",
+            "answers": [
+                {
+                    "text": "peut s'employer sans danger à proximité immédiate d'un relief",
+                    "points": -6
+                },
+                {
+                    "text": "s'utilise pour se maintenir dans un secteur ascendant",
+                    "points": 2
+                },
+                {
+                    "text": "est à proscrire près du sol",
+                    "points": 2
+                },
+                {
+                    "text": "implique de gérer une dérive\/sol en présence de vent",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Le choix de la sellette est guidé par :",
+            "answers": [
+                {
+                    "text": "le confort de la posture de pilotage recherchée",
+                    "points": 3
+                },
+                {
+                    "text": "la ristourne accordée par le vendeur",
+                    "points": -6
+                },
+                {
+                    "text": "les recommandations du constructeur",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "La temporisation :",
+            "answers": [
+                {
+                    "text": "permet de contrôler l'état de son profil",
+                    "points": 2
+                },
+                {
+                    "text": "vise à synchroniser les vitesses respectives du pilote et de son aile",
+                    "points": 1
+                },
+                {
+                    "text": "suit le gonflage et la levée de l'aile et précède la décision de décoller",
+                    "points": 1
+                },
+                {
+                    "text": "fait l'objet d'un contrôle du tangage",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un changement de calage du parapente influe sur :",
+            "answers": [
+                {
+                    "text": "la polaire des vitesses",
+                    "points": 2
+                },
+                {
+                    "text": "la stabilité et le décrochage",
+                    "points": 2
+                },
+                {
+                    "text": "la vitesse max et la finesse max",
+                    "points": 2
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un casque de vol libre :",
+            "answers": [
+                {
+                    "text": "se ferme rapidement par velcro",
+                    "points": -6
+                },
+                {
+                    "text": "est testé selon des normes",
+                    "points": 3
+                },
+                {
+                    "text": "comprend une enveloppe « composite » anti-poinçonnement et une mousse absorbante",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Une aile classée « A » :",
+            "answers": [
+                {
+                    "text": "correspond à une pratique « loisir »",
+                    "points": 3
+                },
+                {
+                    "text": "est réservée aux débutants",
+                    "points": -6
+                },
+                {
+                    "text": "peut avoir un très bon « taux de chute minimum »",
+                    "points": 3
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "question": "Un nœud sur une suspente :",
+            "answers": [
+                {
+                    "text": "n'influe pas sur la résistance à la rupture",
+                    "points": -6
+                },
+                {
+                    "text": "augmente la résistance à la rupture",
+                    "points": -6
+                },
+                {
+                    "text": "peut diminuer la résistance à la rupture jusqu'à 50 %",
+                    "points": 6
+                }
+            ],
+            "explanation": ""
+        }
+    ]
+}

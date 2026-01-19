@@ -13,8 +13,17 @@ async function start() {
         shuffle(questions);
         current = 0;
         stopFlag = false;
+
         document.getElementById('startBtn').classList.add('hidden'); // cache Démarrer
         document.getElementById('stopBtn').classList.remove('hidden'); // affiche Stop
+        // cacher dropdown
+        document.getElementById('levelSelect').classList.add('hidden');
+        document.getElementById('levelLabel').classList.add('hidden');
+        // mettre à jour le titre avec le niveau
+        const select = document.getElementById('levelSelect');
+        const levelText = select.options[select.selectedIndex].text;
+        document.getElementById('title').textContent = `Entraînement QCM - ${levelText}`;
+
         nextQuestion();
     } catch (err) {
         console.error("Erreur lors du chargement du JSON :", err);
@@ -25,12 +34,19 @@ async function start() {
 function stop() {
     stopFlag = true;
 
+    // arrêter le TTS en cours
+    speechSynthesis.cancel();
+
     // cacher Stop et réafficher Démarrer
     document.getElementById('stopBtn').classList.add('hidden');
     document.getElementById('startBtn').classList.remove('hidden');
 
-    // arrêter le TTS en cours
-    speechSynthesis.cancel();
+    // réafficher dropdown
+    document.getElementById('levelSelect').classList.remove('hidden');
+    document.getElementById('levelLabel').classList.remove('hidden');
+
+    // remettre le titre générique
+    document.getElementById('title').textContent = 'Entraînement QCM';
 
     // tu peux aussi reset l'affichage si tu veux
     document.getElementById('question').textContent = '';
