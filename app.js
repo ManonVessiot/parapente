@@ -4,6 +4,7 @@ let current = 0;
 let controller = null;
 let totalMaxScore = 0;   // score théorique max
 let playerScore = 0;    // score réel du joueur
+let reflectionTime = 10;
 
 
 async function start() {
@@ -18,6 +19,11 @@ async function start() {
         current = -1;
         totalMaxScore = 0;
         playerScore = 0;
+
+        // Temps de réflexion
+        reflectionTime = parseInt(document.getElementById('waitTime').value) || 10; // fallback à 10s si vide
+        document.getElementById('waitTime').classList.add('hidden');
+        document.getElementById('waitTimeLabel').classList.add('hidden');
 
         document.getElementById('startBtn').classList.add('hidden'); // Hide Démarrer
         document.getElementById('stopBtn').classList.remove('hidden'); // Show Stop
@@ -66,6 +72,9 @@ function stop() {
     document.getElementById('nextBtn').classList.add('hidden');
     document.getElementById('question').classList.add('hidden');
     document.getElementById('startBtn').classList.remove('hidden');
+
+    document.getElementById('waitTime').classList.remove('hidden');
+    document.getElementById('waitTimeLabel').classList.remove('hidden');
 
     // show dropdown
     document.getElementById('levelSelect').classList.remove('hidden');
@@ -158,9 +167,6 @@ async function readQuestion(q, signal) {
 }
 
 async function waitResponse(signal) {
-    // Temps de réflexion
-    const waitInput = document.getElementById('waitTime');
-    const reflectionTime = parseInt(waitInput.value) || 10; // fallback à 10s si vide
     await wait(reflectionTime, signal);
 }
 
