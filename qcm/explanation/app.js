@@ -1,12 +1,10 @@
 let questions = [];
 let category = "";
 let level = "";
-let current = 0;
-let totalMaxScore = 0;   // score théorique max
-let playerScore = 0;    // score réel du joueur
+let currentIndex = 0;
 const LEVELS = ['bpi', 'bp', 'bpc'];
 const CATEGORIES = ['pilotage', 'mecavol', 'meteo', 'materiel', 'reglementation', 'facteursH', 'naturel'];
-
+const SHOW_EXPLANATION_DONE = true;
 
 async function start() {
     // get json name
@@ -17,9 +15,7 @@ async function start() {
     json = res.json ? await res.json() : []; // get json
     questions = json.data; // get data
     // initialize
-    current = -1;
-    totalMaxScore = 0;
-    playerScore = 0;
+    currentIndex = -1;
 
     document.getElementById('startBtn').classList.add('hidden'); // Hide Démarrer
     document.getElementById('stopBtn').classList.remove('hidden'); // Show Stop
@@ -69,8 +65,6 @@ function stop() {
     document.getElementById('question').textContent = '';
     document.getElementById('answers').innerHTML = '';
     document.getElementById('explanationEdit').classList.add('hidden');
-
-    document.getElementById('score').innerHTML = 'Score : 0 / 0 (0%)';
 }
 
 function next() {
@@ -79,13 +73,13 @@ function next() {
 }
 
 function save() {
-    if (!questions || current < 0 || current >= questions.length) return;
+    if (!questions || currentIndex < 0 || currentIndex >= questions.length) return;
 
     const input = document.getElementById("explanationInput");
     if (!input) return;
 
     // 1. Met à jour l'explication de la question courante
-    questions[current].explanation = input.value.trim();
+    questions[currentIndex].explanation = input.value.trim();
 }
 
 function download() {
@@ -115,16 +109,38 @@ function download() {
 
 
 async function nextQuestion() {
-    current++;
-    while (current < questions.length && LEVELS.includes(level) && CATEGORIES.includes(category)) {
-        current++;
+    currentIndex++;
+
+    while (currentIndex < questions.length) {
+        const q = questions[currentIndex];
+
+        const levelMismatch = LEVELS.includes(level) && q.level !== level + "_";
+        const categoryMismatch = CATEGORIES.includes(category) && q.category !== category;
+
+        const explanationAlreadyDone =
+            SHOW_EXPLANATION_DONE ||
+            (q.explanation &&
+                q.explanation.trim() !== '');
+
+        if (!levelMismatch && !categoryMismatch && explanationAlreadyDone) {
+            break;
+        }
+
+        currentIndex++;
     }
 
-    if (current >= questions.length) {
+    if (currentIndex >= questions.length) {
+        document.getElementById('nextBtn').classList.add('hidden');
+        document.getElementById('question').classList.add('hidden');
+
+        // reset
+        document.getElementById('question').textContent = '';
+        document.getElementById('answers').innerHTML = '';
+        document.getElementById('explanationEdit').classList.add('hidden');
         return;
     }
 
-    const q = questions[current];
+    const q = questions[currentIndex];
 
     showQuestion(q);
     showCorrection(q);
@@ -132,7 +148,7 @@ async function nextQuestion() {
 
 function showQuestion(q) {
     // Reset UI
-    document.getElementById('question').textContent = `${(current + 1)}/${questions.length}.  ${q.question}`;
+    document.getElementById('question').textContent = `${(currentIndex + 1)}/${questions.length}.  ${q.question}`;
     document.getElementById('answers').innerHTML = '';
     document.getElementById('explanationEdit').classList.add('hidden');
     document.getElementById('nextBtn').classList.add('hidden');
@@ -161,32 +177,6 @@ function showQuestion(q) {
     });
 }
 
-function computeScores(q) {
-    let questionMax = 0;
-    let questionPlayer = 0;
-
-    q.answers.forEach(a => {
-        if (a.points > 0) {
-            questionMax += a.points;
-        }
-        if (a.selected) {
-            questionPlayer += a.points;
-        }
-    });
-    questionPlayer = Math.max(0, questionPlayer);
-
-    return { questionMax, questionPlayer };
-}
-
-function updateScoreDisplay() {
-    percent = 0;
-    if (totalMaxScore > 0) {
-        percent = Math.round((playerScore / totalMaxScore) * 100);
-    }
-    document.getElementById('score').textContent =
-        `Score : ${playerScore} / ${totalMaxScore} (${percent}%)`;
-}
-
 function lockAnswers() {
     document.querySelectorAll('#answers input[type="checkbox"]').forEach(cb => {
         cb.disabled = true;
@@ -197,10 +187,6 @@ function showCorrection(q) {
     lockAnswers();
 
     const answersDiv = document.getElementById('answers');
-
-    const { questionMax, questionPlayer } = computeScores(q);
-    totalMaxScore += questionMax;
-    playerScore += questionPlayer;
 
     // Affichage correction
     [...answersDiv.children].forEach((div, i) => {
@@ -219,8 +205,6 @@ function showCorrection(q) {
     document.getElementById('explanationInput').textContent = q.explanation;
     document.getElementById('explanationEdit').classList.remove('hidden');
     document.getElementById('nextBtn').classList.remove('hidden');
-
-    updateScoreDisplay();
 }
 
 // ---------- Utils ----------
