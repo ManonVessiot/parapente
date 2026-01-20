@@ -5,58 +5,55 @@ let controller = null;
 let totalMaxScore = 0;   // score théorique max
 let playerScore = 0;    // score réel du joueur
 let reflectionTime = 10;
+const LEVELS = ['bpi', 'bp', 'bpc'];
+const CATEGORIES = ['pilotage', 'mecavol', 'meteo', 'materiel', 'reglementation', 'facteursH', 'naturel'];
 
 
 async function start() {
     // get json name
     const levelSelect = document.getElementById('levelSelect');
-    const jsonFile = levelSelect.value; // bpi.json, bp.json ou bpc.json
-    try {
-        const res = await fetch(jsonFile + '?_=' + Date.now());
-        json = res.json ? await res.json() : []; // get json
-        questions = json.data; // get data
-        // initialize
-        current = -1;
-        totalMaxScore = 0;
-        playerScore = 0;
+    const level = levelSelect.value;
 
-        // Temps de réflexion
-        reflectionTime = parseInt(document.getElementById('waitTime').value); // fallback à 10s si vide
-        console.log(reflectionTime);
-        document.getElementById('waitTime').classList.add('hidden');
-        document.getElementById('waitTimeLabel').classList.add('hidden');
+    const res = await fetch("qcm.json?_=" + Date.now());
+    json = res.json ? await res.json() : []; // get json
+    questions = json.data; // get data
+    // initialize
+    current = -1;
+    totalMaxScore = 0;
+    playerScore = 0;
 
-        document.getElementById('startBtn').classList.add('hidden'); // Hide Démarrer
-        document.getElementById('stopBtn').classList.remove('hidden'); // Show Stop
-        document.getElementById('question').classList.remove('hidden');
-        // hidde dropdown
-        document.getElementById('levelSelect').classList.add('hidden');
-        document.getElementById('levelLabel').classList.add('hidden');
-        // update title with level selected
-        const levelSelect = document.getElementById('levelSelect');
-        const levelText = levelSelect.options[levelSelect.selectedIndex].text;
+    // Temps de réflexion
+    reflectionTime = parseInt(document.getElementById('waitTime').value); // fallback à 10s si vide
 
-        // hidde dropdown
-        document.getElementById('categorySelect').classList.add('hidden');
-        document.getElementById('categoryLabel').classList.add('hidden');
+    document.getElementById('waitTime').classList.add('hidden');
+    document.getElementById('waitTimeLabel').classList.add('hidden');
 
-        const categorySelect = document.getElementById('categorySelect');
-        category = categorySelect.options[categorySelect.selectedIndex].value;
-        categoryText = categorySelect.options[categorySelect.selectedIndex].text;
+    document.getElementById('startBtn').classList.add('hidden'); // Hide Démarrer
+    document.getElementById('stopBtn').classList.remove('hidden'); // Show Stop
+    document.getElementById('question').classList.remove('hidden');
+    // hidde dropdown
+    document.getElementById('levelSelect').classList.add('hidden');
+    document.getElementById('levelLabel').classList.add('hidden');
+    // update title with level selected
+    const levelText = levelSelect.options[levelSelect.selectedIndex].text;
 
-        if (category && category.trim() !== '') {
-            document.getElementById('title').textContent = `Entraînement QCM - ${levelText} (${categoryText})`;
-        }
-        else document.getElementById('title').textContent = `Entraînement QCM - ${levelText}`;
+    // hidde dropdown
+    document.getElementById('categorySelect').classList.add('hidden');
+    document.getElementById('categoryLabel').classList.add('hidden');
 
-        questions = shuffle(questions, category); // randomize
-        console.log(questions.length);
-        controller = new AbortController();
-        nextQuestion(controller.signal);
-    } catch (err) {
-        console.error("Erreur lors du chargement du JSON :", err);
-        alert("Impossible de charger le QCM. Vérifie que le fichier existe.");
+    const categorySelect = document.getElementById('categorySelect');
+    category = categorySelect.options[categorySelect.selectedIndex].value;
+    categoryText = categorySelect.options[categorySelect.selectedIndex].text;
+
+    if (category && category.trim() !== '') {
+        document.getElementById('title').textContent = `Entraînement QCM - ${levelText} (${categoryText})`;
     }
+    else document.getElementById('title').textContent = `Entraînement QCM - ${levelText}`;
+
+    questions = shuffle(questions, level, category); // randomize
+
+    controller = new AbortController();
+    nextQuestion(controller.signal);
 }
 
 function stopCurrent() {
@@ -111,8 +108,7 @@ async function nextQuestion(signal) {
     }
 
     const q = questions[current];
-    console.log(q);
-    q.answers = shuffle(q.answers, null); // randomize
+    q.answers = shuffle(q.answers); // randomize
 
     showQuestion(q);
     await readQuestion(q, signal);
@@ -240,8 +236,6 @@ function showCorrection(q) {
     }
     document.getElementById('nextBtn').classList.remove('hidden');
 
-    console.log(`Question: ${questionPlayer} / ${questionMax}`);
-    console.log(`Total: ${playerScore} / ${totalMaxScore}`);
     updateScoreDisplay();
 }
 
@@ -323,9 +317,12 @@ function wait(seconds, signal) {
 }
 
 
-function shuffle(array, category) {
+function shuffle(array, level = null, category = null) {
     let filtered = array;
-    if (category && category.trim() !== '') {
+    if (level && level.trim() !== '' && LEVELS.includes(level)) {
+        filtered = filtered.filter(q => q.level.includes(level + '_'));
+    }
+    if (category && category.trim() !== '' && CATEGORIES.includes(category)) {
         filtered = array.filter(q => q.category === category);
     }
     for (let i = array.length - 1; i > 0; i--) {
