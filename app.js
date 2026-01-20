@@ -1,123 +1,238 @@
 let questions = [];
+let category = "";
 let current = 0;
-let stopFlag = false; // global
+let controller = null;
+let totalMaxScore = 0;   // score théorique max
+let playerScore = 0;    // score réel du joueur
+
 
 async function start() {
-    stopFlag = true;
-
-    // arrêter le TTS en cours
-    speechSynthesis.cancel();
-    await wait(1); // 300ms pause
-
+    // get json name
     const levelSelect = document.getElementById('levelSelect');
     const jsonFile = levelSelect.value; // bpi.json, bp.json ou bpc.json
     try {
-        const res = await fetch(jsonFile);
-        json = res.json ? await res.json() : [];
-        questions = json.data;
-        shuffle(questions);
+        const res = await fetch(jsonFile + '?_=' + Date.now());
+        json = res.json ? await res.json() : []; // get json
+        questions = json.data; // get data
+        shuffle(questions); // randomize
+        // initialize
         current = -1;
-        stopFlag = false;
+        totalMaxScore = 0;
+        playerScore = 0;
 
-        document.getElementById('startBtn').classList.add('hidden'); // cache Démarrer
-        document.getElementById('stopBtn').classList.remove('hidden'); // affiche Stop
-        // cacher dropdown
+        document.getElementById('startBtn').classList.add('hidden'); // Hide Démarrer
+        document.getElementById('stopBtn').classList.remove('hidden'); // Show Stop
+        document.getElementById('question').classList.remove('hidden');
+        // hidde dropdown
         document.getElementById('levelSelect').classList.add('hidden');
         document.getElementById('levelLabel').classList.add('hidden');
-        // mettre à jour le titre avec le niveau
-        const select = document.getElementById('levelSelect');
-        const levelText = select.options[select.selectedIndex].text;
+        // update title with level selected
+        const levelSelect = document.getElementById('levelSelect');
+        const levelText = levelSelect.options[levelSelect.selectedIndex].text;
         document.getElementById('title').textContent = `Entraînement QCM - ${levelText}`;
 
-        nextQuestion();
+        // hidde dropdown
+        document.getElementById('categorySelect').classList.add('hidden');
+        document.getElementById('categoryLabel').classList.add('hidden');
+
+        const categorySelect = document.getElementById('categorySelect');
+        category = categorySelect.options[categorySelect.selectedIndex].value;
+
+        controller = new AbortController();
+        nextQuestion(controller.signal);
     } catch (err) {
         console.error("Erreur lors du chargement du JSON :", err);
         alert("Impossible de charger le QCM. Vérifie que le fichier existe.");
     }
 }
 
-function stop() {
-    stopFlag = true;
-
-    // arrêter le TTS en cours
+function stopCurrent() {
+    if (controller) controller.abort();
+    // stop TTS
     speechSynthesis.cancel();
+}
 
-    // cacher Stop et réafficher Démarrer
+function stop() {
+    stopCurrent();
+
+    // hide Stop and show Démarrer
     document.getElementById('stopBtn').classList.add('hidden');
+    document.getElementById('nextBtn').classList.add('hidden');
+    document.getElementById('question').classList.add('hidden');
     document.getElementById('startBtn').classList.remove('hidden');
 
-    // réafficher dropdown
+    // show dropdown
     document.getElementById('levelSelect').classList.remove('hidden');
     document.getElementById('levelLabel').classList.remove('hidden');
 
-    // remettre le titre générique
+    document.getElementById('categorySelect').classList.remove('hidden');
+    document.getElementById('categoryLabel').classList.remove('hidden');
+
+    // update title
     document.getElementById('title').textContent = 'Entraînement QCM';
 
-    // tu peux aussi reset l'affichage si tu veux
+    // reset
     document.getElementById('question').textContent = '';
     document.getElementById('answers').innerHTML = '';
     document.getElementById('explanation').classList.add('hidden');
+
+    document.getElementById('score').innerHTML = 'Score : 0 / 0 (0%)';
 }
 
-async function nextQuestion() {
-    if (stopFlag) return;
+function next() {
+    stopCurrent();
+    controller = new AbortController();
+    nextQuestion(controller.signal);
+}
+
+async function nextQuestion(signal) {
+    if (signal.aborted) return;
+
+    console.log(`category : "${category}"`)
+
+    current++;
+    if (category && category.trim() !== '') {
+        while (current < questions.length && category != questions[current].category) {
+            current++;
+        }
+    }
+
     if (current >= questions.length) {
         speak("Fin de l'entraînement");
         return;
     }
 
-    current++;
     const q = questions[current];
     console.log(q);
-    shuffle(q.answers);
+    shuffle(q.answers); // randomize
 
+    showQuestion(q);
+    await readQuestion(q, signal);
+    if (signal.aborted) return;
+    await waitResponse(signal);
+    if (signal.aborted) return;
+
+    showCorrection(q);
+    await readCorrection(q, signal);
+}
+
+function showQuestion(q) {
     // Reset UI
     document.getElementById('question').textContent = `${(current + 1)}.  ${q.question}`;
     document.getElementById('answers').innerHTML = '';
     document.getElementById('explanation').classList.add('hidden');
     document.getElementById('nextBtn').classList.add('hidden');
 
-    // Affichage réponses
-    q.answers.forEach((a, i) => {
-        const div = document.createElement('div');
-        div.className = 'answer';
-        div.textContent = `${letter(i)}. ${a.text}`;
-        document.getElementById('answers').appendChild(div);
+    // show réponses
+    q.answers.forEach((a, index) => {
+        const label = document.createElement('label');
+        label.className = 'answer';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.dataset.index = index;
+        checkbox.onchange = () => {
+            a.selected = checkbox.checked;
+            checkbox.closest('.answer').classList.toggle('selected', checkbox.checked);
+        };
+
+        const text = document.createElement('span');
+        text.className = 'answer-text';
+        text.textContent = `${letter(index)}. ${a.text}`;
+
+        label.appendChild(checkbox);
+        label.appendChild(text);
+
+        document.getElementById('answers').appendChild(label);
     });
+}
 
-    // TTS question + réponses
-    await speak(q.question);
-    if (stopFlag) return;
-    await wait(1);
-    if (stopFlag) return;
+async function readQuestion(q, signal) {
+    // read TTS question + réponses
+    await speak(q.question, signal);
+    await wait(1, signal);
     for (let i = 0; i < q.answers.length; i++) {
-        await speak(letter(i));
-        await wait(0.3); // 300ms pause
-        if (stopFlag) return;
-        await speak(`${q.answers[i].text}`);
-        await wait(0.1);
-        if (stopFlag) return;
+        await speak(letter(i), signal);
+        await wait(0.3, signal); // pause
+        await speak(`${q.answers[i].text}`, signal);
+        await wait(0.1, signal);
     }
-    if (stopFlag) return;
+}
 
+async function waitResponse(signal) {
     // Temps de réflexion
     const waitInput = document.getElementById('waitTime');
     const reflectionTime = parseInt(waitInput.value) || 10; // fallback à 10s si vide
-    await wait(reflectionTime);
+    await wait(reflectionTime, signal);
+}
 
-    if (stopFlag) return;
+function computeScores(q) {
+    let questionMax = 0;
+    let questionPlayer = 0;
+
+    q.answers.forEach(a => {
+        if (a.points > 0) {
+            questionMax += a.points;
+        }
+        if (a.selected) {
+            questionPlayer += a.points;
+        }
+    });
+    questionPlayer = Math.max(0, questionPlayer);
+
+    return { questionMax, questionPlayer };
+}
+
+function updateScoreDisplay() {
+    percent = 0;
+    if (totalMaxScore > 0) {
+        percent = Math.round((playerScore / totalMaxScore) * 100);
+    }
+    document.getElementById('score').textContent =
+        `Score : ${playerScore} / ${totalMaxScore} (${percent}%)`;
+}
+
+function lockAnswers() {
+    document.querySelectorAll('#answers input[type="checkbox"]').forEach(cb => {
+        cb.disabled = true;
+    });
+}
+
+function showCorrection(q) {
+    lockAnswers();
+
+    const answersDiv = document.getElementById('answers');
+
+    const { questionMax, questionPlayer } = computeScores(q);
+    totalMaxScore += questionMax;
+    playerScore += questionPlayer;
 
     // Affichage correction
-    document.querySelectorAll('.answer').forEach((el, i) => {
-        el.classList.add(
-            q.answers[i].points > 0 ? 'good' : 'bad'
-        );
-    });
-    document.getElementById('explanation').textContent = `Explications : ${q.explanation}`;
-    document.getElementById('explanation').classList.remove('hidden');
+    [...answersDiv.children].forEach((div, i) => {
+        const a = q.answers[i];
 
+        if (a.points > 0) {
+            div.classList.add('good');
+        } else {
+            div.classList.add('bad');
+        }
+
+        if (a.selected) {
+            div.style.fontWeight = 'bold';
+        }
+    });
+    if (q.explanation) {
+        document.getElementById('explanation').textContent = `Explications : ${q.explanation}`;
+        document.getElementById('explanation').classList.remove('hidden');
+    }
     document.getElementById('nextBtn').classList.remove('hidden');
 
+    console.log(`Question: ${questionPlayer} / ${questionMax}`);
+    console.log(`Total: ${playerScore} / ${totalMaxScore}`);
+    updateScoreDisplay();
+}
+
+async function readCorrection(q, signal) {
     // récupérer les bonnes réponses avec leur index
     const goodAnswers = q.answers
         .map((a, i) => ({ ...a, index: i }))
@@ -128,41 +243,43 @@ async function nextQuestion() {
         // 1️⃣ dire les lettres ensemble : "A et B"
         const lettersText = goodAnswers
             .map(a => letter(a.index))
-            .join(' et ');
+            .join('. ');
 
-        await speak(`Bonne réponse :`);
-        if (stopFlag) return;
-        if (goodAnswers.length > 1) await speak(lettersText);
-        if (stopFlag) return;
+        await speak(`Réponse :`, signal);
+        if (q.explanation || goodAnswers.length > 1) {
+            await speak(lettersText, signal);
+            await wait(0.3, signal); // 300ms pause
+        }
 
-        // 2️⃣ dire le texte de chaque bonne réponse
-        for (const a of goodAnswers) {
-            await speak(letter(a.index));
-            await wait(0.3); // 300ms pause
-            if (stopFlag) return;
-            await speak(a.text);
-            await wait(0.1);
-            if (stopFlag) return;
+        if (!q.explanation) {
+            // 2️⃣ dire le texte de chaque bonne réponse
+            for (const a of goodAnswers) {
+                await speak(letter(a.index), signal);
+                await wait(0.3, signal); // 300ms pause
+                await speak(a.text, signal);
+                await wait(0.1, signal);
+            }
         }
     }
 
-
     // Explication
     if (q.explanation) {
-        await wait(1);
-        await speak("Explications :");
-        await wait(0.1);
-        await speak(q.explanation);
-        if (stopFlag) return;
+        await wait(1, signal);
+        await speak("Explications :", signal);
+        await wait(0.1, signal);
+        await speak(q.explanation, signal);
     }
 }
 
 // ---------- Utils ----------
 
-function speak(text) {
-    return new Promise(resolve => {
+function speak(text, signal) {
+    return new Promise((resolve, reject) => {
         const utter = new SpeechSynthesisUtterance(cleanForTTS(text));
-
+        if (signal?.aborted) {
+            reject('aborted');
+            return;
+        }
         const select = document.getElementById('voiceSelect');
         const voices = speechSynthesis.getVoices().filter(v => v.lang.startsWith('fr'));
         const voiceIndex = select.selectedIndex || 0;
@@ -171,13 +288,27 @@ function speak(text) {
 
         utter.lang = 'fr-FR';
         utter.onend = resolve;
+        utter.onerror = reject;
+
+        signal?.addEventListener('abort', () => {
+            speechSynthesis.cancel();
+            reject('aborted');
+        });
+
         speechSynthesis.speak(utter);
     });
 }
 
-function wait(seconds) {
-    return new Promise(r => setTimeout(r, seconds * 1000));
+function wait(seconds, signal) {
+    return new Promise((resolve, reject) => {
+        const timeout = setTimeout(resolve, seconds * 1000);
+        signal?.addEventListener('abort', () => {
+            clearTimeout(timeout);
+            reject('aborted');
+        });
+    });
 }
+
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -240,32 +371,39 @@ function populateVoices() {
     }
 }
 
-// appel initial et écoute du changement de voix
-speechSynthesis.onvoiceschanged = populateVoices;
-populateVoices();
-
 function savePreferences() {
     const level = document.getElementById('levelSelect').value;
+    const categ = document.getElementById('categorySelect').value;
     const voice = document.getElementById('voiceSelect').value;
     const delay = document.getElementById('waitTime').value;
 
     localStorage.setItem('qcmLevel', level);
+    localStorage.setItem('qcmCategory', categ);
     localStorage.setItem('ttsVoice', voice);
     localStorage.setItem('thinkingTime', delay);
 }
 
+// ---------- Main ----------
+
+// appel initial et écoute du changement de voix
+speechSynthesis.onvoiceschanged = populateVoices;
+populateVoices();
+
 // appeler à chaque changement
 document.getElementById('levelSelect').addEventListener('change', savePreferences);
+document.getElementById('categorySelect').addEventListener('change', savePreferences);
 document.getElementById('voiceSelect').addEventListener('change', savePreferences);
 document.getElementById('waitTime').addEventListener('change', savePreferences);
 
-
 window.addEventListener('DOMContentLoaded', () => {
-
-    speechSynthesis.cancel();
+    stop();
     // niveau
     const savedLevel = localStorage.getItem('qcmLevel');
     if (savedLevel) document.getElementById('levelSelect').value = savedLevel;
+
+    // category
+    const savedCategory = localStorage.getItem('qcmCategory');
+    if (savedCategory) document.getElementById('categorySelect').value = savedCategory;
 
     // temps de réflexion
     const savedDelay = localStorage.getItem('thinkingTime');
