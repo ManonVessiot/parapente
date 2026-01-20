@@ -73,6 +73,7 @@ foreach ($questions as $panel) {
     }
 
     $result[] = [
+        'category' => 'naturel',
         'question' => $questionText,
         'answers'  => $answers,
         'explanation' => ''

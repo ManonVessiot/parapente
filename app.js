@@ -14,7 +14,6 @@ async function start() {
         const res = await fetch(jsonFile + '?_=' + Date.now());
         json = res.json ? await res.json() : []; // get json
         questions = json.data; // get data
-        shuffle(questions); // randomize
         // initialize
         current = -1;
         totalMaxScore = 0;
@@ -29,7 +28,6 @@ async function start() {
         // update title with level selected
         const levelSelect = document.getElementById('levelSelect');
         const levelText = levelSelect.options[levelSelect.selectedIndex].text;
-        document.getElementById('title').textContent = `Entraînement QCM - ${levelText}`;
 
         // hidde dropdown
         document.getElementById('categorySelect').classList.add('hidden');
@@ -37,7 +35,15 @@ async function start() {
 
         const categorySelect = document.getElementById('categorySelect');
         category = categorySelect.options[categorySelect.selectedIndex].value;
+        categoryText = categorySelect.options[categorySelect.selectedIndex].text;
 
+        if (category && category.trim() !== '') {
+            document.getElementById('title').textContent = `Entraînement QCM - ${levelText} (${categoryText})`;
+        }
+        else document.getElementById('title').textContent = `Entraînement QCM - ${levelText}`;
+
+        questions = shuffle(questions, category); // randomize
+        console.log(questions.length);
         controller = new AbortController();
         nextQuestion(controller.signal);
     } catch (err) {
@@ -88,15 +94,7 @@ function next() {
 async function nextQuestion(signal) {
     if (signal.aborted) return;
 
-    console.log(`category : "${category}"`)
-
     current++;
-    if (category && category.trim() !== '') {
-        while (current < questions.length && category != questions[current].category) {
-            current++;
-        }
-    }
-
     if (current >= questions.length) {
         speak("Fin de l'entraînement");
         return;
@@ -104,7 +102,7 @@ async function nextQuestion(signal) {
 
     const q = questions[current];
     console.log(q);
-    shuffle(q.answers); // randomize
+    q.answers = shuffle(q.answers, null); // randomize
 
     showQuestion(q);
     await readQuestion(q, signal);
@@ -118,7 +116,7 @@ async function nextQuestion(signal) {
 
 function showQuestion(q) {
     // Reset UI
-    document.getElementById('question').textContent = `${(current + 1)}.  ${q.question}`;
+    document.getElementById('question').textContent = `${(current + 1)}/${questions.length}.  ${q.question}`;
     document.getElementById('answers').innerHTML = '';
     document.getElementById('explanation').classList.add('hidden');
     document.getElementById('nextBtn').classList.add('hidden');
@@ -310,11 +308,16 @@ function wait(seconds, signal) {
 }
 
 
-function shuffle(array) {
+function shuffle(array, category) {
+    let filtered = array;
+    if (category && category.trim() !== '') {
+        filtered = array.filter(q => q.category === category);
+    }
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
+    return filtered;
 }
 
 function letter(index) {
