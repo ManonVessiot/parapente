@@ -21,7 +21,8 @@ async function start() {
         playerScore = 0;
 
         // Temps de réflexion
-        reflectionTime = parseInt(document.getElementById('waitTime').value) || 10; // fallback à 10s si vide
+        reflectionTime = parseInt(document.getElementById('waitTime').value); // fallback à 10s si vide
+        console.log(reflectionTime);
         document.getElementById('waitTime').classList.add('hidden');
         document.getElementById('waitTimeLabel').classList.add('hidden');
 
@@ -121,6 +122,12 @@ async function nextQuestion(signal) {
 
     showCorrection(q);
     await readCorrection(q, signal);
+
+    if (reflectionTime == 0) {
+        await wait(1, signal);
+        if (signal.aborted) return;
+        next();
+    }
 }
 
 function showQuestion(q) {
@@ -167,7 +174,9 @@ async function readQuestion(q, signal) {
 }
 
 async function waitResponse(signal) {
-    await wait(reflectionTime, signal);
+    waitTime = reflectionTime;
+    if (reflectionTime == 0) waitTime = 1;
+    await wait(waitTime, signal);
 }
 
 function computeScores(q) {
