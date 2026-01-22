@@ -4,7 +4,7 @@ let level = "";
 let currentIndex = 0;
 const LEVELS = ['bpi', 'bp', 'bpc'];
 const CATEGORIES = ['pilotage', 'mecavol', 'meteo', 'materiel', 'reglementation', 'facteursH', 'naturel'];
-const SHOW_EXPLANATION_DONE = true;
+const SHOW_EXPLANATION_DONE = false;
 
 async function start() {
     // get json name

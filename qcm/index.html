@@ -5,17 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QCM vocal</title>
+
     <style>
-        /* ===== Global ===== */
+        /* ===== RESET + BASE ===== */
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 15px;
-            text-align: center;
-            line-height: 1.5;
             background-color: #f9f9f9;
             color: #333;
+        }
+
+        /* ===== PAGE LAYOUT ===== */
+        .page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* ===== SCROLLABLE CONTENT ===== */
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px 15px 120px;
+            /* espace pour les boutons */
+            text-align: center;
+            line-height: 1.5;
         }
 
         h1 {
@@ -81,13 +106,11 @@
             flex: 1;
         }
 
-        /* Sélection avant correction */
         .answer.selected {
             background-color: #dbe7ff;
             border-color: #7da2ff;
         }
 
-        /* Bonne / mauvaise réponse */
         .answer.good {
             background-color: #d4edda;
             border-color: #9fd6b2;
@@ -121,28 +144,30 @@
             margin: 5px 0 12px;
             border-radius: 5px;
             border: 1px solid #ccc;
-            transition: border-color 0.2s, box-shadow 0.2s;
         }
 
-        input[type="number"]:focus,
-        select:focus {
-            border-color: #007bff;
-            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
-            outline: none;
+        /* ===== FIXED BUTTON BAR ===== */
+        .actions {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 900px;
+            background: #ffffff;
+            border-top: 1px solid #ddd;
+            padding: 12px 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            z-index: 100;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
         }
 
-        /* ===== Labels ===== */
-        label {
-            font-size: 1em;
-            display: inline-block;
-            margin-top: 8px;
-        }
-
-        /* ===== Boutons ===== */
+        /* ===== Buttons ===== */
         button {
             font-size: 1em;
             padding: 8px 20px;
-            margin: 6px 4px;
             cursor: pointer;
             border: none;
             border-radius: 25px;
@@ -166,68 +191,34 @@
             background-color: #b52a37;
         }
 
+        #correctBtn,
         #nextBtn {
             background-color: #28a745;
         }
 
+        #correctBtn:hover,
         #nextBtn:hover {
             background-color: #1e7e34;
         }
 
-        /* ===== Hidden ===== */
         .hidden {
             display: none;
         }
 
         /* ===== Responsive ===== */
         @media (max-width: 600px) {
-            body {
-                margin: 20px 10px;
-            }
 
-            h1 {
-                font-size: 1.5em;
-            }
-
-            #score {
-                font-size: 1em;
-                padding: 6px 12px;
+            .answers,
+            #explanation {
+                width: 95%;
             }
 
             .question {
                 font-size: 1.2em;
-                padding: 12px 14px;
             }
 
-            .answers {
-                width: 95%;
-                font-size: 1em;
-                margin-bottom: 20px;
-            }
-
-            .answer {
-                font-size: 0.95em;
-                padding: 10px 12px;
-                gap: 10px;
-            }
-
-            #explanation {
-                width: 95%;
-                font-size: 1em;
-                padding: 10px 12px;
-                margin: 15px auto 25px;
-            }
-
-            input[type="number"],
-            select {
-                width: 95%;
-                font-size: 0.95em;
-            }
-
-            button {
-                font-size: 0.95em;
-                padding: 8px 16px;
-                margin: 5px 3px;
+            .actions {
+                flex-wrap: wrap;
             }
         }
     </style>
@@ -235,48 +226,54 @@
 
 <body>
 
-    <h1 id="title">Entraînement QCM</h1>
+    <div class="page">
 
-    <div id="score" class="hidden">Score : 0 / 0</div>
+        <div class="content">
+            <h1 id="title">Entraînement QCM</h1>
 
-    <div id="question" class="question hidden"></div>
+            <div id="score" class="hidden">Score : 0 / 0</div>
 
-    <div id="answers" class="answers"></div>
+            <div id="question" class="question hidden"></div>
 
-    <div id="explanation" class="hidden"></div>
+            <div id="answers" class="answers"></div>
 
-    <label for="waitTime" id="waitTimeLabel">Temps de réflexion (secondes) :</label>
-    <input id="waitTime" type="number" min="0" value="10" style="width:60px;">
-    <br>
-    <label for="voiceSelect">Choisir la voix :</label>
-    <select id="voiceSelect"></select>
-    <br>
-    <label for="levelSelect" id="levelLabel">Choisir le niveau :</label>
-    <select id="levelSelect">
-        <option value="">Tous les niveaux</option>
-        <option value="bpi">BPI</option>
-        <option value="bp" selected>BP</option>
-        <option value="bpc">BPC</option>
-    </select>
-    <br>
-    <label for="categorySelect" id="categoryLabel">Choisir la catégorie :</label>
-    <select id="categorySelect">
-        <option value="">Toutes les catégories</option>
-        <option value="pilotage">Pilotage</option>
-        <option value="mecavol">Mécavol</option>
-        <option value="meteo">Météo</option>
-        <option value="materiel">Matériel</option>
-        <option value="reglementation">Règlementation</option>
-        <option value="facteursH">Facteurs humains</option>
-        <option value="naturel">Milieu naturel</option>
-    </select>
-    <br>
+            <div id="explanation" class="hidden"></div>
 
+            <label for="waitTime" id="waitTimeLabel">Temps de réflexion (secondes) :</label><br>
+            <input id="waitTime" type="number" min="0" value="10" style="width:60px;"><br>
 
-    <button id="startBtn" onclick="start()">Démarrer</button>
-    <button id="stopBtn" onclick="stop()" class="hidden">Stop</button>
-    <button id="nextBtn" onclick="next()" class="hidden">Suivant</button>
+            <label for="voiceSelect" id="voiceLabel">Choisir la voix :</label><br>
+            <select id="voiceSelect"></select><br>
 
+            <label for="levelSelect" id="levelLabel">Choisir le niveau :</label><br>
+            <select id="levelSelect">
+                <option value="">Tous les niveaux</option>
+                <option value="bpi">BPI</option>
+                <option value="bp" selected>BP</option>
+                <option value="bpc">BPC</option>
+            </select><br>
+
+            <label for="categorySelect" id="categoryLabel">Choisir la catégorie :</label><br>
+            <select id="categorySelect">
+                <option value="">Toutes les catégories</option>
+                <option value="pilotage">Pilotage</option>
+                <option value="mecavol">Mécavol</option>
+                <option value="meteo">Météo</option>
+                <option value="materiel">Matériel</option>
+                <option value="reglementation">Règlementation</option>
+                <option value="facteursH">Facteurs humains</option>
+                <option value="naturel">Milieu naturel</option>
+            </select>
+        </div>
+
+        <div class="actions">
+            <button id="startBtn" onclick="start()">Démarrer</button>
+            <button id="stopBtn" onclick="stop()" class="hidden">Stop</button>
+            <button id="correctBtn" onclick="correct()" class="hidden">Correct</button>
+            <button id="nextBtn" onclick="next()" class="hidden">Suivant</button>
+        </div>
+
+    </div>
 
     <script src="app.js"></script>
 </body>

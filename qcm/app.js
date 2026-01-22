@@ -5,6 +5,7 @@ let controller = null;
 let totalMaxScore = 0;   // score théorique max
 let playerScore = 0;    // score réel du joueur
 let reflectionTime = 10;
+let voiceIndex = -1;
 const LEVELS = ['bpi', 'bp', 'bpc'];
 const CATEGORIES = ['pilotage', 'mecavol', 'meteo', 'materiel', 'reglementation', 'facteursH', 'naturel'];
 
@@ -70,6 +71,7 @@ function stop() {
     document.getElementById('nextBtn').classList.add('hidden');
     document.getElementById('question').classList.add('hidden');
     document.getElementById('startBtn').classList.remove('hidden');
+    document.getElementById('correctBtn').classList.add('hidden');
 
     document.getElementById('waitTime').classList.remove('hidden');
     document.getElementById('waitTimeLabel').classList.remove('hidden');
@@ -101,6 +103,9 @@ function next() {
 async function nextQuestion(signal) {
     if (signal.aborted) return;
 
+    const select = document.getElementById('voiceSelect');
+    voiceIndex = select.selectedIndex || -1;
+
     current++;
     if (current >= questions.length) {
         speak("Fin de l'entraînement");
@@ -110,21 +115,40 @@ async function nextQuestion(signal) {
     const q = questions[current];
     q.answers = shuffle(q.answers); // randomize
 
+    document.getElementById('correctBtn').classList.remove('hidden');
     showQuestion(q);
     await readQuestion(q, signal);
     if (signal.aborted) return;
-    await waitResponse(signal);
-    if (signal.aborted) return;
 
+    if (voiceIndex >= 0) {
+        await waitResponse(signal);
+        if (signal.aborted) return;
+
+        correctQuestion(signal);
+    }
+
+}
+
+function correct() {
+    stopCurrent();
+    controller = new AbortController();
+    correctQuestion(controller.signal);
+}
+
+async function correctQuestion(signal) {
+    document.getElementById('correctBtn').classList.add('hidden');
+    const q = questions[current];
     showCorrection(q);
     await readCorrection(q, signal);
 
-    if (reflectionTime == 0) {
+    if (voiceIndex >= 0 && reflectionTime == 0) {
         await wait(1, signal);
         if (signal.aborted) return;
         next();
     }
 }
+
+
 
 function showQuestion(q) {
     // Reset UI
@@ -281,15 +305,15 @@ async function readCorrection(q, signal) {
 // ---------- Utils ----------
 
 function speak(text, signal) {
+    if (voiceIndex < 0) return;
+
     return new Promise((resolve, reject) => {
         const utter = new SpeechSynthesisUtterance(cleanForTTS(text));
         if (signal?.aborted) {
             reject('aborted');
             return;
         }
-        const select = document.getElementById('voiceSelect');
         const voices = speechSynthesis.getVoices().filter(v => v.lang.startsWith('fr'));
-        const voiceIndex = select.selectedIndex || 0;
         if (voices[voiceIndex]) utter.voice = voices[voiceIndex];
 
 
@@ -307,6 +331,8 @@ function speak(text, signal) {
 }
 
 function wait(seconds, signal) {
+    if (voiceIndex < 0) return;
+
     return new Promise((resolve, reject) => {
         const timeout = setTimeout(resolve, seconds * 1000);
         signal?.addEventListener('abort', () => {
@@ -325,9 +351,9 @@ function shuffle(array, level = null, category = null) {
     if (category && category.trim() !== '' && CATEGORIES.includes(category)) {
         filtered = array.filter(q => q.category === category);
     }
-    for (let i = array.length - 1; i > 0; i--) {
+    for (let i = filtered.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+        [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
     }
     return filtered;
 }
@@ -369,6 +395,11 @@ function populateVoices() {
     const frVoices = voices.filter(v => v.lang.startsWith('fr'));
 
     select.innerHTML = ''; // vider le dropdown
+
+    const optionEmpty = document.createElement('option');
+    optionEmpty.value = -1;
+    optionEmpty.textContent = `None`;
+    select.appendChild(optionEmpty);
 
     frVoices.forEach((v, i) => {
         const option = document.createElement('option');
