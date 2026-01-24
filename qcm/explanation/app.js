@@ -4,23 +4,33 @@ let level = "";
 let currentIndex = 0;
 const LEVELS = ['bpi', 'bp', 'bpc'];
 const CATEGORIES = ['pilotage', 'mecavol', 'meteo', 'materiel', 'reglementation', 'facteursH', 'naturel'];
-const SHOW_EXPLANATION_DONE = false;
+const SHOW_EXPLANATION_DONE = true;
 
 async function start() {
     // get json name
     const levelSelect = document.getElementById('levelSelect');
     level = levelSelect.value;
 
-    const res = await fetch("qcm.json?_=" + Date.now());
-    json = res.json ? await res.json() : []; // get json
-    questions = json.data; // get data
+    const finalJson = localStorage.getItem('finalJson');
+    const qcm = finalJson ? JSON.parse(finalJson) : null;
+    if (qcm) {
+        questions = qcm.data; // get data
+    }
+    else {
+        const res = await fetch("qcm.json?_=" + Date.now());
+        json = res.json ? await res.json() : []; // get json
+        questions = json.data; // get data
+    }
+
     // initialize
     currentIndex = -1;
 
+    document.getElementById('resetBtn').classList.add('hidden');
     document.getElementById('startBtn').classList.add('hidden'); // Hide Démarrer
     document.getElementById('stopBtn').classList.remove('hidden'); // Show Stop
     document.getElementById('question').classList.remove('hidden');
     document.getElementById('downloadBtn').classList.remove('hidden');
+    document.getElementById('saveBtn').classList.remove('hidden');
     // hidde dropdown
     document.getElementById('levelSelect').classList.add('hidden');
     document.getElementById('levelLabel').classList.add('hidden');
@@ -44,7 +54,12 @@ async function start() {
 }
 
 function stop() {
+    const finalJson = localStorage.getItem('finalJson');
+    if (finalJson) document.getElementById('resetBtn').classList.remove("hidden");
+    else document.getElementById('resetBtn').classList.add("hidden");
+
     // hide Stop and show Démarrer
+    document.getElementById('saveBtn').classList.add('hidden');
     document.getElementById('stopBtn').classList.add('hidden');
     document.getElementById('nextBtn').classList.add('hidden');
     document.getElementById('question').classList.add('hidden');
@@ -117,10 +132,10 @@ async function nextQuestion() {
         const levelMismatch = LEVELS.includes(level) && q.level !== level + "_";
         const categoryMismatch = CATEGORIES.includes(category) && q.category !== category;
 
-        const explanationAlreadyDone =
-            SHOW_EXPLANATION_DONE ||
-            (q.explanation &&
-                q.explanation.trim() !== '');
+        explanationAlreadyDone = true;
+        if (!SHOW_EXPLANATION_DONE && q.explanation && q.explanation.trim() !== '') {
+            explanationAlreadyDone = false;
+        }
 
         if (!levelMismatch && !categoryMismatch && explanationAlreadyDone) {
             break;
@@ -231,6 +246,21 @@ function savePreferences() {
     localStorage.setItem('qcmCategory', categ);
 }
 
+function saveJSON() {
+    save();
+    const finalJson = {
+        data: questions
+    };
+    localStorage.setItem('finalJson', JSON.stringify(finalJson));
+
+    alert("Sauvegarde effectuée ✅");
+}
+
+function resetLocalJson() {
+    localStorage.removeItem('finalJson');
+    document.getElementById('resetBtn').classList.add('hidden');
+}
+
 // ---------- Main ----------
 
 // appeler à chaque changement
@@ -239,6 +269,7 @@ document.getElementById('categorySelect').addEventListener('change', savePrefere
 
 window.addEventListener('DOMContentLoaded', () => {
     stop();
+
     // niveau
     const savedLevel = localStorage.getItem('qcmLevel');
     if (savedLevel) document.getElementById('levelSelect').value = savedLevel;

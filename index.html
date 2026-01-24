@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil – Entraînement Parapente</title>
+
+    <style>
+        /* ===== Base ===== */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* ===== Sections ===== */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        /* ===== Cards ===== */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .card-desc {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .vert {
+            font-weight: bold;
+            color: #42b14bff;
+        }
+
+        .bleu {
+            font-weight: bold;
+            color: #00adefff;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            text-align: center;
+            font-size: 0.85em;
+            color: #777;
+            margin-top: 40px;
+            padding-bottom: 10px;
+        }
+
+        /* ===== Mobile ===== */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .card {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Entraînement Parapente</h1>
+        <p class="subtitle">QCM FFVL & ressources pédagogiques</p>
+
+        <!-- QCM -->
+        <div class="section">
+            <h2>QCM</h2>
+            <div class="grid">
+                <a href="./qcm" class="card">
+                    <div class="card-title">QCM – Entraînement</div>
+                    <div class="card-desc">
+                        Répondre aux questions, calcul du score, vocal.
+                    </div>
+                </a>
+
+                <a href="./qcm/explanation" class="card">
+                    <div class="card-title">QCM – Explications</div>
+                    <div class="card-desc">
+                        Ajouter / modifier les explications des questions.
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Livrets -->
+        <div class="section">
+            <h2>Livrets pédagogiques</h2>
+            <div class="grid">
+                <a href="./cours/livrets/livret-init.pdf" class="card">
+                    <div class="card-title">Livret de présentation</div>
+                    <div class="card-desc">Outils pédagogiques</div>
+                </a>
+            </div>
+
+            <div class="grid">
+                <a href="./cours/livrets/livret-init.pdf" class="card">
+                    <div class="card-title">Livret INITIATION</div>
+                    <div class="card-desc">Initiation</div>
+                </a>
+
+                <a href="./cours/livrets/livret-bpi.pdf" class="card">
+                    <div class="card-title">Livret BPI</div>
+                    <div class="card-desc">Brevet de pilote initial</div>
+                </a>
+
+                <a href="./cours/livrets/livret-bp.pdf" class="card">
+                    <div class="card-title">Livret BP</div>
+                    <div class="card-desc">Brevet de pilote</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Livrets -->
+        <div class="section">
+            <h2>Affiches pédagogiques</h2>
+            <div class="grid">
+                <a href="./cours/Affiches pédagogiques A3/01-Desequilibre-du-vol2021.pdf" class="card">
+                    <div class="card-title">Déséquilibre du vol</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/02-Facteurs-humains2019.pdf" class="card">
+                    <div class="card-title">Facteurs humains</div>
+                    <div class="card-desc">Niveau <span class="vert">vert</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/03-La-dynamique-du-vol2019.pdf" class="card">
+                    <div class="card-title">La dynamique du vol</div>
+                    <div class="card-desc">Niveau <span class="vert">vert</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/04-Les-fronts2019.pdf" class="card">
+                    <div class="card-title">Perturbation atmosphérique - Les «fronts»</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/05-Les-pieges-aerologiques2019.pdf" class="card">
+                    <div class="card-title">Les pièges aérologiques</div>
+                    <div class="card-desc">Niveau <span class="vert">vert</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/06-Mecanique-du-vol2021.pdf" class="card">
+                    <div class="card-title">Mécanique du vol et angles</div>
+                    <div class="card-desc">Niveau <span class="vert">vert</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/07-Parachute-de-secours2019.pdf" class="card">
+                    <div class="card-title">Le parachute de secours</div>
+                    <div class="card-desc">Niveau <span class="vert">vert</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/08-Parachute-de-secours-affallement2021.pdf" class="card">
+                    <div class="card-title">Le parachutes de secours - Procédure d’affalement</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/09-Parachute-descriptif-chaine2019.pdf" class="card">
+                    <div class="card-title">Parachute de secours- Description</div>
+                    <div class="card-desc">Niveau <span class="vert">vert</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/10-Parachutes-types2019.pdf" class="card">
+                    <div class="card-title">Les parachutes de secours</div>
+                    <div class="card-desc"></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/11-Rafales2019.pdf" class="card">
+                    <div class="card-title">Rafales - Effets instantanés des rafales sur l’incidence et la vitesse de
+                        vol</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/12-Reglementation2025.pdf" class="card">
+                    <div class="card-title">Réglementation «La division de l’espace aérien»</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/13-Roulis-sellette2025.pdf" class="card">
+                    <div class="card-title">Produire du roulis, de petite amplitude «à la sellette»</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/14-Tangage2025.pdf" class="card">
+                    <div class="card-title">Tangage - Travail d’amortissement en tangage</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/15-Les-brises2021.pdf" class="card">
+                    <div class="card-title">Les brises</div>
+                    <div class="card-desc">Niveau <span class="vert">vert</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/16-SIGR2019.pdf" class="card">
+                    <div class="card-title">La SIGR</div>
+                    <div class="card-desc">Stratégie individuelle de gestion des risques</div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/17-Facteurs-Humains2023.pdf" class="card">
+                    <div class="card-title">Les Facteurs Humains</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/18-Milieux-naturels2022.pdf" class="card">
+                    <div class="card-title">Vol Libre et Milieux Naturels</div>
+                    <div class="card-desc"></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/19-Secours2022.pdf" class="card">
+                    <div class="card-title">Secours Vol libre</div>
+                    <div class="card-desc">Conseils aux pilotes</div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/20-Milieux-naturels-rapaces2023.pdf" class="card">
+                    <div class="card-title">Vol libre et milieux naturels</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+
+                <a href="./cours/Affiches pédagogiques A3/21-Mecavol-Virage2024.pdf" class="card">
+                    <div class="card-title">Le virage en parapente</div>
+                    <div class="card-desc">Niveau <span class="vert">vert</span></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Prepa BPC -->
+        <div class="section">
+            <h2>Brevet de pilote confimé - Préparation à l’écrit / référentiel de correction</h2>
+            <div class="grid">
+                <a href="./cours/Preparation BPC/BPC  PP _ Delta  V-2025 may .pdf" class="card">
+                    <div class="card-title">Préparation à l’écrit</div>
+                    <div class="card-desc">Référenciel de correction</div>
+                </a>
+
+                <a href="./cours/Preparation BPC/appui sellette rayon du virage.pdf" class="card">
+                    <div class="card-title">Quel rayon dans un virage à plat ?</div>
+                    <div class="card-desc">Notes de calcul</div>
+                </a>
+
+                <a href="./cours/Preparation BPC/poids d'une rafale en fermeture ou décrochage.pdf" class="card">
+                    <div class="card-title">Poids d'une rafale dans le risque de fermeture ou de décrochage</div>
+                    <div class="card-desc">Notes de calcul</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Fiches éval -->
+        <div class="section">
+            <h2>Parties pratique</h2>
+            <div class="grid">
+                <a href="./cours/Pratique/Pratique BI_BP_maitrise aile vol_exercices spécifiques_1.pdf" class="card">
+                    <div class="card-title">Pratique du Brevet Initial et Brevet Pilote</div>
+                    <div class="card-desc">Maitrise de l’aile en vol - exercies</div>
+                </a>
+
+                <a href="./cours/Pratique/2025 - Fiche éval_Modules BP.pdf" class="card">
+                    <div class="card-title">Brevet de pilote</div>
+                    <div class="card-desc">Technique de gonflage/décollage DOS/FACE voile</div>
+                </a>
+
+                <a href="./cours/Pratique/2025 - Fiche éval BPC_4 modules.pdf" class="card">
+                    <div class="card-title">BPC</div>
+                    <div class="card-desc">Déplacement et vol de distance</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Facteurs Humains -->
+        <div class="section">
+            <h2>Facteurs Humains</h2>
+            <div class="grid">
+                <a href="./cours/Facteurs_humains/1 - FH CHECK LIST.pdf" class="card">
+                    <div class="card-title">CHECK-LIST</div>
+                    <div class="card-desc">Votre Check-list Facteurs humains</div>
+                </a>
+
+                <a href="./cours/Facteurs_humains/2 - FH Le vol de Didier.pdf" class="card">
+                    <div class="card-title">Le vol de Didier</div>
+                    <div class="card-desc">Analyse de vol</div>
+                </a>
+
+                <a href="./cours/Facteurs_humains/3 - FH Fiche Synthèse Attitude VL.pdf" class="card">
+                    <div class="card-title">L’attitude</div>
+                    <div class="card-desc">Fiche synthèse</div>
+                </a>
+
+                <a href="./cours/Facteurs_humains/4 - FH Fiche Synthèse Intro VL.pdf" class="card">
+                    <div class="card-title">FH : Intro</div>
+                    <div class="card-desc">Fiche synthèse</div>
+                </a>
+
+                <a href="./cours/Facteurs_humains/5 - FH Fiche Synthèse Ressources VL.pdf" class="card">
+                    <div class="card-title">FH : Ressources</div>
+                    <div class="card-desc">Fiche synthèse</div>
+                </a>
+
+                <a href="./cours/Facteurs_humains/Facteurs Humains2022.pdf" class="card">
+                    <div class="card-title">Les Facteurs Humains</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Dev durable -->
+        <div class="section">
+            <h2>Vol Libre et Milieux Naturels</h2>
+            <div class="grid">
+                <a href="./cours/Developpement durable/Milieux naturels2022.pdf" class="card">
+                    <div class="card-title">Schéma</div>
+                    <div class="card-desc">Niveau <span class="vert">vert</span></div>
+                </a>
+
+                <a href="./cours/Developpement durable/Référentiel niveau vert - brevet initial -.pdf" class="card">
+                    <div class="card-title">Référentiel de connaissances</div>
+                    <div class="card-desc">Niveau <span class="vert">vert</span></div>
+                </a>
+
+                <a href="./cours/Developpement durable/Référentiel niveau bleu - brevet de pilote -.pdf" class="card">
+                    <div class="card-title">Référentiel de connaissances</div>
+                    <div class="card-desc">Niveau <span class="bleu">bleu</span></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Autre -->
+        <div class="section">
+            <h2>Autre ressources</h2>
+            <div class="grid">
+                <a href="./cours/Autre/20240409_FFVL-Formation-EspacesAeriens.pdf" class="card">
+                    <div class="card-title">Espaces Aériens</div>
+                    <div class="card-desc">Les fondamentaux</div>
+                </a>
+
+                <a href="./cours/Autre/Livret_parachute_secours_Secours 2023.pdf" class="card">
+                    <div class="card-title">Le Fascicule Parachute de secours</div>
+                    <div class="card-desc">Livret</div>
+                </a>
+
+                <a href="./cours/Autre/Parapente-360-T1-V1.01.01.pdf" class="card">
+                    <div class="card-title">Ouvrage numérique Parapente 360</div>
+                    <div class="card-desc">Livre</div>
+                </a>
+
+                <a href="./cours/Autre/2014_Livret_FFVL_9BD.pdf" class="card">
+                    <div class="card-title">Livret Mentalpilote</div>
+                    <div class="card-desc">Facteurs Humains</div>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            © Entraînement personnel – usage pédagogique
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
