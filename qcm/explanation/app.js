@@ -2,6 +2,8 @@ let questions = [];
 let category = "";
 let level = "";
 let currentIndex = 0;
+let currentCount = 0;
+let count = 0;
 const LEVELS = ['bpi', 'bp', 'bpc'];
 const CATEGORIES = ['pilotage', 'mecavol', 'meteo', 'materiel', 'reglementation', 'facteursH', 'naturel'];
 const SHOW_EXPLANATION_DONE = true;
@@ -24,6 +26,7 @@ async function start() {
 
     // initialize
     currentIndex = -1;
+    currentCount = 0;
 
     document.getElementById('resetBtn').classList.add('hidden');
     document.getElementById('startBtn').classList.add('hidden'); // Hide Démarrer
@@ -50,7 +53,32 @@ async function start() {
     }
     else document.getElementById('title').textContent = `Entraînement QCM - ${levelText}`;
 
+    count = countQuestions();
     nextQuestion();
+}
+
+function countQuestions() {
+    number = 0;
+    index = 0;
+    while (index < questions.length) {
+        const q = questions[index];
+
+        const levelMismatch = LEVELS.includes(level) && !q.level.includes(level + "_");
+        const categoryMismatch = CATEGORIES.includes(category) && q.category !== category;
+
+        explanationAlreadyDone = true;
+        if (!SHOW_EXPLANATION_DONE && q.explanation && q.explanation.trim() !== '') {
+            explanationAlreadyDone = false;
+        }
+
+        if (!levelMismatch && !categoryMismatch && explanationAlreadyDone) {
+            number++;
+            console.log("question " + number + " : " + q.question);
+        }
+
+        index++;
+    }
+    return number;
 }
 
 function stop() {
@@ -129,7 +157,7 @@ async function nextQuestion() {
     while (currentIndex < questions.length) {
         const q = questions[currentIndex];
 
-        const levelMismatch = LEVELS.includes(level) && q.level !== level + "_";
+        const levelMismatch = LEVELS.includes(level) && !q.level.includes(level + "_");
         const categoryMismatch = CATEGORIES.includes(category) && q.category !== category;
 
         explanationAlreadyDone = true;
@@ -144,17 +172,18 @@ async function nextQuestion() {
         currentIndex++;
     }
 
+    // reset
+    document.getElementById('question').textContent = '';
+    document.getElementById('answers').innerHTML = '';
+    document.getElementById('explanationEdit').classList.add('hidden');
+    document.getElementById("explanationInput").value = '';
+
     if (currentIndex >= questions.length) {
         document.getElementById('nextBtn').classList.add('hidden');
         document.getElementById('question').classList.add('hidden');
-
-        // reset
-        document.getElementById('question').textContent = '';
-        document.getElementById('answers').innerHTML = '';
-        document.getElementById('explanationEdit').classList.add('hidden');
         return;
     }
-
+    currentCount++;
     const q = questions[currentIndex];
 
     showQuestion(q);
@@ -163,7 +192,7 @@ async function nextQuestion() {
 
 function showQuestion(q) {
     // Reset UI
-    document.getElementById('question').textContent = `${(currentIndex + 1)}/${questions.length}.  ${q.question}`;
+    document.getElementById('question').textContent = `${(currentCount)}/${count}.  ${q.question}`;
     document.getElementById('answers').innerHTML = '';
     document.getElementById('explanationEdit').classList.add('hidden');
     document.getElementById('nextBtn').classList.add('hidden');
@@ -217,7 +246,7 @@ function showCorrection(q) {
             div.style.fontWeight = 'bold';
         }
     });
-    document.getElementById('explanationInput').textContent = q.explanation;
+    document.getElementById('explanationInput').value = q.explanation;
     document.getElementById('explanationEdit').classList.remove('hidden');
     document.getElementById('nextBtn').classList.remove('hidden');
 }
