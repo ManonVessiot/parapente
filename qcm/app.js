@@ -296,8 +296,6 @@ async function readCorrection(q, signal) {
     // Explication
     if (q.explanation) {
         await wait(1, signal);
-        await speak("Explications :", signal);
-        await wait(0.1, signal);
         await speak(q.explanation, signal);
     }
 }
