@@ -344,13 +344,15 @@ function wait(seconds, signal) {
 
 
 function shuffle(array, level = null, category = null) {
-    let filtered = array;
-    if (level && level.trim() !== '' && LEVELS.includes(level)) {
-        filtered = filtered.filter(q => q.level.includes(level + '_'));
-    }
-    if (category && category.trim() !== '' && CATEGORIES.includes(category)) {
-        filtered = array.filter(q => q.category === category);
-    }
+    let filtered = array.filter(q => {
+        const levelMismatch =
+            LEVELS.includes(level) && !q.level.includes(level + "_");
+
+        const categoryMismatch =
+            CATEGORIES.includes(category) && q.category !== category;
+
+        return !levelMismatch && !categoryMismatch;
+    });
     for (let i = filtered.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
