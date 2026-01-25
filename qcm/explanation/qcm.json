@@ -137,7 +137,7 @@
           "points": 4
         }
       ],
-      "explanation": "",
+      "explanation": "Un gros cumulus isolé n’est pas toujours inoffensif, car sa taille indique souvent une convection puissante pouvant créer des ascendances fortes, des turbulences et une évolution rapide vers un nuage dangereux.",
       "level": "bpi_"
     },
     {
@@ -161,7 +161,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Pour décoller, il faut accélérer en chargeant progressivement la ventrale tout en gardant un contact permanent avec les commandes, car c’est ce qui permet de contrôler l’aile et la vitesse jusqu’à l’envol.\nIl ne faut ni freiner fort, ni tenir les avants, ni décoller mains totalement hautes sans contact, car ces actions suppriment le contrôle du tangage et peuvent provoquer une perte de vitesse ou un déséquilibre.",
       "level": "bpi_"
     },
     {
@@ -181,7 +181,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La décision de décoller se prend juste après la temporisation, lorsque tu as à la fois le contact aux commandes et l’appui ventral qui augmente avec la vitesse, car ce sont les deux références décrites dans les livrets pour valider que l’aile vole correctement et que tu peux t’engager.\nOn ne décide jamais pendant la temporisation, car l’aile n’est pas encore stabilisée ni en situation de vol contrôlé.",
       "level": "bpi_"
     },
     {
@@ -205,7 +205,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Pour faire les oreilles, on garde les freins en main et on tire les suspentes extérieures de la ligne des A, comme indiqué dans la notice technique de l’aile.\nOn ne tire ni les stabilos, ni les élévateurs avants, car ces actions ne correspondent pas à la procédure correcte et peuvent déformer ou déséquilibrer l’aile.",
       "level": "bpi_"
     },
     {
@@ -229,7 +229,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le virage face à la pente est à éviter, car il devient difficile à contrôler et dangereux du fait du défilement rapide du sol en vent arrière.\nCe virage impose effectivement la plus forte inclinaison pour obtenir le même rayon de virage par rapport au sol, ce qui renforce encore son caractère risquéc car le vent nous pousse contre la pente il faut donc tourner plus vite.",
       "level": "bpi_"
     },
     {
@@ -249,7 +249,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La phase d’accélération après la temporisation nécessite de regarder en avant et de se pencher légèrement vers l’avant pour charger la ventrale, car c’est cette posture qui permet une prise de vitesse efficace et un décollage contrôlé.\nSe pencher en arrière est à éviter, car cela coupe la vitesse, déséquilibre l’appui ventral et réduit le contrôle du tangage.",
       "level": "bpi_"
     },
     {
@@ -269,7 +269,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La règle des additions consiste à éviter le cumul de menaces ou de facteurs stressants, car chacun pris isolément peut sembler acceptable, mais leur addition fait basculer le vol dans une zone de risque inacceptable.\nIdentifier les nouveautés et n’en accepter qu’une à la fois est donc une bonne pratique.",
       "level": "bpi_"
     },
     {
@@ -289,7 +289,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Après un décollage “à l’arraché”, on n’est pas immédiatement lucide sur sa vitesse, donc on ne ralentit surtout pas : dans le doute, on prend de la vitesse et on s’écarte du relief, car c’est la seule attitude qui garantit une marge de sécurité.",
       "level": "bpi_"
     },
     {
@@ -313,7 +313,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Dans cette situation, tu as la priorité, mais la règle de sécurité dit clairement que la priorité ne s’impose jamais : si l’autre pilote ne semble pas réagir, tu dois faire demi‑tour pour éviter le conflit de trajectoire.\nS’écarter vers le relief ou “imposer” sa priorité est dangereux, car cela réduit ta marge et augmente le risque d’impact.",
       "level": "bpi_"
     },
     {
@@ -333,7 +333,7 @@
           "points": 4
         }
       ],
-      "explanation": "",
+      "explanation": "La turbulence de sillage est dangereuse parce qu’elle perturbe momentanément le pilotage, et elle se rencontre sur quelques dizaines de mètres dans la trajectoire d’air de l’aile, généralement en arrière et légèrement au‑dessus.\nElle ne dure pas plusieurs minutes : son effet est bref mais suffisamment fort pour déstabiliser une aile qui passerait dedans.",
       "level": "bpi_"
     },
     {
@@ -357,7 +357,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Dans ce cas, la bonne conduite est de suivre l’aile et la ramener progressivement sur l’axe au frein, car c’est la seule manière de reprendre le contrôle sans casser la vitesse ni aggraver le déséquilibre.\nFreiner fort ou ralentir la course est dangereux, et une fois l’axe retrouvé, on peut vérifier rapidement qu’il n’y a ni clé ni cravate avant de s’engager dans la course d’envol.",
       "level": "bpi_"
     },
     {
@@ -377,7 +377,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le vol à vitesse lente en finale est dangereux, car une aile lente devient vulnérable aux turbulences, aux variations de vent et aux pièges aérologiques, ce qui augmente fortement le risque de décrochage ou de perte de contrôle près du sol.\nOn n’arrive jamais lentement en finale : on garde de la vitesse, puis on arrondit au dernier moment.",
       "level": "bpi_"
     },
     {
@@ -397,7 +397,7 @@
           "points": 0
         }
       ],
-      "explanation": "",
+      "explanation": "Au sol sans vent, si l’aile dévie, la bonne action est d’accélérer pour passer devant l’aile et la ramener en freinant du côté où vous voulez aller, car c’est la seule manière de reprendre l’axe sans perdre la pression interne.\nS’opposer avec le corps ou regarder l’aile fait perdre le contrôle : il faut regarder devant soi, rester mobile et piloter proprement au frein.",
       "level": "bpi_"
     },
     {
@@ -421,7 +421,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Relever brusquement les mains fait chuter l’incidence d’un coup, ce qui provoque une abattée : l’aile accélère brutalement et pique vers l’avant.\nEn vol, cela peut surprendre et déstabiliser ; à l’atterrissage, ce piqué fait se rapprocher le sol très vite ; au décollage, cela peut te faire perdre le soutien de l’aile, qui risque de te dépasser. La parachutale, elle apparait lorsque l'incidence est trop grande, avec une vitesse trop basse.",
       "level": "bpi_"
     },
     {
@@ -445,7 +445,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En vol de pente, on fait attention au gradient et on garde une marge de vitesse, car ce sont les deux protections essentielles près du relief.\nPour changer de sens, on effectue bien un virage dos à la pente, qui est la manœuvre normale et sécurisée.\nEn revanche, on ne vire jamais face à la pente, car cela expose à un risque immédiat de collision avec le relief.",
       "level": "bpi_"
     },
     {
@@ -469,7 +469,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La première chose à faire est d’évaluer si vos trajectoires deviennent convergentes, car c’est ce qui détermine s’il y a un risque de conflit.\nSi l’autre aile est côté relief, tu prévois logiquement de t’écarter vers la vallée, car c’est la règle de priorité en vol de pente.\nSi tu arrives vent arrière à grande vitesse sur une aile quasi immobile, tu dois anticiper très tôt, car la vitesse sol élevée réduit ton temps de réaction.\nEnfin, on ne passe jamais juste derrière un biplace à altitude équivalente, car son sillage est puissant et dangereux.",
       "level": "bpi_"
     },
     {
@@ -493,7 +493,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une prise de vitesse avant l’atterrissage est une mesure de sécurité essentielle : elle permet de garder une bonne réserve de vitesse/air pour traverser un éventuel gradient et rester maître de l’aile près du sol.\nElle améliore aussi la maniabilité, car une aile plus rapide répond mieux et reste plus solide.\nCe n’est pas dangereux en soi, car la ressource ne se produit que si tu freines trop tôt ou trop fort.",
       "level": "bpi_"
     },
     {
@@ -513,7 +513,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La finale doit être face au vent, et on l’effectue en entrée de terrain, c’est‑à‑dire en début d’axe d’atterrissage, pour avoir toute la longueur devant soi et garder de la marge pour l’arrondi.\nArriver face au vent “en bout de terrain” serait dangereux, car on manquerait d’espace pour corriger ou rallonger la finale.",
       "level": "bpi_"
     },
     {
@@ -537,7 +537,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La sauvegarde des sites concerne tout le monde dans la chaîne du vol libre :\n- chaque pilote, parce que son comportement sur le terrain conditionne directement la pérennité du site ;\n- la Fédération, qui structure et défend la pratique ;\n- les ligues et les clubs, qui gèrent localement les relations avec les propriétaires, les mairies et les riverains.\nLe ministère de l’Intérieur n’a aucun rôle dans la sauvegarde des sites de vol libre.",
       "level": "bpi_"
     },
     {
@@ -557,7 +557,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Avant d’effectuer un virage, deux actions sont indispensables : vérifier que la voie est libre du côté où vous allez tourner, et anticiper la perte d’altitude ainsi que la nouvelle trajectoire.\nRalentir serait dangereux, car un virage demande au contraire de la vitesse pour garder de la portance et du contrôle.",
       "level": "bpi_"
     },
     {
@@ -581,7 +581,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En présence de vent, il faut gérer la dérive sol, car le 360° ne te ramène pas au même endroit.\nC’est formellement proscrit près du sol, car la perte d’altitude est importante et variable.\nOn l’utilise effectivement pour rester dans un secteur ascendant, notamment en thermique.\nEn revanche, il est dangereux à proximité immédiate d’un relief, car la dérive peut t’y projeter.",
       "level": "bpi_"
     },
     {
@@ -605,7 +605,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les collisions en vol libre proviennent presque toujours d’un manque d’anticipation et d’un défaut de surveillance, aggravés par des comportements à risque.\n- ne pas regarder dans l’axe de sa trajectoire présente et future\n- la densité d’ailes et le non‑respect des marges de sécurité",
       "level": "bpi_"
     },
     {
@@ -629,7 +629,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Si tu dévies vers la droite, c’est que ta demi‑aile gauche monte plus vite. Pour te remettre dessous, tu accélères vers la droite, puis une fois l’aile haute, tu corriges au frein gauche pour la remettre dans l’axe.",
       "level": "bpi_"
     },
     {
@@ -649,7 +649,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En vent nul, le décollage demande simplement d’atteindre la vitesse minimale de vol de l’aile en courant, puisque l’air ne t’apporte aucune vitesse relative.\nCe n’est pas dangereux en soi, et cela ne nécessite surtout pas d’enfoncer les commandes, ce qui ferait risquer un décrochage.",
       "level": "bpi_"
     },
     {
@@ -673,7 +673,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "En vent nul face à la pente, si après plusieurs pas accélérés tu ne sens aucun affermissement des A, cela signifie que l’aile ne se gonfle pas.\nLa bonne conduite est de ralentir pour tenter de laisser l’aile écoper, tout en évaluant immédiatement l’espace restant pour abandonner avant de te retrouver trop bas.",
       "level": "bpi_"
     },
     {
@@ -697,7 +697,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le décollage dos‑voile se déroule en trois étapes : gonflage, temporisation, puis course d’accélération jusqu’au décollage. L’installation en sellette n’en fait pas partie, car elle se réalise seulement une fois en l’air et éloigné du relief.",
       "level": "bpi_"
     },
     {
@@ -721,7 +721,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le parapente est simple en conditions calmes mais devient très exigeant en aérologie turbulente, et il obéit aux mêmes lois aérodynamiques que tous les autres aéronefs. Il ne pardonne pas les erreurs et nécessite donc un apprentissage sérieux, quelle que soit la pratique.",
       "level": "bpi_"
     },
     {
@@ -745,7 +745,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La temporisation sert à stabiliser l’aile au bon angle d’incidence avant la course, et elle est plus facile avec un minimum de vent et de pente.\nElle ne peut pas être remplacée sans risque par un simple ressenti, et elle est plus difficile, non facilitée, en absence de vent.",
       "level": "bpi_"
     },
     {
@@ -769,7 +769,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La prise de vitesse avant l’atterrissage est indispensable en parapente : près du sol, le vent relatif diminue et il faut conserver une bonne vitesse/air pour garder de la maniabilité et une ressource efficace.",
       "level": "bpi_"
     },
     {
@@ -793,7 +793,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "En face‑voile, sans vent il n’y a pas de vrai prégonflage, et la prise de commandes reste la même qu’en dos‑voile. Avec les élévateurs croisés, le retournement se fait toujours en passant sous le faisceau supérieur.",
       "level": "bpi_"
     },
     {
@@ -817,7 +817,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La temporisation sert à contrôler le tangage, synchroniser la vitesse du pilote et de l’aile, s’insérer entre le gonflage et la décision de décoller, et vérifier l’état du profil.",
       "level": "bpi_"
     },
     {
@@ -841,7 +841,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La progression vers le brevet de pilote initial (niveau vert) s’étale sur plusieurs semaines, le temps d’acquérir des bases solides, et demande en général au moins une trentaine de grands vols pour valider les compétences.",
       "level": "bpi_"
     },
     {
@@ -861,7 +861,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La mise en place du parapente dépend du vent, du modèle d’aile (taille, allongement, comportement au gonflage) et de la pente, qui conditionne l’orientation et la facilité de levée.",
       "level": "bpi_"
     },
     {
@@ -885,7 +885,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Si ton assise droite se soulève, ton poids est projeté à gauche et l’aile tend à tourner à gauche, donc tu corriges en chargeant à droite et en freinant à droite, ce qui durcit la commande droite car la demi‑aile droite reprend de la vitesse et de la pression interne.",
       "level": "bpi_"
     },
     {
@@ -909,7 +909,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le premier grand vol demande une vraie préparation technique et une adaptation progressive au vide, jamais un passage « direct » ni précipité.",
       "level": "bpi_"
     },
     {
@@ -933,7 +933,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "En face‑voile, tu vois parfaitement l’aile, tu contrôles sa montée et tu peux temporiser pour caler l’incidence, et ce n’est absolument pas réservé au vent fort.",
       "level": "bpi_"
     },
     {
@@ -957,7 +957,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Juste après le décollage, la priorité est de conserver une bonne vitesse et de gérer sa trajectoire en tenant compte des autres ailes. Il est donc hors de question de lacher les commande avant cela. La vérification visuelle du parapente se fait avant de s’engager dans la course.",
       "level": "bpi_"
     },
     {
@@ -981,7 +981,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Quand vous lâchez les commandes, vous êtes bras hauts, donc à vitesse maximale, vous pouvez encore infléchir légèrement la trajectoire par le poids, et la plupart des ailes sont alors proches de leur finesse max. \nBras hauts, un frein bien réglé ne bride pas le bord de fuite. Si le bord de fuite est légèrement tiré quand vous lâchez les commandes, cela signifie simplement que les freins sont trop courts, donc mal réglés.",
       "level": "bpi_"
     },
     {
