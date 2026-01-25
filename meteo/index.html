@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse météo parapente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Analyse météo – Parapente</h1>
+
+        <!-- ===== PRESETS SITE ===== -->
+        <section class="card">
+            <h2>Site de vol</h2>
+
+            <label>Preset :</label>
+            <select id="presetSelect"></select>
+
+            <label>Nom du site</label>
+            <input id="siteName">
+
+            <label>Orientations</label>
+            <input id="orientations" placeholder="N / NE / E">
+
+            <label>Altitude</label>
+            <input id="altitude" placeholder="m">
+
+            <label>Type de vol</label>
+            <input id="typeVol" placeholder="Plouf / Soaring / Cross">
+
+            <label>Atterrissages</label>
+            <textarea id="atteros"></textarea>
+
+            <label>Pièges aérologiques</label>
+            <textarea id="pieges"></textarea>
+
+            <button onclick="savePreset()" class="secondary">Sauvegarder le preset</button>
+            <button onclick="deletePreset()" id="deletePresetBtn" class="danger">Supprimer le preset</button>
+        </section>
+
+        <!-- ===== ANALYSE METEO ===== -->
+        <section class="card">
+            <h2>Analyse météo</h2>
+
+            <div id="steps"></div>
+
+            <label>Bilan / Décision</label>
+            <textarea id="conclusion" placeholder="Je vole / Je ne vole pas car..."></textarea>
+
+            <div class="actions">
+                <button onclick="resetDynamic()" class="danger">Nouveau</button>
+                <button onclick="showAnalysis()">Afficher l’analyse</button>
+            </div>
+        </section>
+
+        <div id="analysisModal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Analyse météo</h2>
+
+                <textarea id="analysisText" readonly></textarea>
+
+                <div class="modal-buttons">
+                    <button onclick="copyAnalysis()">Copier</button>
+                    <button onclick="closeAnalysis()" class="danger">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
