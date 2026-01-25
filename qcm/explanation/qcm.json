@@ -1001,7 +1001,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "L’assiette, en mécavol, désigne l’angle que fait l’aile par rapport à l’horizontale.",
       "level": "bpi_"
     },
     {
@@ -1025,7 +1025,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Lorsqu’on abaisse une commande, on augmente la traînée du côté concerné et on augmente aussi la charge sur cette demi‑aile (elle porte davantage car elle vole moins vite).",
       "level": "bpi_"
     },
     {
@@ -1049,7 +1049,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Quand le pilote se redresse en finale, il présente plus de surface au vent, donc il augmente sa traînée, ce qui détériore sa pénétration et augmente son taux de chute.",
       "level": "bpi_"
     },
     {
@@ -1069,7 +1069,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En vol rectiligne stabilisé, la force aérodynamique (FA) est la résultante de la portance et de la traînée.\nDans cette configuration, elle est directement opposée au poids total aile + pilote, car les deux forces se compensent pour maintenir un vol stabilisé.",
       "level": "bpi_"
     },
     {
@@ -1089,7 +1089,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le vent relatif est toujours opposé à la trajectoire air, jamais à la trajectoire‑sol, et il varie en permanence selon la vitesse et les mouvements de l’aile.",
       "level": "bpi_"
     },
     {
@@ -1113,7 +1113,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le Poids Total Volant (PTV), c’est tout ce qui vole accroché à la voile, pas seulement le pilote. Et pour la charge alaire, on fait bien PTV ÷ surface.",
       "level": "bpi_"
     },
     {
@@ -1133,7 +1133,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "En vol rectiligne stabilisé, la traînée s’oppose au déplacement sur la trajectoire‑air, la portance est perpendiculaire à cette trajectoire, et la force aérodynamique équilibre exactement le poids.\nC’est cet équilibre des forces qui permet un vol stable sans accélération.",
       "level": "bpi_"
     },
     {
@@ -1157,7 +1157,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une aile peut pivoter autour de trois axes : lacet, tangage et roulis.\nLa corde est une ligne imaginaire qui relie le bord d’attaque au bord de fuite. Elle sert à définir l’incidence, l’assiette et la géométrie du profil.",
       "level": "bpi_"
     },
     {
@@ -1177,7 +1177,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le vent relatif, c’est le vent créé par ton déplacement dans l’air.\nEt ce vent, tu le sens sur ton visage : c’est exactement la sensation du vent relatif.",
       "level": "bpi_"
     },
     {
@@ -1197,7 +1197,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "L’incidence est l’angle entre le plan de l’aile et le vent relatif.\nAlors que Assiette = angle entre la corde de l’aile et l’horizon et Angle de plané = angle entre la trajectoire‑air et l’horizon.",
       "level": "bpi_"
     },
     {
@@ -1217,7 +1217,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Sur un profil porteur comme celui d’un parapente, l’air qui passe sur l’extrados doit parcourir un chemin plus long et est donc accéléré.",
       "level": "bpi_"
     },
     {
@@ -1241,7 +1241,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’angle d’incidence est défini par le plan de l’aile et le vent relatif.\nMais comme la trajectoire‑air est colinéaire et opposée au vent relatif, l’angle entre plan de l’aile / trajectoire‑air est le même.",
       "level": "bpi_"
     },
     {
@@ -1261,7 +1261,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Lorsqu’on abaisse une commande, on freine ce côté de l’aile. Freiner = augmenter l’incidence = augmenter la traînée.\nCette traînée supplémentaire tire l’aile vers l’arrière de ce côté",
       "level": "bpi_"
     },
     {
@@ -1277,7 +1277,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le centre de poussée est le point d’application des forces aérodynamiques, c’est‑à‑dire la résultante portance + traînée.",
       "level": "bpi_"
     },
     {
@@ -1297,7 +1297,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La polaire des vitesses n’a rien à voir avec la forme du profil ni avec les facteurs de charge.\nC’est une courbe qui relie vitesse et taux de chute en vol rectiligne stabilisé.",
       "level": "bpi_"
     },
     {
@@ -1321,7 +1321,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’assiette est un angle spatial, défini entre la corde et l’horizon.\nElle permet de savoir si le parapente cabré ou piqué.\nEn thermique, elle varie beaucoup.",
       "level": "bpi_"
     },
     {
@@ -1341,7 +1341,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Sur un profil en vol stabilisé, la résultante aérodynamique (portance + traînée) s’applique dans une zone située plutôt vers l’avant du profil.",
       "level": "bpi_"
     },
     {
@@ -1361,7 +1361,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "L’angle de plané décrit la pente réelle de la trajectoire par rapport à l’horizontale.",
       "level": "bpi_"
     },
     {
@@ -1381,7 +1381,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En vol rectiligne stabilisé, toutes les forces se compensent : le Poids Total Volant est équilibré par la Force Aérodynamique (sa composante portance compense le poids, sa composante traînée est compensée par la traction vers l’avant due à la pente de la trajectoire).",
       "level": "bpi_"
     },
     {
@@ -1401,7 +1401,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La vitesse‑air est la vitesse de l’aéronef par rapport à la masse d’air dans laquelle il se déplace, donc l'air traversé.",
       "level": "bpi_"
     },
     {
@@ -1421,7 +1421,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La vitesse du vent relatif est exactement la vitesse de l’appareil dans la masse d’air, mais prise en sens opposé.",
       "level": "bpi_"
     },
     {
@@ -1445,7 +1445,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La brise de terre souffle de la terre vers la mer, et elle apparaît la nuit ou tôt le matin, quand la terre se refroidit plus vite que la mer.\nDonc elle souffle lorsque le continent est plus froid que la mer.",
       "level": "bpi_"
     },
     {
@@ -1465,7 +1465,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Une brise de vallée s’accélère dans les resserrements, effet Venturi oblige.\nElle peut devenir très rapide, surtout dans les vallées encaissées.\nElle n’est pas toujours régulière : les thermiques et reliefs la rendent souvent turbulente.",
       "level": "bpi_"
     },
     {
@@ -1489,7 +1489,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La brise de mer souffle de la mer vers la terre quand la terre se réchauffe plus vite que l’eau, lorsque le continent est plus chaud que la mer.",
       "level": "bpi_"
     },
     {
@@ -1509,7 +1509,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un cumulonimbus est dangereux à plusieurs kilomètres, car il génère rafales, cisaillements et turbulences.\nÀ l’intérieur, les phénomènes sont extrêmes : grêle, foudre, ascendances violentes.\nOn ne l’approche jamais, ni par-dessus ni par-dessous.",
       "level": "bpi_"
     },
     {
@@ -1529,7 +1529,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Les cirrus, cirrocumulus et cirrostratus se forment très haut dans l’atmosphère, là où l’air est froid et sec. Ce sont des nuages fins, souvent annonciateurs d’un changement de temps. Ils appartiennent tous à l’étage supérieur",
       "level": "bpi_"
     },
     {
@@ -1549,7 +1549,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les stratus, stratocumulus et cumulus se forment près du sol, dans l’air le plus dense et le plus humide. Ce sont des nuages bas, typiques de l’étage inférieur.",
       "level": "bpi_"
     },
     {
@@ -1569,7 +1569,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les altocumulus et altostratus se forment à des altitudes intermédiaires, typiques des couches moyennes de l’atmosphère. Ils annoncent souvent une évolution du temps, notamment l’arrivée d’un front chaud.",
       "level": "bpi_"
     },
     {
@@ -1589,7 +1589,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un cumulonimbus génère des ascendances extrêmes, capables d’aspirer un parapente très loin à l’intérieur du nuage. Il produit aussi des rafales descendantes qui créent des vents violents au sol, dangereux pour l’atterrissage. Enfin, il provoque des turbulences sévères.",
       "level": "bpi_"
     },
     {
@@ -1613,7 +1613,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Les cumulonimbus et les nimbostratus sont des nuages très épais qui traversent plusieurs couches de l’atmosphère. Ils peuvent s’étendre du bas jusqu’au moyen, voire jusqu’au haut pour les cumulonimbus. Ils occupent plusieurs étages à la fois.",
       "level": "bpi_"
     },
     {
@@ -1633,7 +1633,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’air chaud est moins dense, donc plus léger que l’air froid et a tendance à monter, pas à descendre. Il ne se mélange pas facilement avec l’air froid, ce qui crée des zones de discontinuité et de turbulence.",
       "level": "bpi_"
     },
     {
@@ -1653,7 +1653,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Un nuage n’est jamais constitué de vapeur d’eau, car la vapeur est invisible. Ce que l’on voit, ce sont des gouttelettes d’eau et/ou des cristaux de glace, selon la température.",
       "level": "bpi_"
     },
     {
@@ -1673,7 +1673,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le gradient de vent est marqué sur terrain lisse, car les couches d’air restent bien séparées. Il reste aussi sensible par vent fort, puisque la différence de vitesse entre le sol et l’altitude augmente. Sur terrain accidenté, il existe toujours mais se mélange aux turbulences, ce qui le rend moins perceptible sans pour autant disparaître.",
       "level": "bpi_"
     },
     {
@@ -1693,7 +1693,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le vent devient dangereux près des crêtes, où le risque d’être basculé sous le vent est réel. Il l’est aussi lorsque sa vitesse approche celle de l’aile, car la marge de manœuvre disparaît. Enfin, il peut devenir critique dans un fond de vallée resserré, où l’effet Venturi l’accélère fortement.",
       "level": "bpi_"
     },
     {
@@ -1713,7 +1713,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les brises de pente sont descendantes la nuit, lorsque les pentes se refroidissent et que l’air dense glisse vers le bas. Le jour, elles deviennent au contraire montantes sous l’effet du réchauffement solaire.",
       "level": "bpi_"
     },
     {
@@ -1737,7 +1737,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le gradient de vent dépend à la fois de la vitesse du vent et de l’état du sol, car ces deux facteurs déterminent la différence de vitesse entre les couches d’air. En entrant dans une zone où le vent diminue, votre vitesse air chute, ce qui augmente le taux de chute. Il ne vous oblige pas à voler plus lentement : au contraire, il faut garder de la vitesse pour rester en sécurité.",
       "level": "bpi_"
     },
     {
@@ -1761,7 +1761,7 @@
           "points": 1
         }
       ],
-      "explanation": "",
+      "explanation": "Les brises de pente deviennent turbulentes quand des thermiques passent, car les deux circulations se superposent. Elles naissent sur les versants ensoleillés, et peuvent être modifiées par le vent météo. Elles apparaissent aussi en même temps que les brises de vallée, qui complètent le cycle thermique quotidien.",
       "level": "bpi_"
     },
     {
@@ -1785,7 +1785,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En début d’après‑midi par beau temps, le soleil chauffe fortement les pentes, ce qui renforce les circulations thermiques. Les brises deviennent alors plus puissantes et remontent les pentes.",
       "level": "bpi_"
     },
     {
@@ -1805,7 +1805,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le matin, ce sont les versants exposés à l’est qui chauffent en premier, donc la brise y devient montante. Les faces ouest restent encore à l’ombre et ne déclenchent rien. Le centre de la vallée reste trop froid pour produire des ascendances.",
       "level": "bpi_"
     },
     {
@@ -1825,7 +1825,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Une ascendance dynamique pure vient uniquement du vent dévié vers le haut par un relief, ce qui crée une zone de portance exploitable. Elle ne dépend ni d’un réchauffement ni d’une dilatation de l’air.",
       "level": "bpi_"
     },
     {
@@ -1849,7 +1849,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La turbulence, en aéronautique, correspond à des mouvements désordonnés de l’air qui provoquent des variations d’incidence et de vitesse air sur l’aile. L’analogie avec le bouillonnement d’une rivière est tout à fait pertinente pour visualiser ce phénomène. En revanche, elle n’est pas due aux variations de vitesse de vol : c’est l’inverse, la turbulence provoque ces variations.",
       "level": "bpi_"
     },
     {
@@ -1869,7 +1869,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les turbulences viennent de mouvements d’air désordonnés, comme le bouillonnement d’une rivière. Elles provoquent des variations d’incidence et de vitesse air sur l’aile. Elles peuvent être créées par le relief, les cisaillements de vent ou les thermiques.",
       "level": "bpi_"
     },
     {
@@ -1889,7 +1889,7 @@
           "points": 0
         }
       ],
-      "explanation": "",
+      "explanation": "Un rideau d’arbres crée surtout des turbulences sous le vent, là où le flux se déchire et forme des rouleaux. Au vent, l’air est ralenti mais reste relativement laminaire. À la verticale, ce n’est pas la zone la plus perturbée.",
       "level": "bpi_"
     },
     {
@@ -1913,7 +1913,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La brise de vallée peut se renforcer en descendant dans la basse couche, car elle se combine aux circulations locales et aux brises de pente. Elle s’accélère aussi dans les rétrécissements de vallée (effet Venturi). En été, elle peut devenir très forte, dépassant facilement 30 km/h. Elle ne fonctionne quasiment pas en hiver, faute de chauffage solaire.",
       "level": "bpi_"
     },
     {
@@ -1929,7 +1929,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La direction du vent indiquée par les services météo correspond toujours à la direction d’où il vient.",
       "level": "bpi_"
     },
     {
@@ -1949,7 +1949,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La zone d’ascendance dynamique dépend de l’orientation de la pente par rapport au vent, qui conditionne la déviation de l’air vers le haut. Elle varie aussi avec la force du vent, qui agrandit ou réduit la zone porteuse. Enfin, la forme de la pente modifie la régularité et l’étendue de cette ascendance.",
       "level": "bpi_"
     },
     {
@@ -1969,7 +1969,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Un parapente ou un secours doit être protégé de tout ce qui dégrade les tissus et les suspentes : humidité et chaleur, solvants et corps gras et rayonnement solaire",
       "level": "bpi_"
     },
     {
