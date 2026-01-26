@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Livrets pédagogiques</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pdf-viewer.css">
+</head>
+
+<body>
+
+    <div class="viewer">
+        <h1 id="pdfTitle">Livret</h1>
+
+        <iframe id="pdfFrame"></iframe>
+
+        <div class="controls">
+            <button onclick="prevPdf()">◀ Précédent</button>
+            <span id="counter"></span>
+            <button onclick="nextPdf()">Suivant ▶</button>
+        </div>
+    </div>
+
+    <script src="pdf-viewer.js"></script>
+</body>
+
+</html>
