@@ -117,7 +117,7 @@
           "points": 6
         }
       ],
-      "explanation": "Les turbulences d’une aile sont dangereuses dans sa trajectoire d’air, c’est‑à‑dire dans le volume d’air qu’elle a traversé et perturbé, où un autre aéronef qui vient se placer peut subir des mouvements brusques ou une perte de contrôle.",
+      "explanation": "Les turbulences d’une aile sont dangereuses derrière et surtout dans sa trajectoire d’air, c’est‑à‑dire dans le volume d’air qu’elle a traversé et perturbé, où un autre aéronef qui vient se placer peut subir des mouvements brusques ou une perte de contrôle.",
       "level": "bpi_"
     },
     {
@@ -1993,7 +1993,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les freins doivent être vérifiés régulièrement, car ils sont souvent réglés avec peu de garde. On ne les raccourcit jamais arbitrairement, car cela peut freiner l’aile en permanence. Le réglage doit garantir qu’à fond d’accélérateur et bras hauts, l’aile reste totalement libre de toute tension.",
       "level": "bpi_"
     },
     {
@@ -2017,7 +2017,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Mains hautes donnent la vitesse maximale sans accélérateur et une finesse air proche du maximum. Le taux de chute mini et la finesse max exacte nécessitent un léger freinage, donc pas bras hauts. La vitesse mini est obtenue fortement freinée, jamais mains hautes.",
       "level": "bpi_"
     },
     {
@@ -2037,7 +2037,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La corde d’une aile est simplement la distance entre le bord d’attaque et le bord de fuite, mesurée dans l’axe du profil.",
       "level": "bpi_"
     },
     {
@@ -2061,7 +2061,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les sellettes ont des réglages permettant d’obtenir une posture de pilotage active et confortable. Elles sont conçues avec plus ou moins de stabilité, ce qui influence directement le comportement de l’aile. Changer de modèle peut donc modifier le pilotage et la manière dont l’aile réagit.",
       "level": "bpi_"
     },
     {
@@ -2081,7 +2081,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un nœud sur une suspente affaiblit fortement la résistance du matériau. Il peut réduire la résistance jusqu’à 50 %, ce qui est considérable.",
       "level": "bpi_"
     },
     {
@@ -2105,7 +2105,7 @@
           "points": 1
         }
       ],
-      "explanation": "",
+      "explanation": "La prévol doit inclure le harnais (cuissardes et boucles), le container secours, les instruments, et même les lacets, car tout ce qui peut s’ouvrir, se coincer ou s’accrocher représente un risque. Ces vérifications évitent des incidents critiques au décollage ou en vol. Une prévol complète est un rituel de sécurité incontournable.",
       "level": "bpi_"
     },
     {
@@ -2125,7 +2125,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un casque doit être solide et absorber les chocs, tout en restant assez léger pour éviter la fatigue du cou. Il doit aussi offrir une bonne audition et une bonne visibilité, indispensables pour la sécurité en vol.",
       "level": "bpi_"
     },
     {
@@ -2145,7 +2145,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Une aile A est conçue pour offrir un maximum de sécurité, mais elle n’est pas limitée aux débutants. Elle correspond bien à une pratique loisir stable et tolérante. Certaines ailes A ont même un taux de chute très performant.",
       "level": "bpi_"
     },
     {
@@ -2165,7 +2165,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Un pilote non breveté et peu actif doit voler avec une aile très tolérante, donc EN‑A. Les ailes plus techniques (B, C, D) demandent un pilotage précis et une régularité qu’il n’a pas. On ne choisit pas sa voile selon la météo, mais selon son niveau durable.",
       "level": "bpi_"
     },
     {
@@ -2185,7 +2185,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Une voile doit être testée en vol par le fabricant avant d’être vendue. Elle doit correspondre à votre niveau pour rester sûre et tolérante. Et elle doit être choisie selon votre poids total volant, indispensable pour un comportement correct.",
       "level": "bpi_"
     },
     {
@@ -2209,7 +2209,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le vieillissement d’une aile vient surtout des UV, de l’humidité et des manœuvres contraignantes. Les turbulences ne sont pas considérées comme un facteur. Les UV restent de loin l’élément le plus destructeur.",
       "level": "bpi_"
     },
     {
@@ -2233,7 +2233,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "On choisit une aile selon plusieurs familles de critères : performances (finesse, taux de chute, pénétration), charge alaire, homologation, et comportement en vol (stabilité, maniabilité, réactions en turbulence). Une aile doit donc être adaptée à la fois au pilote, à sa pratique, et à ses objectifs.",
       "level": "bpi_"
     },
     {
@@ -2257,7 +2257,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Une aile doit être protégée de l’humidité, des solvants et du soleil, qui dégradent tous le tissu et les suspentes. Un stockage propre, sec et à l’ombre prolonge nettement la durée de vie du matériel.",
       "level": "bpi_"
     },
     {
@@ -2277,7 +2277,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une sellette se choisit selon la posture, la stabilité et le type de pilotage souhaité. Les recommandations du constructeur garantissent une compatibilité correcte avec l’aile et le niveau du pilote. Une remise commerciale ne doit jamais primer sur la sécurité.",
       "level": "bpi_"
     },
     {
@@ -2301,7 +2301,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Une bonne sellette doit permettre de se mettre debout et de s’asseoir facilement, sans les mains. Elle doit aussi être adaptée à votre morphologie pour garantir confort et pilotage précis. L’emplacement du parachute est un critère essentiel, car il conditionne l’accessibilité en cas d’urgence.",
       "level": "bpi_"
     },
     {
@@ -2321,7 +2321,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un casque doit respecter une norme de sécurité et intégrer une coque protectrice avec une mousse absorbante. La fermeture doit être solide, jamais en velcro. Ces éléments garantissent une protection efficace en cas d’impact.",
       "level": "bpi_"
     },
     {
@@ -2341,7 +2341,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "L’envergure correspond à la largeur totale de l’aile, mesurée d’un bout à l’autre. La distance bord d’attaque–bord de fuite est la corde. Le nombre de cellules n’a aucun lien avec l’envergure.",
       "level": "bpi_"
     },
     {
@@ -2365,7 +2365,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un casque doit protéger sans gêner la perception ni la vision. La décoration n’a aucun rôle dans la sécurité. L’absorption d’énergie et l’ajustement correct sont essentiels en cas d’impact.",
       "level": "bpi_"
     },
     {
@@ -2389,7 +2389,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le calage est déterminé par les longueurs de suspentes, qui fixent l’assiette de l’aile. Il ne doit jamais être modifié par le pilote. Les freins n’agissent pas sur le calage mais sur le pilotage actif.",
       "level": "bpi_"
     },
     {
@@ -2409,7 +2409,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le manuel de vol est un document obligatoire et fait partie intégrante de l’homologation. Il précise les limites d’utilisation et les manœuvres recommandées pour voler en sécurité. C’est un élément essentiel pour connaître le comportement de l’aile.",
       "level": "bpi_"
     },
     {
@@ -2429,7 +2429,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les suspentes peuvent être en polyéthylène tressé, en aramide (type Kevlar) ou gainées de polyester, selon les modèles. Le Kevlar vieillit plus vite mais reste présent sur certaines configurations. La gaine polyester protège l’âme porteuse contre l’abrasion et les UV.",
       "level": "bpi_"
     },
     {
@@ -2449,7 +2449,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les protections de sellette réduisent la gravité des chocs mais ne suppriment jamais le risque. Leur efficacité varie selon la conception et les matériaux. Elles ne peuvent donc pas être considérées comme infaillibles.",
       "level": "bpi_"
     },
     {
@@ -2473,7 +2473,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le cône de suspentage conditionne le calage et la voûte de l’aile. Il évolue avec le temps car les suspentes vieillissent différemment. Toute modification du cône modifie l’assiette et donc le comportement en vol.",
       "level": "bpi_"
     },
     {
@@ -2497,7 +2497,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le vol libre nécessite un casque répondant à la norme EN 966, spécifique aux contraintes du parapente. Les casques d’autres disciplines ne protègent pas correctement dans les scénarios typiques du vol libre. Seul un casque dédié garantit une protection adaptée.",
       "level": "bpi_"
     },
     {
@@ -2517,7 +2517,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un pilote en première année doit utiliser une aile tolérante et stable, donc homologuée A ou B. Les ailes C et D demandent un pilotage précis et une gestion avancée des incidents. Elles sont inadaptées à la phase d’accès à l’autonomie.",
       "level": "bpi_"
     },
     {
@@ -2537,7 +2537,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le calage conditionne l’incidence de vol, donc toute la polaire et les performances. Il influence aussi la stabilité et les marges de décrochage. Toute variation du calage modifie la vitesse et la finesse de l’aile.",
       "level": "bpi_"
     },
     {
@@ -2557,7 +2557,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’extrados est la surface supérieure du profil, celle exposée au vent relatif. L’intrados est la face inférieure. Le bord d’attaque désigne uniquement l’avant de l’aile.",
       "level": "bpi_"
     },
     {
@@ -2577,7 +2577,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’exploitation d’un site repose sur des accords locaux entre propriétaires et communes. Aucune procédure administrative type plan de vol n’est requise. La réglementation vise surtout à garantir l’accès légal et sécurisé aux terrains.",
       "level": "bpi_"
     },
     {
@@ -2597,7 +2597,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’aviation internationale repose sur l’usage du temps universel et de la langue anglaise pour harmoniser les communications. Les unités utilisées sont le pied, le mille nautique et le nœud. Les autres propositions ne correspondent pas aux standards internationaux.",
       "level": "bpi_"
     },
     {
@@ -2617,7 +2617,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un PUL n’est pas immatriculé et peut être mis en vol par l’énergie musculaire du pilote. Une fois en l’air, il exploite l’énergie potentielle liée à l’altitude.",
       "level": "bpi_"
     },
     {
@@ -2637,7 +2637,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En plaine, la limite d’évolution des aéronefs non motorisés est fixée au FL115. Au‑delà, l’espace aérien contrôlé impose des règles incompatibles avec le vol libre autonome. Cette limite garantit la séparation avec le trafic aérien rapide.\nLe FL (Flight Level) est une altitude exprimée non pas en mètres, mais en niveaux de vol, mesurés en centaines de pieds et référencés à la pression standard 1013 hPa. FL115 = 11 500 ft ≈ 3500 m",
       "level": "bpi_"
     },
     {
@@ -2661,7 +2661,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La seule obligation légale pour pratiquer le vol libre est la responsabilité civile couvrant le risque aérien. L’assurance corporelle est facultative mais fortement conseillée.",
       "level": "bpi_"
     },
     {
@@ -2681,7 +2681,7 @@
           "points": 4
         }
       ],
-      "explanation": "",
+      "explanation": "La FFVL fonctionne sur un système représentatif : les clubs votent, donc le licencié agit via son président. L’engagement dans les structures fédérales permet aussi d’influencer les décisions. Les réclamations dans la presse n’ont pas de valeur décisionnelle.",
       "level": "bpi_"
     },
     {
@@ -2701,7 +2701,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le SIA est l’autorité française responsable de l’information aéronautique officielle. Il publie les documents nécessaires à la préparation et à la sécurité des vols.",
       "level": "bpi_"
     },
     {
@@ -2721,7 +2721,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "L’accompagnateur fédéral n’est pas un moniteur : il ne peut pas enseigner ni être payé. Il peut accompagner uniquement des pilotes déjà autonomes au niveau vert. Ce niveau garantit que le pilote sait décoller, voler et atterrir en sécurité.",
       "level": "bpi_"
     },
     {
@@ -2745,7 +2745,7 @@
           "points": -3
         }
       ],
-      "explanation": "",
+      "explanation": "Après les premiers grands vols, l’élève n’est pas encore autonome : il doit poursuivre sa formation. Le niveau vert lui permet seulement de voler accompagné en club. L’enseignement reste du ressort des écoles labellisées.",
       "level": "bpi_"
     },
     {
@@ -2765,7 +2765,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Autour d’un aéroport, la zone de contrôle (CTR) est en général en classe D. Au‑dessus, la TMA (Terminal Manoeuvring Area) peut être en classe D ou E selon le trafic.",
       "level": "bpi_"
     },
     {
@@ -2785,7 +2785,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le RTBA est un réseau national de couloirs militaires où circulent des avions de combat à très basse altitude et à grande vitesse. Il est actif selon des horaires publiés dans les NOTAM. C’est l’un des espaces les plus dangereux pour les aéronefs légers.\nUne ZIT est une zone interdite temporaire, pas un réseau permanent.\nLa CTR est une zone de contrôle autour d’un aérodrome civil.",
       "level": "bpi_"
     },
     {
@@ -2805,7 +2805,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le brevet initial correspond au niveau vert, qui atteste l’autonomie minimale pour voler accompagné en club. Il n’est pas requis pour prendre une licence, mais il ouvre l’accès aux sorties encadrées. L’enseignement reste réservé aux écoles, pas aux accompagnateurs.",
       "level": "bpi_"
     },
     {
@@ -2825,7 +2825,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une ZRT est une zone réglementée mise en place temporairement pour protéger une activité particulière. Elle peut apparaître dans n’importe quel type d’espace aérien. Sa localisation dépend uniquement du besoin opérationnel.",
       "level": "bpi_"
     },
     {
@@ -2845,7 +2845,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’évaluation du niveau repose sur la progression formalisée dans le passeport de vol libre. Les validations doivent être faites par un professionnel habilité. Les copains peuvent donner un avis, mais pas certifier un niveau.",
       "level": "bpi_"
     },
     {
@@ -2869,7 +2869,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La FFVL est une association loi 1901 structurée en fédération de clubs. Les licenciés ne sont pas membres directs de la fédération. Les ligues sont des échelons territoriaux, pas des membres.",
       "level": "bpi_"
     },
     {
@@ -2893,7 +2893,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "L’accompagnateur fédéral n’est pas un moniteur : il n’enseigne pas et n’a pas de pouvoir disciplinaire. Il accompagne des pilotes déjà autonomes au niveau vert pour les aider à voler en sécurité. Son rôle est centré sur le conseil, l’évaluation des conditions et la gestion du groupe.",
       "level": "bpi_"
     },
     {
@@ -2913,7 +2913,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Les activités militaires temporaires modifiant l’espace aérien doivent être publiées officiellement. Les NOTAM et SUP AIP sont les seules sources réglementaires. C’est pourquoi tout pilote doit les consulter avant de voler.",
       "level": "bpi_"
     },
     {
@@ -2933,7 +2933,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le RTBA n’est actif que sur certains créneaux, qui changent chaque jour. Le message AZBA est la publication officielle qui indique précisément ces horaires. C’est donc la seule source fiable pour savoir si les couloirs sont actifs.\nLe RTBA est le Réseau Très Basse Altitude, un ensemble de couloirs militaires où volent des avions de chasse très vite et très bas.",
       "level": "bpi_"
     },
     {
@@ -2953,7 +2953,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le brevet initial correspond au niveau vert, qui valide l’autonomie minimale en vol calme sur site connu. Il est délivré uniquement par une école labellisée. L’analyse des conditions aérologiques fait partie des compétences du niveau supérieur.",
       "level": "bpi_"
     },
     {
@@ -2973,7 +2973,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La seule obligation légale pour voler en parapente est d’être assuré en Responsabilité Civile aérienne. Les forces de l’ordre peuvent donc demander ce document. Les autres documents relèvent de la fédération, pas de la réglementation.",
       "level": "bpi_"
     },
     {
@@ -2993,7 +2993,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le vol libre évolue principalement en classe G, et peut aussi voler en classe E si les conditions VMC sont respectées. Les classes A, C et D sont des espaces contrôlés nécessitant une clairance radio. Le parapente n’a pas les moyens techniques pour y accéder.",
       "level": "bpi_"
     },
     {
@@ -3017,7 +3017,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un site peut être utilisé si les propriétaires des terrains concernés ont donné leur accord.\nIl est aussi nécessaire que les maires concernés soient avisés, car ils sont responsables de la sécurité sur leur commune.",
       "level": "bpi_"
     },
     {
@@ -3037,7 +3037,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Avant d’ouvrir un site, il faut obtenir l’accord des propriétaires et informer les maires concernés.\nLe district aéronautique n’intervient pas dans cette procédure.\nCes deux démarches suffisent pour l’ouverture d’un site au niveau local.",
       "level": "bpi_"
     },
     {
@@ -3057,7 +3057,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les ULM non motorisés volent uniquement en VFR, c’est‑à‑dire en conditions de vol à vue.\nIls ne peuvent pas voler aux instruments ni en espace nécessitant une clairance.\nLa CTR n’est pas une règle de vol mais un espace contrôlé.",
       "level": "bpi_"
     },
     {
@@ -3081,7 +3081,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’accompagnateur fédéral encadre des sorties club mais n’enseigne pas. Il n’est ni moniteur ni élève moniteur. Son rôle est d’accompagner des pilotes déjà autonomes au niveau vert.",
       "level": "bpi_"
     },
     {
@@ -3105,7 +3105,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La fatigue réduit les capacités cognitives du pilote. Elle diminue vigilance, attention et réactivité. Elle dégrade aussi la qualité des décisions, augmentant le risque d’erreur.",
       "level": "bpi_"
     },
     {
@@ -3129,7 +3129,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La prise de décision dépend de l’expérience accumulée et de la capacité à gérer le stress. Le stress dégrade le jugement et augmente les erreurs. L’expérience permet au contraire d’anticiper et de choisir plus efficacement.",
       "level": "bpi_"
     },
     {
@@ -3153,7 +3153,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La préparation mentale repose sur la capacité à se concentrer, anticiper et gérer son stress. La visualisation du vol est un outil central pour se préparer efficacement. La sur‑confiance ou l’ignorance des risques nuisent à la sécurité.",
       "level": "bpi_"
     },
     {
@@ -3173,7 +3173,7 @@
           "points": 4
         }
       ],
-      "explanation": "",
+      "explanation": "Les compétences techniques et non techniques se construisent par la pratique et la théorie. Elles se renforcent et se transforment avec l’expérience. Elles ne sont jamais définitivement acquises.",
       "level": "bpi_ bpc_"
     },
     {
@@ -3197,7 +3197,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La fatigue altère vigilance, réactivité et prise de décision. Faire des pauses régulières est la seule méthode efficace pour récupérer. Les autres options augmentent le risque d’erreur.",
       "level": "bpi_"
     },
     {
@@ -3221,7 +3221,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un premier vol autonome nécessite une préparation rigoureuse. Le pilote doit vérifier les conditions, appliquer une check‑list complète et mentaliser son vol. L’intuition seule n’est jamais suffisante.",
       "level": "bpi_"
     },
     {
@@ -3245,7 +3245,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La gestion du stress repose sur des techniques qui recentrent l’attention et stabilisent l’état émotionnel. La respiration contrôlée et la mentalisation sont des outils efficaces. Les stimulants ou distractions augmentent au contraire la charge mentale.",
       "level": "bpi_"
     },
     {
@@ -3269,7 +3269,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le débriefing permet de partager les expériences et de renforcer les bonnes pratiques. Il aide aussi à repérer les erreurs pour progresser. Bien conduit, il améliore la sécurité et la confiance.",
       "level": "bpi_"
     },
     {
@@ -3293,7 +3293,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En situation d’urgence, certains pilotes peuvent réagir par indifférence apparente, liée au déni ou à la sidération.\nC’est une réaction humaine possible, mais la panique reste la réponse la plus dangereuse et la plus fréquente.\nLes deux comportements peuvent aggraver la situation.",
       "level": "bpi_"
     },
     {
@@ -3317,7 +3317,7 @@
           "points": 0
         }
       ],
-      "explanation": "",
+      "explanation": "La fatigue réduit vigilance et lucidité, donc il faut en tenir compte avant de décoller. En parler au moniteur permet une décision objective. Se laisser du temps en passant dernier aide à vérifier si l’on est vraiment en état de voler.",
       "level": "bpi_"
     },
     {
@@ -3337,7 +3337,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La fatigue mentale réduit la capacité d’analyse et de concentration. Elle entraîne des décisions hâtives et moins pertinentes. Les performances fines et précises diminuent au lieu de s’améliorer.",
       "level": "bpi_"
     },
     {
@@ -3361,7 +3361,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La performance dépend fortement de la vigilance et de la clarté mentale. L’alcool et la fatigue diminuent ces capacités. L’entraînement et la connaissance des règles renforcent au contraire la sécurité.",
       "level": "bpi_"
     },
     {
@@ -3385,7 +3385,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un bon pilote développe lucidité, humilité et capacité à décider. La connaissance de soi permet d’adapter son vol à son état réel. La sur‑confiance, au contraire, augmente le risque d’erreur.",
       "level": "bpi_"
     },
     {
@@ -3409,7 +3409,7 @@
           "points": -2
         }
       ],
-      "explanation": "",
+      "explanation": "Sans préparation météo, l’observation et l’échange avec d’autres pilotes deviennent essentiels. Ils permettent de compenser le manque d’informations et d’éviter un décollage hâtif. La fatigue et la précipitation sont deux facteurs humains majeurs d’accident.",
       "level": "bpi_"
     },
     {
@@ -3433,7 +3433,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le déni des risques conduit à ignorer les signaux d’alerte et à sous‑estimer les dangers réels. C’est l’un des facteurs humains les plus accidentogènes.",
       "level": "bpi_"
     },
     {
@@ -3457,7 +3457,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le stress mal géré pousse à vouloir « sortir » vite d’une situation, ce qui entraîne des décisions hâtives. Il réduit la qualité de l’analyse et de la concentration. Il a toujours un impact sur la performance, jamais neutre.",
       "level": "bpi_"
     },
     {
@@ -3481,7 +3481,7 @@
           "points": -3
         }
       ],
-      "explanation": "",
+      "explanation": "Les protections réglementaires impliquent des règles strictes et contraignantes. C’est le cas des réserves naturelles et des parcs nationaux. Les PNR et Natura 2000 reposent sur des chartes ou des documents d’objectifs, pas sur une réglementation directe.",
       "level": "bpi_"
     },
     {
@@ -3505,7 +3505,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les rapaces ont des comportements variés selon les espèces. Certains migrent, d’autres restent sur place. Beaucoup utilisent les falaises comme site de nidification, et certaines espèces nichent en colonie.",
       "level": "bpi_"
     },
     {
@@ -3529,7 +3529,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le statut de conservation évalue le niveau de menace pesant sur une espèce. Il est défini par l’UICN, pas par l’État. Il ne dit pas si l’espèce est protégée, mais si elle est en danger.",
       "level": "bpi_"
     },
     {
@@ -3549,7 +3549,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les rapaces sont exclusivement carnivores, avec des régimes adaptés à leur espèce. Certains consomment des proies vivantes, d’autres des charognes. Aucun ne se nourrit de fruits.",
       "level": "bpi_"
     },
     {
@@ -3573,7 +3573,7 @@
           "points": -3
         }
       ],
-      "explanation": "",
+      "explanation": "Les zones de protection servent à éviter le dérangement des oiseaux en reproduction. Elles sont souvent placées près de thermiques attractifs pour les rapaces. Elles doivent être respectées sans exception pendant la période concernée.",
       "level": "bpi_"
     },
     {
@@ -3601,7 +3601,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le piétinement détruit rapidement la végétation, surtout sur les zones sensibles. Une fois le sol nu, l’érosion s’accélère. Le libériste est directement concerné lors des déplacements et des séances de gonflage.",
       "level": "bpi_"
     },
     {
@@ -3621,7 +3621,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le faucon pèlerin utilise le piqué pour fondre sur sa proie à des vitesses extrêmes. Sa morphologie et sa technique de vol lui permettent d’atteindre plus de 300 km/h. C’est l’oiseau le plus rapide du monde.",
       "level": "bpi_"
     },
     {
@@ -3645,7 +3645,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le dérangement répété augmente le stress et peut pousser les animaux à abandonner leur nid. Il peut aussi provoquer des chutes ou blessures lors de fuites paniquées. Il a donc des conséquences réelles sur la faune.",
       "level": "bpi_"
     },
     {
@@ -3661,7 +3661,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Les zones réglementaires sont obligatoires à respecter. Leur violation peut entraîner une sanction administrative ou pénale. C’est donc bien une infraction.",
       "level": "bpi_"
     },
     {
@@ -3685,7 +3685,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le vol libre peut déranger de nombreuses espèces terrestres ou aériennes. Les rapaces, ongulés et petites espèces de montagne sont particulièrement sensibles. Les poissons ne sont pas affectés.",
       "level": "bpi_"
     },
     {
@@ -3705,7 +3705,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le statut de menace (UICN) décrit le risque d’extinction, pas la protection légale. Certaines espèces menacées restent chassables. Protection et menace ne coïncident pas toujours.",
       "level": "bpi_"
     },
     {
@@ -3725,7 +3725,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les altitudes de survol sont exprimées en hauteur-sol pour garantir une protection réelle de la faune. Certaines zones ne sont sensibles qu’à certaines périodes. Les restrictions peuvent donc être temporaires.",
       "level": "bpi_"
     },
     {
@@ -3745,7 +3745,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les informations proviennent de plusieurs sources complémentaires. Les clubs et panneaux FFVL donnent les consignes locales, tandis que les cartes aériennes montrent les zones réglementaires.",
       "level": "bpi_"
     },
     {
@@ -3765,7 +3765,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La protection conventionnelle repose sur des accords entre acteurs locaux pour gérer un espace. Les PNR en sont un exemple typique. La FFVL peut être impliquée dans ces conventions, avec des règles spécifiques pour les pilotes.",
       "level": "bpi_"
     },
     {
@@ -3785,7 +3785,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les animaux réagissent surtout à la forme et à la distance, pas seulement au bruit. Un PUL trop proche peut déclencher stress ou fuite. Il n’est donc jamais “toujours ignoré”.",
       "level": "bpi_"
     },
     {
@@ -3809,7 +3809,7 @@
           "points": -3
         }
       ],
-      "explanation": "",
+      "explanation": "Les oiseaux du littoral ont besoin de tranquillité pour s’alimenter et se reproduire. Beaucoup nichent en colonies, parfois très vulnérables. Ils sont sensibles au dérangement, qui peut provoquer l’abandon des nids.",
       "level": "bpi_"
     },
     {

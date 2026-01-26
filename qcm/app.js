@@ -204,7 +204,7 @@ function computeScores(q) {
     let questionPlayer = 0;
 
     q.answers.forEach(a => {
-        if (a.points > 0) {
+        if (a.points >= 0) {
             questionMax += a.points;
         }
         if (a.selected) {
@@ -246,6 +246,8 @@ function showCorrection(q) {
 
         if (a.points > 0) {
             div.classList.add('good');
+        } else if (a.points == 0) {
+            div.classList.add('ok');
         } else {
             div.classList.add('bad');
         }
@@ -267,7 +269,7 @@ async function readCorrection(q, signal) {
     // récupérer les bonnes réponses avec leur index
     const goodAnswers = q.answers
         .map((a, i) => ({ ...a, index: i }))
-        .filter(a => a.points > 0);
+        .filter(a => a.points >= 0);
 
     if (goodAnswers.length > 0) {
 

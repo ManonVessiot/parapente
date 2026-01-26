@@ -4,9 +4,9 @@ let level = "";
 let currentIndex = 0;
 let currentCount = 0;
 let count = 0;
+let show_all = true;
 const LEVELS = ['bpi', 'bp', 'bpc'];
 const CATEGORIES = ['pilotage', 'mecavol', 'meteo', 'materiel', 'reglementation', 'facteursH', 'naturel'];
-const SHOW_EXPLANATION_DONE = true;
 
 async function start() {
     // get json name
@@ -53,6 +53,11 @@ async function start() {
     }
     else document.getElementById('title').textContent = `Entraînement QCM - ${levelText}`;
 
+    const showModeSelect = document.getElementById('showModeSelect');
+    show_all = showModeSelect.options[showModeSelect.selectedIndex].value.length > 0;
+    document.getElementById('showModeSelect').classList.add('hidden');
+    document.getElementById('showModeLabel').classList.add('hidden');
+
     count = countQuestions();
     nextQuestion();
 }
@@ -67,7 +72,7 @@ function countQuestions() {
         const categoryMismatch = CATEGORIES.includes(category) && q.category !== category;
 
         explanationAlreadyDone = true;
-        if (!SHOW_EXPLANATION_DONE && q.explanation && q.explanation.trim() !== '') {
+        if (!show_all && q.explanation && q.explanation.trim() !== '') {
             explanationAlreadyDone = false;
         }
 
@@ -93,6 +98,8 @@ function stop() {
     document.getElementById('question').classList.add('hidden');
     document.getElementById('downloadBtn').classList.add('hidden');
     document.getElementById('startBtn').classList.remove('hidden');
+    document.getElementById('showModeLabel').classList.remove('hidden');
+    document.getElementById('showModeSelect').classList.remove('hidden');
 
     // show dropdown
     document.getElementById('levelSelect').classList.remove('hidden');
@@ -161,7 +168,7 @@ async function nextQuestion() {
         const categoryMismatch = CATEGORIES.includes(category) && q.category !== category;
 
         explanationAlreadyDone = true;
-        if (!SHOW_EXPLANATION_DONE && q.explanation && q.explanation.trim() !== '') {
+        if (!show_all && q.explanation && q.explanation.trim() !== '') {
             explanationAlreadyDone = false;
         }
 
@@ -238,6 +245,8 @@ function showCorrection(q) {
 
         if (a.points > 0) {
             div.classList.add('good');
+        } else if (a.points == 0) {
+            div.classList.add('ok');
         } else {
             div.classList.add('bad');
         }

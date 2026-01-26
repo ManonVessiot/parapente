@@ -82,6 +82,12 @@
             color: #155724;
         }
 
+        .answer.ok {
+            background-color: #fff3cd;
+            border-color: #ffecb5;
+            color: #856404;
+        }
+
         .answer.bad {
             background-color: #f8d7da;
             border-color: #f1aeb5;
@@ -255,6 +261,7 @@
         <textarea id="explanationInput" rows="4" placeholder="Écrire l’explication ici..."></textarea>
     </div>
     <button id="downloadBtn" onclick="download()" class="hidden">Télécharger</button>
+    <button id="saveBtn" class="hidden" onclick="saveJSON()">Sauvegarder</button>
 
     <label for="levelSelect" id="levelLabel">Choisir le niveau :</label>
     <select id="levelSelect">
@@ -276,9 +283,14 @@
         <option value="naturel">Milieu naturel</option>
     </select>
     <br>
+    <label for="showModeSelect" id="showModeLabel">Mode de selection :</label>
+    <select id="showModeSelect">
+        <option value="true">Montrer toutes les question</option>
+        <option value="">Montrer les questions sans explications</option>
+    </select>
+    <br>
     <button id="startBtn" onclick="start()">Démarrer</button>
     <button id="resetBtn" class="hidden" onclick="resetLocalJson()">Reset</button>
-    <button id="saveBtn" class="hidden" onclick="saveJSON()">Sauvegarder</button>
 
     <script src="app.js"></script>
 </body>
