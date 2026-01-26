@@ -3829,7 +3829,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "En finale, on augmente légèrement la vitesse pour disposer d’une meilleure autorité de pilotage et d’un arrondi efficace. Comme la portance et la traînée augmentent avec le carré de la vitesse, une prise de vitesse permet un arrondi plus efficace. Le gradient de vent peut réduire soudainement la vitesse relative, d’où la nécessité d’une marge. Les forces aérodynamiques dépendent directement de la vitesse, ce qui rend la prise de vitesse pertinente et sécurisante.",
       "level": "bp_"
     },
     {
@@ -3853,7 +3853,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le gonflage face voile permet de contrôler la montée de l’aile tout en surveillant les suspentes. Il est particulièrement adapté aux vents faibles à modérés, où la gestion fine est essentielle. En revanche, il ne permet pas de décoller en sécurité par vent fort.",
       "level": "bp_"
     },
     {
@@ -3877,7 +3877,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "En turbulence, on pilote activement pour amortir les mouvements de l’aile et conserver de la vitesse, ce qui augmente la sécurité. Les commandes fournissent des informations précieuses pour anticiper les variations de pression et réagir correctement. Rester bras hauts sans adaptation serait inapproprié dans ces conditions.",
       "level": "bp_"
     },
     {
@@ -3901,7 +3901,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Par vent établi, le gonflage face voile permet de contrôler la montée en avançant vers l’aile pour éviter qu’elle ne dépasse. La technique avec les A réunis d’un côté facilite la maîtrise de la trajectoire. Le gonflage dos voile serait trop puissant et difficilement contrôlable dans ces conditions.",
       "level": "bp_"
     },
     {
@@ -3925,7 +3925,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "En vent de travers, l’aile avance dans la masse d’air mais la trajectoire au sol est déviée, ce qui impose un angle entre l’axe de l’aile et la trajectoire. Pour viser un point précis, il faut donc adopter une contre‑dérive (craber). Le parapente ne se met pas face au vent comme une girouette.",
       "level": "bp_"
     },
     {
@@ -3945,7 +3945,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un cumulonimbus est un nuage dangereux qui peut générer rafales, cisaillements, pluie violente et ascendances incontrôlables. Dès qu’il approche, il faut se poser immédiatement, même si l’atterrissage peut devenir délicat. Ce type de nuage n’est jamais exploitable pour le vol libre.",
       "level": "bp_"
     },
     {
@@ -3965,7 +3965,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les oreilles réduisent la surface de l’aile et la rendent moins sensible aux mouvements de tangage, ce qui stabilise le vol en turbulence. Le pilotage aux freins devient limité, d’où l’usage de la sellette. Cette manœuvre reste une option pertinente pour traverser une zone turbulente.",
       "level": "bp_"
     },
     {
@@ -3989,7 +3989,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "En entrant dans une ascendance, il faut relâcher les freins pour éviter un sur‑freinage et conserver une bonne vitesse relative. Cela permet de rester dans un domaine de vol sûr et d’exploiter efficacement la montée. Garder ou augmenter légèrement la vitesse est la bonne stratégie pour absorber la transition de masse d’air.",
       "level": "bp_"
     },
     {
@@ -4009,7 +4009,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Au taux de chute mini, l’aile est déjà freinée, donc il faut éviter d’ajouter du frein côté intérieur. Le virage doit être initié par le poids et un léger relâcher du frein extérieur pour conserver de la vitesse. Cette méthode permet d’éviter le sur‑freinage et le risque de vrille.",
       "level": "bp_"
     },
     {
@@ -4033,7 +4033,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le 360° en approche fait perdre les repères et rend la trajectoire imprévisible pour les autres pilotes, augmentant le risque de collision. C’est une manœuvre énergique qui n’a pas sa place dans un plan d’atterrissage. Elle est donc déconseillée pour une prise de terrain sûre et lisible.",
       "level": "bp_"
     },
     {
@@ -4057,7 +4057,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Quand l’aile cabre, elle perd de la vitesse et vous bascule vers l’arrière. Il faut alors relâcher brièvement pour lui redonner de l’énergie, puis gérer l’éventuelle abattée. Freiner dans cette phase serait dangereux car cela accentuerait la perte de vitesse.",
       "level": "bp_"
     },
     {
@@ -4077,7 +4077,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Quand ta vitesse/air est égale à celle du vent et que tu voles vent arrière, ta vitesse/sol est la somme des deux. Tu te déplaces alors deux fois plus vite qu’en air calme, ce qui fait défiler le sol très rapidement. Le sol ne peut donc pas paraître fixe dans cette configuration.",
       "level": "bp_"
     },
     {
@@ -4101,7 +4101,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les turbulences les plus dangereuses apparaissent dans les zones de cisaillement, près du relief en forte activité thermique et surtout sous le vent d’un relief par vent fort. Ces situations créent des variations brutales de pression et de direction du flux. Une ascendance dynamique bien formée reste au contraire relativement régulière.",
       "level": "bp_"
     },
     {
@@ -4121,7 +4121,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Quand le vario devient négatif en 360°, c’est que vous êtes sorti du noyau et devez corriger votre trajectoire. Continuer le virage jusqu’à retrouver la zone porteuse ou inverser le sens permet de revenir rapidement dans l’ascendance. L’objectif est de recentrer efficacement sans perdre trop d’altitude.",
       "level": "bp_"
     },
     {
@@ -4141,7 +4141,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En milieu d’après‑midi sur un versant ensoleillé, les effets thermiques peuvent générer un vent de vallée significatif, même sans vent météo. La configuration de la vallée, notamment si elle est étroite, peut renforcer cet écoulement. Il est donc indispensable d’intégrer l’hypothèse d’un vent de vallée fort dans la préparation du vol.",
       "level": "bp_"
     },
     {
@@ -4161,7 +4161,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Lors d’une fermeture côté relief, la priorité absolue est de garder le cap pour éviter une rotation dangereuse vers l’obstacle. Le pilotage se fait côté ouvert, commande et sellette, afin de stabiliser l’aile. Toute action trop énergique ou mal orientée peut aggraver la situation.",
       "level": "bp_"
     },
     {
@@ -4181,7 +4181,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Lorsqu’un autre appareil exploite déjà une ascendance, vous devez vous intégrer dans son sens de rotation. Se placer diamétralement opposé permet de conserver une distance de sécurité. Toute manœuvre agressive ou non coordonnée augmente fortement le risque de collision.",
       "level": "bp_"
     },
     {
@@ -4205,7 +4205,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Juste après la fermeture, vous stabilisez la trajectoire en chargeant le côté ouvert et en pouvant utiliser un léger frein opposé sans sur‑contrer. Une fois revenu au vol droit, si la demi‑aile reste fermée, vous pouvez aider la réouverture par une action brève et ample du frein du côté fermé. Freiner côté fermé trop tôt ou trop fort augmenterait le risque de vrille.",
       "level": "bp_"
     },
     {
@@ -4229,7 +4229,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "En frontale, on relâche d’abord les commandes pour redonner de la vitesse, puis on peut aider la réouverture par une action brève et symétrique. Maintenir un freinage serait dangereux. Une frontale en turbulence indique souvent un pilotage préventif insuffisant.",
       "level": "bp_"
     },
     {
@@ -4249,7 +4249,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Une approche sûre se construit tôt et reste adaptable jusqu’au sol. Elle doit tenir compte du vent et de ses variations pour anticiper la finesse et la trajectoire. Cette combinaison garantit une arrivée stable et lisible.",
       "level": "bp_"
     },
     {
@@ -4269,7 +4269,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le cône d’autonomie regroupe tous les points atteignables en plané selon la finesse sol. Comme la finesse sol dépend du vent, le cône se déforme et son axe se penche. Vent de face il se raccourcit, vent arrière il s’étire.",
       "level": "bp_"
     },
     {
@@ -4289,7 +4289,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Avec 30 km/h de vent pour une aile qui vole à 35 km/h max, la marge est trop faible pour garantir la sécurité. Même si la course serait minime, cela ne change rien au risque. La seule décision sûre est de ne pas décoller.",
       "level": "bp_"
     },
     {
@@ -4309,7 +4309,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "En finale, la cible doit rester stable dans le champ de vision. Si elle descend, vous allez la dépasser : vous êtes long. Si elle monte, vous êtes court. Par contre ralentir au maximum en finale est dangereux et ne corrige pas le problème.",
       "level": "bp_"
     },
     {
@@ -4333,7 +4333,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les 360° serrés provoquent une forte accélération centrifuge qui peut désorienter et augmenter les G. Cela peut entraîner une perte de repères et une fatigue physiologique importante. Dans certains cas, une perte de connaissance est possible.",
       "level": "bp_"
     },
     {
@@ -4353,7 +4353,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Une aile neuve doit d’abord être testée en pente école pour vérifier réglages et sensations. Ensuite, un vol en conditions calmes permet de confirmer son comportement réel. Modifier les freins est dangereux et interdit.",
       "level": "bp_"
     },
     {
@@ -4377,7 +4377,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Par vent fort, le freinage final doit être précis pour rester stable à l’atterrissage. Une fois posé, relever les mains et reculer vers l’aile permet de la neutraliser proprement. Chercher le décrochage ou résister aux freins serait dangereux.",
       "level": "bp_"
     },
     {
@@ -4397,7 +4397,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Voler en local, c’est rester dans une zone où l’on peut toujours rejoindre l’atterrissage malgré les variations aérologiques. Cela demande de maîtriser les notions de finesse et les performances de son aile. Une distance fixe ne garantit jamais le retour.",
       "level": "bp_"
     },
     {
@@ -4417,7 +4417,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Avec un vent de travers modéré, on gonfle face au vent pour obtenir une montée propre et symétrique. Une fois temporisé, on réaligne progressivement la course dans l’axe de la pente. Les autres méthodes augmentent le risque de déport ou de montée asymétrique.",
       "level": "bp_"
     },
     {
@@ -4437,7 +4437,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le vol de pente demande une vigilance constante sur l’évolution du vent. Il faut maîtriser la dérive et garder une trajectoire précise pour rester dans la zone portante. C’est un vol exigeant qui nécessite attention et finesse de pilotage.",
       "level": "bp_"
     },
     {
