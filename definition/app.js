@@ -1,4 +1,5 @@
 let definitions = [];
+let currentDefinitions = [];
 let editIndex = null;
 
 const searchInput = document.getElementById("search");
@@ -23,17 +24,17 @@ init();
 // ---------- RENDER ----------
 function render(filter = "") {
     list.innerHTML = "";
-    definitions = fuzzySearch(filter);
-    definitions.forEach((item, i) => {
+    console.log("filter : " + filter);
+    currentDefinitions = fuzzySearch(filter);
+    for (const index of currentDefinitions) {
+        item = definitions[index];
         const li = document.createElement("li");
-        li.innerHTML = `
-      <strong>${item.nom}</strong><br>
-      ${item.definition}<br>
-      <button onclick="edit(${i})">✏ Modifier</button>
-      <button onclick="removeDef(${i})">✖ Supprimer</button>
-    `;
+        li.innerHTML = `<strong>${item.nom}</strong><br>
+            ${item.definition}<br>
+            <button onclick="edit(${index})">✏ Modifier</button>
+            <button onclick="removeDef(${index})">✖ Supprimer</button>`;
         list.appendChild(li);
-    });
+    }
 }
 
 // ---------- SEARCH ----------
@@ -67,31 +68,46 @@ function levenshtein(a, b) {
 
 // Recherche fuzzy sur le nom et la définition
 function fuzzySearch(query) {
-    if (!query || !query.trim()) return [...definitions].sort((a, b) => a.nom.localeCompare(b.nom));
+    if (!query || !query.trim()) {
+        return definitions
+            .map((_, index) => index)
+            .sort((a, b) => definitions[a].nom.localeCompare(definitions[b].nom));
+    }
 
     const q = query.trim().toLowerCase();
 
     return definitions
-        .map(item => {
+        .map((item, index) => {
             const name = item.nom.toLowerCase();
             const def = item.definition.toLowerCase();
-            let score = Infinity;
 
-            if (name.startsWith(q) || def.startsWith(q)) {
-                score = 0; // début de mot exact
-            } else if (name.includes(q) || def.includes(q)) {
-                score = 0.5; // contient le mot
-            } else {
-                score = Math.min(levenshtein(name, q), levenshtein(def, q));
+            let score = 100;
+
+            // --- NOM ---
+            if (name.startsWith(q)) score = 0;
+            else if (name.includes(q)) score = 1;
+            else {
+                const d = levenshtein(name, q);
+                if (d <= 3) score = 2 + d;
             }
 
-            return { item, score };
-        })
-        .filter(({ score }) => score <= 2) // distance max autorisée
-        .sort((a, b) => a.score - b.score)
-        .map(({ item }) => item);
-}
+            // --- DEFINITION (bonus) ---
+            if (def.includes(q)) score -= 0.5;
+            else {
+                const dDef = levenshtein(def, q);
+                if (dDef <= 4) score -= 0.25;
+            }
 
+            return { index, score };
+        })
+        .filter(({ score }) => score < 6)
+        .sort(
+            (a, b) =>
+                a.score - b.score ||
+                definitions[a.index].nom.localeCompare(definitions[b.index].nom)
+        )
+        .map(({ index }) => index);
+}
 
 searchInput.addEventListener("input", e => {
     render(e.target.value);
@@ -128,7 +144,7 @@ function saveDefinition() {
     const existing = definitions.findIndex(d => d.nom === nom);
 
     if (existing !== -1 && existing !== editIndex) {
-        alert("Ce mot existe déjà.");
+        alert("\"" + definitions[existing].nom + "\" existe déjà.");
         return;
     } else if (editIndex !== null) {
         definitions[editIndex] = { nom, definition: def };
@@ -142,7 +158,7 @@ function saveDefinition() {
 
 // ---------- DELETE ----------
 function removeDef(i) {
-    if (!confirm("Supprimer cette définition ?")) return;
+    if (!confirm("Supprimer le définition de \"" + definitions[i].nom + "\" ?")) return;
     definitions.splice(i, 1);
     persist();
 }
@@ -168,6 +184,7 @@ function downloadJSON() {
 // ---------- RESET ----------
 async function resetToServer() {
     if (!confirm("Revenir à la version serveur ?")) return;
+    searchInput.value = "";
     localStorage.removeItem("definitions");
     const res = await fetch("definitions.json");
     definitions = await res.json();
