@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Définitions</title>
+    <link rel="shortcut icon" href="/parapente/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="/parapente" class="title">
+        <h1>📘 Définitions</h1>
+    </a>
+
+    <input id="search" type="text" placeholder="Rechercher un mot…">
+
+    <button id="addBtn">➕ Ajouter une définition</button>
+    <div class="containerBtn">
+        <button id="downloadBtn">⬇ Télécharger JSON</button>
+        <button id="resetBtn">♻ Reset serveur</button>
+    </div>
+
+    <ul id="definitionsList"></ul>
+
+    <footer>
+        © Espace personnel – outils, documents et apprentissages
+    </footer>
+
+    <!-- POPUP -->
+    <div id="popup" class="hidden">
+        <div id="popupContent">
+            <input id="popupName" placeholder="Nom">
+            <textarea id="popupDef" rows="4" placeholder="Définition"></textarea>
+            <div class="popup-actions">
+                <button id="saveBtn">💾 Sauvegarder</button>
+                <button id="cancelBtn">❌ Annuler</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

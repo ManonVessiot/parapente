@@ -6025,7 +6025,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La finesse‑sol correspond au rapport distance horizontale / perte d’altitude.\nIci : 4800/600 = 8.",
       "level": "bp_"
     },
     {
@@ -6045,7 +6045,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La finesse‑sol dépend de la vitesse horizontale par rapport au sol. Avec du vent arrière, cette vitesse augmente, donc la distance horizontale parcourue pour une même perte d’altitude devient plus grande. À l’inverse, face au vent, la vitesse‑sol diminue et la finesse‑sol se dégrade.",
       "level": "bp_"
     },
     {
@@ -6069,7 +6069,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Quand la charge alaire diminue, l’aile vole plus lentement et nécessite moins de vitesse pour se maintenir, ce qui réduit le taux de chute. La finesse augmente également, car l’aile évolue dans une zone plus favorable de sa polaire. En revanche, la vitesse de décollage diminue (et non l’inverse) et la maniabilité augmente généralement, car l’aile réagit plus facilement aux commandes.",
       "level": "bp_"
     },
     {
@@ -6093,7 +6093,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Quand un parapente part en lacet vers la droite, l’aile droite avance légèrement par rapport au flux et l’aile gauche recule. L’aile qui avance génère plus de portance, ce qui crée un roulis induit du même côté que le lacet, donc un roulis à droite. C’est le mécanisme de base du couplage lacet‑roulis sur un parapente.",
       "level": "bp_"
     },
     {
@@ -6117,7 +6117,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les suspentes fines, un harnais profilé et un profil bien lisse réduisent la traînée, ce qui améliore directement la finesse. Faire les oreilles, au contraire, augmente la traînée et réduit la surface portante, donc la finesse chute. Tout ce qui diminue la résistance à l’avancement améliore la performance en plané.",
       "level": "bp_"
     },
     {
@@ -6141,7 +6141,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Juste avant le sommet d’une ressource, la vitesse‑air est minimale car presque toute l’énergie a été transformée en altitude. Le facteur de charge passe sous 1 puisque la trajectoire monte encore alors que l’aile commence à repasser devant le pilote. Ce déphasage aile/pilote annonce l’abattée imminente due à l’effet pendulaire.",
       "level": "bp_"
     },
     {

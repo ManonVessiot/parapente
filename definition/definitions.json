@@ -1,0 +1,598 @@
+[
+  {
+    "nom": "360 engagé",
+    "definition": "Virage rapide avec forte inclinaison et forte chute."
+  },
+  {
+    "nom": "Abattée",
+    "definition": "Retour de l’aile devant le pilote après une ressource."
+  },
+  {
+    "nom": "Accélérateur",
+    "definition": "Système permettant d’augmenter la vitesse-air en modifiant l’incidence."
+  },
+  {
+    "nom": "Allongement",
+    "definition": "Rapport envergure² / surface ; caractérise la finesse et la stabilité en roulis."
+  },
+  {
+    "nom": "Allure",
+    "definition": "Configuration de vol liée à la vitesse et à l’incidence."
+  },
+  {
+    "nom": "Altocumulus lenticularis",
+    "definition": "Nuage en lentille, signe d’onde orographique."
+  },
+  {
+    "nom": "Angle de virage",
+    "definition": "Inclinaison de l’aile en roulis lors d’un virage."
+  },
+  {
+    "nom": "Arrondi",
+    "definition": "Phase finale de l’atterrissage où la chute est freinée."
+  },
+  {
+    "nom": "Assiette",
+    "definition": "Orientation de l’aile par rapport à l’horizon."
+  },
+  {
+    "nom": "Autorotation",
+    "definition": "Rotation auto-entretenue due à une asymétrie de portance."
+  },
+  {
+    "nom": "B-STALL",
+    "definition": "Manœuvre de descente en tirant les élévateurs B."
+  },
+  {
+    "nom": "Bande de tension",
+    "definition": "Renfort longitudinal stabilisant le profil."
+  },
+  {
+    "nom": "Barber pole",
+    "definition": "Indication visuelle de rotation du vent sur un manche à air."
+  },
+  {
+    "nom": "Base des nuages",
+    "definition": "Altitude où l’air atteint son point de rosée."
+  },
+  {
+    "nom": "Bord d’attaque",
+    "definition": "Partie avant du profil, où entre l’air."
+  },
+  {
+    "nom": "Bord d’attaque",
+    "definition": "Partie avant du profil."
+  },
+  {
+    "nom": "Bord de fuite",
+    "definition": "Partie arrière du profil."
+  },
+  {
+    "nom": "Brise de pente",
+    "definition": "Vent thermique montant le long d’une pente ensoleillée."
+  },
+  {
+    "nom": "Brise de vallée",
+    "definition": "Vent thermique entrant dans la vallée en journée."
+  },
+  {
+    "nom": "Caissons",
+    "definition": "Compartiments internes de l’aile."
+  },
+  {
+    "nom": "Cale-pieds",
+    "definition": "Accessoire permettant de tendre les jambes en vol."
+  },
+  {
+    "nom": "CCC",
+    "definition": "Catégorie compétition."
+  },
+  {
+    "nom": "Charge alaire",
+    "definition": "Rapport PTV / surface de l’aile, influençant vitesse, taux de chute et maniabilité."
+  },
+  {
+    "nom": "Cisaillement",
+    "definition": "Variation brutale de la vitesse ou direction du vent."
+  },
+  {
+    "nom": "Classe D",
+    "definition": "Espace contrôlé nécessitant autorisation radio."
+  },
+  {
+    "nom": "Classe E",
+    "definition": "Espace contrôlé mais accessible sous conditions."
+  },
+  {
+    "nom": "Classe G",
+    "definition": "Espace non contrôlé, accessible au vol libre."
+  },
+  {
+    "nom": "Cloisons",
+    "definition": "Parois internes maintenant la forme du profil."
+  },
+  {
+    "nom": "Cocon",
+    "definition": "Sellette carénée améliorant la finesse."
+  },
+  {
+    "nom": "Commande de frein",
+    "definition": "Action sur le bord de fuite pour piloter l’aile."
+  },
+  {
+    "nom": "Commande extérieure",
+    "definition": "Commande du côté opposé au virage, utilisée pour élargir le rayon."
+  },
+  {
+    "nom": "Commande intérieure",
+    "definition": "Commande du côté du virage, utilisée pour incliner l’aile."
+  },
+  {
+    "nom": "Conduite du thermique",
+    "definition": "Technique pour rester dans l’ascendance en virage."
+  },
+  {
+    "nom": "Convergence",
+    "definition": "Zone où deux flux se rencontrent, créant une ascendance."
+  },
+  {
+    "nom": "Cross",
+    "definition": "Vol de distance utilisant thermiques et transitions."
+  },
+  {
+    "nom": "CTR",
+    "definition": "Zone de contrôle autour d’un aéroport."
+  },
+  {
+    "nom": "Cumulonimbus",
+    "definition": "Nuage orageux dangereux, générant rafales et ascendances violentes."
+  },
+  {
+    "nom": "Cumulus",
+    "definition": "Nuage thermique typique, signe d’ascendance."
+  },
+  {
+    "nom": "Décrochage",
+    "definition": "Perte de portance due à une incidence excessive."
+  },
+  {
+    "nom": "Divergence",
+    "definition": "Zone où les flux se séparent, créant une descendance."
+  },
+  {
+    "nom": "Effet pendulaire",
+    "definition": "Déphasage aile/pilote dû à la suspension."
+  },
+  {
+    "nom": "Élévateurs",
+    "definition": "Sangles reliant les suspentes aux maillons."
+  },
+  {
+    "nom": "EN-A",
+    "definition": "Catégorie d’aile la plus accessible et la plus sûre."
+  },
+  {
+    "nom": "EN-B",
+    "definition": "Catégorie intermédiaire."
+  },
+  {
+    "nom": "EN-C",
+    "definition": "Catégorie performante pour pilotes expérimentés."
+  },
+  {
+    "nom": "EN-D",
+    "definition": "Catégorie très performante, exigeante."
+  },
+  {
+    "nom": "Envergure",
+    "definition": "Distance entre les deux extrémités de l’aile."
+  },
+  {
+    "nom": "Espace aérien",
+    "definition": "Classification des zones de vol selon règles et restrictions."
+  },
+  {
+    "nom": "Extraction",
+    "definition": "Action de lancer le parachute de secours."
+  },
+  {
+    "nom": "Facteur de charge",
+    "definition": "Rapport portance/poids ; mesure l'effort subi par l’aile."
+  },
+  {
+    "nom": "Fermeture",
+    "definition": "Perte de pression interne d’une partie de l’aile."
+  },
+  {
+    "nom": "Finesse-air",
+    "definition": "Rapport vitesse horizontale / vitesse verticale dans la masse d’air."
+  },
+  {
+    "nom": "Finesse-sol",
+    "definition": "Distance horizontale parcourue au sol pour une altitude perdue."
+  },
+  {
+    "nom": "Frontale",
+    "definition": "Fermeture simultanée du bord d’attaque."
+  },
+  {
+    "nom": "Gonflage dos voile",
+    "definition": "Technique de décollage où le pilote tourne après la montée de l’aile."
+  },
+  {
+    "nom": "Gonflage face voile",
+    "definition": "Technique de décollage où le pilote fait face à l’aile."
+  },
+  {
+    "nom": "Gradient de vent",
+    "definition": "Variation du vent avec l’altitude."
+  },
+  {
+    "nom": "Incidence",
+    "definition": "Angle entre la corde du profil et le vent relatif, déterminant portance, traînée et décrochage."
+  },
+  {
+    "nom": "Instabilité atmosphérique",
+    "definition": "Propension de l’air à monter spontanément."
+  },
+  {
+    "nom": "Inversion",
+    "definition": "Couche où la température augmente avec l’altitude, bloquant les thermiques."
+  },
+  {
+    "nom": "Isotherme 0°C",
+    "definition": "Altitude où la température atteint 0°C."
+  },
+  {
+    "nom": "Lacet",
+    "definition": "Rotation autour de l’axe vertical."
+  },
+  {
+    "nom": "Maillons",
+    "definition": "Connecteurs métalliques entre suspentes et élévateurs."
+  },
+  {
+    "nom": "NOTAM",
+    "definition": "Information temporaire sur les restrictions aériennes."
+  },
+  {
+    "nom": "Noyau du thermique",
+    "definition": "Zone centrale où le taux de montée est maximal."
+  },
+  {
+    "nom": "Onde orographique",
+    "definition": "Ascendance stationnaire générée par un relief et un vent fort."
+  },
+  {
+    "nom": "Oreilles",
+    "definition": "Réduction de surface en repliant les bouts d’aile."
+  },
+  {
+    "nom": "Parachutale",
+    "definition": "Vol à forte incidence, faible vitesse horizontale et forte chute."
+  },
+  {
+    "nom": "Pilotage actif",
+    "definition": "Gestion du tangage et des turbulences en ajustant les commandes."
+  },
+  {
+    "nom": "Pilotage aux A",
+    "definition": "Action sur les élévateurs avant, utilisée pour gonflage face voile."
+  },
+  {
+    "nom": "Pilotage aux arrières",
+    "definition": "Pilotage en utilisant les élévateurs arrière, surtout accéléré."
+  },
+  {
+    "nom": "Pilotage passif",
+    "definition": "Vol sans correction active, risqué en conditions turbulentes."
+  },
+  {
+    "nom": "Pilotage sellette",
+    "definition": "Pilotage par déplacement du poids du pilote."
+  },
+  {
+    "nom": "Plan d’approche",
+    "definition": "Organisation de la trajectoire avant l’atterrissage."
+  },
+  {
+    "nom": "Plan de vol",
+    "definition": "Organisation de la trajectoire pour atteindre un objectif en sécurité."
+  },
+  {
+    "nom": "Plané",
+    "definition": "Vol en ligne droite sans ascendance."
+  },
+  {
+    "nom": "Point bas",
+    "definition": "Altitude minimale atteinte avant de retrouver une ascendance."
+  },
+  {
+    "nom": "Point de décrochage",
+    "definition": "Incidence à partir de laquelle la portance s’effondre."
+  },
+  {
+    "nom": "Point de finesse max",
+    "definition": "Vitesse-air où le rapport portance/traînée est maximal."
+  },
+  {
+    "nom": "Point de parachutale",
+    "definition": "Incidence élevée où l’aile vole lentement avec forte chute."
+  },
+  {
+    "nom": "Point de rosée",
+    "definition": "Température à laquelle l’humidité condense."
+  },
+  {
+    "nom": "Point de taux de chute mini",
+    "definition": "Vitesse-air où la chute verticale est minimale."
+  },
+  {
+    "nom": "Point haut",
+    "definition": "Altitude maximale atteinte dans un thermique."
+  },
+  {
+    "nom": "Polaire",
+    "definition": "Courbe reliant vitesse-air et taux de chute, indiquant finesse max et vitesses caractéristiques."
+  },
+  {
+    "nom": "Portance",
+    "definition": "Force perpendiculaire au vent relatif, générée par la déviation des filets d’air et la dépression au-dessus du profil."
+  },
+  {
+    "nom": "Pression atmosphérique",
+    "definition": "Poids de la colonne d’air au-dessus d’un point."
+  },
+  {
+    "nom": "Profil reflex",
+    "definition": "Profil conçu pour la stabilité accélérée."
+  },
+  {
+    "nom": "PT8",
+    "definition": "Procédure d’atterrissage en 8."
+  },
+  {
+    "nom": "PTL",
+    "definition": "Procédure d’atterrissage en L."
+  },
+  {
+    "nom": "PTU",
+    "definition": "Procédure d’atterrissage en U."
+  },
+  {
+    "nom": "PTV",
+    "definition": "Poids Total Volant : poids du pilote équipé + aile + sellette + accessoires."
+  },
+  {
+    "nom": "QFE",
+    "definition": "Réglage altimétrique donnant altitude par rapport au terrain."
+  },
+  {
+    "nom": "QNH",
+    "definition": "Réglage altimétrique donnant altitude par rapport au niveau de la mer."
+  },
+  {
+    "nom": "Radio",
+    "definition": "Outil de communication en vol."
+  },
+  {
+    "nom": "Régime laminaire",
+    "definition": "Flux d’air régulier et stable."
+  },
+  {
+    "nom": "Régime turbulent",
+    "definition": "Flux d’air instable et irrégulier."
+  },
+  {
+    "nom": "Ressource",
+    "definition": "Conversion de vitesse en altitude ; vitesse minimale au sommet."
+  },
+  {
+    "nom": "Rotor",
+    "definition": "Zone de turbulences violentes sous le vent d’un relief."
+  },
+  {
+    "nom": "Roulis",
+    "definition": "Rotation autour de l’axe longitudinal."
+  },
+  {
+    "nom": "Roulis induit",
+    "definition": "Roulis généré par un lacet : l’aile qui avance porte plus."
+  },
+  {
+    "nom": "Saturation",
+    "definition": "État où l’air ne peut plus contenir davantage de vapeur d’eau."
+  },
+  {
+    "nom": "Secours",
+    "definition": "Parachute de secours utilisé en cas d’incident majeur."
+  },
+  {
+    "nom": "Sellette",
+    "definition": "Siège du pilote, influençant stabilité et pilotage."
+  },
+  {
+    "nom": "Shark nose",
+    "definition": "Forme de bord d’attaque améliorant la pression interne."
+  },
+  {
+    "nom": "SIV",
+    "definition": "Stage d’Incident en Vol pour apprendre à gérer les fermetures et vrilles."
+  },
+  {
+    "nom": "Sous le vent",
+    "definition": "Zone derrière un relief, turbulente et descendante."
+  },
+  {
+    "nom": "Spin",
+    "definition": "Synonyme de vrille."
+  },
+  {
+    "nom": "Stabilité atmosphérique",
+    "definition": "Capacité de l’air à résister aux mouvements verticaux."
+  },
+  {
+    "nom": "Stabilité en lacet",
+    "definition": "Capacité de l’aile à maintenir son cap."
+  },
+  {
+    "nom": "Stabilité en roulis",
+    "definition": "Capacité de l’aile à revenir à plat."
+  },
+  {
+    "nom": "Stabilité en tangage",
+    "definition": "Capacité de l’aile à amortir les mouvements avant/arrière."
+  },
+  {
+    "nom": "Stratus",
+    "definition": "Nuage bas et uniforme, signe de stabilité."
+  },
+  {
+    "nom": "Surface à plat",
+    "definition": "Surface totale de l’aile lorsqu’elle est étalée au sol."
+  },
+  {
+    "nom": "Surface projetée",
+    "definition": "Surface de l’aile projetée au sol, inférieure à la surface à plat."
+  },
+  {
+    "nom": "Suspentes",
+    "definition": "Câbles reliant l’aile aux élévateurs."
+  },
+  {
+    "nom": "Tangage",
+    "definition": "Rotation autour de l’axe transversal."
+  },
+  {
+    "nom": "Taux de chute",
+    "definition": "Vitesse verticale de descente."
+  },
+  {
+    "nom": "Taux de montée",
+    "definition": "Vitesse verticale positive dans une ascendance."
+  },
+  {
+    "nom": "Tempo",
+    "definition": "Action de frein pour contrôler une abattée."
+  },
+  {
+    "nom": "Tempo d’atterrissage",
+    "definition": "Action de frein progressive pour arrondir la trajectoire avant le posé."
+  },
+  {
+    "nom": "Thermique",
+    "definition": "Ascendance due à l’air chaud qui monte."
+  },
+  {
+    "nom": "Thermique bleu",
+    "definition": "Thermique sans nuage associé."
+  },
+  {
+    "nom": "Thermique haché",
+    "definition": "Thermique turbulent et irrégulier."
+  },
+  {
+    "nom": "Thermique structuré",
+    "definition": "Thermique régulier et bien formé."
+  },
+  {
+    "nom": "TMA",
+    "definition": "Espace contrôlé au-dessus d’un aéroport."
+  },
+  {
+    "nom": "Traînée",
+    "definition": "Force opposée au mouvement, due au frottement et à la dépression derrière le profil."
+  },
+  {
+    "nom": "Trajectoire",
+    "definition": "Chemin réel suivi dans l’espace."
+  },
+  {
+    "nom": "Transition",
+    "definition": "Déplacement entre deux ascendances."
+  },
+  {
+    "nom": "Trim",
+    "definition": "Réglage de vitesse sur certaines ailes."
+  },
+  {
+    "nom": "Turbulence",
+    "definition": "Variations rapides et désordonnées du vent."
+  },
+  {
+    "nom": "Turbulence mécanique",
+    "definition": "Turbulence créée par un obstacle."
+  },
+  {
+    "nom": "Turbulence thermique",
+    "definition": "Turbulence créée par des ascendances irrégulières."
+  },
+  {
+    "nom": "Vent anabatique",
+    "definition": "Vent chaud montant en journée."
+  },
+  {
+    "nom": "Vent catabatique",
+    "definition": "Vent froid descendant la nuit."
+  },
+  {
+    "nom": "Vent de pente",
+    "definition": "Vent thermique montant le long d’une pente ensoleillée."
+  },
+  {
+    "nom": "Vent de vallée",
+    "definition": "Vent thermique entrant dans la vallée en journée."
+  },
+  {
+    "nom": "Vent relatif",
+    "definition": "Flux d’air rencontré par le profil, résultant du mouvement de l’aile dans l’air."
+  },
+  {
+    "nom": "Venturi",
+    "definition": "Accélération du vent dans un resserrement."
+  },
+  {
+    "nom": "Virage à plat",
+    "definition": "Virage avec faible inclinaison, utilisé en thermique faible."
+  },
+  {
+    "nom": "Virage dissymétrique",
+    "definition": "Virage où les commandes ne sont pas symétriques, souvent involontaire."
+  },
+  {
+    "nom": "Virage dynamique",
+    "definition": "Virage utilisant l’énergie cinétique pour augmenter le taux de montée."
+  },
+  {
+    "nom": "Virage engagé",
+    "definition": "Virage auto-entretenu nécessitant une action pour en sortir."
+  },
+  {
+    "nom": "Vitesse bras hauts",
+    "definition": "Vitesse-air en vol libre sans action sur les commandes."
+  },
+  {
+    "nom": "Vitesse de décrochage",
+    "definition": "Vitesse minimale permettant de maintenir la portance."
+  },
+  {
+    "nom": "Vitesse maximale",
+    "definition": "Vitesse-air atteinte accélérateur à fond."
+  },
+  {
+    "nom": "Vitesse-air",
+    "definition": "Vitesse de l’aile par rapport à la masse d’air."
+  },
+  {
+    "nom": "Vitesse-sol",
+    "definition": "Vitesse par rapport au sol, influencée par le vent."
+  },
+  {
+    "nom": "Vrille",
+    "definition": "Décrochage asymétrique entraînant rotation autour d’une demi-aile."
+  },
+  {
+    "nom": "Zone de gradient",
+    "definition": "Couche proche du sol où le vent diminue fortement."
+  }
+]
