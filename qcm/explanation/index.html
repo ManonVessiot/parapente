@@ -18,7 +18,12 @@
             color: #333;
         }
 
-        h1 {
+        .titlePage {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .titlePage h1 {
             font-size: 2em;
             margin-bottom: 15px;
             color: #222;
@@ -209,7 +214,7 @@
                 margin: 20px 10px;
             }
 
-            h1 {
+            .titlePage h1 {
                 font-size: 1.5em;
             }
 
@@ -247,7 +252,9 @@
 
 <body>
 
-    <h1 id="title">Entraînement QCM</h1>
+    <a href="/" class="titlePage">
+        <h1 id="title">Entraînement QCM</h1>
+    </a>
 
     <button id="stopBtn" onclick="stop()" class="hidden">Stop</button>
     <button id="nextBtn" onclick="next()" class="hidden">Suivant</button>

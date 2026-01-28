@@ -17,7 +17,12 @@ body {
     padding: 0 15px;
 }
 
-h1 {
+.titlePage {
+    text-decoration: none;
+    color: inherit;
+}
+
+.titlePage h1 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
@@ -138,7 +143,7 @@ button.danger:hover {
 }
 
 /* Lien externe / ouverture analyse */
-a {
+a.link {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
@@ -158,7 +163,7 @@ a {
 }
 
 /* Icône flèche discrète */
-a::after {
+a.link::after {
     content: "↗";
     font-size: 0.9em;
     opacity: 0.7;
@@ -166,29 +171,29 @@ a::after {
 }
 
 /* Hover desktop */
-a:hover {
+a.link:hover {
     color: #145c2a;
     border-bottom-color: #145c2a;
 }
 
-a:hover::after {
+a.link:hover::after {
     transform: translate(2px, -2px);
     opacity: 1;
 }
 
 /* Focus clavier (accessibilité) */
-a:focus-visible {
+a.link:focus-visible {
     outline: none;
     border-bottom-style: solid;
 }
 
 /* Variante discrète si besoin */
-a.muted {
+a.link.muted {
     color: #555;
     border-bottom-color: rgba(0, 0, 0, 0.3);
 }
 
-a.muted:hover {
+a.link.muted:hover {
     color: #000;
     border-bottom-color: #000;
 }
@@ -251,7 +256,7 @@ a.muted:hover {
         margin: 15px auto;
     }
 
-    h1 {
+    .titlePage h1 {
         font-size: 1.5em;
     }
 

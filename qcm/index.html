@@ -43,7 +43,12 @@
             line-height: 1.5;
         }
 
-        h1 {
+        .titlePage {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .titlePage h1 {
             font-size: 2em;
             margin-bottom: 15px;
             color: #222;
@@ -235,7 +240,9 @@
     <div class="page">
 
         <div class="content">
-            <h1 id="title">Entraînement QCM</h1>
+            <a href="/" class="titlePage">
+                <h1 id="title">Entraînement QCM</h1>
+            </a>
 
             <div id="score" class="hidden">Score : 0 / 0</div>
 

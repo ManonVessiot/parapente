@@ -169,7 +169,7 @@ function initSteps() {
         div.innerHTML = `
             <h3>${s.title}</h3>
             <p>${s.desc}</p>
-            <a href="${s.url}" target='_blank'>${s.site}</a>
+            <a href="${s.url}" target='_blank' class='link'>${s.site}</a>
             <textarea id="step_${i}" placeholder="Notes..."></textarea>
         `;
         container.appendChild(div);
