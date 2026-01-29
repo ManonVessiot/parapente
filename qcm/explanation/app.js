@@ -8,6 +8,8 @@ let show_all = true;
 const LEVELS = ['bpi', 'bp', 'bpc'];
 const CATEGORIES = ['pilotage', 'mecavol', 'meteo', 'materiel', 'reglementation', 'facteursH', 'naturel'];
 
+let titleText = document.getElementById('subtitle').textContent;
+
 async function start() {
     // get json name
     const levelSelect = document.getElementById('levelSelect');
@@ -49,9 +51,9 @@ async function start() {
     categoryText = categorySelect.options[categorySelect.selectedIndex].text;
 
     if (category && category.trim() !== '') {
-        document.getElementById('title').textContent = `Entraînement QCM - ${levelText} (${categoryText})`;
+        document.getElementById('subtitle').textContent = titleText + ` - ${levelText} (${categoryText})`;
     }
-    else document.getElementById('title').textContent = `Entraînement QCM - ${levelText}`;
+    else document.getElementById('subtitle').textContent = titleText + ` - ${levelText}`;
 
     const showModeSelect = document.getElementById('showModeSelect');
     show_all = showModeSelect.options[showModeSelect.selectedIndex].value.length > 0;
@@ -109,7 +111,7 @@ function stop() {
     document.getElementById('categoryLabel').classList.remove('hidden');
 
     // update title
-    document.getElementById('title').textContent = 'Entraînement QCM';
+    document.getElementById('subtitle').textContent = titleText;
 
     // reset
     document.getElementById('question').textContent = '';

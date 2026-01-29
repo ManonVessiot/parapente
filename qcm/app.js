@@ -9,6 +9,7 @@ let voiceIndex = -1;
 const LEVELS = ['bpi', 'bp', 'bpc'];
 const CATEGORIES = ['pilotage', 'mecavol', 'meteo', 'materiel', 'reglementation', 'facteursH', 'naturel'];
 
+let titleText = document.getElementById('subtitle').textContent;
 
 async function start() {
     // get json name
@@ -47,9 +48,9 @@ async function start() {
     categoryText = categorySelect.options[categorySelect.selectedIndex].text;
 
     if (category && category.trim() !== '') {
-        document.getElementById('title').textContent = `Entraînement QCM - ${levelText} (${categoryText})`;
+        document.getElementById('subtitle').textContent = titleText + ` - ${levelText} (${categoryText})`;
     }
-    else document.getElementById('title').textContent = `Entraînement QCM - ${levelText}`;
+    else document.getElementById('subtitle').textContent = titleText + ` - ${levelText}`;
 
     questions = shuffle(questions, level, category); // randomize
 
@@ -84,7 +85,7 @@ function stop() {
     document.getElementById('categoryLabel').classList.remove('hidden');
 
     // update title
-    document.getElementById('title').textContent = 'Entraînement QCM';
+    document.getElementById('subtitle').textContent = titleText;
 
     // reset
     document.getElementById('question').textContent = '';

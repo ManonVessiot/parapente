@@ -30,6 +30,12 @@ body,
     margin-right: auto;
 }
 
+p.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
 /* ---------- Inputs ---------- */
 input,
 textarea {

@@ -29,6 +29,12 @@ body {
     color: #222;
 }
 
+p.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
 /* =========================
    CARDS (sections)
 ========================= */

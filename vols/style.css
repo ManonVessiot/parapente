@@ -151,3 +151,9 @@ footer {
     margin-top: 40px;
     padding-bottom: 10px;
 }
+
+p.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
