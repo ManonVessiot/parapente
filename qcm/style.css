@@ -1,0 +1,239 @@
+/* ===== RESET + BASE ===== */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* ===== PAGE LAYOUT ===== */
+.page {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ===== SCROLLABLE CONTENT ===== */
+.content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 15px;
+    /* espace pour les boutons */
+    text-align: center;
+    line-height: 1.5;
+}
+
+.titlePage {
+    text-decoration: none;
+    color: inherit;
+}
+
+.titlePage h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* ===== Score ===== */
+#score {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #eef4ff;
+    color: #1a3c8c;
+    font-weight: 600;
+}
+
+/* ===== Question ===== */
+.question {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Réponses ===== */
+.answers {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 0 auto 25px;
+    width: 70%;
+}
+
+.answer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 8px 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s, transform 0.15s, box-shadow 0.15s;
+}
+
+.answer:hover {
+    background-color: #eef4ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.answer input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.answer-text {
+    flex: 1;
+}
+
+.answer.selected {
+    background-color: #dbe7ff;
+    border-color: #7da2ff;
+}
+
+.answer.good {
+    background-color: #d4edda;
+    border-color: #9fd6b2;
+    color: #155724;
+}
+
+.answer.ok {
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+    color: #856404;
+}
+
+.answer.bad {
+    background-color: #f8d7da;
+    border-color: #f1aeb5;
+    color: #721c24;
+}
+
+/* ===== Explication ===== */
+#explanation {
+    text-align: left;
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 20px auto 30px;
+    width: 70%;
+    padding: 12px 15px;
+    background-color: #fff3cd;
+    color: #856404;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Inputs / Select ===== */
+input[type="number"],
+select {
+    font-size: 1em;
+    padding: 6px 10px;
+    margin: 5px 0 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ===== FIXED BUTTON BAR ===== */
+.actions {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 100;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Buttons ===== */
+button {
+    font-size: 1em;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.15s, box-shadow 0.15s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#stopBtn {
+    background-color: #dc3545;
+}
+
+#stopBtn:hover {
+    background-color: #b52a37;
+}
+
+#correctBtn,
+#nextBtn {
+    background-color: #28a745;
+}
+
+#correctBtn:hover,
+#nextBtn:hover {
+    background-color: #1e7e34;
+}
+
+.hidden {
+    display: none;
+}
+
+p.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+
+    .answers,
+    #explanation {
+        width: 95%;
+    }
+
+    .question {
+        font-size: 1.2em;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+    }
+}

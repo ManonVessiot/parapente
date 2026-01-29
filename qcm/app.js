@@ -25,10 +25,7 @@ async function start() {
     playerScore = 0;
 
     // Temps de réflexion
-    reflectionTime = parseInt(document.getElementById('waitTime').value); // fallback à 10s si vide
-
-    document.getElementById('waitTime').classList.add('hidden');
-    document.getElementById('waitTimeLabel').classList.add('hidden');
+    reflectionTime = parseInt(document.getElementById('waitTime').value);
 
     document.getElementById('startBtn').classList.add('hidden'); // Hide Démarrer
     document.getElementById('stopBtn').classList.remove('hidden'); // Show Stop
@@ -73,9 +70,6 @@ function stop() {
     document.getElementById('question').classList.add('hidden');
     document.getElementById('startBtn').classList.remove('hidden');
     document.getElementById('correctBtn').classList.add('hidden');
-
-    document.getElementById('waitTime').classList.remove('hidden');
-    document.getElementById('waitTimeLabel').classList.remove('hidden');
 
     // show dropdown
     document.getElementById('levelSelect').classList.remove('hidden');
@@ -142,6 +136,7 @@ async function correctQuestion(signal) {
     showCorrection(q);
     await readCorrection(q, signal);
 
+    reflectionTime = parseInt(document.getElementById('waitTime').value);
     if (voiceIndex >= 0 && reflectionTime == 0) {
         await wait(1, signal);
         if (signal.aborted) return;
@@ -195,6 +190,7 @@ async function readQuestion(q, signal) {
 }
 
 async function waitResponse(signal) {
+    reflectionTime = parseInt(document.getElementById('waitTime').value);
     waitTime = reflectionTime;
     if (reflectionTime == 0) waitTime = 1;
     await wait(waitTime, signal);
@@ -258,7 +254,7 @@ function showCorrection(q) {
         }
     });
     if (q.explanation) {
-        document.getElementById('explanation').textContent = `Explications : ${q.explanation}`;
+        document.getElementById('explanation').textContent = q.explanation;
         document.getElementById('explanation').classList.remove('hidden');
     }
     document.getElementById('nextBtn').classList.remove('hidden');
@@ -463,5 +459,23 @@ window.addEventListener('DOMContentLoaded', () => {
     speechSynthesis.onvoiceschanged = () => {
         populateVoices();
         if (savedVoice) document.getElementById('voiceSelect').value = savedVoice;
+        UpdateVoiceView();
     };
 });
+
+function UpdateVoiceView() {
+    const select = document.getElementById('voiceSelect').value;
+    console.log("UpdateVoiceView select : " + select);
+    if (select < 0) {
+
+        document.getElementById('waitTime').classList.add('hidden');
+        document.getElementById('waitTimeLabel').classList.add('hidden');
+    }
+    else {
+
+        document.getElementById('waitTime').classList.remove('hidden');
+        document.getElementById('waitTimeLabel').classList.remove('hidden');
+    }
+}
+
+document.getElementById("voiceSelect").addEventListener("change", UpdateVoiceView);
