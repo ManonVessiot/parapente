@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vols</title>
+    <link rel="shortcut icon" href="/parapente/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="/parapente" class="title">
+        <h1>Vols</h1>
+    </a>
+
+    <button id="addBtn">➕ Ajouter un vol</button>
+    <div class="containerBtn">
+        <button id="downloadBtn">⬇ Télécharger JSON</button>
+        <button id="resetBtn">♻ Reset serveur</button>
+    </div>
+
+    <ul id="volsList"></ul>
+
+    <footer>
+        © Espace personnel – outils, documents et apprentissages
+    </footer>
+
+    <!-- POPUP -->
+    <div id="popup" class="hidden">
+        <div id="popupContent">
+            <input id="popupDate" placeholder="dd/mm/aaaa">
+            <input id="popupSite" placeholder="Cuges S">
+            <input id="popupType" placeholder="Ecole">
+            <input id="popupEquip" placeholder="Niviuk Hook 5 / Exence Woody Valley">
+            <input id="popupTime" placeholder="8 min">
+            <textarea id="popupCom" rows="4" placeholder="Commentaire"></textarea>
+            <div class="popup-actions">
+                <button id="saveBtn">💾 Sauvegarder</button>
+                <button id="cancelBtn">❌ Annuler</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

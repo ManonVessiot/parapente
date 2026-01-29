@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2024-01-29",
+    "site": "Cuges-les-Pins",
+    "type_vol": "école",
+    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
+    "duree_minutes": "5 min",
+    "commentaire": "Déco serein. Vol calme."
+  },
+  {
+    "date": "2026-01-29",
+    "site": "Cuges-les-Pins",
+    "type_vol": "solo",
+    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
+    "duree_minutes": "42 min",
+    "commentaire": "Déco serein. Vol calme. Petit thermique exploité devant le déco. Bonne gestion de l’approche, posé propre."
+  },
+  {
+    "date": "01/02/1970",
+    "site": "Cuges",
+    "type_vol": "Stage",
+    "equipement": "",
+    "duree_minutes": "20 min",
+    "commentaire": "RAS"
+  }
+]

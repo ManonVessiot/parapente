@@ -89,7 +89,7 @@
   },
   {
     "nom": "Charge alaire",
-    "definition": "Rapport PTV / surface de l’aile, influençant vitesse, taux de chute et maniabilité."
+    "definition": "La charge alaire est le rapport entre le poids total volant (aile + pilote + équipement) et la surface de l’aile. C’est ce qui détermine à quel point l’aile est chargée, donc sa vitesse, sa maniabilité et sa résistance aux turbulences."
   },
   {
     "nom": "Cisaillement",
@@ -594,5 +594,21 @@
   {
     "nom": "Zone de gradient",
     "definition": "Couche proche du sol où le vent diminue fortement."
+  },
+  {
+    "nom": "Corde",
+    "definition": "La corde du profil, c’est la ligne droite imaginaire qui relie le bord d’attaque au bord de fuite d’un profil aérodynamique. Elle fait partie du plan de l'aile.\nElle sert de référence pour définir l’incidence, l’assiette et beaucoup de paramètres aérodynamiques."
+  },
+  {
+    "nom": "Traînée induite",
+    "definition": "C’est la traînée qui apparaît parce que l’aile produit de la portance. Elle provient des tourbillons en bout d’aile et augmente quand la vitesse diminue ou que l’incidence augmente."
+  },
+  {
+    "nom": "Traînée de forme",
+    "definition": "C’est la traînée liée à la forme du pilote et de la sellette exposée au vent. Plus la surface frontale est grande (par exemple en se redressant), plus cette traînée augmente."
+  },
+  {
+    "nom": "Traînée d’effet de sol",
+    "definition": "C’est la traînée modifiée par la proximité du sol : en s’approchant du sol, les tourbillons marginaux sont perturbés, ce qui réduit la traînée induite. Elle dépend uniquement de la hauteur, pas de la position du pilote."
   }
 ]

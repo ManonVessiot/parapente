@@ -6165,7 +6165,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Avec les oreilles, l’aile vole plus lentement et l’incidence augmente, ce qui peut rapprocher du domaine parachutal. L’accélérateur diminue l’incidence, ce qui constitue une vraie parade contre ce risque. En plus, accélérer dans cette configuration dégrade encore la finesse, ce qui augmente le taux de chute.",
       "level": "bp_"
     },
     {
@@ -6189,7 +6189,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les oreilles réduisent la surface de l’aile, ce qui la rend moins vive et améliore l’amortissement en tangage. Elles augmentent aussi fortement la traînée, ce qui dégrade la finesse et accroît le taux de chute. En revanche, elles n’entraînent pas de diminution d’incidence et nécessitent de retirer tout tour de frein avant la manœuvre.",
       "level": "bp_"
     },
     {
@@ -6213,7 +6213,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Quand vous volez sous‑chargée sur l’aile d’un pilote plus lourd, les commandes deviennent moins efficaces car l’aile réagit plus mollement. Le taux de chute peut être légèrement meilleur, car une aile un peu sous‑chargée descend un peu moins vite. En revanche, la pression interne baisse, ce qui rend l’aile plus sensible aux fermetures en turbulence.",
       "level": "bp_"
     },
     {
@@ -6233,7 +6233,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Se lever en finale change la forme que présente le pilote au vent, donc la traînée de forme augmente. En revanche, cela ne modifie pas la traînée induite, qui dépend de la portance et donc de l’incidence, ni la traînée liée à l’effet de sol, qui dépend uniquement de la proximité du sol.",
       "level": "bp_"
     },
     {
@@ -6257,7 +6257,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un parapente subit d’abord la traînée induite, créée par la production de portance et les tourbillons en bout d’aile. Il subit aussi la traînée de forme, liée à la silhouette du pilote, de la sellette et de l’aile face au vent. Enfin, la traînée de frottement provient du contact de l’air avec le tissu et du profil lui‑même.",
       "level": "bp_"
     },
     {
@@ -6281,7 +6281,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Quand le pilote diminue l’incidence (par exemple en accélérant ou en relevant les mains), l’aile perd momentanément de la portance, donc la trajectoire s’incurve vers le bas. En même temps, la vitesse augmente, car l’aile adopte un angle plus faible et offre moins de résistance à l’avancement.",
       "level": "bp_"
     },
     {
@@ -6305,7 +6305,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Faire les oreilles dégrade la finesse, car on réduit la surface portante et on augmente fortement la traînée. Le taux de chute augmente aussi, puisque l’aile descend plus vite avec les bouts repliés. En revanche, cela n’améliore pas la pénétration et n’empêche pas totalement les fermetures.",
       "level": "bp_"
     },
     {
@@ -6329,7 +6329,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Avec les oreilles, la surface portante diminue, donc traverser un gradient peut faire augmenter fortement le taux de chute. La traînée augmente et la vitesse baisse, ce qui fait augmenter l’incidence. La finesse diminue parce que l’aile avance moins bien et descend davantage.",
       "level": "bp_"
     },
     {
@@ -6353,7 +6353,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La charge alaire est le rapport entre le poids total volant (aile + pilote + équipement) et la surface de l’aile. C’est ce qui détermine à quel point l’aile est chargée, donc sa vitesse, sa maniabilité et sa résistance aux turbulences.",
       "level": "bp_"
     },
     {
@@ -6373,7 +6373,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Quand on augmente fortement la charge alaire, l’aile doit voler plus vite, ce qui augmente la vitesse horizontale. Elle descend aussi plus vite, donc le taux de chute augmente. Cette tension supplémentaire dans la voile entraîne également plus de déformations internes, même si l’aile devient plus solide en turbulence.",
       "level": "bp_"
     },
     {
