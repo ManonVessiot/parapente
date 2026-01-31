@@ -1,26 +1,498 @@
 [
   {
-    "date": "2024-01-29",
-    "site": "Cuges-les-Pins",
-    "type_vol": "école",
-    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
-    "duree_minutes": "5 min",
-    "commentaire": "Déco serein. Vol calme."
+    "date": "20/01/2024",
+    "site": "Cuges S",
+    "type_vol": "Ecole Init",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Course à améliorer / peur du premier vol"
   },
   {
-    "date": "2026-01-29",
-    "site": "Cuges-les-Pins",
-    "type_vol": "solo",
-    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
-    "duree_minutes": "42 min",
-    "commentaire": "Déco serein. Vol calme. Petit thermique exploité devant le déco. Bonne gestion de l’approche, posé propre."
-  },
-  {
-    "date": "01/02/1970",
+    "date": "22/01/2024",
     "site": "Cuges",
-    "type_vol": "Stage",
-    "equipement": "",
-    "duree_minutes": "20 min",
-    "commentaire": "RAS"
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "course à améliorer, ne pas s'assoir dès le début / courir à l'attero"
+  },
+  {
+    "date": "22/01/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "course à améliorer, ne pas s'assoir dès le début / courir à l'attero"
+  },
+  {
+    "date": "22/01/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "course à améliorer, ne pas s'assoir dès le début / Premier exo de tangage"
+  },
+  {
+    "date": "04/02/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Course niquel et déco maitrisé / Tangage et attero à travailler"
+  },
+  {
+    "date": "04/02/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Course niquel et déco maitrisé / Tangage et attero à travailler"
+  },
+  {
+    "date": "04/02/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Course niquel et déco maitrisé / Tangage et attero à travailler"
+  },
+  {
+    "date": "13/02/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Déco raté car trop de frein / Premier exo roulis sympa et tangage à travailler, oreille plus compliqué que prévu mais ok / attero solo court"
+  },
+  {
+    "date": "13/02/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "13/02/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "17/02/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "premier déco solo : garder le cap. trop focus sur la technique / tangage presque ok"
+  },
+  {
+    "date": "17/02/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "07/03/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Déco et attero autonome / Tangage ok mais pas autonome"
+  },
+  {
+    "date": "07/03/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "07/03/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Thermique très sympa mais long > 30min / mal aux bras au bout d'un moment"
+  },
+  {
+    "date": "13/03/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "déco ok mais apprender à renoncer / attero à améliorer"
+  },
+  {
+    "date": "13/03/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "10/05/2025",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "deco niquel / attero à bosser (sellette mal réglé)"
+  },
+  {
+    "date": "10/05/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "08/07/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "attero votré parterre / sellette mal réglé"
+  },
+  {
+    "date": "20/07/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Sellette mal réglé, vol debout"
+  },
+  {
+    "date": "07/08/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "déco juste / Roulis cool / Attero trop long"
+  },
+  {
+    "date": "07/08/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "déco sans courir / roulis et enroulage de thermique / attero en biais sur les fesses"
+  },
+  {
+    "date": "14/08/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "déco auto : mauvais cap / Attero dos au vent !! => Vol cata"
+  },
+  {
+    "date": "14/08/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Plouf niquel"
+  },
+  {
+    "date": "24/08/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "attero presque dos vent et pas assez vite / brut à la commande"
+  },
+  {
+    "date": "24/08/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Plouf avec un peu de roulis"
+  },
+  {
+    "date": "01/11/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "déco niquel / tempo avant qu'elle passe devant"
+  },
+  {
+    "date": "01/11/2024",
+    "site": "Cuges",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "tangage presque bon : tempo plus fort et plus prononcé / placement dynamique à revoir"
+  },
+  {
+    "date": "01/11/2024",
+    "site": "Cuges",
+    "type_vol": "Voile école pour maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "test voile maroc"
+  },
+  {
+    "date": "02/11/2024",
+    "site": "Cuges",
+    "type_vol": "Voile école Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "voile maroc monte pas sans vent"
+  },
+  {
+    "date": "02/11/2024",
+    "site": "Cuges",
+    "type_vol": "Voile école Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "09/11/2024",
+    "site": "MAROC - Nid d'aigle",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Découverte accélérateur + oreille / Attéro sans mono en bas"
+  },
+  {
+    "date": "09/11/2024",
+    "site": "MAROC - Nid d'aigle",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Attéro sans mono en bas"
+  },
+  {
+    "date": "09/11/2024",
+    "site": "MAROC - Nid d'aigle",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "09/11/2024",
+    "site": "MAROC - Nid d'aigle",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "09/11/2024",
+    "site": "MAROC - Nid d'aigle",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "09/11/2024",
+    "site": "MAROC - Nid d'aigle",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "10/11/2024",
+    "site": "MAROC - Nid d'aigle",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Attero à améliorer / Vent faible"
+  },
+  {
+    "date": "10/11/2024",
+    "site": "MAROC - Nid d'aigle",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "10/11/2024",
+    "site": "MAROC - Nid d'aigle",
+    "type_vol": "EcoStage Marocle",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "10/11/2024",
+    "site": "MAROC - Bunamaan",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "70 min",
+    "commentaire": "Dynamique > 1h"
+  },
+  {
+    "date": "12/11/2024",
+    "site": "MAROC - Legzira",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Déco face voile / dynamique, virage trop engager : lacher extérieur avant d'utiliser l'intérieur / Attero doux"
+  },
+  {
+    "date": "13/11/2024",
+    "site": "MAROC - Legzira",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Face voile à bosser / Dynamique : virage revue et ok, peur du train à cause des prios / Attero ok"
+  },
+  {
+    "date": "13/11/2024",
+    "site": "MAROC - Legzira",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "13/11/2024",
+    "site": "MAROC - Legzira",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "13/11/2024",
+    "site": "MAROC - Legzira",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Pareil"
+  },
+  {
+    "date": "14/11/2024",
+    "site": "MAROC - Legzira",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "dynamique / attero plage / Touch&go en glissant"
+  },
+  {
+    "date": "14/11/2024",
+    "site": "MAROC - Legzira",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "être plus proche du relief en dynamique (~15m) / attero au pied de l'arche"
+  },
+  {
+    "date": "14/11/2024",
+    "site": "MAROC - Aglou montagne",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "dynamique / approche en S sur la plage avec glissade cool sur les pieds"
+  },
+  {
+    "date": "15/11/2024",
+    "site": "MAROC - Nid d'aigle",
+    "type_vol": "Stage Maroc",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Dernier plouf avec un peu de dynamique"
+  },
+  {
+    "date": "09/06/2025",
+    "site": "CUGES S",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Plouf / Reprise après 6 mois off"
+  },
+  {
+    "date": "09/06/2025",
+    "site": "CUGES S",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "tempo en thermique / prise de terrain trop tôt"
+  },
+  {
+    "date": "22/06/2025",
+    "site": "CUGES S",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Thermique sympa : main int bouge pas dans les virages, control avec main ext"
+  },
+  {
+    "date": "22/06/2025",
+    "site": "CUGES S",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "Radio éteinte au début donc plouf"
+  },
+  {
+    "date": "30/06/2025",
+    "site": "CUGES SO",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "",
+    "commentaire": "L'air tenait pas, direct en bas"
+  },
+  {
+    "date": "30/06/2025",
+    "site": "CUGES SO",
+    "type_vol": "Ecole",
+    "equipement": "Voile école",
+    "duree_minutes": "30 min",
+    "commentaire": "dynamique monté haut au dessus du déco > 30 min"
+  },
+  {
+    "date": "12/07/2025",
+    "site": "CUGES SE",
+    "type_vol": "Cours avec Charles",
+    "equipement": "Niviuk Hook 5 + Supair XL de l'école",
+    "duree_minutes": "",
+    "commentaire": "Gonflage découpé avec Charles avant. / déco face voile découpé / Attéro perturbé à cause de la moissonneuse : trop longue et sur les fesses"
+  },
+  {
+    "date": "08/08/2025",
+    "site": "Cuges SO",
+    "type_vol": "Autonome",
+    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
+    "duree_minutes": "",
+    "commentaire": "Reprise à 3 fois et parti de travers : vraiment mauvais / turbulant, trop de roulis/tanguage / attero difficile à cause des bulles d'air chaud mais sinon ok / Stresse du premier vol sans l'école. But étant de décoller pour atterir (thermiques rencontré ignoré)"
+  },
+  {
+    "date": "11/08/2025",
+    "site": "Cuges E",
+    "type_vol": "Autonome",
+    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
+    "duree_minutes": "",
+    "commentaire": "face voile ok, mais mauvaise gestion du cap / attero sans vent, pas assez freiné, sur les fesses / plus à l'aise mais toujours un peu crispé"
+  },
+  {
+    "date": "11/08/2025",
+    "site": "Cuges S",
+    "type_vol": "Autonome",
+    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
+    "duree_minutes": "",
+    "commentaire": "face voile ok / pas encore à l'aise avec les thermiques / prise en dragonnes plus haut permet de mieux freiner pour attero sans vent / correction des erreurs du vol d'avant et prise en main du freinage fort pour attero sans vent"
+  },
+  {
+    "date": "13/08/2025",
+    "site": "Cuges E",
+    "type_vol": "Autonome",
+    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
+    "duree_minutes": "",
+    "commentaire": "premier raté car mauvais cap puis niquel / pas de 360 en perte d'altitude et trop de frein en finale ! / travail à faire sur le cap !"
   }
 ]

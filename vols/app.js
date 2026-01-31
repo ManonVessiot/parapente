@@ -28,13 +28,13 @@ function render() {
     list.innerHTML = "";
     for (let index = vols.length - 1; index >= 0; index--) {
         const li = document.createElement("li");
-        li.innerHTML = `<strong>${index + 1}. ${vols[index].date}<br></strong>
-            <span>Site :</span> ${vols[index].site}<br>
-            <span>Type :</span> ${vols[index].type_vol}<br>
-            <span>Equipement :</span> ${vols[index].equipement}<br>
-            <span>Durée :</span> ${vols[index].duree_minutes}<br><br>
-            ${vols[index].commentaire}<br>
-            <button onclick="edit(${index})">✏ Modifier</button>
+        li.innerHTML = `<strong>${index + 1}. ${vols[index].date}<br></strong>`
+        if (vols[index].site) li.innerHTML += `<span>Site :</span> ${vols[index].site}<br>`
+        if (vols[index].type_vol) li.innerHTML += `<span>Type :</span> ${vols[index].type_vol}<br>`
+        if (vols[index].equipement) li.innerHTML += `<span>Equipement :</span> ${vols[index].equipement}<br>`
+        if (vols[index].duree_minutes) li.innerHTML += `<span>Durée :</span> ${vols[index].duree_minutes}<br><br>`
+        li.innerHTML += `${vols[index].commentaire}<br>`
+        li.innerHTML += `<button onclick="edit(${index})">✏ Modifier</button>
             <button onclick="removeDef(${index})">✖ Supprimer</button>`;
         list.appendChild(li);
     }
@@ -65,9 +65,9 @@ function edit(i) {
 
 function saveVol() {
     const date = popupDate.value.trim();
-    const site = popupSite.value.trim();
-    const type_vol = popupType.value.trim();
-    const equipement = popupEquip.value.trim();
+    site = popupSite.value.trim();
+    type_vol = popupType.value.trim();
+    equipement = popupEquip.value.trim();
     const duree_minutes = popupTime.value.trim();
     const commentaire = popupCom.value.trim();
 
@@ -125,8 +125,8 @@ async function resetToServer() {
 document.getElementById("addBtn").onclick = () => {
     popupDate.value = "";
     popupSite.value = "";
-    popupType.value = "";
-    popupEquip.value = "";
+    popupType.value = "Autonome";
+    popupEquip.value = "Niviuk Hook 5 / Exence Woody Valley";
     popupTime.value = "";
     popupCom.value = "";
     openPopup();
