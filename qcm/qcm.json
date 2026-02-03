@@ -6393,7 +6393,7 @@
           "points": 4
         }
       ],
-      "explanation": "",
+      "explanation": "Le centrage d’une aile s’exprime en pourcentage de la corde.\nIl est considéré comme équilibré lorsque le centre de poussée et le centre de gravité sont alignés verticalement sur la corde.",
       "level": "bp_"
     },
     {
@@ -6413,7 +6413,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Dans une masse d’air descendante, ta finesse-sol se dégrade, car même si ta finesse air reste la même, le sol « remonte » vers toi. Tu avances donc moins loin pour chaque mètre perdu.",
       "level": "bp_"
     },
     {
@@ -6433,7 +6433,7 @@
           "points": -3
         }
       ],
-      "explanation": "",
+      "explanation": "Le décrochage survient toujours à une vitesse plus faible que celle du taux de chute mini, donc en dessous de la vitesse de finesse max. La vitesse de taux de chute mini correspond encore à un vol stable, alors que le décrochage nécessite une incidence beaucoup plus forte.",
       "level": "bp_"
     },
     {
@@ -6457,7 +6457,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le taux de chute minimum correspond à une incidence plus grande que celle de finesse‑max. C’est aussi le régime utile le plus proche du décrochage, car on vole à forte incidence. En ascendance, voler au taux de chute mini n’est pas toujours sûr, car on peut se rapprocher trop du décrochage si la masse d’air varie, et la vitesse max correspond à une incidence très faible.",
       "level": "bp_"
     },
     {
@@ -6481,7 +6481,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Pour réduire le risque de fermeture, on augmente l’incidence en bridant l’aile ou la demi‑aile concernée, ce qui stabilise le profil. Débrider ou diminuer l’incidence rend l’aile plus rapide et plus vulnérable aux fermetures.",
       "level": "bp_"
     },
     {
@@ -6505,7 +6505,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "L’effet girouette ramène toujours l’aile face à son vent relatif.\nAu sol, une aile immobile s’oriente naturellement face au vent instantané.",
       "level": "bp_"
     },
     {
@@ -6525,7 +6525,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La traînée totale regroupe la traînée de frottement/profil, la traînée de forme/pression, et la traînée induite. Ces trois composantes proviennent respectivement du contact de l’air avec la surface, de la silhouette de l’aéronef, et de la production de portance.",
       "level": "bp_"
     },
     {
@@ -6549,7 +6549,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Juste avant une vrille, la commande intérieure est très basse et devient dure, signe d’une incidence excessive. Le bruit du vent relatif diminue, car la vitesse chute fortement. Le pilote ressent aussi que l’aile a du mal à tourner, car elle sature en incidence.",
       "level": "bp_"
     },
     {
@@ -6573,7 +6573,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "En turbulence, l’aile et le pilote subissent des variations de vitesse‑air, car les mouvements de la masse d’air modifient instantanément le vent relatif. L’incidence varie aussi en permanence, puisque la direction du vent relatif change. Enfin, la force aérodynamique fluctue, car elle dépend directement de la vitesse‑air et de l’incidence.",
       "level": "bp_"
     },
     {
@@ -6597,7 +6597,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le point d’arrêt est le point où la pression statique est maximale.\nIl se déplace selon l’incidence, avançant ou reculant sur le bord d’attaque.\nIl sépare les écoulements qui partent vers l’intrados et vers l’extrados.\nCe n’est pas une zone où « s’arrêtent » surpression et dépression, mais simplement le point où l’air arrive avec vitesse nulle.",
       "level": "bp_"
     },
     {
@@ -6621,7 +6621,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Avec un vent arrière fort, ta vitesse‑sol augmente, car le vent s’ajoute à ta vitesse‑air.\nLa portance ne change pas (elle dépend uniquement de la vitesse‑air), ton aile n’est pas plus fragile, et le vent sur le visage ne change pas non plus puisque c’est toujours la vitesse‑air que tu ressens.",
       "level": "bp_"
     },
     {
@@ -6645,7 +6645,7 @@
           "points": -3
         }
       ],
-      "explanation": "",
+      "explanation": "La finesse‑sol est le rapport entre la vitesse‑sol horizontale et la vitesse‑sol verticale.",
       "level": "bp_"
     },
     {
@@ -6665,7 +6665,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La portance et la traînée dépendent uniquement de la vitesse‑air, c’est‑à‑dire la vitesse de l’aile dans la masse d’air.\nLa vitesse‑sol n’a aucun effet aérodynamique, et le vent météo n’agit que s’il modifie la vitesse‑air — ce qui n’est pas le cas si l’aile se déplace avec la masse d’air.",
       "level": "bp_"
     },
     {
@@ -6685,7 +6685,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un allongement important améliore la performance, car il réduit la traînée induite et augmente la finesse.",
       "level": "bp_"
     },
     {
@@ -6705,7 +6705,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "En virage équilibré, la portance doit compenser à la fois le poids et la force centrifuge, ce qui augmente la charge ressentie. Le poids apparent devient donc supérieur au poids réel aile + pilote.",
       "level": "bp_"
     },
     {
@@ -6725,7 +6725,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un vent régulier n’a aucune influence sur la vitesse‑air car c'est la vitesse du parapente dans la masse d'air (qui bouge).\nEn revanche, il modifie la vitesse‑sol et donc la finesse‑sol, puisque celles‑ci dépendent du vent météo.",
       "level": "bp_"
     },
     {
@@ -6745,7 +6745,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le décrochage survient lorsque l’incidence est trop forte.\nUne vitesse trop faible conduit à une incidence trop forte, mais ce n’est pas la vitesse en elle‑même qui provoque le décrochage : c’est bien l’angle d’attaque excessif.",
       "level": "bp_"
     },
     {
@@ -6765,7 +6765,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La finesse‑air maximale est atteinte à une vitesse plus élevée que celle du taux de chute mini (vitesse mini < taux de chute mini < finess max < vitesse max).\nElle correspond à une incidence plus faible, donc à un vol plus rapide.",
       "level": "bp_"
     },
     {
@@ -6789,7 +6789,7 @@
           "points": 4
         }
       ],
-      "explanation": "",
+      "explanation": "En décrochage, la portance s’effondre car l’incidence dépasse la limite où l’aile peut maintenir un écoulement attaché.\nDans le même temps, la traînée augmente fortement à cause du flux d’air devenu turbulent.",
       "level": "bp_"
     },
     {
@@ -6813,7 +6813,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le calage change lorsqu’on agit sur les trims ou l’accélérateur, car on modifie l’angle que fait l’aile avec la trajectoire.\nIl peut aussi être fortement altéré par le vieillissement du suspentage, qui modifie les longueurs relatives des étages.\nEnfin, le calage est déterminé par la longueur des suspentes, alors que le réglage des freins n’a aucune influence dessus.",
       "level": "bp_"
     },
     {
@@ -6833,7 +6833,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Dans un virage, l’aile s’incline grâce au roulis, car c’est l’axe qui permet de basculer l’ensemble aile‑pilote.\nLe tangage fait cabrer ou piquer, et le lacet fait tourner le nez, mais aucun des deux n’incline l’aile.\nC’est donc bien le mouvement de roulis qui initie l’inclinaison en virage.",
       "level": "bp_"
     },
     {
@@ -6853,7 +6853,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Dans une ascendance, l’aile descend toujours par rapport à la masse d’air, car elle a un taux de chute propre incompressible.\nSi l’ascendance est plus forte que ce taux de chute, le pilote monte par rapport au sol, mais l’aile continue malgré tout de « descendre » dans l’air ascendant.",
       "level": "bp_"
     },
     {
@@ -6869,7 +6869,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Aux régimes de croisière, l’aile vole à une incidence plus faible que celle du taux de chute mini.\nCela correspond à une vitesse plus élevée et donc à un angle d’attaque réduit.",
       "level": "bp_"
     },
     {
@@ -6893,7 +6893,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En vol rectiligne stabilisé, le facteur de charge vaut 1, car la portance compense exactement le poids.\nEn virage équilibré, il devient supérieur à 1 puisque la portance doit compenser poids + force centrifuge.\nLors d’une abattée, il peut devenir inférieur à 1 car l’aile « tombe » momentanément sous le pilote, tandis qu’il ne dépend pas du poids du pilote ni des indications constructeur.",
       "level": "bp_"
     },
     {
@@ -6917,7 +6917,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Quand le pilote augmente l’incidence, la trajectoire s’incurve vers le haut car la portance augmente momentanément.\nDans le même temps, la vitesse sur trajectoire diminue puisque l’aile cabre et oppose davantage de traînée.",
       "level": "bp_"
     },
     {
@@ -6941,7 +6941,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Autour d’un profil, l’écoulement peut être laminaire, turbulent ou décollé, selon l’incidence et l’état de surface.\nUn écoulement résonnant n’existe pas en aérodynamique.",
       "level": "bp_"
     },
     {
@@ -6965,7 +6965,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "À même incidence, les deux ailes produisent la même portance relative, mais le pilote le plus lourd doit voler plus vite pour équilibrer son poids.\nComme sa vitesse est plus élevée, son taux de chute augmente, ce qui signifie qu’il descend plus vite dans la masse d’air.",
       "level": "bp_"
     },
     {
@@ -6985,7 +6985,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Traînée de frottement : due au contact de l’air avec la surface.\nTraînée de forme : due à la forme du profil et aux dépressions qu’il crée.\nTraînée induite : liée à la portance et aux tourbillons en bout d’aile.",
       "level": "bp_"
     },
     {
@@ -7005,7 +7005,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La traînée totale dépend bien de la vitesse‑air et de la forme de l’aile.\nElle se compose de traînée de forme, traînée de frottement et traînée induite, qui sont les trois familles classiques en aérodynamique.",
       "level": "bp_"
     },
     {
@@ -7025,7 +7025,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La traînée induite provient de la création de tourbillons marginaux en bout d’aile, conséquence directe de la portance.",
       "level": "bp_"
     },
     {
@@ -7049,7 +7049,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La traînée est bien une force qui s’oppose à l’avancement, elle dépend donc de la vitesse air. Elle augmente avec elle, et plus précisément une grande partie de la traînée (forme + frottement) est proportionnelle au carré de la vitesse-air.",
       "level": "bp_"
     },
     {
@@ -7073,7 +7073,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Avec un fort vent arrière, ta vitesse par rapport au sol augmente, car tu additionnes ta vitesse‑air et la vitesse du vent.\nLa finesse‑sol augmente aussi, puisque tu parcours plus de distance horizontale pour la même perte d’altitude",
       "level": "bp_"
     },
     {
@@ -7097,7 +7097,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Un pilote plus léger, à surface égale, aura une vitesse max plus faible, car il a besoin de moins de portance et donc vole à plus faible incidence et plus faible vitesse‑air.\nIl aura aussi un taux de chute plus faible, car sa charge alaire réduite améliore la performance verticale.\nEn revanche, la vitesse de décrochage diminue avec la charge alaire, et la pénétration est moins bonne",
       "level": "bp_"
     },
     {
@@ -7117,7 +7117,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Quand une particule d’air nuageux est soulevée, elle contient de la vapeur d’eau qui condense en gouttelettes.\nCette condensation libère de la chaleur latente, ce qui ralentit le refroidissement de la particule par rapport à une particule d’air clair (qui, elle, se refroidit au gradient adiabatique sec).",
       "level": "bp_"
     },
     {
@@ -7137,7 +7137,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Lors du passage d’un front, c’est toujours l’air chaud qui est soulevé.\nC’est même la définition d’un front : une discontinuité entre deux masses d’air, où l’air chaud, plus léger, est forcé de monter au‑dessus de l’air froid, plus dense.",
       "level": "bp_"
     },
     {
@@ -7161,7 +7161,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Dans une atmosphère stable, la température diminue lentement avec l’altitude, ce qui rend l’air peu enclin à se laisser déplacer verticalement. Une bulle d’air chaude qui s’élève se retrouve rapidement plus froide et plus dense que l’air environnant, ce qui la fait redescendre. La masse d’air s’oppose donc naturellement au développement des ascendances, qui restent faibles et peu durables.",
       "level": "bp_"
     },
     {
@@ -7181,7 +7181,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les nuages qui matérialisent les ondes de ressaut sont les altocumulus lenticulaires et les cumulus rotors.\nLes lenticulaires se forment dans la partie ascendante et lissée de l’onde, tandis que les rotors apparaissent plus bas, dans la zone turbulente en aval du relief. Les autres types de nuages proposés ne sont pas liés au phénomène d’onde orographique.",
       "level": "bp_"
     },
     {
@@ -7201,7 +7201,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La formation d’onde de ressaut est favorisée par une atmosphère stable, car les couches d’air se comportent alors comme des ressorts capables d’osciller lorsqu’elles sont soulevées par un relief. L’air, une fois dévié vers le haut, tend à revenir à son niveau d’équilibre puis à osciller autour de celui‑ci, ce qui crée l’onde. Une atmosphère instable ou très humide casse ce mécanisme en déclenchant des mouvements verticaux anarchiques plutôt qu’un régime ondulatoire régulier.",
       "level": "bp_"
     },
     {
@@ -7221,7 +7221,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La règle de Buys‑Ballot : dans l’hémisphère Nord, si tu te mets dos au vent, la basse pression se trouve à ta gauche.\nDonc si tu te retournes pour être face au vent, la basse pression passe naturellement à ta droite.",
       "level": "bp_"
     },
     {
@@ -7245,7 +7245,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les nuages qui annoncent l’arrivée d’un front chaud sont les cirrostratus et les altostratus.\nIls apparaissent en couches étendues et régulières, souvent très en avance sur le front lui‑même, car l’air chaud glisse en douceur au‑dessus de l’air froid.\nLes cumulonimbus et les cumulus sont plutôt associés aux fronts froids ou à l’instabilité, pas à l’arrivée progressive d’un front chaud.",
       "level": "bp_"
     },
     {
@@ -7265,7 +7265,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La restitution correspond à l’apparition en fin de journée d’ascendances douces et larges sur des zones qui ne produisaient plus ou presque plus de thermiques pendant l’après‑midi. Elle se produit lorsque l’air, encore chaud en altitude, se met à redescendre lentement et à se réorganiser, créant des mouvements verticaux réguliers. Ce n’est pas une inversion de brises, mais un phénomène lié à la dissipation progressive de l’instabilité.",
       "level": "bp_"
     },
     {
@@ -7289,7 +7289,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Dans une atmosphère instable, la température diminue rapidement avec l’altitude, ce qui favorise les mouvements verticaux. Les bulles d’air chaudes montent facilement et donnent naissance à des cumulus, souvent bien développés. Ce contexte est donc propice aux ascendances, et non à leur absence, ni au développement de stratus.",
       "level": "bp_"
     },
     {
@@ -7309,7 +7309,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’instabilité augmente lorsque l’air en bas se réchauffe ou lorsque l’air en haut se refroidit.\nLe réchauffement du sol renforce les contrastes verticaux de température et facilite l’ascension des bulles d’air.\nÀ l’inverse, l’arrivée d’air chaud en altitude stabilise la masse d’air, et le refroidissement du sol la stabilise aussi.",
       "level": "bp_"
     },
     {
@@ -7329,7 +7329,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les nuages se forment lorsque l’air se refroidit suffisamment pour atteindre son niveau de condensation, ce qui provoque la transformation de la vapeur d’eau en gouttelettes.\nLe réchauffement d’une ascendance fait exactement l’inverse, et une descendance réchauffe l’air en le comprimant, ce qui empêche toute condensation.",
       "level": "bp_"
     },
     {
@@ -7353,7 +7353,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un front froid est un phénomène actif et souvent brutal, car l’air froid dense pousse l’air chaud vers le haut. Cela génère facilement averses intenses, rafales et turbulences, parfois très marquées. Il peut donc provoquer des coups de vent, et certainement pas « peu de vent », ni être considéré comme sécurisant.",
       "level": "bp_"
     },
     {
@@ -7377,7 +7377,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les cirrus sont bien constitués de cristaux de glace, et les cumulonimbus contiennent à la fois des gouttes d’eau et des cristaux de glace, surtout dans leurs parties hautes très froides.\nLes nimbostratus donnent des pluies continues, pas de grêle, et les stratus sont composés de gouttelettes d’eau.",
       "level": "bp_"
     },
     {
@@ -7397,7 +7397,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le déclenchement des thermiques renforce globalement les brises de pente et de vallée, car l’air chaud ascendant ajoute un moteur supplémentaire à la circulation. En revanche, au niveau du versant, ces ascendances qui se détachent perturbent le flux régulier, rendant la brise de pente irrégulière et hachée. Enfin, cette brise reste un phénomène collé au relief, donc elle ne peut pas être exploitée loin de la pente.",
       "level": "bp_"
     },
     {
@@ -7417,7 +7417,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un thalweg correspond à un axe de basses pressions qui s’étire au sein d’un champ de pression plus élevé.\nIl matérialise une zone allongée où l’air est plus froid et plus dépressionnaire, souvent associée à de l’instabilité et à des précipitations.\nCe n’est ni un axe de hautes pressions, ni une zone uniforme de pression.",
       "level": "bp_"
     },
     {
@@ -7441,7 +7441,7 @@
           "points": 4
         }
       ],
-      "explanation": "",
+      "explanation": "La vapeur d’eau est invisible, car ce sont des molécules d’eau à l’état gazeux, sans gouttelettes.\nElle existe partout dans la troposphère, en quantité variable selon les régions et les conditions météo.\nLes fines gouttelettes visibles correspondent à des nuages ou du brouillard, pas à de la vapeur d’eau.",
       "level": "bp_"
     },
     {
@@ -7461,7 +7461,7 @@
           "points": -2
         }
       ],
-      "explanation": "",
+      "explanation": "Le maximum d’ensoleillement a lieu vers 12 h solaires.\nLe sol continue ensuite à chauffer l’air pendant 2 à 3 heures, ce qui décale le pic de température.\nEn pratique, on observe souvent un maximum vers 15 h solaires.",
       "level": "bp_"
     },
     {
@@ -7481,7 +7481,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le Nimbostratus (Ns) donne de la pluie continue, durable, sans orage.\nLe Cumulonimbus (Cb) est le nuage d’orage, avec averses intenses, éclairs, rafales, turbulences, parfois grêle.",
       "level": "bp_"
     },
     {
@@ -7501,7 +7501,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le Soleil chauffe d’abord le sol, qui à son tour réchauffe l’air par conduction puis convection.\nLe rayonnement solaire chauffe très peu l’air directement, et la convection n’est qu’un mécanisme de transport, pas la source initiale du réchauffement.",
       "level": "bp_"
     },
     {
@@ -7525,7 +7525,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Zones urbanisées : béton, bitume → chauffent très vite.\nZones rocailleuses : surfaces sombres et sèches → excellent rendement thermique.\nZones sèches : peu d’évaporation → toute l’énergie sert à chauffer l’air.\nForêts : chauffent lentement, homogénéisent la température → peu favorables.",
       "level": "bp_"
     },
     {
@@ -7545,7 +7545,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Sous le vent du relief, le fœhn se manifeste bien par une descente d’air chaud, sec et turbulent.\nAu vent du relief, on observe souvent un nuage orographique (mur de foehn, lenticulaires) lié au soulèvement et à la condensation de l’air humide.\nSous le vent l’air se réchauffe, il ne se refroidit pas.",
       "level": "bp_"
     },
     {
@@ -7565,7 +7565,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un nœud correspond à 1,852 km/h. Donc 20 kt correspond à 36 km/h.",
       "level": "bp_"
     },
     {
@@ -7585,7 +7585,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les nuages dangereux pour le vol libre — en dehors des problèmes de visibilité — sont ceux associés à fortes turbulences, ascendances violentes ou cisaillements.\nCumulonimbus (Cb) : extrêmement dangereux — ascendances explosives, rafales descendantes, grêle, orages, cisaillements.\nNuages de rotors : danger majeur — turbulences sévères, rouleaux sous le vent d’un relief, impossibles à traverser en sécurité.\nStratocumulus : généralement stables, peu turbulents, pas dangereux en soi (hors visibilité).",
       "level": "bp_"
     },
     {

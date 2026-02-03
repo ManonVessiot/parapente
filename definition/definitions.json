@@ -610,5 +610,29 @@
   {
     "nom": "Traînée d’effet de sol",
     "definition": "C’est la traînée modifiée par la proximité du sol : en s’approchant du sol, les tourbillons marginaux sont perturbés, ce qui réduit la traînée induite. Elle dépend uniquement de la hauteur, pas de la position du pilote."
+  },
+  {
+    "nom": "Calage",
+    "definition": "Le calage est la manière dont l’aile est orientée par rapport à la trajectoire de vol, déterminée par les longueurs relatives des suspentes avant, médianes et arrière.\nIl fixe donc l’incidence de référence de l’aile en vol libre, c’est‑à‑dire son angle d’attaque naturel sans action du pilote.\nUn changement de calage modifie directement le comportement, la vitesse et la stabilité de la voile."
+  },
+  {
+    "nom": "Front",
+    "definition": "Un front est une discontinuité entre deux masses d’air, où l’air chaud, plus léger, est forcé de monter au‑dessus de l’air froid, plus dense."
+  },
+  {
+    "nom": "Atmosphère stable",
+    "definition": "Une atmosphère stable est une masse d’air dont la stratification thermique décourage les mouvements verticaux. Lorsqu’une bulle d’air est soulevée, elle devient rapidement plus froide et plus dense que l’air environnant, ce qui la pousse à redescendre. Ce comportement fait que les ascendances y sont faibles, étroites et peu durables, car la structure même de l’air tend à les étouffer."
+  },
+  {
+    "nom": "Buys‑Ballot",
+    "definition": "La règle de Buys‑Ballot dit que, dans l’hémisphère Nord, si tu te places dos au vent, la basse pression se situe à ta gauche et la haute pression à ta droite.\nCette relation vient du fait que les vents tournent dans le sens antihoraire autour d’une dépression et dans le sens horaire autour d’un anticyclone, sous l’effet de la force de Coriolis.\nSi tu te retournes pour être face au vent, les positions s’inversent naturellement : la dépression passe à droite et l’anticyclone à gauche."
+  },
+  {
+    "nom": "Thalweg",
+    "definition": "Un thalweg est une zone allongée de basses pressions qui s’étire au sein d’un champ de pression plus élevé.\nIl correspond à une vallée barométrique, où la pression diminue en suivant un axe souvent associé à de l’air plus froid et instable.\nOn y trouve fréquemment nuages, averses et perturbations, car cette configuration favorise les mouvements verticaux."
+  },
+  {
+    "nom": "foehn",
+    "definition": "Le foehn est un vent chaud, sec et turbulent qui souffle sous le vent d’un relief lorsque de l’air humide est forcé de monter au vent, se refroidit, condense et précipite.\nEn redescendant de l’autre côté, cet air désormais sec se réchauffe par compression, ce qui lui donne son caractère chaud et asséchant.\nIl s’accompagne souvent, au vent du relief, d’un nuage orographique typique (mur de foehn)."
   }
 ]
