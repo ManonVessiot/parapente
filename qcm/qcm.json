@@ -7605,7 +7605,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La traîne d’une perturbation correspond à l’air froid instable situé à l’arrière du front froid, avec averses, éclaircies, cumulus et cumulonimbus isolés.",
       "level": "bp_"
     },
     {
@@ -7629,7 +7629,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Dans un anticyclone, l’air s’affaisse et les vents sont faibles.",
       "level": "bp_"
     },
     {
@@ -7649,7 +7649,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le vent traverse en permanence la zone, mais le nuage se reforme continuellement au même endroit (au vent) et se dissipe au même endroit (sous le vent).\nCe renouvellement constant donne l’illusion qu’il est immobile, alors que l’air y circule très vite.",
       "level": "bp_"
     },
     {
@@ -7673,7 +7673,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les facteurs qui favorisent réellement la convection sont ceux qui chauffent fortement le sol et permettent aux bulles d’air chaud de se détacher proprement. Un vent très fort détruit ou cisaille les thermiques, empêche leur formation alors qu'un vent de force moyenne organise les thermiques, les décale, les rend exploitables.",
       "level": "bp_"
     },
     {
@@ -7693,7 +7693,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les ondes de ressaut (ondes orographiques) se forment sous le vent d’un relief, mais uniquement si l’air est stable.",
       "level": "bp_"
     },
     {
@@ -7713,7 +7713,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Pour un front froid, la tendance générale est une aggravation rapide du temps, souvent brutale, avec averses, orages, rafales et turbulences.",
       "level": "bp_"
     },
     {
@@ -7737,7 +7737,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les nuages de type stratus sont des nuages uniformes, liés à une forte stabilité et à un développement horizontal.",
       "level": "bp_"
     },
     {
@@ -7757,7 +7757,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Gradient adiabatique sec ≈ 10 °C / 1000 m\nGradient adiabatique saturé ≈ 6 °C / 1000 m\nGradient réel = 6 °C / 1000 m\nQuand le gradient réel est inférieur au gradient sec mais égal ou proche du gradient saturé, l’air est plutôt stable.\nIl n’y a pas d’instabilité : une bulle d’air sèche qui monte se refroidit plus vite que l’environnement et redescend.",
       "level": "bp_"
     },
     {
@@ -7777,7 +7777,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le vent météo dépend directement du gradient de pression, donc de l’espacement des isobares. Il se renforce lorsque les isobares se resserrent.",
       "level": "bp_"
     },
     {
@@ -7797,7 +7797,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La pression atmosphérique provient uniquement du poids de la colonne d’air au‑dessus d’un point.",
       "level": "bp_"
     },
     {
