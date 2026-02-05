@@ -9561,7 +9561,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Dès qu’un moteur est installé, même s’il sert peu, l’aéronef change de catégorie et passe sous la réglementation ULM, avec toutes les obligations associées.",
       "level": "bp_"
     },
     {
@@ -9581,7 +9581,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Au‑dessus de 900 m mer (ou 300 m sol en montagne), on applique les distances VMC complètes : 1500 m horizontalement et 300 m verticalement par rapport aux nuages.",
       "level": "bp_"
     },
     {
@@ -9601,7 +9601,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le vol libre relève du VFR : voler dans un nuage = vol sans visibilité = IMC = interdit.\nIl n’existe aucune exception pour le parapente ou le delta.",
       "level": "bp_"
     },
     {
@@ -9621,7 +9621,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La règle VMC impose simplement : rester hors des nuages.\nLa base étant à 1200 m, c’est donc l’altitude maximale autorisée.",
       "level": "bp_"
     },
     {
@@ -9645,7 +9645,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "En vol de pente, priorité à celui qui a le relief à sa droite.\nIci, ce n’est pas toi, donc tu dois laisser passer l’aile en face en t'écartant vers la droite ou en faisant demi-tour par la droite.",
       "level": "bp_"
     },
     {
@@ -9669,7 +9669,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "En thermique, le premier impose le sens de rotation.\nLa priorité verticale est à l’aile la plus basse.\nL’intégration se fait dans le même sens, avec un 180° si nécessaire.",
       "level": "bp_"
     },
     {
@@ -9689,7 +9689,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En classe E, IFR et VFR coexistent. L’IFR reste sous contrôle ATC, le VFR reste responsable de l’évitement, mais il n’y a pas de priorité réglementaire en faveur de l’IFR.",
       "level": "bp_"
     },
     {
@@ -9713,7 +9713,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La FFVL veut que la déclaration soit faite par la personne directement concernée ou responsable de l’encadrement. Donc pour l'élève c'est le moniteur, et pour le pilote breveté, c'est lui même ou son entourage.",
       "level": "bp_"
     },
     {
@@ -9733,7 +9733,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Pour le vol libre, on privilégie toujours la carte OACI au 1/250 000, dès lors que le secteur est couvert, car c’est la seule offrant la précision nécessaire pour voler en sécurité près du relief et dans des espaces aériens complexes.",
       "level": "bp_"
     },
     {
@@ -9753,7 +9753,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "On ne franchit une limite d’espace aérien que si la carte et les NOTAM indiquent que c’est autorisé.\nLa DGAC n’est pas un service d’information tactique pour les pilotes de vol libre.\nElle ne répond pas à ce type de demande opérationnelle.",
       "level": "bp_"
     },
     {
@@ -9773,7 +9773,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "L’accompagnateur fédéral garde les mêmes prérogatives partout, mais en plaine il doit en plus connaître les techniques et règles liées au treuil, car c’est un environnement spécifique.",
       "level": "bp_"
     },
     {
@@ -9793,7 +9793,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les déclarations d'accident doivent être envoyées sous 5 jours à la FFVL qui transmet à l'assureur.",
       "level": "bp_"
     },
     {
@@ -9813,7 +9813,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Priorité à droite, sauf cas particuliers (vol de pente, approche, aile basse en thermique…).\nIci, on est dans une situation de croisement classique donc vous devez céder la priorité",
       "level": "bp_"
     },
     {
@@ -9837,7 +9837,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La priorité à niveau égal revient à l’aile qui arrive par la droite car c’est la règle générale d’évitement en vol\nEn thermique, le premier arrivé impose le sens de rotation et les autres doivent s’y conformer\nCes deux règles coexistent et s’appliquent selon la situation rencontrée en vol",
       "level": "bp_"
     },
     {
@@ -9857,7 +9857,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les limites d’espaces contrôlés peuvent être exprimées en ASFC, en AMSL ou en FL, selon la nature de l’espace.\nElles ne sont pas toujours en altitude QNH et ne sont pas uniquement en niveaux de vol.\nOn lit simplement ce qui est indiqué sur la carte aéronautique à jour.\nASFC signifie au‑dessus du sol et indique une hauteur mesurée depuis le terrain sous toi\nAMSL signifie au‑dessus du niveau de la mer et donne une altitude fixe indépendante du relief\nFL signifie niveau de vol et correspond à une altitude basée sur une pression standard utilisée surtout en croisière aérienne\nLe QNH est la pression atmosphérique ajustée au niveau de la mer et il permet de lire une altitude réelle sur l’altimètre",
       "level": "bp_"
     },
     {
@@ -9877,7 +9877,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Quand le relief est à droite, il faut faire demi‑tour. On peut aussi choisir de dépasser par la gauche si on veille à la sécurité de l'aile doublée mais cela est déconseillé.\nOn ne se glisse jamais côté relief car c’est dangereux pour les deux ailes",
       "level": "bp_"
     },
     {
@@ -9897,7 +9897,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le brevet marque le début de l’autonomie mais pas la fin de la progression et le pilote reste responsable de respecter les règles et de voler sur des sites adaptés à ses compétences",
       "level": "bp_"
     },
     {
@@ -9917,7 +9917,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Un CEFVL est une structure associative affiliée à la FFVL et gérée par ses adhérents et il ne s’agit jamais d’une entreprise privée",
       "level": "bp_"
     },
     {
@@ -9937,7 +9937,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Entre PUL il n’y a pas de priorité liée au type d’aile et tout le monde applique les mêmes règles de croisement et d’évitement",
       "level": "bp_"
     },
     {
@@ -9957,7 +9957,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Les priorités ne dépendent ni du type d’aile ni du nombre de places et les aéronefs non motorisés passent avant les ensembles remorqués car cela garantit la sécurité de tous",
       "level": "bp_"
     },
     {
@@ -9977,7 +9977,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Une EFVL est une structure professionnelle privée qui enseigne le vol libre tout en respectant la charte fédérale et en étant suivie par la FFVL pour garantir un enseignement sûr et conforme",
       "level": "bp_"
     },
     {
@@ -9997,7 +9997,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Face à face la règle est simple et universelle on vire tous les deux à droite pour s’éviter proprement et sans ambiguïté",
       "level": "bp_"
     },
     {
@@ -10017,7 +10017,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le seul cas où le pilote militaire ne peut pas assurer l’anticollision est le RTBA (réseau très basse altitude utilisé par les avions militaires pour s’entraîner à très grande vitesse près du sol) activé car le vol à très basse altitude en suivi de terrain limite fortement la capacité de voir dehors",
       "level": "bp_"
     },
     {
@@ -10037,7 +10037,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les avions de chasse peuvent voler en G et en E sans activation particulière et leur présence dépend surtout de leur mission et de leur mode de vol",
       "level": "bp_"
     },
     {
@@ -10061,7 +10061,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’accompagnateur fédéral est un bénévole formé pour aider les clubs et les nouveaux pilotes sans enseigner et cette qualification n’a aucune valeur professionnelle ni impact sur le DEJEPS.",
       "level": "bp_"
     },
     {
@@ -10085,7 +10085,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Avant de voler sur un site que tu ne connais pas tu dois comprendre l’espace aérien et lire les informations FFVL du site et aucune autorisation locale n’est requise pour y voler",
       "level": "bp_"
     },
     {
@@ -10105,7 +10105,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’altitude maximale dépend de l’espace aérien et la règle générale est le FL 115 mais certaines LTA E permettent de monter jusqu’au FL 195 tandis que d’autres zones imposent des limites plus basses comme le FL 100 en haute montagne, ce n’est pas la limite générale du vol libre",
       "level": "bp_"
     },
     {
@@ -10129,7 +10129,7 @@
           "points": -3
         }
       ],
-      "explanation": "",
+      "explanation": "L’accompagnateur fédéral reste un pilote bénévole sans prérogatives d’enseignement et il utilise sa radio comme tout pilote sans guider les autres en vol",
       "level": "bp_"
     },
     {
@@ -10149,7 +10149,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le vol libre relève de la réglementation aérienne et un pilote peut être contrôlé et il doit être totalement exempt d’alcool et de stupéfiants pour garantir la sécurité",
       "level": "bp_"
     },
     {
@@ -10169,7 +10169,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’obligation d’utiliser une aile homologuée CEN ne concerne que les écoles labellisées et en dehors de ce cadre le choix du matériel reste libre pour le pilote",
       "level": "bp_"
     },
     {
@@ -10189,7 +10189,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En espace G à basse altitude la règle impose une visibilité minimale de 1500 m pour garantir la capacité de voir et éviter les autres aéronefs",
       "level": "bp_"
     },
     {
@@ -10209,7 +10209,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La certification des brevets et qualifications relève du responsable régional de la formation qui est l’autorité fédérale compétente pour valider officiellement les niveaux des pilotes",
       "level": "bp_"
     },
     {
@@ -10229,7 +10229,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’encadrement en milieu aménagé demande une formation spécifique et se déroule obligatoirement au-dessus de l’eau pour garantir la sécurité des pilotes et permettre une intervention rapide en cas d’incident",
       "level": "bp_"
     },
     {
@@ -10249,7 +10249,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un aérodrome contrôlé n’est pas accessible librement aux deltas et parapentes et une autorisation spécifique est indispensable avant toute utilisation",
       "level": "bp_"
     },
     {
@@ -10269,7 +10269,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "En espace G basse altitude les exigences sont allégées et la règle se résume à voir à 1500 m et rester hors des nuages pour assurer le voir et éviter",
       "level": "bp_"
     },
     {
@@ -10293,7 +10293,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "En cas d’atterrissage dans un champ non fauché tu échanges calmement avec le propriétaire tu fais constater les dégâts et tu déclares l’incident à l’assurance FFVL qui prendra en charge l’indemnisation et tu ne paies jamais sur place, sauf réglement à l'amiable",
       "level": "bp_"
     },
     {
@@ -10317,7 +10317,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une aile de vol libre est un aéronef ultraléger non motorisé classé comme PUL et dispensé d’immatriculation et elle n’est pas considérée comme un parachute",
       "level": "bp_"
     },
     {
@@ -10337,7 +10337,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le vol libre se pratique sans dépôt de plan de vol et seules des situations exceptionnelles peuvent imposer une coordination particulière avec les services de la circulation aérienne",
       "level": "bp_"
     },
     {
@@ -10361,7 +10361,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’accompagnateur fédéral suit une formation spécifique et sa qualification est délivrée officiellement par le responsable régional formation et elle ne peut ni être auto-attribuée ni validée par un club",
       "level": "bp_"
     },
     {
@@ -10381,7 +10381,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le vol libre est une activité diurne et doit cesser au plus tard 30 min après le coucher du soleil et l’assurance spécifique est obligatoire pour décoller",
       "level": "bp_"
     },
     {
@@ -10401,7 +10401,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le survol d’un rassemblement de personnes est strictement encadré et impose une hauteur minimale de 300 m dans un rayon de 600 m afin d’éviter tout risque pour les personnes au sol",
       "level": "bp_"
     },
     {
@@ -10425,7 +10425,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Lors d’un atterrissage en campagne avec dégâts matériels la RC du pilote couvre les dommages causés aux tiers et ni le propriétaire ni le pilote ne doivent payer directement sur place.",
       "level": "bp_"
     },
     {
@@ -10445,7 +10445,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le directeur technique d’une EFVL ou d’un CEFVL encadre toute la pédagogie et valide la partie pratique du brevet mais il ne délivre pas le brevet lui‑même qui reste du ressort du responsable régional formation",
       "level": "bp_"
     },
     {
@@ -10465,7 +10465,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le cartouche d’un espace fournit les informations essentielles pour identifier l’espace et communiquer avec l’organisme associé et il contient toujours type nom plancher plafond et fréquence d’appel",
       "level": "bp_"
     },
     {
@@ -10485,7 +10485,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Dans le cadre fédéral la pente école impose obligatoirement la présence d’un moniteur et un pilote breveté ne peut pas assurer cette fonction",
       "level": "bp_"
     },
     {
