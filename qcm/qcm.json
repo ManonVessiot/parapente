@@ -10505,7 +10505,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Pour savoir si un exercice militaire est en cours il faut consulter les sources officielles du SIA via SUP AIP et NOTAM car ce sont les seules informations fiables et actualisées",
       "level": "bp_"
     },
     {
@@ -10529,7 +10529,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Loin du relief le dépassement se fait par la droite ou la gauche.",
       "level": "bp_"
     },
     {
@@ -10549,7 +10549,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Un FL est une altitude pression réglée sur l’atmosphère standard ce qui donne une référence commune pour la séparation verticale mais l’altitude réelle varie selon les conditions du jour",
       "level": "bp_"
     },
     {
@@ -10569,7 +10569,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les évènements sportifs culturels ou politiques peuvent modifier temporairement l’espace aérien via des ZRT ou ZIT et ce sont ces restrictions qui s’imposent aux pilotes de vol libre",
       "level": "bp_"
     },
     {
@@ -10593,7 +10593,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les horaires d’activation des zones R se trouvent dans les documents officiels du SIA au dos des cartes 1/250 000 dans le complément aux cartes et dans l’eAIP car ce sont les sources réglementaires à jour pour la navigation aérienne",
       "level": "bp_"
     },
     {
@@ -10613,7 +10613,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les règles de vol imposent de dégager par la droite en croisement et de maintenir une distance suffisante pour éviter tout risque d’abordage.",
       "level": "bp_"
     },
     {
@@ -10637,7 +10637,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En vol de pente la règle est simple l’aile qui a la pente à sa droite est prioritaire car elle ne peut pas se décaler vers le relief et c’est donc à l’autre aile de manœuvrer",
       "level": "bp_"
     },
     {
@@ -10657,7 +10657,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le label EFVL ou CEFVL atteste que l’école respecte les standards fédéraux mais il ne remplace pas les qualifications des moniteurs et ne permet pas d’enseigner sans eux",
       "level": "bp_"
     },
     {
@@ -10677,7 +10677,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "ASFC et AGL sont des hauteurs sol et AMSL est une altitude mer et seules les altitudes pression varient avec la pression mais pas les hauteurs sol",
       "level": "bp_"
     },
     {
@@ -10701,7 +10701,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La coopération entre accompagnateurs fédéraux et écoles est essentielle pour garantir une progression cohérente et sécurisée des nouveaux pilotes et elle renforce l’efficacité de chacun dans son rôle",
       "level": "bp_"
     },
     {
@@ -10725,7 +10725,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’état émotionnel d’un pilote dépend de facteurs internes comme la préparation mentale et la vie personnelle et de facteurs externes comme la météo mais pas d’éléments sans lien avec le vol comme le carburant du véhicule",
       "level": "bp_"
     },
     {
@@ -10749,7 +10749,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Face à un doute sur les conditions on renonce ou on demande un avis compétent mais on ne décolle jamais pour tester la masse d’air et on ne se fie pas aux autres pilotes, même si les observer permet de mieux évaluer ce qui se passe en l'air",
       "level": "bp_"
     },
     {
@@ -10773,7 +10773,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La prise de décision dépend de facteurs humains comme l’expérience et le stress qui modifient la perception et le jugement mais pas d’éléments sans lien psychologique comme la température ou la couleur de l’aile",
       "level": "bp_"
     },
     {
@@ -10797,7 +10797,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les objectifs de vol se basent sur ton état du jour les conditions et ton niveau mais jamais sur ce que font les autres pilotes car chacun doit voler selon ses propres capacités et marges de sécurité",
       "level": "bp_ bpc_"
     },
     {
@@ -10821,7 +10821,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’attitude la plus dangereuse est le déni des risques car elle supprime la vigilance et empêche d’adapter ses décisions à la réalité des conditions",
       "level": "bp_ bpc_"
     },
     {
@@ -10845,7 +10845,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Après une situation extrême on se remobilise en agissant sur le mental respiration hydratation et verbalisation tout en gardant le contrôle de l’aile et en évitant toute action qui détournerait l’attention du pilotage",
       "level": "bp_"
     },
     {
@@ -10865,7 +10865,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La connaissance de soi en tant que pilote englobe les facteurs non techniques les facteurs techniques et la capacité à renoncer car ces trois dimensions définissent ton niveau réel et ta marge de sécurité",
       "level": "bp_"
     },
     {
@@ -10889,7 +10889,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "L’expérience influence les facteurs humains en réduisant l’inconnu en améliorant la gestion de la peur et en affinant la prise de décision mais elle ne supprime jamais totalement les erreurs humaines",
       "level": "bp_"
     },
     {
@@ -10913,7 +10913,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Quand la météo se dégrade il faut éviter les biais qui poussent à voler coûte que coûte et garder une approche rationnelle en prévoyant un plan B ou en renonçant sans frustration",
       "level": "bp_"
     },
     {
@@ -10937,7 +10937,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La gestion du stress influence la qualité des décisions et une mauvaise gestion peut pousser à agir trop vite ce qui dégrade la sécurité en vol",
       "level": "bp_"
     },
     {
@@ -10961,7 +10961,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En situation d’urgence l’indifférence et la panique sont les comportements humains les plus problématiques car ils empêchent d’agir correctement ou poussent à agir trop vite",
       "level": "bp_"
     },
     {
@@ -10985,7 +10985,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La performance d’un pilote baisse avec l’alcool et le manque de sommeil car ils altèrent les capacités mentales et physiques tandis que la connaissance et l’entraînement renforcent la sécurité et l’efficacité en vol",
       "level": "bp_"
     },
     {
@@ -11005,7 +11005,7 @@
           "points": 4
         }
       ],
-      "explanation": "",
+      "explanation": "Les compétences techniques et non techniques se construisent et évoluent en continu car la progression d’un pilote est un processus permanent et jamais figé",
       "level": "bp_"
     },
     {
@@ -11029,7 +11029,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Sur un décollage fréquenté tu gères ton stress en te recentrant sur toi respiration mentalisation et bulle personnelle mais jamais en te précipitant car cela augmente le risque et dégrade la qualité du geste",
       "level": "bp_"
     },
     {
@@ -11053,7 +11053,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le débriefing après le vol améliore la progression et la sécurité grâce au partage à l’analyse et à l’identification des points à renforcer sans générer d’anxiété",
       "level": "bp_"
     },
     {
@@ -11077,7 +11077,7 @@
           "points": -3
         }
       ],
-      "explanation": "",
+      "explanation": "Le bon choix est une aile adaptée à ton niveau actuel car elle correspond à ta pratique réelle et préserve ta marge de sécurité. Si elle est d'occasion et moins cher c'est tant mieux, mais cela ne doit pas conditionner ton choix.\nLes autres options créent un décalage dangereux entre l’aile et le pilote",
       "level": "bp_"
     },
     {
@@ -11101,7 +11101,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Après une nuit courte la fatigue réduit la performance et augmente les risques il faut donc limiter l’engagement en vol ou rester au sol en choisissant une option plus sûre comme la navette ou un vol très simple. Mais on ne décolle pas sans être très attentif à son état de fatigue",
       "level": "bp_"
     },
     {
@@ -11121,7 +11121,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Avant le vol la prise de décision est fortement influencée par la confiance la fatigue et l’excitation car ces facteurs modifient la perception du risque et la qualité du jugement",
       "level": "bp_"
     },
     {
@@ -11145,7 +11145,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Pour prendre en main une nouvelle voile il faut réduire les inconnues et les facteurs de charge mentale en volant tôt en conditions calmes sur un site connu avec ton matériel habituel et en évitant les conditions fortes",
       "level": "bp_"
     },
     {
@@ -11169,7 +11169,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les accidents liés à l’erreur humaine proviennent surtout d’une mauvaise analyse de la météo d’un mauvais jugement en vol ou d’un choix de site inadapté car ces décisions structurent tout le niveau de risque du vol",
       "level": "bp_"
     },
     {
@@ -11193,7 +11193,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La fatigue dégrade la performance en diminuant la décision la vigilance et la concentration ce qui augmente le risque en vol",
       "level": "bp_"
     },
     {
@@ -11217,7 +11217,7 @@
           "points": 0
         }
       ],
-      "explanation": "",
+      "explanation": "La préparation mentale repose sur la visualisation et la gestion émotionnelle car elles renforcent la clarté d’esprit et la qualité des décisions avant le vol",
       "level": "bp_ bpc_"
     },
     {
@@ -11241,7 +11241,7 @@
           "points": -3
         }
       ],
-      "explanation": "",
+      "explanation": "Les compétences essentielles d’un pilote reposent sur la théorie et le pilotage car ce sont elles qui garantissent la compréhension des conditions et la maîtrise de l’aile en vol",
       "level": "bp_"
     },
     {
@@ -11265,7 +11265,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’optimisme excessif est un facteur humain classique qui dégrade l’évaluation météo car il pousse à voir les conditions meilleures qu’elles ne le sont réellement ce qui augmente le risque en vol. Le pessimisme peut aussi mener à une mauvaise évaluation des conditions météorologiques, mais nous pousse à ne pas voler donc n'est pas dangereux en soit",
       "level": "bp_"
     },
     {
@@ -11289,7 +11289,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La gestion du stress repose sur la préparation mentale et la respiration car elles recentrent le pilote et améliorent la lucidité tandis que les stimulants ou les distractions augmentent le risque",
       "level": "bp_"
     },
     {
@@ -11313,7 +11313,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "En approche le regard doit rester mobile pour analyser l’espace relever en finale pour gérer la vitesse et conscient des obstacles pour éviter les surprises tandis que fixer un point unique réduit la qualité de l’information visuelle",
       "level": "bp_"
     },
     {
@@ -11337,7 +11337,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Être en rapport avec d’autres pilotes est utile pour progresser et sécuriser sa pratique mais jamais pour déléguer son analyse car chaque pilote doit rester maître de ses décisions",
       "level": "bp_"
     },
     {
@@ -11361,7 +11361,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Quand tu es bas avec un obstacle majeur comme une forêt tu dois basculer immédiatement sur ton terrain de secours car c’est la seule option sûre et anticipée qui préserve ta marge de sécurité",
       "level": "bp_"
     },
     {
@@ -11385,7 +11385,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Devenir pilote demande décision, humilité et connaissance de soi car ce trio permet d’évaluer correctement les risques et d’adapter son vol tandis que la sur‑confiance mène à des erreurs de jugement",
       "level": "bp_"
     },
     {
@@ -11409,7 +11409,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Pour gérer la fatigue lors de vols successifs il faut récupérer réellement en prenant des pauses car seule la récupération restaure la vigilance et la qualité de décision tandis que l’ignorance ou les stimulants augmentent le risque",
       "level": "bp_"
     },
     {
@@ -11433,7 +11433,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les compétences non techniques regroupent le jugement, l’organisation mentale et la culture de sécurité tandis que les compétences techniques concernent le pilotage pur comme le SIV",
       "level": "bp_"
     },
     {
@@ -11453,7 +11453,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La pratique du vol libre en parc national est encadrée par des règles variables selon les parcs avec souvent des hauteurs minimales de survol mais jamais une interdiction générale ce qui impose une vérification préalable des réglementations locales",
       "level": "bp_ bpc_"
     },
     {
@@ -11477,7 +11477,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L'acronyme ZSM signifie Zone de Sensibilité Majeure",
       "level": "bp_"
     },
     {
@@ -11501,7 +11501,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un parc national est structuré en plusieurs zones avec des niveaux de protection différents dont la zone cœur l’aire d’adhésion et parfois des réserves intégrales ce qui exclut l’idée d’un statut unique sur toute la surface",
       "level": "bp_"
     },
     {
@@ -11525,7 +11525,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le dérangement des espèces par les libéristes est généralement observé autour de 300 m ce qui montre que même à distance importante le survol peut impacter la faune et impose de respecter les zones sensibles",
       "level": "bp_"
     },
     {
@@ -11541,7 +11541,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Les bulles de quiétude sont mises en place pour protéger la zone de reproduction de rapaces",
       "level": "bp_"
     },
     {
@@ -11561,7 +11561,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En réserve naturelle le décollage est en principe interdit sauf rares dérogations très encadrées ce qui impose de vérifier précisément la réglementation locale avant toute pratique",
       "level": "bp_"
     },
     {
@@ -11581,7 +11581,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un rapace qui bat des ailes montre que l’air ne porte pas ce qui signale des conditions peu favorables au vol libre et à la montée en thermique",
       "level": "bp_ bpc_"
     },
     {
@@ -11601,7 +11601,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’identification d’un rapace en vol repose surtout sur la silhouette et le comportement car ce sont les éléments visibles et distinctifs même à grande distance",
       "level": "bp_ bpc_"
     },
     {
@@ -11629,7 +11629,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un rapace qui alterne piqués et prises d’altitude exprime un comportement sensible lié à la reproduction ou à la défense du territoire ce qui impose de s’éloigner immédiatement et ce type de vol correspond au vol en festons",
       "level": "bp_"
     },
     {
@@ -11649,7 +11649,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La période de reproduction est la phase la plus sensible pour la faune car elle implique l’accouplement la nidification et l’élevage des jeunes ce qui rend les animaux vulnérables au dérangement sur toute sa durée",
       "level": "bp_ bpc_"
     },
     {
@@ -11673,7 +11673,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un parc national protège la nature tout en sensibilisant le public et en permettant un tourisme maîtrisé ce qui exclut l’idée d’interdiction totale des activités humaines",
       "level": "bp_"
     },
     {
@@ -11693,7 +11693,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les APPB et APPHN sont des outils de protection ciblée de la biodiversité et peuvent restreindre le vol libre lorsque celui‑ci représente un risque de dérangement pour les espèces ou les habitats sensibles",
       "level": "bp_"
     },
     {
@@ -11709,7 +11709,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La bulle de quiétude n’est pas une infraction automatique mais un cadre de prévention du dérangement et si le vol provoque un dérangement d’espèce protégée cela devient une infraction",
       "level": "bp_"
     },
     {
@@ -11737,7 +11737,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La reproduction dépend des espèces mais elle se situe souvent au printemps et peut durer longtemps, plus de 6 mois, ce qui rend les animaux sensibles au dérangement sur une période étendue",
       "level": "bp_"
     },
     {
