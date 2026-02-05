@@ -7817,7 +7817,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Lorsqu’une particule non saturée s’élève sans échange de chaleur avec l’air ambiant, elle suit le gradient adiabatique sec, soit environ 1 °C / 100 m de refroidissement.",
       "level": "bp_"
     },
     {
@@ -7837,7 +7837,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le front chaud donne des précipitations larges, régulières et durables, souvent sous forme de bruine ou pluie faible à modérée. L'air est très humide avec un système nuageux important (succession classique Ci → Cs → As → Ns). \nLe front chat arrive par le haut !",
       "level": "bp_"
     },
     {
@@ -7861,7 +7861,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les cumulus sont des nuages typiques de l’instabilité, avec un développement vertical marqué.",
       "level": "bp_"
     },
     {
@@ -7881,7 +7881,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Pour amener une particule d’air non saturée à saturation, il faut rapprocher sa température du point de rosée.\nLe moyen le plus efficace est de la refroidir.",
       "level": "bp_"
     },
     {
@@ -7901,7 +7901,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le phénomène de restitution correspond au moment où les pentes, encore chaudes après l’arrêt du soleil, continuent à rayonner de la chaleur et relancent une petite convection résiduelle, douce et régulière, donc le soir.",
       "level": "bp_"
     },
     {
@@ -7921,7 +7921,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les nuages qui produisent généralement des précipitations sont les cumulonimbus et les nimbostratus.",
       "level": "bp_"
     },
     {
@@ -7941,7 +7941,7 @@
           "points": 0
         }
       ],
-      "explanation": "",
+      "explanation": "L’inversion de température correspond strictement à une situation où la température augmente avec l’altitude, ce qui est l’inverse du comportement normal de l’atmosphère. C'est donc une couche d'air chaud qui est au-dessus d'une couche d'air froid. Cela a pour conséquence de bloquer les ascendances.",
       "level": "bp_"
     },
     {
@@ -7965,7 +7965,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Un thermique peut être visible sous un cumulus, invisible quand l’air est trop sec, et il est toujours déporté par le vent qui incline sa colonne d’air chaud.\nIl n’est jamais matérialisé par des stratus, qui indiquent au contraire de la stabilité.\nEn pratique, on vole donc souvent dans des thermiques bleus ou décalés sous le vent du relief.",
       "level": "bp_"
     },
     {
@@ -7989,7 +7989,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Un nuage orographique est un nuage fixe formé par de l’air humide forcé de monter sur un relief, ce qui le refroidit et le condense.",
       "level": "bp_"
     },
     {
@@ -8009,7 +8009,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "En atmosphère humide, les ascendances sont souvent matérialisées par des nuages car elle monte jusqu'à devenir des gouttelettes d'eau qui forme les nuages.",
       "level": "bp_"
     },
     {
@@ -8029,7 +8029,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le brouillard d’advection se forme quand de l’air humide se déplace au‑dessus d’un sol plus froid, ce qui le refroidit jusqu’à la saturation.",
       "level": "bp_"
     },
     {
@@ -8049,7 +8049,7 @@
           "points": 4
         }
       ],
-      "explanation": "",
+      "explanation": "Le brouillard de rayonnement apparaît quand le sol se refroidit fortement la nuit, ce qui refroidit l’air au contact jusqu’à la saturation, sans vent ou avec un vent très faible.",
       "level": "bp_"
     },
     {
@@ -8069,7 +8069,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les zones de cisaillement apparaissent dès qu’il existe une variation brutale de vitesse ou de direction du vent sur une courte distance. Donc au niveau de thermiques, mais aussi lorsque deux flux qui se rencontrent, ils créent un fort gradient de vent (C'est une confluence), ainsi que lors d'une traversée d'une inversion, le vent change souvent brutalement.",
       "level": "bp_"
     },
     {
@@ -8089,7 +8089,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La brise de pente descendante (vent catabatique) est un phénomène local, dû au refroidissement du sol qui entraîne l’air plus froid à glisser vers le bas par gravité.",
       "level": "bp_"
     },
     {
@@ -8109,7 +8109,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une bulle d’air ne s’élève que si elle est plus chaude que l’air environnant, donc moins dense et plus légère.",
       "level": "bp_"
     },
     {
@@ -8129,7 +8129,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un front froid génère des nuages épais, souvent un cumulonimbus, qui s’étend sur plusieurs étages et combine à la fois des caractères cumuliformes et stratiformes.\nIl ne s’agit donc ni de nuages isolés de type cumuliformes, ni de couches minces stratiformes.",
       "level": "bp_"
     },
     {
@@ -8149,7 +8149,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La chaleur peut se transmettre par rayonnement, par déplacement de matière (convection) ou par contact direct (conduction). Ce sont les trois modes physiques de transfert thermique présents dans l’atmosphère.",
       "level": "bp_"
     },
     {
@@ -8169,7 +8169,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’hectopascal est l’unité standard pour exprimer la pression de l’air, notamment sur les cartes météo et dans les altimètres.",
       "level": "bp_"
     },
     {
@@ -8193,7 +8193,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les nuages les plus intéressants pour la performance sont les cumulus, car ils matérialisent des ascendances franches, régulières et bien structurées. Les nuages stratiformes ou pluvieux, eux, traduisent une atmosphère stable ou perturbée, sans conditions favorables au vol de distance.",
       "level": "bp_"
     },
     {
@@ -8213,7 +8213,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Les turbulences dangereuses apparaissent surtout là où il existe un fort cisaillement ou des mouvements d’air rotatifs puissants, comme sous une inversion active ou dans les rotors liés aux ondes de relief. Les stratus, eux, traduisent une atmosphère stable et peu turbulente.",
       "level": "bp_"
     },
     {
@@ -8233,7 +8233,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Autour d’une haute pression, le vent tourne dans le sens des aiguilles d’une montre au nord, alors qu’il tourne dans le sens inverse au sud. C’est la combinaison entre la force de pression et la force de Coriolis qui impose cette rotation.",
       "level": "bp_"
     },
     {
@@ -8253,7 +8253,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La vapeur d’eau est un gaz totalement invisible ; ce que l’on voit (buée, brouillard, rosée) correspond toujours à de l’eau liquide formée après condensation, jamais à la vapeur elle‑même.",
       "level": "bp_"
     },
     {
@@ -8277,7 +8277,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un thermique bleu est une ascendance non matérialisée par un nuage, typique d’une atmosphère instable où l’air monte mais ne condense pas. Il n’est pas plus dangereux qu’un thermique classique, mais simplement plus difficile à repérer.",
       "level": "bp_"
     },
     {
@@ -8301,7 +8301,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une perturbation est constituée d’un front chaud, d’un front froid, puis d’un front occlus lorsque les deux se rejoignent. Le « front tempéré » n’est pas un type de front reconnu.",
       "level": "bp_"
     },
     {
@@ -8321,7 +8321,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "La force de Coriolis dévie systématiquement les vents vers la droite au nord et vers la gauche au sud, en raison de la rotation de la Terre.",
       "level": "bp_"
     },
     {
@@ -8345,7 +8345,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Quand le ciel se couvre progressivement de cirrus puis de cirrostratus denses, cela signale l’approche d’un front chaud, typiquement suivi d’une couverture nuageuse continue et de précipitations. Ce voile atténue le soleil et réduit la convection, il ne la renforce pas.",
       "level": "bp_"
     },
     {
@@ -8365,7 +8365,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Une confluence apparaît dès que plusieurs flux d’air se rejoignent, que ce soit entre deux brises, entre une brise et le vent météo, ou le long d’un front de brise de mer. C’est la convergence horizontale des vents qui définit ce phénomène.",
       "level": "bp_"
     },
     {
@@ -8385,7 +8385,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Quand deux masses d’air de températures différentes se rencontrent, l’air chaud monte au‑dessus de l’air froid, car il est plus léger. Les deux masses ne se mélangent pas directement : elles forment une surface de discontinuité, ce qui est à l’origine des fronts.",
       "level": "bp_"
     },
     {
@@ -8409,7 +8409,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un halo autour du Soleil ou de la Lune apparaît lorsque la lumière traverse des cristaux de glace présents dans les cirrostratus, nuages qui précèdent généralement un front chaud et annoncent une dégradation progressive du temps.",
       "level": "bp_"
     },
     {
@@ -8429,7 +8429,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les ondes de ressaut se forment lorsque le vent augmente en altitude et que l’atmosphère est stable, ce qui permet à l’air dévié par un relief d’osciller en aval. Une atmosphère instable empêche ces oscillations organisées.",
       "level": "bp_"
     },
     {
@@ -8449,7 +8449,7 @@
           "points": 0
         }
       ],
-      "explanation": "",
+      "explanation": "Un anticyclone est défini par une pression atmosphérique élevée, ce qui favorise un temps stable et des vents généralement faibles, mais ce n’est pas ce critère qui le définit.",
       "level": "bp_"
     },
     {
@@ -8473,7 +8473,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le nom d’un vent indique la direction d’où il vient.  \nDonc un vent du 225° vient du sud‑ouest ou du cap 225° et souffle vers le nord‑est.",
       "level": "bp_"
     },
     {
@@ -8493,7 +8493,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "À pression et volume constants, la température détermine la densité. L'air froid est plus dense et donc plus lourd que l'air chaud.\nC’est cette différence de densité qui explique la montée de l’air chaud et la descente de l’air froid dans l’atmosphère.",
       "level": "bp_"
     },
     {
@@ -8513,7 +8513,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Dans une masse d’air plutôt stable, la convection n’est pas spontanée, mais elle peut apparaître si un forçage local (pente ensoleillée, contraste thermique marqué) permet à une bulle d’air de dépasser la couche stable initiale. C’est exactement ce qu’on observe en vol libre sur les pentes bien exposées ou lors de journées où le soleil chauffe suffisamment le sol pour créer des ascendances malgré la stabilité générale.",
       "level": "bp_"
     },
     {
@@ -8537,7 +8537,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les ascendances thermiques sont des mouvements d’air chaud qui montent sous l’effet du réchauffement du sol. Elles peuvent être locales ou organisées, droites ou inclinées, et sont toujours accompagnées de descendances périphériques. Les contrastes de surface jouent un rôle majeur dans leur déclenchement.",
       "level": "bp_"
     },
     {
@@ -8557,7 +8557,7 @@
           "points": 0
         }
       ],
-      "explanation": "",
+      "explanation": "Les orages isolés se développent surtout en marais barométrique, quand l’atmosphère est peu structurée, chaude, humide, et que la convection peut s’organiser localement sans être entraînée par une perturbation.\nLors d'un anticyclone l’air est stable, la convection est limitée, les orages sont rares. et Une dépression donne plutôt des orages organisés, intégrés à une perturbation, pas des orages isolés.",
       "level": "bp_"
     },
     {
@@ -8577,7 +8577,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le fœhn crée un air chaud, sec et turbulent sous le vent du relief. Cette zone est souvent dégagée, car l’assèchement dissout les nuages.",
       "level": "bp_"
     },
     {
@@ -8597,7 +8597,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les isobares servent uniquement à représenter la pression atmosphérique et donc à visualiser la structure du champ de pression : anticyclones, dépressions et force/direction du vent associée.",
       "level": "bp_"
     },
     {
@@ -8621,7 +8621,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le variomètre de base est un instrument barométrique : il ne mesure ni le vent ni la masse d’air, seulement les changements de pression (variations de pression statique) qui permettent d’en déduire la vitesse verticale de l’aéronef.",
       "level": "bp_"
     },
     {
@@ -8645,7 +8645,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "Le choix d’une voile repose sur des critères techniques et pédagogiques : la catégorie de la voile, le niveau réel du pilote. Et potentiellement le type de vole ou de site principalement fréquenté (cross/accro...)\nLe coût ou l’absence de contrôle technique n’entrent jamais dans les critères de choix.",
       "level": "bp_"
     },
     {
@@ -8665,7 +8665,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’allongement exprime la finesse géométrique d’une aile : plus l’envergure est grande par rapport à la surface, plus l’aile est allongée. C’est un paramètre clé pour la performance… et pour l’exigence en pilotage. Elle est égale au carré de l'envergure divisé par la surface.",
       "level": "bp_"
     },
     {
@@ -8685,7 +8685,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les constructeurs donnent en général deux surfaces : la surface à plat (intrados posé au sol), la surface projetée (voile gonflée, vue de dessus).\nLes deux sont correctes, mais la surface à plat reste la référence principale.",
       "level": "bp_"
     },
     {
@@ -8709,7 +8709,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Pour garder un parachute en bon état, on veille à :\nun stockage sec,\nun repliage régulier,\nun remplacement systématique des élastiques,\nle respect strict des préconisations constructeur.\nC’est ce qui garantit un secours fiable le jour où on en a besoin.",
       "level": "bp_"
     },
     {
@@ -8733,7 +8733,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Pour rendre un secours réellement efficace, il faut :\nun entretien régulier (aération + repliage),\nun geste de déclenchement maîtrisé,\nune procédure d’affalement connue,\net surtout éviter toute manipulation dangereuse comme un lavage machine.\nC’est l’ensemble de ces points qui garantit une ouverture fiable le jour où il est nécessaire.",
       "level": "bp_"
     },
     {
@@ -8757,7 +8757,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Pour qu’un secours soit réellement efficace, il faut :\nune prévol rigoureuse (poignée + container),\nune connaissance précise de son utilisation,\nun entretien régulier conforme aux recommandations constructeur (a minima 1 fois par an).\nC’est ce qui garantit un déclenchement fiable le jour où il devient indispensable.",
       "level": "bp_"
     },
     {
@@ -8781,7 +8781,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "L’emport d’un parachute de secours implique :\nun geste d’extraction maîtrisé,\nune prévol stricte,\nla conscience du risque d’ouverture intempestive,\nune préparation sérieuse pour garantir son efficacité.\nC’est un équipement vital qui demande rigueur et anticipation.",
       "level": "bp_"
     },
     {
@@ -8805,7 +8805,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le système de fermeture du container extérieur doit être :\nfiable,\ncontrôlé avant chaque vol,\nverrouillé par une aiguille,\nlibérable immédiatement lors de la traction sur la poignée.\nC’est un élément critique pour garantir une extraction rapide et sûre du parachute de secours.",
       "level": "bp_"
     },
     {
@@ -8829,7 +8829,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Les secours hémisphériques / non‑ronds sont évalués selon :\nla norme CEN,\nleur stabilité en descente,\nleur taux de chute,\nleur fiabilité d’ouverture (mais non automatique).\nCe sont des critères fondamentaux pour garantir une descente la plus sûre possible.",
       "level": "bp_"
     },
     {
@@ -8853,7 +8853,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "La norme EN 926‑1 et 926‑2 évalue :\nla résistance mécanique (tests au sol),\nle comportement en vol (28 manœuvres),\npuis attribue une catégorie A à D selon le niveau d’exigence.\nC’est la référence officielle pour la certification des parapentes.",
       "level": "bp_"
     },
     {
@@ -8877,7 +8877,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’emport du secours est :\nobligatoire en compétition mais pas en sortie club,\nfortement recommandé partout ailleurs,\nlibre d’utilisation,\net nécessite une préparation sérieuse pour être efficace.\nC’est un élément essentiel de la sécurité en vol libre.",
       "level": "bp_"
     },
     {
@@ -8901,7 +8901,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’attention du pilote envers son secours repose sur :\nun entretien régulier,\nune connaissance du montage dans la sellette,\nune préparation mentale et gestuelle à son utilisation.\nLe repliage peut être délégué, mais la compréhension globale du système reste essentielle pour la sécurité.",
       "level": "bp_"
     },
     {
@@ -8925,7 +8925,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les protections de sellette sont conçues pour réduire la gravité de certains impacts, pas pour permettre de voler plus vite, plus bas ou plus engagé.\nElles améliorent la sécurité passive, mais ne remplacent jamais la gestion du risque et la maîtrise du pilotage.",
       "level": "bp_"
     },
     {
@@ -8949,7 +8949,7 @@
           "points": 1
         }
       ],
-      "explanation": "",
+      "explanation": "Le choix d’une voile repose sur :\nla catégorie officielle,\nl’avis de professionnels compétents,\ndes informations complémentaires comme celles de la presse spécialisée.\nOn ne choisit jamais une voile en fonction d’un niveau futur, mais en fonction du niveau maîtrisé aujourd’hui.",
       "level": "bp_"
     },
     {
@@ -8973,7 +8973,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’altimètre donne une altitude estimée à partir de la pression, en supposant une atmosphère standard, et cette estimation varie avec les conditions réelles de pression—d’où l’importance du recalage.",
       "level": "bp_"
     },
     {
@@ -8993,7 +8993,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’anémomètre est un instrument qui mesure uniquement la vitesse du vent, qu’il soit relatif (en vol) ou réel (au sol), mais jamais sa direction.",
       "level": "bp_"
     },
     {
@@ -9017,7 +9017,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Assumer l’emploi du secours, c’est :\ncomprendre toutes les étapes de son utilisation,\nvoler avec une sellette réglée correctement,\nêtre préparé mentalement et techniquement,\nsavoir gérer les interactions voile–secours comme l’effet miroir.\nC’est une compétence complète, qui dépasse largement le simple geste d’extraction, mais ne necessitant pas une étude à fond du sujet.",
       "level": "bp_"
     },
     {
@@ -9041,7 +9041,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Des commandes réglées trop tendues :\nfreinent la voile en permanence,\nréduisent la vitesse et la stabilité,\naugmentent fortement les risques d’incidents,\nperturbent le gonflage et l’accélération.\nC’est un réglage critique qui doit toujours être vérifié et corrigé si nécessaire.",
       "level": "bp_"
     },
     {
@@ -9061,7 +9061,7 @@
           "points": 0
         }
       ],
-      "explanation": "",
+      "explanation": "Un altimètre mesure la pression et la convertit en altitude, selon un modèle standardisé.\nIl ne fournit aucune donnée sur l’humidité, mais son fonctionnement repose bien sur la variation verticale de pression dans l’atmosphère. Il donne donc, indirectement, le gradient vertical de pression atmosphérique.",
       "level": "bp_"
     },
     {
@@ -9085,7 +9085,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le container de secours peut être placé :\ndans le dos,\nsous l’assise,\nen ventral,\nou près des points d’accroche selon les modèles.\nL’important est que l’extraction soit fiable, accessible et efficace dans la configuration choisie.",
       "level": "bp_"
     },
     {
@@ -9105,7 +9105,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Le variomètre sert uniquement à mesurer la vitesse verticale, ce qui permet au pilote de détecter les ascendances et les descendances.\nIl ne donne ni la direction, ni l’altitude.",
       "level": "bp_"
     },
     {
@@ -9129,7 +9129,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’emport du parachute de secours se justifie par des situations critiques et irréversibles, où la voile ne peut plus assurer la sécurité du pilote : rupture, incident majeur incontrôlable, collision.\nIl n’est jamais destiné à gérer la fatigue ou le confort du pilote.",
       "level": "bp_"
     },
     {
@@ -9153,7 +9153,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Le variomètre de base sert uniquement à mesurer la vitesse verticale de l’aile, donc du pilote, par rapport au sol.\nIl ne fournit ni altitude, ni direction, ni informations sur la masse d’air elle‑même.",
       "level": "bp_"
     },
     {
@@ -9177,7 +9177,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "L’altimètre est un instrument dépendant de la pression atmosphérique, donc il doit être recalé régulièrement et peut être réglé sur différentes références selon le besoin du pilote. Il doit toujours être comparé et réglé par rapport aux valeurs connues (décollage, points reconnus, atterrissage).",
       "level": "bp_"
     },
     {
@@ -9201,7 +9201,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le niveau d’accessibilité d’une voile est une combinaison de : la technique du pilote, les tests officiels, les informations du constructeur, la charge alaire réelle.\nC’est l’ensemble de ces facteurs qui détermine si une voile est réellement adaptée à un pilote donné.",
       "level": "bp_"
     },
     {
@@ -9225,7 +9225,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Le sticker CEN est une étiquette d’homologation obligatoire, qui renseigne sur les résultats des tests, la catégorie, la fourchette de poids, et donc indirectement sur le niveau de pilotage requis.",
       "level": "bp_"
     },
     {
@@ -9249,7 +9249,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une voile neuve qui tire d’un côté doit être diagnostiquée (test de poids), jamais bricolée, renvoyée si nécessaire pour contrôle.\nOn ne corrige pas un défaut de voile en modifiant la sellette ou les élévateurs.",
       "level": "bp_"
     },
     {
@@ -9273,7 +9273,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "La norme CEN EN 926‑1/2 décrit le comportement testé, impose la stabilité de fabrication, mais ne garantit ni l’universalité d’usage, ni la compatibilité avec tous les harnais.",
       "level": "bp_"
     },
     {
@@ -9293,7 +9293,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une voile EN A est conçue pour offrir un maximum de tolérance, amortir les turbulences, faciliter l’apprentissage.\nElle n’est pas un passeport pour voler dans des conditions fortes, qui exigent avant tout expérience et jugement.",
       "level": "bp_"
     },
     {
@@ -9317,7 +9317,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Un pilote loisir irrégulier doit privilégier la simplicité et la tolérance du matériel.\nLes voiles A ou B sont les seules offrant une marge de sécurité compatible avec une pratique non continue.",
       "level": "bp_"
     },
     {
@@ -9337,7 +9337,7 @@
           "points": 2
         }
       ],
-      "explanation": "",
+      "explanation": "Dès qu’un comportement anormal apparaît — au gonflage ou en vol — la priorité est de faire contrôler l’aile par un atelier spécialisé.\nEt pour la sécurité, une sellette doit toujours être équipée d’un véritable parachute de secours.",
       "level": "bp_"
     },
     {
@@ -9361,7 +9361,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Les zones les plus sollicitées d’une aile sont celles qui supportent la portance principale : l’avant du profil et les lignes avant (A et B).\nL’arrière du profil et les suspentes D travaillent beaucoup moins.",
       "level": "bp_"
     },
     {
@@ -9381,7 +9381,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "Lorsqu’une aile spirale sous vous, la priorité est de maintenir des trajectoires compatibles et prévisibles.\nEnrouler dans le même sens est la seule réponse conforme aux règles de sécurité en thermique, même si attendre qu'elle passe au dessus peut être une bonne pratique.",
       "level": "bp_"
     },
     {
@@ -9401,7 +9401,7 @@
           "points": 3
         }
       ],
-      "explanation": "",
+      "explanation": "La déclaration d’accident est requise lorsqu’il y a secours / hospitalisation, blessure d’un tiers.\nLes dommages matériels seuls ne suffisent pas à déclencher l’obligation.",
       "level": "bp_"
     },
     {
@@ -9421,7 +9421,7 @@
           "points": -3
         }
       ],
-      "explanation": "",
+      "explanation": "La validation pratique du brevet de pilote relève exclusivement d’un directeur technique d'une école française de vol libre, car c’est le seul cadre habilité à évaluer et certifier les compétences techniques en vol.",
       "level": "bp_"
     },
     {
@@ -9437,7 +9437,7 @@
           "points": 6
         }
       ],
-      "explanation": "",
+      "explanation": "En pratique loisir, la FFVL impose uniquement la lecture du formulaire d’information médicale, sans obligation de certificat médical, même si celui ci est généralement demandé par l'école.",
       "level": "bp_"
     },
     {
@@ -9457,7 +9457,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Au‑dessus de 900 m mer (ou 300 m sol en montagne), en espace non contrôlé, on applique les VMC complètes :\n5 km de visibilité sous FL100,\n8 km au‑dessus,\n300 m / 1500 m d’espacement nuages.",
       "level": "bp_"
     },
     {
@@ -9477,7 +9477,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une ZIT active = interdiction totale de pénétrer.\nSeule la désactivation officielle (NOTAM) peut la rendre traversable.",
       "level": "bp_"
     },
     {
@@ -9501,7 +9501,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "L’accompagnateur fédéral agit auprès de pilotes licenciés, assurés, et ayant déjà un socle technique validé (niveau vert + brevet initial).\nIl ne peut pas intervenir auprès de pilotes non licenciés.",
       "level": "bp_"
     },
     {
@@ -9521,7 +9521,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Une école non reconnue peut enseigner, mais elle ne peut délivrer aucune validation fédérale (brevet initial, brevet de pilote, brevet confirmé).",
       "level": "bp_"
     },
     {
@@ -9541,7 +9541,7 @@
           "points": -6
         }
       ],
-      "explanation": "",
+      "explanation": "Pour une association loi 1901, l’assemblée générale annuelle est indispensable pour valider la gestion, maintenir la transparence et respecter les statuts.",
       "level": "bp_"
     },
     {

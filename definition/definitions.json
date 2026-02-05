@@ -634,5 +634,9 @@
   {
     "nom": "foehn",
     "definition": "Le foehn est un vent chaud, sec et turbulent qui souffle sous le vent d’un relief lorsque de l’air humide est forcé de monter au vent, se refroidit, condense et précipite.\nEn redescendant de l’autre côté, cet air désormais sec se réchauffe par compression, ce qui lui donne son caractère chaud et asséchant.\nIl s’accompagne souvent, au vent du relief, d’un nuage orographique typique (mur de foehn)."
+  },
+  {
+    "nom": "Marais barométrique",
+    "definition": "Le terme marais barométrique désigne une vaste zone où la pression atmosphérique varie très peu sur de larges distances et durant plusieurs jours. Ce contexte favorise l’accumulation de nuages convectifs et une faible ventilation des masses d’air, conditions propices à des averses localisées."
   }
 ]
