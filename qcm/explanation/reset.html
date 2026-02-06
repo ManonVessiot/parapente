@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM reset</title>
+</head>
+
+<body>
+    <script>
+
+        async function start() {
+            const res = await fetch("qcm.json?_=" + Date.now());
+            const json = res.json ? await res.json() : []; // get json
+            questions = json.data; // get data
+
+            questions.forEach(element => {
+                element.explanation = "";
+            });
+
+            // 2. Reconstruit le JSON final
+            const finalJson = {
+                data: questions
+            };
+
+            // 3. Génère un fichier JSON téléchargeable
+            const blob = new Blob(
+                [JSON.stringify(finalJson, null, 2)],
+                { type: "application/json" }
+            );
+
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "qcm.json";
+            a.click();
+
+            URL.revokeObjectURL(url);
+
+            console.log("JSON sauvegardé");
+        }
+        start();
+    </script>
+</body>
+
+</html>

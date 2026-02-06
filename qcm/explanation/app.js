@@ -8,6 +8,10 @@ let show_all = true;
 const LEVELS = ['bpi', 'bp', 'bpc'];
 const CATEGORIES = ['pilotage', 'mecavol', 'meteo', 'materiel', 'reglementation', 'facteursH', 'naturel'];
 
+let dataSource = "server";
+let customQuestions = null;
+let isCustomJsonValid = false;
+
 let titleText = document.getElementById('subtitle').textContent;
 
 async function start() {
@@ -15,21 +19,45 @@ async function start() {
     const levelSelect = document.getElementById('levelSelect');
     level = levelSelect.value;
 
-    const finalJson = localStorage.getItem('finalJson');
-    const qcm = finalJson ? JSON.parse(finalJson) : null;
-    if (qcm) {
-        questions = qcm.data; // get data
-    }
-    else {
+    if (dataSource === "server") {
         const res = await fetch("qcm.json?_=" + Date.now());
-        json = res.json ? await res.json() : []; // get json
+        const json = res.json ? await res.json() : []; // get json
         questions = json.data; // get data
+    }
+
+    if (dataSource === "local") {
+        const json = JSON.parse(localStorage.getItem("qcmData"));
+        questions = json.data;
+    }
+
+    if (dataSource === "custom") {
+        if (!isCustomJsonValid || !customQuestions) {
+            alert("JSON custom invalide");
+            return;
+        }
+        questions = customQuestions;
+        localStorage.setItem("qcmData", JSON.stringify({ data: questions }));
+        document.getElementById("customJsonInput").value = "";
+
+        const dataSourceSelect = document.getElementById("dataSourceSelect");
+        const newOption = document.createElement("option");
+        newOption.value = "local";
+        newOption.text = "LocalStorage";
+
+        // Insérer en 2ème position (index 1)
+        dataSourceSelect.insertBefore(newOption, dataSourceSelect.options[1]);
+        dataSourceSelect.value = "local";
+        dataSource = "local";
+        alert("JSON sauvegarder localement ✔");
     }
 
     // initialize
     currentIndex = -1;
     currentCount = 0;
 
+    document.getElementById('dataSourceLabel').classList.add('hidden');
+    document.getElementById('dataSourceSelect').classList.add('hidden');
+    document.getElementById('customJsonContainer').classList.add('hidden');
     document.getElementById('resetBtn').classList.add('hidden');
     document.getElementById('startBtn').classList.add('hidden'); // Hide Démarrer
     document.getElementById('stopBtn').classList.remove('hidden'); // Show Stop
@@ -89,7 +117,7 @@ function countQuestions() {
 }
 
 function stop() {
-    const finalJson = localStorage.getItem('finalJson');
+    const finalJson = localStorage.getItem('qcmData');
     if (finalJson) document.getElementById('resetBtn').classList.remove("hidden");
     else document.getElementById('resetBtn').classList.add("hidden");
 
@@ -102,6 +130,8 @@ function stop() {
     document.getElementById('startBtn').classList.remove('hidden');
     document.getElementById('showModeLabel').classList.remove('hidden');
     document.getElementById('showModeSelect').classList.remove('hidden');
+    document.getElementById('dataSourceLabel').classList.remove('hidden');
+    document.getElementById('dataSourceSelect').classList.remove('hidden');
 
     // show dropdown
     document.getElementById('levelSelect').classList.remove('hidden');
@@ -291,14 +321,31 @@ function saveJSON() {
     const finalJson = {
         data: questions
     };
-    localStorage.setItem('finalJson', JSON.stringify(finalJson));
+    localStorage.setItem('qcmData', JSON.stringify(finalJson));
 
     alert("Sauvegarde effectuée ✅");
 }
 
 function resetLocalJson() {
-    localStorage.removeItem('finalJson');
+    localStorage.removeItem('qcmData');
     document.getElementById('resetBtn').classList.add('hidden');
+    const dataSourceSelect = document.getElementById("dataSourceSelect");
+    [...dataSourceSelect.options].forEach(o => {
+        if (o.value === "local") o.remove();
+    });
+    document.getElementById("dataSourceSelect").value = "server";
+    dataSource = "server";
+}
+
+function hasLocalQuestions() {
+    const data = localStorage.getItem("qcmData");
+    if (!data) return false;
+    try {
+        const parsed = JSON.parse(data);
+        return Array.isArray(parsed.data);
+    } catch {
+        return false;
+    }
 }
 
 // ---------- Main ----------
@@ -310,6 +357,29 @@ document.getElementById('categorySelect').addEventListener('change', savePrefere
 window.addEventListener('DOMContentLoaded', () => {
     stop();
 
+    const dataSourceSelect = document.getElementById("dataSourceSelect");
+    const customContainer = document.getElementById("customJsonContainer");
+    const startBtn = document.getElementById("startBtn");
+
+    // Supprimer option local si vide
+    if (!hasLocalQuestions()) {
+        [...dataSourceSelect.options].forEach(o => {
+            if (o.value === "local") o.remove();
+        });
+    }
+
+    dataSourceSelect.addEventListener("change", () => {
+        dataSource = dataSourceSelect.value;
+
+        if (dataSource === "custom") {
+            customContainer.classList.remove("hidden");
+            startBtn.disabled = !isCustomJsonValid;
+        } else {
+            customContainer.classList.add("hidden");
+            startBtn.disabled = false;
+        }
+    });
+
     // niveau
     const savedLevel = localStorage.getItem('qcmLevel');
     if (savedLevel) document.getElementById('levelSelect').value = savedLevel;
@@ -317,4 +387,32 @@ window.addEventListener('DOMContentLoaded', () => {
     // category
     const savedCategory = localStorage.getItem('qcmCategory');
     if (savedCategory) document.getElementById('categorySelect').value = savedCategory;
+});
+
+document.getElementById("customJsonInput").addEventListener("change", e => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+        try {
+            const json = JSON.parse(reader.result);
+
+            if (!json.data || !Array.isArray(json.data)) {
+                throw new Error("Format invalide : data manquant");
+            }
+
+            customQuestions = json.data;
+            isCustomJsonValid = true;
+        } catch (err) {
+            isCustomJsonValid = false;
+            customQuestions = null;
+            alert("JSON invalide ❌");
+            e.target.value = "";
+        }
+
+        startBtn.disabled = !isCustomJsonValid;
+    };
+
+    reader.readAsText(file);
 });

@@ -29,6 +29,20 @@
     <button id="downloadBtn" onclick="download()" class="hidden">Télécharger</button>
     <button id="saveBtn" class="hidden" onclick="saveJSON()">Sauvegarder</button>
 
+    <br>
+    <label id="dataSourceLabel" for="dataSourceSelect">Source des questions</label>
+    <select id="dataSourceSelect">
+        <option value="server">Données du serveur</option>
+        <option value="local">LocalStorage</option>
+        <option value="custom">JSON personnalisé</option>
+    </select>
+
+    <div id="customJsonContainer" class="hidden">
+        <input type="file" id="customJsonInput" accept=".json">
+    </div>
+    <br>
+
+
     <label for="levelSelect" id="levelLabel">Choisir le niveau :</label>
     <select id="levelSelect">
         <option value="">Tous les niveaux</option>
