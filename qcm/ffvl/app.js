@@ -1,4 +1,5 @@
 let allQuestions = [];
+let allQuestionsServer = [];
 let currentQuestions = [];
 let corrected = false;
 
@@ -38,58 +39,87 @@ document.querySelectorAll("select").forEach(s => s.onchange = changeOptions);
 document.getElementById("sourceSelect").onchange = handleSource;
 
 async function loadServer() {
-    const res = await fetch("qcm.json?_=" + Date.now());
-    const json = await res.json();
+    console.log("loadServer");
+    if (allQuestionsServer && allQuestionsServer.length > 0) {
+        allQuestions = [...allQuestionsServer];
+        return;
+    }
+    const res = await fetch("/parapente/qcm/qcm.json?_=" + Date.now());
+    console.log("loadServer res " + res);
+    const json = res.json ? await res.json() : []; // get json
+    console.log("loadServer json " + JSON.stringify(json));
     allQuestions = json.data;
+    allQuestionsServer = [...allQuestions];
+    console.log("loadServer allQuestions " + JSON.stringify(allQuestions));
+    console.log("loadServer allQuestions.lenght " + allQuestions.length);
 }
 
 function loadLocal() {
-    const json = JSON.parse(localStorage.getItem("qcmData"));
-    allQuestions = json.data;
+    console.log("loadLocal");
+    const json = localStorage.getItem("qcmData");
+    const data = JSON.parse(json);
+    allQuestions = data.data;
+    console.log("loadLocal allQuestions.lenght " + allQuestions.length);
 }
 
-function handleSource(e) {
-    savePreferences();
+async function handleSource(e) {
     if (e.target.value === "upload") {
         console.log("jsonInput.click()");
         jsonInput.click();
     } else if (e.target.value === "local") {
+        document.getElementById("questionsContainer").classList.add("hidden");
         console.log("loadLocal()");
         loadLocal();
-        if (allQuestions == null || allQuestions.length == 0) loadServer();
+        if (allQuestions == null || allQuestions.length == 0) await loadServer();
+        setTimeout(() => {
+            corrected = true;
+            buildQCM();
+        }, 0);
+
+    } else if (e.target.value === "server") {
+        document.getElementById("questionsContainer").classList.add("hidden");
+        console.log("loadServer()");
+        await loadServer();
+        setTimeout(() => {
+            corrected = true;
+            buildQCM();
+        }, 0);
+    }
+    savePreferences();
+}
+
+jsonInput.onchange = () => {
+    document.getElementById("questionsContainer").classList.add("hidden");
+    console.log("jsonInput");
+    const file = jsonInput.files[0];
+    const reader = new FileReader();
+    reader.onload = () => {
+        jsonFile(reader);
+    };
+    reader.readAsText(file);
+};
+
+async function jsonFile(reader) {
+    try {
+        const json = JSON.parse(reader.result);
+        if (!Array.isArray(json.data)) throw "invalid";
+        localStorage.setItem("qcmData", JSON.stringify(json));
+        addLocalOption();
+        document.getElementById("sourceSelect").value = "local";
+        jsonInput.value = "";
+        loadLocal();
         corrected = true;
         buildQCM();
-    } else if (e.target.value === "server") {
-        console.log("loadServer()");
-        loadServer();
+    } catch {
+        alert("JSON invalide");
+        document.getElementById("sourceSelect").value = "server";
+        jsonInput.value = "";
+        console.log("catch loadServer()");
+        await loadServer();
         corrected = true;
         buildQCM();
     }
 }
-
-jsonInput.onchange = () => {
-    const file = jsonInput.files[0];
-    const reader = new FileReader();
-    reader.onload = () => {
-        try {
-            const json = JSON.parse(reader.result);
-            if (!Array.isArray(json.data)) throw "invalid";
-            localStorage.setItem("qcmData", JSON.stringify(json));
-            addLocalOption();
-            allQuestions = json.data;
-            buildQCM();
-        } catch {
-            alert("JSON invalide");
-            document.getElementById("sourceSelect").value = "server";
-            jsonInput.value = "";
-            console.log("catch loadServer()");
-            loadServer();
-            corrected = true;
-            buildQCM();
-        }
-    };
-    reader.readAsText(file);
-};
 
 function addLocalOption() {
     if (hasLocalOpt) return;
@@ -107,6 +137,7 @@ function shuffle(arr) {
     return arr.sort(() => Math.random() - 0.5);
 }
 function changeOptions() {
+    document.getElementById("questionsContainer").classList.add("hidden");
     savePreferences();
     buildQCM();
 }
@@ -114,6 +145,7 @@ function changeOptions() {
 function buildQCM() {
     container.innerHTML = "";
     if (corrected) {
+        console.log("buildQCM corrected : " + corrected);
         allQuestions = shuffle(allQuestions);
         corrected = false;
         document.getElementById("correctBtn").textContent = `Corriger`;
@@ -132,7 +164,8 @@ function buildQCM() {
 
     currentQuestions = filtered;
 
-    filtered.forEach((q, i) => {
+    for (let i = 0; i < filtered.length; i++) {
+        q = filtered[i];
         const div = document.createElement("div");
         div.className = "question";
         div.innerHTML = `
@@ -153,10 +186,12 @@ function buildQCM() {
                 </tr>
             `).join("")}
         </table>
-        <div class="explanation">${q.explanation || ""}</div>
+        <div class="explanation hidden">${q.explanation || ""}</div>
         `;
+        console.log(`explanation : ${q.explanation || ""}`);
         container.appendChild(div);
-    });
+    }
+    document.getElementById("questionsContainer").classList.remove("hidden");
 }
 
 function correctQCM() {
@@ -210,7 +245,7 @@ function correctQCM() {
             qDiv.classList.add("q-bad");
         }
 
-        qDiv.querySelector(".explanation").style.display = "block";
+        qDiv.querySelector(".explanation").classList.remove("hidden");
     });
 
     const percent = maxTotal > 0

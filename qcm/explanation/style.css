@@ -154,7 +154,7 @@ button:hover {
 
 /* ===== Hidden ===== */
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /* ===== Edition Explication ===== */

@@ -127,11 +127,11 @@ main {
     background: #eef4ff;
     font-style: italic;
     padding: 10px;
-    display: none;
+    display: block;
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 @media (max-width: 700px) {
