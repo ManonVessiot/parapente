@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM FFVL</title>
+    <link rel="shortcut icon" href="/parapente/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar" id="menu">
+        <div class="topbar-left">
+            <a href="/parapente" class="titlePage">
+                <h1 id="title">Parapente</h1>
+            </a>
+        </div>
+
+        <div class="topbar-options" id="menuOptions">
+            <select id="levelSelect">
+                <option value="">Tous niveaux</option>
+                <option value="bpi">BPI</option>
+                <option value="bp">BP</option>
+                <option value="bpc">BPC</option>
+            </select>
+
+            <select id="countSelect">
+                <option value="10">10 questions</option>
+                <option value="30">30 questions</option>
+                <option value="60">60 questions</option>
+                <option value="90">90 questions</option>
+                <option value="all">Toutes</option>
+            </select>
+
+            <select id="categorySelect">
+                <option value="">Toutes les catégories</option>
+                <option value="pilotage">Pilotage</option>
+                <option value="mecavol">Mécavol</option>
+                <option value="meteo">Météo</option>
+                <option value="materiel">Matériel</option>
+                <option value="reglementation">Règlementation</option>
+                <option value="facteursH">Facteurs humains</option>
+                <option value="naturel">Milieu naturel</option>
+            </select>
+
+            <select id="sourceSelect">
+                <option value="server">Serveur</option>
+                <option value="local">Local</option>
+                <option value="upload">Importer JSON</option>
+            </select>
+        </div>
+
+        <div class="topbar-right">
+            <button id="correctBtn">Corriger</button>
+            <button id="resetBtn" title="Reset">🔄</button>
+            <button id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <main id="questionsContainer"></main>
+
+    <input type="file" id="jsonInput" accept=".json" class="hidden">
+
+    <script src="app.js"></script>
+</body>
+
+</html>

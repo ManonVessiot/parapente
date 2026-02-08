@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f6f7f9;
+    color: #222;
+}
+
+.titlePage {
+    text-decoration: none;
+    color: inherit;
+}
+
+select {
+    font-size: 1em;
+    padding: 6px 10px;
+    margin: 5px 0 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    font-size: 1em;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #eef4ff;
+    border: 1px solid #ccc;
+}
+
+button:hover {
+    background-color: #d6e4ff;
+}
+
+/* ---------- Topbar ---------- */
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px;
+}
+
+/* Titre */
+.topbar-left h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+/* Zone options (dropdowns) */
+.topbar-options {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+/* Boutons à droite */
+.topbar-right {
+    display: flex;
+    gap: 6px;
+}
+
+/* Boutons */
+.topbar button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+/* Menu burger : caché par défaut (desktop) */
+#menuToggle {
+    display: none;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.question {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.question table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.question th {
+    text-align: left;
+    padding: 10px;
+    background: #eef4ff;
+}
+
+.question td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.points {
+    width: 80px;
+    text-align: center;
+}
+
+.explanation {
+    background: #eef4ff;
+    font-style: italic;
+    padding: 10px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    .topbar {
+        flex-wrap: wrap;
+    }
+
+    /* Cache les options par défaut */
+    .topbar-options {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    /* Quand menu ouvert */
+    .topbar-options.open {
+        display: flex;
+    }
+
+    /* Bouton menu visible uniquement en mobile */
+    #menuToggle {
+        display: inline-block;
+    }
+}
+
+
+/* ---------- Réponses ---------- */
+.answer-row.good {
+    color: #28a745;
+}
+
+.answer-row.bad {
+    color: #dc3545;
+}
+
+.answers.badQ {
+    text-decoration: line-through;
+}
+
+/* ---------- Questions ---------- */
+.question.q-good {
+    border: 2px solid #d4edda;
+}
+
+.question.q-good th {
+    background: #d4edda;
+    color: #28a745;
+}
+
+.question.q-partial {
+    border: 2px solid #fff3cd;
+}
+
+.question.q-partial th {
+    background: #fff3cd;
+    color: #ffc107;
+}
+
+.question.q-bad {
+    border: 2px solid #f8d7da;
+}
+
+.question.q-bad th {
+    background: #f8d7da;
+    color: #dc3545;
+}
+
+th {
+    font-weight: normal;
+}
+
+/* Points */
+.answer-points,
+.points {
+    text-align: center;
+}
+
+/* Empêche les clics sur le contenu quand le menu est ouvert */
+body.menu-open main {
+    pointer-events: none;
+    filter: blur(1px);
+}
+
+/* Le menu reste cliquable */
+body.menu-open .topbar {
+    pointer-events: auto;
+}
