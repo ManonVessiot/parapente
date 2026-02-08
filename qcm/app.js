@@ -40,7 +40,15 @@ async function start() {
         questions = customQuestions;
         localStorage.setItem("qcmData", JSON.stringify({ data: questions }));
         document.getElementById("customJsonInput").value = "";
-        document.getElementById("dataSourceSelect").value = "local";
+
+        const dataSourceSelect = document.getElementById("dataSourceSelect");
+        const newOption = document.createElement("option");
+        newOption.value = "local";
+        newOption.text = "LocalStorage";
+
+        // Insérer en 2ème position (index 1)
+        dataSourceSelect.insertBefore(newOption, dataSourceSelect.options[1]);
+        dataSourceSelect.value = "local";
         dataSource = "local";
         alert("JSON sauvegarder localement ✔");
     }
