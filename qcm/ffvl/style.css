@@ -35,6 +35,19 @@ button:hover {
     background-color: #d6e4ff;
 }
 
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: #d6e4ff;
+    color: black;
+}
+
+button:disabled:hover {
+    background-color: #eef4ff;
+}
+
+
+
 /* ---------- Topbar ---------- */
 .topbar {
     position: sticky;

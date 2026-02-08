@@ -149,6 +149,7 @@ function buildQCM() {
         allQuestions = shuffle(allQuestions);
         corrected = false;
         document.getElementById("correctBtn").textContent = `Corriger`;
+        document.getElementById("correctBtn").disabled = false;
     }
 
     let filtered = [...allQuestions];
@@ -253,6 +254,7 @@ function correctQCM() {
         : 0;
 
     const btn = document.getElementById("correctBtn");
+    btn.disabled = true;
     btn.textContent = `Score : ${total} / ${maxTotal} (${percent}%)`;
 
     corrected = true;
