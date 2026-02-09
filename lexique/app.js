@@ -1,21 +1,21 @@
-let definitions = [];
-let currentDefinitions = [];
+let lexique = [];
+let currentlexique = [];
 let editIndex = null;
 
 const searchInput = document.getElementById("search");
-const list = document.getElementById("definitionsList");
+const list = document.getElementById("lexiqueList");
 const popup = document.getElementById("popup");
 const popupName = document.getElementById("popupName");
 const popupDef = document.getElementById("popupDef");
 
 // ---------- INIT ----------
 async function init() {
-    const local = localStorage.getItem("definitions");
+    const local = localStorage.getItem("lexique");
     if (local) {
-        definitions = JSON.parse(local);
+        lexique = JSON.parse(local);
     } else {
-        const res = await fetch("definitions.json");
-        definitions = await res.json();
+        const res = await fetch("lexique.json");
+        lexique = await res.json();
     }
     render();
 }
@@ -25,9 +25,9 @@ init();
 function render(filter = "") {
     list.innerHTML = "";
     console.log("filter : " + filter);
-    currentDefinitions = fuzzySearch(filter);
-    for (const index of currentDefinitions) {
-        item = definitions[index];
+    currentlexique = fuzzySearch(filter);
+    for (const index of currentlexique) {
+        item = lexique[index];
         const li = document.createElement("li");
         li.innerHTML = `<strong>${item.nom}</strong><br>
             ${item.definition}<br>
@@ -43,6 +43,13 @@ function normalize(str) {
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "");
 }
+
+function splitWords(str) {
+    return normalize(str)
+        .split(/[^a-z0-9]+/)
+        .filter(w => w.length > 1);
+}
+
 
 // Calcul de la distance de Levenshtein entre 2 chaînes
 function levenshtein(a, b) {
@@ -69,45 +76,66 @@ function levenshtein(a, b) {
 // Recherche fuzzy sur le nom et la définition
 function fuzzySearch(query) {
     if (!query || !query.trim()) {
-        return definitions
+        return lexique
             .map((_, index) => index)
-            .sort((a, b) => definitions[a].nom.localeCompare(definitions[b].nom));
+            .sort((a, b) => lexique[a].nom.localeCompare(lexique[b].nom));
     }
 
-    const q = query.trim().toLowerCase();
+    const queryWords = splitWords(query);
 
-    return definitions
+    return lexique
         .map((item, index) => {
-            const name = item.nom.toLowerCase();
-            const def = item.definition.toLowerCase();
+            const nameWords = splitWords(item.nom);
+            const defWords = splitWords(item.definition);
 
-            let score = 100;
+            let score = 0;
+            let matchedWords = 0;
 
-            // --- NOM ---
-            if (name.startsWith(q)) score = 0;
-            else if (name.includes(q)) score = 1;
-            else {
-                const d = levenshtein(name, q);
-                if (d <= 3) score = 2 + d;
+            for (const q of queryWords) {
+                let best = 0;
+
+                // --- NOM ---
+                for (const w of nameWords) {
+                    if (w.startsWith(q)) best = Math.max(best, 6);
+                    else if (w.includes(q)) best = Math.max(best, 5);
+                    else {
+                        const d = levenshtein(w, q);
+                        if (d <= 2) best = Math.max(best, 4 - d);
+                    }
+                }
+
+                // --- DÉFINITION ---
+                for (const w of defWords) {
+                    if (w.startsWith(q)) best = Math.max(best, 3);
+                    else if (w.includes(q)) best = Math.max(best, 2);
+                    else {
+                        const d = levenshtein(w, q);
+                        if (d <= 2) best = Math.max(best, 2 - d);
+                    }
+                }
+
+                if (best > 0) {
+                    score += best;
+                    matchedWords++;
+                }
             }
 
-            // --- DEFINITION (bonus) ---
-            if (def.includes(q)) score -= 0.5;
-            else {
-                const dDef = levenshtein(def, q);
-                if (dDef <= 4) score -= 0.25;
+            // Bonus si tous les mots recherchés sont trouvés
+            if (matchedWords === queryWords.length) {
+                score += 5;
             }
 
             return { index, score };
         })
-        .filter(({ score }) => score < 6)
+        .filter(r => r.score > 0)
         .sort(
             (a, b) =>
-                a.score - b.score ||
-                definitions[a.index].nom.localeCompare(definitions[b.index].nom)
+                b.score - a.score ||
+                lexique[a.index].nom.localeCompare(lexique[b.index].nom)
         )
-        .map(({ index }) => index);
+        .map(r => r.index);
 }
+
 
 searchInput.addEventListener("input", e => {
     render(e.target.value);
@@ -127,12 +155,12 @@ function closePopup() {
 // ---------- ADD / EDIT ----------
 function edit(i) {
     editIndex = i;
-    popupName.value = definitions[i].nom;
-    popupDef.value = definitions[i].definition;
+    popupName.value = lexique[i].nom;
+    popupDef.value = lexique[i].definition;
     openPopup();
 }
 
-function saveDefinition() {
+function savelexique() {
     const nom = popupName.value.trim();
     const def = popupDef.value.trim();
 
@@ -141,15 +169,15 @@ function saveDefinition() {
         return;
     }
 
-    const existing = definitions.findIndex(d => d.nom === nom);
+    const existing = lexique.findIndex(d => d.nom === nom);
 
     if (existing !== -1 && existing !== editIndex) {
-        alert("\"" + definitions[existing].nom + "\" existe déjà.");
+        alert("\"" + lexique[existing].nom + "\" existe déjà.");
         return;
     } else if (editIndex !== null) {
-        definitions[editIndex] = { nom, definition: def };
+        lexique[editIndex] = { nom, definition: def };
     } else {
-        definitions.push({ nom, definition: def });
+        lexique.push({ nom, definition: def });
     }
 
     persist();
@@ -158,26 +186,26 @@ function saveDefinition() {
 
 // ---------- DELETE ----------
 function removeDef(i) {
-    if (!confirm("Supprimer le définition de \"" + definitions[i].nom + "\" ?")) return;
-    definitions.splice(i, 1);
+    if (!confirm("Supprimer le définition de \"" + lexique[i].nom + "\" ?")) return;
+    lexique.splice(i, 1);
     persist();
 }
 
 // ---------- STORAGE ----------
 function persist() {
-    localStorage.setItem("definitions", JSON.stringify(definitions));
+    localStorage.setItem("lexique", JSON.stringify(lexique));
     render(searchInput.value);
 }
 
 // ---------- DOWNLOAD ----------
 function downloadJSON() {
     const blob = new Blob(
-        [JSON.stringify(definitions, null, 2)],
+        [JSON.stringify(lexique, null, 2)],
         { type: "application/json" }
     );
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = "definitions.json";
+    a.download = "lexique.json";
     a.click();
 }
 
@@ -185,9 +213,9 @@ function downloadJSON() {
 async function resetToServer() {
     if (!confirm("Revenir à la version serveur ?")) return;
     searchInput.value = "";
-    localStorage.removeItem("definitions");
-    const res = await fetch("definitions.json");
-    definitions = await res.json();
+    localStorage.removeItem("lexique");
+    const res = await fetch("lexique.json");
+    lexique = await res.json();
     render();
 }
 
@@ -199,6 +227,6 @@ document.getElementById("addBtn").onclick = () => {
 };
 
 document.getElementById("cancelBtn").onclick = closePopup;
-document.getElementById("saveBtn").onclick = saveDefinition;
+document.getElementById("saveBtn").onclick = savelexique;
 document.getElementById("downloadBtn").onclick = downloadJSON;
 document.getElementById("resetBtn").onclick = resetToServer;
