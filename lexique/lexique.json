@@ -29,7 +29,7 @@
   },
   {
     "nom": "Arrondi",
-    "definition": "Phase finale de l’atterrissage où la chute est freinée."
+    "definition": "L’arrondi est l’action de freiner progressivement en fin de finale pour transformer la vitesse horizontale en portance, réduire la vitesse verticale et permettre un posé doux et contrôlé."
   },
   {
     "nom": "Assiette",
@@ -145,11 +145,11 @@
   },
   {
     "nom": "Cumulonimbus",
-    "definition": "Nuage orageux dangereux, générant rafales et ascendances violentes."
+    "definition": "Le cumulonimbus est un nuage convectif très développé verticalement, issu d’un cumulus en surdéveloppement, capable de produire des ascendances violentes, des rafales descendantes, de la grêle, des orages, des pluies intenses et des turbulences extrêmes."
   },
   {
     "nom": "Cumulus",
-    "definition": "Nuage thermique typique, signe d’ascendance."
+    "definition": "Un cumulus est un nuage convectif formé par la montée d’une bulle d’air chaud (thermique) qui se condense en atteignant un niveau où la vapeur d’eau se transforme en gouttelettes.\nIl a une base plate et un développement vertical, souvent en forme de chou‑fleur."
   },
   {
     "nom": "Décrochage",
@@ -161,7 +161,7 @@
   },
   {
     "nom": "Effet pendulaire",
-    "definition": "Déphasage aile/pilote dû à la suspension."
+    "definition": "L’effet pendulaire désigne le fait que le pilote et la sellette se comportent comme un pendule suspendu sous l’aile.\nL’aile est le point fixe, et le pilote oscille en dessous, ce qui crée des mouvements d’avant‑arrière (tangage) et de gauche‑droite (roulis).\nLe parapente n’est pas un avion rigide : l’aile et le pilote peuvent bouger différemment, et cette dissociation crée l’effet pendulaire."
   },
   {
     "nom": "Élévateurs",
@@ -217,19 +217,19 @@
   },
   {
     "nom": "Gonflage dos voile",
-    "definition": "Technique de décollage où le pilote tourne après la montée de l’aile."
+    "definition": "Le gonflage dos voile est une technique de décollage où le pilote se place dos à la voile et face à son cap de décollage.\nIl met les suspentes en tension, fait monter l’aile au-dessus de lui en tirant sur les élévateurs avants, puis poursuit dans la même direction pour prendre de la vitesse et décoller."
   },
   {
     "nom": "Gonflage face voile",
-    "definition": "Technique de décollage où le pilote fait face à l’aile."
+    "definition": "Le gonflage face à la voile est une technique où le pilote se place face à son aile, donc dos au vent, et fait monter la voile en la contrôlant visuellement pendant toute la phase de gonflage.\nUne fois l’aile stabilisée au-dessus de lui, il se retourne pour se mettre dans l’axe du décollage et partir."
   },
   {
     "nom": "Gradient de vent",
-    "definition": "Variation du vent avec l’altitude."
+    "definition": "Le gradient de vent est la variation de la vitesse du vent en fonction de l’altitude. Plus on se rapproche du sol, plus le vent est ralenti par les frottements avec le terrain, la végétation, les obstacles."
   },
   {
     "nom": "Incidence",
-    "definition": "Angle entre la corde du profil et le vent relatif, déterminant portance, traînée et décrochage."
+    "definition": "L’incidence est l’angle entre le vent relatif et la corde du profil de l’aile, déterminant portance, traînée et décrochage."
   },
   {
     "nom": "Instabilité atmosphérique",
@@ -265,11 +265,11 @@
   },
   {
     "nom": "Oreilles",
-    "definition": "Réduction de surface en repliant les bouts d’aile."
+    "definition": "Les oreilles sont une manœuvre de descente qui consiste à replier volontairement les extrémités de l’aile en tirant les élévateurs A extérieurs, afin de réduire la surface portante et d’augmenter le taux de chute, tout en gardant une aile stable et pilotable."
   },
   {
     "nom": "Parachutale",
-    "definition": "Vol à forte incidence, faible vitesse horizontale et forte chute."
+    "definition": "La parachutale est un régime de vol, à forte incidence, anormal dans lequel le parapente descend verticalement avec peu ou pas de vitesse horizontale, sans être en décrochage.\nL’aile reste ouverte, mais ne génère plus assez de portance pour avancer.\nElle “tombe” presque à la verticale, comme un parachute… d’où le nom."
   },
   {
     "nom": "Pilotage actif",
@@ -312,8 +312,8 @@
     "definition": "Incidence à partir de laquelle la portance s’effondre."
   },
   {
-    "nom": "Point de finesse max",
-    "definition": "Vitesse-air où le rapport portance/traînée est maximal."
+    "nom": "Finesse max",
+    "definition": "La finesse maximale est la meilleure finesse que ton parapente peut atteindre, c’est‑à‑dire le meilleur plané possible, dans des conditions calmes, sans vent.\nC’est le point du polaire où ton aile avance le plus loin pour le moins de hauteur perdue."
   },
   {
     "nom": "Point de parachutale",
@@ -324,8 +324,8 @@
     "definition": "Température à laquelle l’humidité condense."
   },
   {
-    "nom": "Point de taux de chute mini",
-    "definition": "Vitesse-air où la chute verticale est minimale."
+    "nom": "Taux de chute mini",
+    "definition": "Le taux de chute minimum est la plus faible vitesse verticale de descente que peut atteindre un parapente dans une configuration de vol donnée.\nC’est la vitesse à laquelle l’aile descend le plus lentement possible."
   },
   {
     "nom": "Point haut",
@@ -376,16 +376,12 @@
     "definition": "Outil de communication en vol."
   },
   {
-    "nom": "Régime laminaire",
-    "definition": "Flux d’air régulier et stable."
-  },
-  {
     "nom": "Régime turbulent",
     "definition": "Flux d’air instable et irrégulier."
   },
   {
     "nom": "Ressource",
-    "definition": "Conversion de vitesse en altitude ; vitesse minimale au sommet."
+    "definition": "La ressource est le mouvement de l’aile qui remonte après avoir plongé. C’est une phase de tangage où l’aile, après avoir pris de la vitesse en avançant et en descendant, remonte brutalement au-dessus du pilote. Elle convertit cette vitesse en altitude, ce qui la fait remonter."
   },
   {
     "nom": "Rotor",
@@ -457,11 +453,11 @@
   },
   {
     "nom": "Suspentes",
-    "definition": "Câbles reliant l’aile aux élévateurs."
+    "definition": "Les suspentes sont les cordelettes qui relient l’aile à la sellette.\nElles transmettent toutes les forces entre le pilote et le parapente, maintiennent la forme du profil et assurent la répartition de la charge sur l’aile."
   },
   {
     "nom": "Tangage",
-    "definition": "Rotation autour de l’axe transversal."
+    "definition": "Le tangage est le mouvement avant‑arrière du parapente autour de son axe horizontal.\nC’est l’oscillation où l’aile avance (plongée) puis revient en arrière (ressource) par rapport au pilote."
   },
   {
     "nom": "Taux de chute",
@@ -517,7 +513,7 @@
   },
   {
     "nom": "Turbulence",
-    "definition": "Variations rapides et désordonnées du vent."
+    "definition": "La turbulence est une zone d’air irrégulière, où le vent ne circule plus de manière uniforme mais devient déformé, tourbillonnant ou instable, provoquant des variations brusques de vitesse, de direction ou de pression."
   },
   {
     "nom": "Turbulence mécanique",
@@ -638,5 +634,237 @@
   {
     "nom": "Marais barométrique",
     "definition": "Le terme marais barométrique désigne une vaste zone où la pression atmosphérique varie très peu sur de larges distances et durant plusieurs jours. Ce contexte favorise l’accumulation de nuages convectifs et une faible ventilation des masses d’air, conditions propices à des averses localisées."
+  },
+  {
+    "nom": "Maniabilité",
+    "definition": "La maniabilité d’un parapente désigne la facilité avec laquelle l’aile répond aux actions du pilote sur les commandes, les élévateurs ou le déplacement du poids du corps.\nC’est la capacité de l’aile à changer rapidement et précisément d’attitude sur les trois axes.\nUne aile maniable est une aile qui réagit vite, de manière intuitive et proportionnée aux sollicitations du pilote."
+  },
+  {
+    "nom": "Laminaire",
+    "definition": "Un écoulement laminaire est un flux d’air régulier, stable et ordonné, dans lequel les particules d’air se déplacent en couches parallèles, sans se mélanger ni tourbillonner.\nL’air glisse comme des couches superposées, sans perturbation."
+  },
+  {
+    "nom": "Vol en air calme",
+    "definition": "Le vol en air calme désigne un vol effectué dans une masse d’air sans mouvements verticaux significatifs, c’est‑à‑dire sans ascendances ni descendances notables, et sans turbulences.\nL’air ne monte pas, ne descend pas, ne tourbillonne pas :\nil est stable, homogène et laminaire."
+  },
+  {
+    "nom": "Vol de pente",
+    "definition": "Le vol de pente est un vol où le parapente se maintient en l’air grâce à l’ascendance dynamique créée par le vent qui rencontre une pente et est dévié vers le haut."
+  },
+  {
+    "nom": "Vol en aérologie turbulente",
+    "definition": "Le vol en aérologie turbulente désigne un vol effectué dans une masse d’air irrégulière, où le vent présente des variations rapides de direction et de vitesse, provoquant des mouvements brusques du parapente sur les trois axes (tangage, roulis, lacet).\nL’air n’est ni stable, ni homogène, ni prévisible.\nLe pilote doit piloter activement pour maintenir l’aile ouverte et contrôlée."
+  },
+  {
+    "nom": "Inclinaison",
+    "definition": "L’inclinaison désigne l’angle que prend le parapente par rapport à l’horizontale lorsqu’il s’incline latéralement en virage.\nC’est l’angle de roulis : plus l’aile est inclinée, plus le virage est serré."
+  },
+  {
+    "nom": "Rayon de virage",
+    "definition": "Le rayon de virage est la distance entre le centre du virage et la trajectoire décrite par le parapente lorsqu’il tourne.\nC’est la “taille” du cercle que décrit ton parapente en virage."
+  },
+  {
+    "nom": "Dérive",
+    "definition": "La dérive est le déplacement latéral du parapente sous l’effet du vent, c’est‑à‑dire la différence entre la trajectoire que tu vises et la trajectoire réelle au sol."
+  },
+  {
+    "nom": "Marge de vitesse",
+    "definition": "La marge de vitesse est l’écart entre la vitesse à laquelle tu voles et la vitesse de décrochage de ton parapente.\nC’est la réserve de vitesse qui te sépare du décrochage.\nPlus cette marge est grande, plus ton aile est sûre et solide."
+  },
+  {
+    "nom": "Vol lent",
+    "definition": "Le vol lent est un régime de vol où le parapente évolue à faible vitesse air, proche de la vitesse de décrochage, avec une marge de vitesse réduite."
+  },
+  {
+    "nom": "Virage à 360°",
+    "definition": "Un virage à 360° est une manœuvre où le parapente effectue une rotation complète autour d’un axe vertical, en décrivant un cercle complet dans l’air."
+  },
+  {
+    "nom": "Trajectoires convergentes",
+    "definition": "Des trajectoires convergentes sont des trajectoires de vol qui se rapprochent l’une de l’autre, au point que deux aéronefs (ou deux parapentes) risquent de se croiser, de se couper la route, ou de se percuter si aucune action n’est effectuée."
+  },
+  {
+    "nom": "Prégonflage",
+    "definition": "Le prégonflage est la phase avant la montée de l’aile, où le pilote met progressivement en tension les suspentes et commence à ouvrir et remplir les caissons de la voile au sol, sans encore la faire décoller du sol. Cela permet de positionner sa voile avant le gonflage."
+  },
+  {
+    "nom": "Temporisation",
+    "definition": "La temporisation est l’action de freiner brièvement et précisément pour absorber ou limiter une abattée de l’aile, c’est‑à‑dire pour empêcher l’aile de prendre trop de vitesse vers l’avant après un mouvement pendulaire.\nElle est, en autre, effectué lors du gonflage pour mettre l'aile et le pilote à la même vitesse."
+  },
+  {
+    "nom": "Écopage",
+    "definition": "L’écopage est l’action de laisser le vent entrer dans le bord d’attaque pour ouvrir et gonfler les caissons de la voile au sol, avant même de commencer la montée de l’aile."
+  },
+  {
+    "nom": "Charge ventrale",
+    "definition": "La charge ventrale est la pression exercée par les élévateurs sur la ventrale du pilote lorsque la voile commence à prendre de la traction au sol, avant ou pendant la montée de l’aile."
+  },
+  {
+    "nom": "Appui ventral",
+    "definition": "L’appui ventral est le fait de s’incliner légèrement vers l’avant, en mettant du poids sur la ventrale, pour accompagner la montée de l’aile et garder les suspentes en tension pendant le gonflage."
+  },
+  {
+    "nom": "Course d’accélération",
+    "definition": "La course d’accélération est la phase où le pilote, aile stabilisée au‑dessus de lui, avance franchement pour augmenter sa vitesse air afin de permettre à la voile de générer suffisamment de portance pour décoller."
+  },
+  {
+    "nom": "Décollage par vent nul",
+    "definition": "Le décollage par vent nul est un décollage où le pilote doit créer lui‑même tout le vent relatif nécessaire au gonflage, à la montée de l’aile et à la portance, en courant suffisamment vite puisque l’air ne vient pas naturellement remplir la voile."
+  },
+  {
+    "nom": "Décollage à l’arraché",
+    "definition": "Le décollage à l’arraché est un décollage non maîtrisé, où la voile soulève le pilote brutalement sans qu’il ait eu le temps de prendre de la vitesse, de stabiliser l’aile, ni de contrôler son cap."
+  },
+  {
+    "nom": "Perte de soutien",
+    "definition": "La perte de soutien est la situation où l’aile ne génère plus suffisamment de portance pour soutenir le pilote.\nElle survient lorsque la vitesse air est trop faible ou que l’incidence est trop forte, au point que la voile ne peut plus maintenir le vol normal."
+  },
+  {
+    "nom": "Déviation de l’aile",
+    "definition": "La déviation de l’aile est la situation où la voile ne reste pas dans l’axe du pilote et part latéralement pendant le gonflage, la montée ou le début de la course d’accélération."
+  },
+  {
+    "nom": "Déséquilibre de la voile",
+    "definition": "Le déséquilibre de la voile est la situation où la voile n’est plus symétrique dans sa forme, sa pression ou sa montée, ce qui entraîne une traction asymétrique sur le pilote et perturbe l’axe de gonflage ou de décollage."
+  },
+  {
+    "nom": "Clé",
+    "definition": "Une clé est un vrillage ou un croisement dans les suspentes ou dans une partie de la voile (souvent une oreille) qui empêche l’aile de se gonfler correctement et provoque une asymétrie lors du gonflage ou du vol."
+  },
+  {
+    "nom": "Cravate",
+    "definition": "Une cravate est une situation où une partie de la voile reste coincée dans les suspentes, généralement après une fermeture ou un gonflage mal propre, ce qui empêche cette zone de se regonfler et provoque une asymétrie permanente de portance."
+  },
+  {
+    "nom": "Faisceaux d’élévateurs",
+    "definition": "Les faisceaux d’élévateurs sont les groupes de sangles qui relient les suspentes du parapente aux maillons du harnais.\nChaque faisceau regroupe un ensemble de suspentes ayant une fonction spécifique (A, B, C, D, et parfois les élévateurs de frein)."
+  },
+  {
+    "nom": "Retournement",
+    "definition": "Le retournement est l’action par laquelle le pilote, après avoir fait monter et stabiliser l’aile face à la voile, se tourne pour se mettre dans l’axe du décollage, dos à la voile, afin d’entamer la course d’accélération."
+  },
+  {
+    "nom": "Finale",
+    "definition": "La finale est la dernière partie de l’approche d’atterrissage, effectuée dans l’axe de la zone d’atterrissage, en ligne droite, avec une vitesse stable, jusqu’au touché des pieds."
+  },
+  {
+    "nom": "Prise de vitesse",
+    "definition": "La prise de vitesse est l’action d’augmenter la vitesse air du parapente pour obtenir une portance suffisante et une aile solide, que ce soit au décollage, en vol ou en approche."
+  },
+  {
+    "nom": "Posé",
+    "definition": "Le posé est la phase finale de l’atterrissage, juste après l’arrondi, où le pilote met pied au sol en douceur, en gardant l’aile contrôlée et stable, jusqu’à l’arrêt complet."
+  },
+  {
+    "nom": "Vent à l’atterrissage",
+    "definition": "Le vent à l’atterrissage est le vent ressenti au niveau du sol dans la zone d’atterrissage. C’est lui qui détermine l’axe de la finale, la vitesse sol, la stabilité de l’aile et la manière de réaliser l’arrondi et le posé."
+  },
+  {
+    "nom": "Freinage",
+    "definition": "Le freinage est l’action d’abaisser les commandes pour augmenter l’incidence du profil, ce qui réduit la vitesse air, augmente la portance jusqu’à un certain point, et permet de contrôler le tangage, la trajectoire et la finesse du parapente."
+  },
+  {
+    "nom": "Affalage",
+    "definition": "L’affalage est l’action de faire redescendre volontairement l’aile au sol, de manière contrôlée, en tirant progressivement sur les commandes (ou en utilisant les élévateurs arrières) pour vider la voile de son air et neutraliser la traction."
+  },
+  {
+    "nom": "Gradient près du sol",
+    "definition": "Le gradient près du sol est la diminution de la vitesse du vent lorsqu’on se rapproche du sol, à cause du frottement de l’air sur le terrain et les obstacles.\nPlus on descend, plus le vent faiblit et devient irrégulier."
+  },
+  {
+    "nom": "Turbulence de sillage",
+    "definition": "La turbulence de sillage est la perturbation de l’air laissée derrière un aéronef ou un obstacle en mouvement dans l’air, composée de tourbillons puissants, de cisaillements et de dépressions.\nElle peut provoquer des mouvements brusques, des fermetures ou une perte de contrôle pour un parapente qui la traverse."
+  },
+  {
+    "nom": "Ascendance",
+    "definition": "Une ascendance est une masse d’air qui monte, plus rapidement que l’air environnant, permettant à un parapente de gagner de l’altitude sans moteur."
+  },
+  {
+    "nom": "Aérologie calme",
+    "definition": "L’aérologie calme désigne une masse d’air stable, avec peu ou pas de variations de vent, peu de turbulence, et pas de phénomènes convectifs marqués. C’est une atmosphère douce, régulière et prévisible, idéale pour le décollage, le vol et l’atterrissage."
+  },
+  {
+    "nom": "Aérologie turbulente",
+    "definition": "L’aérologie turbulente désigne une masse d’air instable, où le vent présente des variations rapides de force et de direction, créant des mouvements irréguliers, des cisaillements et des tourbillons. Elle provoque des mouvements parasites de l’aile et augmente le risque de fermetures."
+  },
+  {
+    "nom": "Vent arrière",
+    "definition": "Le vent arrière est la situation où le vent souffle dans le même sens que la trajectoire du pilote, c’est‑à‑dire dans son dos. Il augmente la vitesse sol, réduit la vitesse air, et rend l’atterrissage dangereux car l’aile peut manquer de portance."
+  },
+  {
+    "nom": "Vent de face",
+    "definition": "Le vent de face est un vent qui souffle en sens inverse de la trajectoire du pilote, c’est‑à‑dire en venant de l’avant. Il réduit la vitesse sol, augmente la vitesse air et rend le décollage et l’atterrissage plus faciles et plus sûrs."
+  },
+  {
+    "nom": "Règle des additions",
+    "definition": "La règle des additions en facteurs humains dit que les petits facteurs de risque s’additionnent. Pris isolément, chacun semble anodin, mais ensemble, ils peuvent conduire à une situation dangereuse ou à un accident."
+  },
+  {
+    "nom": "Facteurs de risque",
+    "definition": "Les facteurs de risque sont tous les éléments — personnels, matériels, environnementaux ou organisationnels — qui augmentent la probabilité d’une erreur, d’un incident ou d’un accident.\nCe sont des conditions qui dégradent la sécurité, parfois de manière subtile."
+  },
+  {
+    "nom": "Marges de sécurité",
+    "definition": "Les marges de sécurité sont les réserves que le pilote se donne volontairement — en altitude, en distance, en vitesse, en décision ou en niveau de compétence — pour pouvoir gérer l’imprévu, compenser une erreur ou faire face à une dégradation des conditions."
+  },
+  {
+    "nom": "Analyse de trajectoire",
+    "definition": "L’analyse de trajectoire est l’action d’observer, anticiper et évaluer en continu la trajectoire du parapente — en fonction du vent, du relief, de l’aérologie, du trafic et de sa propre vitesse — afin de confirmer que la trajectoire prévue est sûre ou d’adapter le pilotage si nécessaire."
+  },
+  {
+    "nom": "Densité d’ailes",
+    "definition": "La densité d’ailes désigne le nombre de parapentes présents dans une même zone de vol, et donc le niveau de trafic. Plus il y a d’ailes proches les unes des autres, plus le risque de collision, de conflit de trajectoire et de stress augmente."
+  },
+  {
+    "nom": "Collision",
+    "definition": "Une collision est un contact involontaire entre deux aéronefs, ou entre un aéronef et un obstacle (relief, arbre, câble, sol), entraînant un risque immédiat pour l’intégrité du pilote et du matériel."
+  },
+  {
+    "nom": "Priorités de vol",
+    "definition": "Les priorités de vol sont les règles qui déterminent quel pilote doit céder le passage pour éviter les conflits de trajectoire. Elles permettent de maintenir la séparation, d’organiser le trafic et de prévenir les collisions."
+  },
+  {
+    "nom": "Suspentes extérieures",
+    "definition": "Les suspentes extérieures sont les suspentes situées aux extrémités de l’aile, c’est‑à‑dire les suspentes les plus latérales de chaque côté.\nElles soutiennent les bouts d’aile et jouent un rôle important dans la stabilité latérale, la répartition de la charge et certaines manœuvres (comme les oreilles)."
+  },
+  {
+    "nom": "Ligne des A",
+    "definition": "La ligne des A est la rangée de suspentes la plus avant du parapente, reliée aux élévateurs A.\nElle soutient le bord d’attaque et joue un rôle essentiel dans la portance, la stabilité et plusieurs manœuvres (décollage, accélérateur, oreilles)."
+  },
+  {
+    "nom": "Élévateurs avants",
+    "definition": "Les élévateurs avants sont les sangles avant du faisceau d’élévateurs, celles qui sont reliées à la ligne des A (et parfois aux B selon les conceptions).\nIls soutiennent le bord d’attaque et servent à contrôler l’incidence, au décollage, à l’accélérateur et à certaines manœuvres de descente (comme les oreilles)."
+  },
+  {
+    "nom": "Stabilo",
+    "definition": "Le stabilo est la partie latérale et extérieure de l’aile, située à l’extrémité du parapente. C’est une zone plus fine et plus allongée, conçue pour améliorer la stabilité directionnelle et limiter les oscillations en roulis."
+  },
+  {
+    "nom": "Priorité en vol de pente",
+    "definition": "En vol de pente, le pilote qui a le relief à sa droite est prioritaire. L’autre pilote doit s’écarter du relief pour éviter la collision."
+  },
+  {
+    "nom": "Sauvegarde des sites",
+    "definition": "La sauvegarde des sites désigne l’ensemble des comportements, actions et règles qui permettent de préserver l’accès, la qualité et la pérennité des sites de vol.\nElle repose sur le respect des propriétaires, des riverains, de l’environnement, et sur une pratique responsable du parapente."
+  },
+  {
+    "nom": "Biplace",
+    "definition": "Un biplace est un parapente conçu pour transporter deux personnes : un pilote (généralement qualifié pour le vol biplace), un passager.\nC’est une aile plus grande, plus solide et spécifiquement homologuée pour supporter une charge plus élevée et garantir la sécurité des deux occupants."
+  },
+  {
+    "nom": "Fédération",
+    "definition": "Une fédération est une organisation nationale qui regroupe les clubs, les pratiquants et les structures d’un sport afin d’en organiser, développer et sécuriser la pratique.\nElle établit les règles, délivre les licences, encadre la formation et représente la discipline auprès des autorités."
+  },
+  {
+    "nom": "Brevet de pilote initiale",
+    "definition": "Le Brevet de Pilote Initial est le premier niveau de certification FFVL. Il atteste qu’un pilote est capable de voler en autonomie en conditions calmes, en maîtrisant les bases du pilotage, de la sécurité, de la préparation du vol et du comportement sur site."
+  },
+  {
+    "nom": "Brevet de pilote",
+    "definition": "Le Brevet de Pilote est une certification FFVL qui atteste qu’un pilote possède les compétences techniques, théoriques et comportementales nécessaires pour voler en autonomie complète, y compris dans des conditions variées et sur des sites plus complexes que ceux du niveau initial."
+  },
+  {
+    "nom": "Brevet de Pilote Confirmé",
+    "definition": "Le Brevet de Pilote Confirmé est la certification FFVL de niveau avancé.\nIl atteste qu’un pilote est capable de voler en autonomie complète, y compris dans des conditions thermiques actives, sur des sites variés, en maîtrisant les manœuvres de descente, le pilotage actif et l’analyse fine de l’aérologie."
   }
 ]
