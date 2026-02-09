@@ -83,6 +83,14 @@ button:disabled:hover {
     gap: 6px;
 }
 
+/* Boutons à droite */
+.topbar-right-right {
+    display: flex;
+    gap: 6px;
+    margin: auto;
+    margin-right: 0;
+}
+
 /* Boutons */
 .topbar button {
     padding: 6px 10px;
