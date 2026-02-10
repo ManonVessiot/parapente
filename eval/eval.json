@@ -1,931 +1,1010 @@
-[
-  {
-    "name": "Niveau Blanc",
-    "competences": [
-      {
-        "name": "L'analyse",
-        "competences": [
-          {
-            "text": "Prendre en compte la forme du terrain",
-            "done": false
-          },
-          {
-            "text": "Systématisation de la prévol (points de sécurité)",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le mental",
-        "competences": [
-          {
-            "text": "Observer le milieu",
-            "done": false
-          },
-          {
-            "text": "Respecter le matériel",
-            "done": false
-          },
-          {
-            "text": "Se concentrer avant la mise en mouvement",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La technique",
-        "competences": [
-          {
-            "text": "Matériel : Démêlage",
-            "done": false
-          },
-          {
-            "text": "Matériel : Installation sellette",
-            "done": false
-          },
-          {
-            "text": "Matériel : Prise des commandes",
-            "done": false
-          },
-          {
-            "text": "Choix du moment de gonflage",
-            "done": false
-          },
-          {
-            "text": "Gonflage",
-            "done": false
-          },
-          {
-            "text": "Recentrage",
-            "done": false
-          },
-          {
-            "text": "Freinage/arrêt. Faire retomber l'aile sous le vent du pilote",
-            "done": false
-          },
-          {
-            "text": "Gestion des mouvements de l'aile sur les axes de roulis et de tangage",
-            "done": false
-          },
-          {
-            "text": "Respect du cap",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le cadre de pratique",
-        "competences": [
-          {
-            "text": "Connaître les obligations légales (assurances, autorisations, ...)",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La théorie",
-        "competences": [
-          {
-            "text": "Aérologie : le vent (direction et intensité)",
-            "done": false
-          },
-          {
-            "text": "Mécavol : équilibre aile-pilote (au sol)",
-            "done": false
-          },
-          {
-            "text": "Mécavol : les axes (Roulis, tangage, lacet)",
-            "done": false
-          },
-          {
-            "text": "Mécavol : pourquoi ça vole ?",
-            "done": false
-          },
-          {
-            "text": "Matériel : description et utilisation des commandes",
-            "done": false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Niveau Jaune",
-    "color": "#f0fd35",
-    "competences": [
-      {
-        "name": "L'analyse",
-        "competences": [
-          {
-            "text": "Choisir le moment de la mise en action",
-            "done": false
-          },
-          {
-            "text": "Prévol autonome",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le mental",
-        "competences": [
-          {
-            "text": "Prendre en compte les consignes",
-            "done": false
-          },
-          {
-            "text": "Réagir correctement aux consignes",
-            "done": false
-          },
-          {
-            "text": "Être prêt mentalement pour le premier grand vol",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La technique",
-        "competences": [
-          {
-            "text": "Respecter les 3 phases (gonflage, contrôle, décision)",
-            "done": false
-          },
-          {
-            "text": "Accélération (attitude corporelle : appui sur la ventrale, centre de gravité, foulée)",
-            "done": false
-          },
-          {
-            "text": "Gestion de l'équilibre aile-pilote (incidence, vitesse aile-pilote, axe de course)",
-            "done": false
-          },
-          {
-            "text": "Respect d'un cap en vol droit",
-            "done": false
-          },
-          {
-            "text": "Correction et légers changements de cap",
-            "done": false
-          },
-          {
-            "text": "Finale (réserve de vitesse, stabilité en roulis)",
-            "done": false
-          },
-          {
-            "text": "Arrondi, posé (amplitude du freinage, position du pilote, réception)",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le cadre de pratique",
-        "competences": [
-          {
-            "text": "Respecter l'environnement des zones de pratique (accès, terrains privés, riverains, autres utilisateurs)",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La théorie",
-        "competences": [
-          {
-            "text": "Aérologie : notion d'écoulements (au vent, sous le vent, turbulences)",
-            "done": false
-          },
-          {
-            "text": "Mécavol : fondamentaux (forces, angles) du vol rectiligne stabilisé",
-            "done": false
-          },
-          {
-            "text": "Mécavol : vitesse air et vitesse sol",
-            "done": false
-          },
-          {
-            "text": "Mécavol : les régimes de vol",
-            "done": false
-          },
-          {
-            "text": "Mécavol : configuration pendulaire",
-            "done": false
-          },
-          {
-            "text": "Pilotage : utilisation des commandes (préhension, gestuelle)",
-            "done": false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Niveau Orange",
-    "color": "#fb8c00",
-    "competences": [
-      {
-        "name": "L'analyse",
-        "competences": [
-          {
-            "text": "Prendre des repères topographiques (configuration de pente au décollage, dénivelée du vol, zone d'approche et d'atterrissage)",
-            "done": false
-          },
-          {
-            "text": "Lire l'aérologie (alimentation, force et orientation)",
-            "done": false
-          },
-          {
-            "text": "Réaliser une prévol complète (boucles d'attache, sangles de réglage, écartement de la ventrale, aiguille du secours)",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le mental",
-        "competences": [
-          {
-            "text": "Gérer l'anxiété liée au changement des repères et à la hauteur sol",
-            "done": false
-          },
-          {
-            "text": "Prendre conscience de son fonctionnement et le respecter (aspect émotionnel, envie-appréhension)",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La technique",
-        "competences": [
-          {
-            "text": "Adaptation de la technique de décollage à la configuration de la zone d'envol",
-            "done": false
-          },
-          {
-            "text": "Maintien du cap au décollage et éloignement du relief",
-            "done": false
-          },
-          {
-            "text": "Passage assis dans la sellette",
-            "done": false
-          },
-          {
-            "text": "Installation confortable (sensation de mobilité latérale et avant-arrière)",
-            "done": false
-          },
-          {
-            "text": "Pilotage commande et sellette",
-            "done": false
-          },
-          {
-            "text": "Mise en virage (90°, 180°, 360°)",
-            "done": false
-          },
-          {
-            "text": "Plan de vol : Situation dans l'espace (cap et repères sol)",
-            "done": false
-          },
-          {
-            "text": "Plan de vol : Déplacements, respects des zones d'évolution",
-            "done": false
-          },
-          {
-            "text": "Approche : Perte d'altitude",
-            "done": false
-          },
-          {
-            "text": "Approche : Prise de terrain en U et en S",
-            "done": false
-          },
-          {
-            "text": "Approche : Finale (régime de vol adapté, équilibre aile-pilote)",
-            "done": false
-          },
-          {
-            "text": "Approche : sortie de la sellette, arrondi et posé",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le cadre de pratique",
-        "competences": [
-          {
-            "text": "Respecter les règles d'utilisation des sites",
-            "done": false
-          },
-          {
-            "text": "Appliquer les règles de priorité en vol",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La théorie",
-        "competences": [
-          {
-            "text": "Aérologie : Evolution des conditions d'une journée, régime de brise",
-            "done": false
-          },
-          {
-            "text": "Mecavol : mécanique de la mise en virage",
-            "done": false
-          },
-          {
-            "text": "Matériel : Réglage sellette",
-            "done": false
-          },
-          {
-            "text": "Matériel : Préconisation pour l'utilisation du parachute de secours",
-            "done": false
-          },
-          {
-            "text": "Pilotage : Mise en virage, utilisation des commandes (amplitude, vitesse d'exécution, durée), appui sellette",
-            "done": false
-          },
-          {
-            "text": "Technique de vol : Plan de vol",
-            "done": false
-          },
-          {
-            "text": "Technique de vol : Prise de terrain (placement, différentes approches)",
-            "done": false
-          },
-          {
-            "text": "Réglementation : Règles de priorités, règles d'utilisation des sites",
-            "done": false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Niveau Vert",
-    "color": "#4caf50",
-    "competences": [
-      {
-        "name": "L'analyse",
-        "competences": [
-          {
-            "text": "Réaliser sa propre analyse avant le vol",
-            "done": false
-          },
-          {
-            "text": "Effectuer seul une prévol complète",
-            "done": false
-          },
-          {
-            "text": "Décider du moment du décollage",
-            "done": false
-          },
-          {
-            "text": "Prendre en compte l'environnement pendant le vol",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le mental",
-        "competences": [
-          {
-            "text": "Mesurer le niveau atteint, les exigences et les risques de l'activité",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La technique",
-        "competences": [
-          {
-            "text": "Sevrage progressif de la radio",
-            "done": false
-          },
-          {
-            "text": "Choix d'un plan de vol",
-            "done": false
-          },
-          {
-            "text": "Tangage : faible amplitude",
-            "done": false
-          },
-          {
-            "text": "Roulis : inversions de virage à faible inclinaison",
-            "done": false
-          },
-          {
-            "text": "Connaître la position des commandes sur l'ensemble de la plage de vitesse",
-            "done": false
-          },
-          {
-            "text": "Oreilles",
-            "done": false
-          },
-          {
-            "text": "Anticiper les trajectoires lors du vol à plusieurs",
-            "done": false
-          },
-          {
-            "text": "Gestion de problèmes d'installation, de commandes, de clef",
-            "done": false
-          },
-          {
-            "text": "Adaptation du plan de vol aux conditions du moment",
-            "done": false
-          },
-          {
-            "text": "Construction de différentes approches",
-            "done": false
-          },
-          {
-            "text": "Approches à plusieurs",
-            "done": false
-          },
-          {
-            "text": "Contrôle statique (dos et face voile)",
-            "done": false
-          },
-          {
-            "text": "Techniques d'affalement",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le cadre de pratique",
-        "competences": [
-          {
-            "text": "S'inscrire dans une pratique sécuritaire",
-            "done": false
-          },
-          {
-            "text": "Préparer le brevet initial",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La théorie",
-        "competences": [
-          {
-            "text": "Météo-Aéro : Classification des nuages",
-            "done": false
-          },
-          {
-            "text": "Météo-Aéro : Différence vent et brise",
-            "done": false
-          },
-          {
-            "text": "Météo-Aéro : Les pièges aérologiques",
-            "done": false
-          },
-          {
-            "text": "Météo-Aéro : Les différents types d'ascendances",
-            "done": false
-          },
-          {
-            "text": "Mécavol : Notion de polaire des vitesses",
-            "done": false
-          },
-          {
-            "text": "Mécavol : Mécanique du virage et mouvements pendulaires associés",
-            "done": false
-          },
-          {
-            "text": "Matériel : Pliage adéquat, facteurs de vieillissement, vrillage des commandes",
-            "done": false
-          },
-          {
-            "text": "Matériel : Montage et conditions d'utilisation du parachute de secours",
-            "done": false
-          },
-          {
-            "text": "Réglementation : Bases de la réglementation aérienne (PUL, règles de vol à vue, règles d'utilisation de la radio)",
-            "done": false
-          },
-          {
-            "text": "Réglementation : Cursus fédéral de formation pilote",
-            "done": false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Niveau Bleu",
-    "color": "#1e88e5",
-    "competences": [
-      {
-        "name": "L'analyse",
-        "competences": [
-          {
-            "text": "Lire le site (repères topographiques et aérologiques)",
-            "done": false
-          },
-          {
-            "text": "Confronter les prévisions météorologiques et l'observation des conditions sur le site",
-            "done": false
-          },
-          {
-            "text": "Prévoir les conditions de vol et l'évolution possible sur la journée",
-            "done": false
-          },
-          {
-            "text": "Choisir le meilleur créneau de vol",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le mental",
-        "competences": [
-          {
-            "text": "Avoir une attitude responsable sur site fréquenté (au sol, en vol)",
-            "done": false
-          },
-          {
-            "text": "Développer la capacité à l'auto évaluation",
-            "done": false
-          },
-          {
-            "text": "Pouvoir voler au moins une heure (gestion de la fatigue, euphorie, attention)",
-            "done": false
-          },
-          {
-            "text": "Savoir prendre la décision d'aller poser (évolution des conditions, niveau personnel)",
-            "done": false
-          },
-          {
-            "text": "Avoir la démarche de solliciter les personnes au structures reconnues compétentes pour poursuivre sa progression",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La technique",
-        "competences": [
-          {
-            "text": "Adapter les techniques dos et face à l'aile selon la force du vent (nul à soutenu) et l'incidence de la pente",
-            "done": false
-          },
-          {
-            "text": "Gonfler et décoller avec un vent de travers (45° maximum)",
-            "done": false
-          },
-          {
-            "text": "Pilotage actif : action simultanée commande et sellette",
-            "done": false
-          },
-          {
-            "text": "Pilotage actif : Induire et stopper les mouvements populaire et l'énergie associée sur les différents axes (tangage, roulis, lacet) lors de virages à 360°, virages cadencés (wings), abattées",
-            "done": false
-          },
-          {
-            "text": "Pilotage actif : Utiliser les différents régimes de vol et se positionner par rapport au relief afin d'exploiter une ascendance dynamique",
-            "done": false
-          },
-          {
-            "text": "Pilotage actif : Maintenir une incidence correcte, modifier son rayon de virage afin d'exploiter une ascendance thermique homogène (suffisamment large et peu turbulente)",
-            "done": false
-          },
-          {
-            "text": "Pilotage actif : Réagir correctement (trajectoire, incidence, mouvements pendulaires) en situation de fermeture frontale et asymétrique de faible amplitude",
-            "done": false
-          },
-          {
-            "text": "Elaborer et réaliser un plan de vol en local du site en conditions aérologiques variées",
-            "done": false
-          },
-          {
-            "text": "Exploiter les ascendances dynamiques et thermiques homogènes",
-            "done": false
-          },
-          {
-            "text": "Respecter les priorités en vol (proche et éloigner du relief, en vol thermique)",
-            "done": false
-          },
-          {
-            "text": "Utiliser l'accélérateur sur des situations simples",
-            "done": false
-          },
-          {
-            "text": "Faire les oreilles associées à l'accélérateur et contrôler la trajectoire",
-            "done": false
-          },
-          {
-            "text": "Exploiter une zone de descendance",
-            "done": false
-          },
-          {
-            "text": "Construire une approche sur une aire d'atterrissage repérée en conditions aérologiques variées",
-            "done": false
-          },
-          {
-            "text": "Gérer les angles de dérive près du sol (\"cabrer\" pour perdre de l'altitude sans avancer sur le terrain)",
-            "done": false
-          },
-          {
-            "text": "Se poser avec précision en utilisant les régimes de vol adaptés lors de la phase finale et de l'arrondi",
-            "done": false
-          },
-          {
-            "text": "Matériel : Régler une sellette",
-            "done": false
-          },
-          {
-            "text": "Matériel : Régler l'accélérateur",
-            "done": false
-          },
-          {
-            "text": "Matériel : Prendre en compte les différents facteurs d'usure du matériel de vol",
-            "done": false
-          },
-          {
-            "text": "Matériel : Comptabiliser le temps d'utilisation de son aile",
-            "done": false
-          },
-          {
-            "text": "Matériel : Être sensibilisé au suivi du parachute de secours (aiguilles, poignée, aération, pliage, conditionnement)",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le cadre de pratique",
-        "competences": [
-          {
-            "text": "Identifier les différents types de pratique et leur exigences",
-            "done": false
-          },
-          {
-            "text": "Avoir conscience de l'importance de ses actes pour la reconnaissance et l'avenir de l'activité",
-            "done": false
-          },
-          {
-            "text": "Participer à la vie fédérale",
-            "done": false
-          },
-          {
-            "text": "Préparer le brevet de pilote",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La théorie",
-        "competences": [
-          {
-            "text": "Météo-Aéro : Bases (grands échanges, dépressions - anticyclones, frontologie, nuages, notion de stabilité - instabilité)",
-            "done": false
-          },
-          {
-            "text": "Météo-Aéro : Compréhension des bulletins (phénomènes généraux)",
-            "done": false
-          },
-          {
-            "text": "Météo-Aéro : Phénomènes dangereux",
-            "done": false
-          },
-          {
-            "text": "Mécavol : Evolution de la portance avec l'incidence",
-            "done": false
-          },
-          {
-            "text": "Mécavol : Effets de l'utilisation de l'accélérateur",
-            "done": false
-          },
-          {
-            "text": "Mécavol : Effet de la réalisation des oreilles",
-            "done": false
-          },
-          {
-            "text": "Mécavol : L'instabilité, la neutralité et la stabilité spirale",
-            "done": false
-          },
-          {
-            "text": "Technique de vol : Différentes techniques de \"posé\" selon les situations",
-            "done": false
-          },
-          {
-            "text": "Pilotage : Phase transitoire (entrée et sortie de thermique, gradient)",
-            "done": false
-          },
-          {
-            "text": "Pilotage : Fermetures (causes, effets, conduite à tenir)",
-            "done": false
-          },
-          {
-            "text": "Pilotage : Utilisation de la plage de vitesse, exploitation de la polaire de l'aile",
-            "done": false
-          },
-          {
-            "text": "Matériel : Accélérateur (montage, utilisation)",
-            "done": false
-          },
-          {
-            "text": "Matériel : Différentes catégories d'ailes et leurs exigences de pilotage",
-            "done": false
-          },
-          {
-            "text": "Matériel : Le parachute de secours (utilisation, configuration aile-secours, contraintes liées aux incidents de vol)",
-            "done": false
-          },
-          {
-            "text": "Réglementation : Réglementation aérienne (lecture de cartes, Notam, Sup AIP, recherche d'informations)",
-            "done": false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Niveau Marron",
-    "color": "#6d4c41",
-    "competences": [
-      {
-        "name": "L'analyse",
-        "competences": [
-          {
-            "text": "Rechercher et confronter les données météorologiques",
-            "done": false
-          },
-          {
-            "text": "Faire l'observation sur secteur",
-            "done": false
-          },
-          {
-            "text": "Anticiper l'aérologie d'un secteur à partir d'une carte topographique",
-            "done": false
-          },
-          {
-            "text": "Poursuivre l'analyse des conditions et de leur évolution tout au long du vol",
-            "done": false
-          },
-          {
-            "text": "Savoir choisir une zone de décollage lors d'une pratique hors site",
-            "done": false
-          },
-          {
-            "text": "Anticiper les choix d'un atterrissage en campagne",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le mental",
-        "competences": [
-          {
-            "text": "Intégrer les facteurs humains",
-            "done": false
-          },
-          {
-            "text": "Rester à l'écoute de ses possibilités du jour et savoir renoncer",
-            "done": false
-          },
-          {
-            "text": "Avoir conscience des exigences liées à la pratique du vol de performance",
-            "done": false
-          },
-          {
-            "text": "Être capable d'endurance en vol (résistance au stress, lucidité, récupération)",
-            "done": false
-          },
-          {
-            "text": "Se concentrer sur les choix et actions à venir tout en pilotant",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La technique",
-        "competences": [
-          {
-            "text": "Adapter sa technique à la situation (alimentation, pente, aile)",
-            "done": false
-          },
-          {
-            "text": "Neutraliser son aile dans le vent (empêcher l'aile de décoller le pilote)",
-            "done": false
-          },
-          {
-            "text": "Anticiper et gérer les incidents de vol (Stage SIV ou pilotage au dessus de l'eau recommandé)",
-            "done": false
-          },
-          {
-            "text": "Exploiter les différents types de thermiques",
-            "done": false
-          },
-          {
-            "text": "Maîtriser la précision des trajectoires en vol de groupe",
-            "done": false
-          },
-          {
-            "text": "Prospecter le thermique (identifier les sources potentielles, repérer l'orientation et la force du flux, se positionner par rapport au relief et aux nuages)",
-            "done": false
-          },
-          {
-            "text": "Adapter son mode de déplacement à la situation (transiter, cheminer, se mettre en attente)",
-            "done": false
-          },
-          {
-            "text": "Savoir utiliser l'accélérateur pour améliorer les performances en vol",
-            "done": false
-          },
-          {
-            "text": "Utiliser la technique de descente rapide adaptée à la situation (conditions, proximité relief)",
-            "done": false
-          },
-          {
-            "text": "Utiliser les basses vitesses près du sol à bon escient",
-            "done": false
-          },
-          {
-            "text": "Créer un scénario de vol et savoir l'adapter",
-            "done": false
-          },
-          {
-            "text": "Se repérer lors de son déplacement et se positionner par rapport au relief, au sol et aux autres pilotes",
-            "done": false
-          },
-          {
-            "text": "Utiliser les données fournies par les instruments",
-            "done": false
-          },
-          {
-            "text": "Matériel : Suivre les signes de vieillissement (drisses de freins, état du tissu, des coutures, du suspentage)",
-            "done": false
-          },
-          {
-            "text": "Matériel : Adapter le réglage de sa sellette à son pilotage",
-            "done": false
-          },
-          {
-            "text": "Matériel : Gérer son parachute de secours (simulation d'utilisation, aérer, replier et réinstaller)",
-            "done": false
-          },
-          {
-            "text": "Matériel : Connaître le fonctionnement des instruments de vol (alti-vario, GPS)",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "Le cadre de pratique",
-        "competences": [
-          {
-            "text": "Agir en commandant de bord, en respect de l'espace aérien et des zones protégées",
-            "done": false
-          },
-          {
-            "text": "S'inscrire dans une démarche de poursuite de progression (évolution du matériel, autres formes de pratique, compétition)",
-            "done": false
-          }
-        ]
-      },
-      {
-        "name": "La théorie",
-        "competences": [
-          {
-            "text": "Météo-Aéro : Frontologie détaillée,",
-            "done": false
-          },
-          {
-            "text": "Météo-Aéro : Notion de stabilité et instabilité appliquées à la pratique",
-            "done": false
-          },
-          {
-            "text": "Météo-Aéro : Phénomènes particuliers liés à une région",
-            "done": false
-          },
-          {
-            "text": "Mécavol : Polaire des vitesses appliquée au vol (influence vent et rafales)",
-            "done": false
-          },
-          {
-            "text": "Mécavol : Incidents de vols et sortie du domaine de vol",
-            "done": false
-          },
-          {
-            "text": "Pilotage : Exploiter les ascendances",
-            "done": false
-          },
-          {
-            "text": "Pilotage : Régimes de vol en transition",
-            "done": false
-          },
-          {
-            "text": "Pilotage : Méthodes de descentes rapides",
-            "done": false
-          },
-          {
-            "text": "Matériel : Homologation",
-            "done": false
-          },
-          {
-            "text": "Matériel : Exigences liées à la mise en oeuvre d'un matériel de vol plus performant (ailes, sellettes, secours)",
-            "done": false
-          },
-          {
-            "text": "Réglementation : Connaissance des différents cadres réglementaires (interlocuteur, institutions)",
-            "done": false
-          }
-        ]
-      }
-    ]
-  }
-]
+{
+  "version": 100220261629,
+  "data": [
+    {
+      "name": "Niveau Blanc",
+      "competences": [
+        {
+          "name": "L'analyse",
+          "competences": [
+            {
+              "text": "Prendre en compte la forme du terrain",
+              "done": false
+            },
+            {
+              "text": "Systématisation de la prévol (points de sécurité)",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le mental",
+          "competences": [
+            {
+              "text": "Observer le milieu",
+              "done": false
+            },
+            {
+              "text": "Respecter le matériel",
+              "done": false
+            },
+            {
+              "text": "Se concentrer avant la mise en mouvement",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La technique",
+          "competences": [
+            {
+              "text": "Matériel : Démêlage",
+              "done": false
+            },
+            {
+              "text": "Matériel : Installation sellette",
+              "done": false
+            },
+            {
+              "text": "Matériel : Prise des commandes",
+              "done": false
+            },
+            {
+              "text": "Choix du moment de gonflage",
+              "done": false
+            },
+            {
+              "text": "Gonflage",
+              "done": false
+            },
+            {
+              "text": "Recentrage",
+              "done": false
+            },
+            {
+              "text": "Freinage/arrêt. Faire retomber l'aile sous le vent du pilote",
+              "done": false
+            },
+            {
+              "text": "Gestion des mouvements de l'aile sur les axes de roulis et de tangage",
+              "done": false
+            },
+            {
+              "text": "Respect du cap",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le cadre de pratique",
+          "competences": [
+            {
+              "text": "Connaître les obligations légales (assurances, autorisations, ...)",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La théorie",
+          "competences": [
+            {
+              "text": "Aérologie : le vent (direction et intensité)",
+              "done": false
+            },
+            {
+              "text": "Mécavol : équilibre aile-pilote (au sol)",
+              "done": false
+            },
+            {
+              "text": "Mécavol : les axes (Roulis, tangage, lacet)",
+              "done": false
+            },
+            {
+              "text": "Mécavol : pourquoi ça vole ?",
+              "done": false
+            },
+            {
+              "text": "Matériel : description et utilisation des commandes",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Niveau Jaune",
+      "color": "#ffff00",
+      "competences": [
+        {
+          "name": "L'analyse",
+          "competences": [
+            {
+              "text": "Choisir le moment de la mise en action",
+              "done": false
+            },
+            {
+              "text": "Prévol autonome",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le mental",
+          "competences": [
+            {
+              "text": "Prendre en compte les consignes",
+              "done": false
+            },
+            {
+              "text": "Réagir correctement aux consignes",
+              "done": false
+            },
+            {
+              "text": "Être prêt mentalement pour le premier grand vol",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La technique",
+          "competences": [
+            {
+              "text": "Respecter les 3 phases (gonflage, contrôle, décision)",
+              "done": false
+            },
+            {
+              "text": "Accélération (attitude corporelle : appui sur la ventrale, centre de gravité, foulée)",
+              "done": false
+            },
+            {
+              "text": "Gestion de l'équilibre aile-pilote (incidence, vitesse aile-pilote, axe de course)",
+              "done": false
+            },
+            {
+              "text": "Respect d'un cap en vol droit",
+              "done": false
+            },
+            {
+              "text": "Correction et légers changements de cap",
+              "done": false
+            },
+            {
+              "text": "Finale (réserve de vitesse, stabilité en roulis)",
+              "done": false
+            },
+            {
+              "text": "Arrondi, posé (amplitude du freinage, position du pilote, réception)",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le cadre de pratique",
+          "competences": [
+            {
+              "text": "Respecter l'environnement des zones de pratique (accès, terrains privés, riverains, autres utilisateurs)",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La théorie",
+          "competences": [
+            {
+              "text": "Aérologie : notion d'écoulements (au vent, sous le vent, turbulences)",
+              "done": false
+            },
+            {
+              "text": "Mécavol : fondamentaux (forces, angles) du vol rectiligne stabilisé",
+              "done": false
+            },
+            {
+              "text": "Mécavol : vitesse air et vitesse sol",
+              "done": false
+            },
+            {
+              "text": "Mécavol : les régimes de vol",
+              "done": false
+            },
+            {
+              "text": "Mécavol : configuration pendulaire",
+              "done": false
+            },
+            {
+              "text": "Pilotage : utilisation des commandes (préhension, gestuelle)",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Niveau Orange",
+      "color": "#FF8000",
+      "competences": [
+        {
+          "name": "L'analyse",
+          "competences": [
+            {
+              "text": "Prendre des repères topographiques (configuration de pente au décollage, dénivelée du vol, zone d'approche et d'atterrissage)",
+              "done": false
+            },
+            {
+              "text": "Lire l'aérologie (alimentation, force et orientation)",
+              "done": false
+            },
+            {
+              "text": "Réaliser une prévol complète (boucles d'attache, sangles de réglage, écartement de la ventrale, aiguille du secours)",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le mental",
+          "competences": [
+            {
+              "text": "Gérer l'anxiété liée au changement des repères et à la hauteur sol",
+              "done": false
+            },
+            {
+              "text": "Prendre conscience de son fonctionnement et le respecter (aspect émotionnel, envie-appréhension)",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La technique",
+          "competences": [
+            {
+              "text": "Adaptation de la technique de décollage à la configuration de la zone d'envol",
+              "done": false
+            },
+            {
+              "text": "Maintien du cap au décollage et éloignement du relief",
+              "done": false
+            },
+            {
+              "text": "Passage assis dans la sellette",
+              "done": false
+            },
+            {
+              "text": "Installation confortable (sensation de mobilité latérale et avant-arrière)",
+              "done": false
+            },
+            {
+              "text": "Pilotage commande et sellette",
+              "done": false
+            },
+            {
+              "text": "Mise en virage (90°, 180°, 360°)",
+              "done": false
+            },
+            {
+              "text": "Plan de vol : Situation dans l'espace (cap et repères sol)",
+              "done": false
+            },
+            {
+              "text": "Plan de vol : Déplacements, respects des zones d'évolution",
+              "done": false
+            },
+            {
+              "text": "Approche : Perte d'altitude",
+              "done": false
+            },
+            {
+              "text": "Approche : Prise de terrain en U et en S",
+              "done": false
+            },
+            {
+              "text": "Approche : Finale (régime de vol adapté, équilibre aile-pilote)",
+              "done": false
+            },
+            {
+              "text": "Approche : sortie de la sellette, arrondi et posé",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le cadre de pratique",
+          "competences": [
+            {
+              "text": "Respecter les règles d'utilisation des sites",
+              "done": false
+            },
+            {
+              "text": "Appliquer les règles de priorité en vol",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La théorie",
+          "competences": [
+            {
+              "text": "Aérologie : Evolution des conditions d'une journée, régime de brise",
+              "done": false
+            },
+            {
+              "text": "Mecavol : mécanique de la mise en virage",
+              "done": false
+            },
+            {
+              "text": "Matériel : Réglage sellette",
+              "done": false
+            },
+            {
+              "text": "Matériel : Préconisation pour l'utilisation du parachute de secours",
+              "done": false
+            },
+            {
+              "text": "Pilotage : Mise en virage, utilisation des commandes (amplitude, vitesse d'exécution, durée), appui sellette",
+              "done": false
+            },
+            {
+              "text": "Technique de vol : Plan de vol",
+              "done": false
+            },
+            {
+              "text": "Technique de vol : Prise de terrain (placement, différentes approches)",
+              "done": false
+            },
+            {
+              "text": "Réglementation : Règles de priorités, règles d'utilisation des sites",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Niveau Vert",
+      "color": "#00FF00",
+      "competences": [
+        {
+          "name": "L'analyse",
+          "competences": [
+            {
+              "text": "Réaliser sa propre analyse avant le vol",
+              "done": false
+            },
+            {
+              "text": "Effectuer seul une prévol complète",
+              "done": false
+            },
+            {
+              "text": "Décider du moment du décollage",
+              "done": false
+            },
+            {
+              "text": "Prendre en compte l'environnement pendant le vol",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le mental",
+          "competences": [
+            {
+              "text": "Mesurer le niveau atteint, les exigences et les risques de l'activité",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La technique",
+          "competences": [
+            {
+              "text": "Sevrage progressif de la radio",
+              "done": false
+            },
+            {
+              "text": "Choix d'un plan de vol",
+              "done": false
+            },
+            {
+              "text": "Tangage : faible amplitude",
+              "done": false
+            },
+            {
+              "text": "Roulis : inversions de virage à faible inclinaison",
+              "done": false
+            },
+            {
+              "text": "Connaître la position des commandes sur l'ensemble de la plage de vitesse",
+              "done": false
+            },
+            {
+              "text": "Oreilles",
+              "done": false
+            },
+            {
+              "text": "Anticiper les trajectoires lors du vol à plusieurs",
+              "done": false
+            },
+            {
+              "text": "Gestion de problèmes d'installation, de commandes, de clef",
+              "done": false
+            },
+            {
+              "text": "Adaptation du plan de vol aux conditions du moment",
+              "done": false
+            },
+            {
+              "text": "Construction de différentes approches",
+              "done": false
+            },
+            {
+              "text": "Approches à plusieurs",
+              "done": false
+            },
+            {
+              "text": "Contrôle statique (dos et face voile)",
+              "done": false
+            },
+            {
+              "text": "Techniques d'affalement",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le cadre de pratique",
+          "competences": [
+            {
+              "text": "S'inscrire dans une pratique sécuritaire",
+              "done": false
+            },
+            {
+              "text": "Préparer le brevet initial",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La théorie",
+          "competences": [
+            {
+              "text": "Météo-Aéro : Classification des nuages",
+              "done": false
+            },
+            {
+              "text": "Météo-Aéro : Différence vent et brise",
+              "done": false
+            },
+            {
+              "text": "Météo-Aéro : Les pièges aérologiques",
+              "done": false
+            },
+            {
+              "text": "Météo-Aéro : Les différents types d'ascendances",
+              "done": false
+            },
+            {
+              "text": "Mécavol : Notion de polaire des vitesses",
+              "done": false
+            },
+            {
+              "text": "Mécavol : Mécanique du virage et mouvements pendulaires associés",
+              "done": false
+            },
+            {
+              "text": "Matériel : Pliage adéquat, facteurs de vieillissement, vrillage des commandes",
+              "done": false
+            },
+            {
+              "text": "Matériel : Montage et conditions d'utilisation du parachute de secours",
+              "done": false
+            },
+            {
+              "text": "Réglementation : Bases de la réglementation aérienne (PUL, règles de vol à vue, règles d'utilisation de la radio)",
+              "done": false
+            },
+            {
+              "text": "Réglementation : Cursus fédéral de formation pilote",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Brevet de pilote initial",
+      "color": "#4caf50",
+      "competences": [
+        {
+          "name": "Théorique",
+          "competences": [
+            {
+              "text": "QCM FFVL BPI 30 questions > 75%",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Pratique",
+          "competences": [
+            {
+              "text": "??",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Niveau Bleu",
+      "color": "#0000ff",
+      "competences": [
+        {
+          "name": "L'analyse",
+          "competences": [
+            {
+              "text": "Lire le site (repères topographiques et aérologiques)",
+              "done": false
+            },
+            {
+              "text": "Confronter les prévisions météorologiques et l'observation des conditions sur le site",
+              "done": false
+            },
+            {
+              "text": "Prévoir les conditions de vol et l'évolution possible sur la journée",
+              "done": false
+            },
+            {
+              "text": "Choisir le meilleur créneau de vol",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le mental",
+          "competences": [
+            {
+              "text": "Avoir une attitude responsable sur site fréquenté (au sol, en vol)",
+              "done": false
+            },
+            {
+              "text": "Développer la capacité à l'auto évaluation",
+              "done": false
+            },
+            {
+              "text": "Pouvoir voler au moins une heure (gestion de la fatigue, euphorie, attention)",
+              "done": false
+            },
+            {
+              "text": "Savoir prendre la décision d'aller poser (évolution des conditions, niveau personnel)",
+              "done": false
+            },
+            {
+              "text": "Avoir la démarche de solliciter les personnes au structures reconnues compétentes pour poursuivre sa progression",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La technique",
+          "competences": [
+            {
+              "text": "Adapter les techniques dos et face à l'aile selon la force du vent (nul à soutenu) et l'incidence de la pente",
+              "done": false
+            },
+            {
+              "text": "Gonfler et décoller avec un vent de travers (45° maximum)",
+              "done": false
+            },
+            {
+              "text": "Pilotage actif : action simultanée commande et sellette",
+              "done": false
+            },
+            {
+              "text": "Pilotage actif : Induire et stopper les mouvements populaire et l'énergie associée sur les différents axes (tangage, roulis, lacet) lors de virages à 360°, virages cadencés (wings), abattées",
+              "done": false
+            },
+            {
+              "text": "Pilotage actif : Utiliser les différents régimes de vol et se positionner par rapport au relief afin d'exploiter une ascendance dynamique",
+              "done": false
+            },
+            {
+              "text": "Pilotage actif : Maintenir une incidence correcte, modifier son rayon de virage afin d'exploiter une ascendance thermique homogène (suffisamment large et peu turbulente)",
+              "done": false
+            },
+            {
+              "text": "Pilotage actif : Réagir correctement (trajectoire, incidence, mouvements pendulaires) en situation de fermeture frontale et asymétrique de faible amplitude",
+              "done": false
+            },
+            {
+              "text": "Elaborer et réaliser un plan de vol en local du site en conditions aérologiques variées",
+              "done": false
+            },
+            {
+              "text": "Exploiter les ascendances dynamiques et thermiques homogènes",
+              "done": false
+            },
+            {
+              "text": "Respecter les priorités en vol (proche et éloigner du relief, en vol thermique)",
+              "done": false
+            },
+            {
+              "text": "Utiliser l'accélérateur sur des situations simples",
+              "done": false
+            },
+            {
+              "text": "Faire les oreilles associées à l'accélérateur et contrôler la trajectoire",
+              "done": false
+            },
+            {
+              "text": "Exploiter une zone de descendance",
+              "done": false
+            },
+            {
+              "text": "Construire une approche sur une aire d'atterrissage repérée en conditions aérologiques variées",
+              "done": false
+            },
+            {
+              "text": "Gérer les angles de dérive près du sol (\"cabrer\" pour perdre de l'altitude sans avancer sur le terrain)",
+              "done": false
+            },
+            {
+              "text": "Se poser avec précision en utilisant les régimes de vol adaptés lors de la phase finale et de l'arrondi",
+              "done": false
+            },
+            {
+              "text": "Matériel : Régler une sellette",
+              "done": false
+            },
+            {
+              "text": "Matériel : Régler l'accélérateur",
+              "done": false
+            },
+            {
+              "text": "Matériel : Prendre en compte les différents facteurs d'usure du matériel de vol",
+              "done": false
+            },
+            {
+              "text": "Matériel : Comptabiliser le temps d'utilisation de son aile",
+              "done": false
+            },
+            {
+              "text": "Matériel : Être sensibilisé au suivi du parachute de secours (aiguilles, poignée, aération, pliage, conditionnement)",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le cadre de pratique",
+          "competences": [
+            {
+              "text": "Identifier les différents types de pratique et leur exigences",
+              "done": false
+            },
+            {
+              "text": "Avoir conscience de l'importance de ses actes pour la reconnaissance et l'avenir de l'activité",
+              "done": false
+            },
+            {
+              "text": "Participer à la vie fédérale",
+              "done": false
+            },
+            {
+              "text": "Préparer le brevet de pilote",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La théorie",
+          "competences": [
+            {
+              "text": "Météo-Aéro : Bases (grands échanges, dépressions - anticyclones, frontologie, nuages, notion de stabilité - instabilité)",
+              "done": false
+            },
+            {
+              "text": "Météo-Aéro : Compréhension des bulletins (phénomènes généraux)",
+              "done": false
+            },
+            {
+              "text": "Météo-Aéro : Phénomènes dangereux",
+              "done": false
+            },
+            {
+              "text": "Mécavol : Evolution de la portance avec l'incidence",
+              "done": false
+            },
+            {
+              "text": "Mécavol : Effets de l'utilisation de l'accélérateur",
+              "done": false
+            },
+            {
+              "text": "Mécavol : Effet de la réalisation des oreilles",
+              "done": false
+            },
+            {
+              "text": "Mécavol : L'instabilité, la neutralité et la stabilité spirale",
+              "done": false
+            },
+            {
+              "text": "Technique de vol : Différentes techniques de \"posé\" selon les situations",
+              "done": false
+            },
+            {
+              "text": "Pilotage : Phase transitoire (entrée et sortie de thermique, gradient)",
+              "done": false
+            },
+            {
+              "text": "Pilotage : Fermetures (causes, effets, conduite à tenir)",
+              "done": false
+            },
+            {
+              "text": "Pilotage : Utilisation de la plage de vitesse, exploitation de la polaire de l'aile",
+              "done": false
+            },
+            {
+              "text": "Matériel : Accélérateur (montage, utilisation)",
+              "done": false
+            },
+            {
+              "text": "Matériel : Différentes catégories d'ailes et leurs exigences de pilotage",
+              "done": false
+            },
+            {
+              "text": "Matériel : Le parachute de secours (utilisation, configuration aile-secours, contraintes liées aux incidents de vol)",
+              "done": false
+            },
+            {
+              "text": "Réglementation : Réglementation aérienne (lecture de cartes, Notam, Sup AIP, recherche d'informations)",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Brevet de pilote",
+      "color": "#1e88e5",
+      "competences": [
+        {
+          "name": "Théorique",
+          "competences": [
+            {
+              "text": "QCM FFVL BP 60 questions > 75%",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Pratique",
+          "competences": [
+            {
+              "text": "??",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Niveau Marron",
+      "color": "#6d4c41",
+      "competences": [
+        {
+          "name": "L'analyse",
+          "competences": [
+            {
+              "text": "Rechercher et confronter les données météorologiques",
+              "done": false
+            },
+            {
+              "text": "Faire l'observation sur secteur",
+              "done": false
+            },
+            {
+              "text": "Anticiper l'aérologie d'un secteur à partir d'une carte topographique",
+              "done": false
+            },
+            {
+              "text": "Poursuivre l'analyse des conditions et de leur évolution tout au long du vol",
+              "done": false
+            },
+            {
+              "text": "Savoir choisir une zone de décollage lors d'une pratique hors site",
+              "done": false
+            },
+            {
+              "text": "Anticiper les choix d'un atterrissage en campagne",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le mental",
+          "competences": [
+            {
+              "text": "Intégrer les facteurs humains",
+              "done": false
+            },
+            {
+              "text": "Rester à l'écoute de ses possibilités du jour et savoir renoncer",
+              "done": false
+            },
+            {
+              "text": "Avoir conscience des exigences liées à la pratique du vol de performance",
+              "done": false
+            },
+            {
+              "text": "Être capable d'endurance en vol (résistance au stress, lucidité, récupération)",
+              "done": false
+            },
+            {
+              "text": "Se concentrer sur les choix et actions à venir tout en pilotant",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La technique",
+          "competences": [
+            {
+              "text": "Adapter sa technique à la situation (alimentation, pente, aile)",
+              "done": false
+            },
+            {
+              "text": "Neutraliser son aile dans le vent (empêcher l'aile de décoller le pilote)",
+              "done": false
+            },
+            {
+              "text": "Anticiper et gérer les incidents de vol (Stage SIV ou pilotage au dessus de l'eau recommandé)",
+              "done": false
+            },
+            {
+              "text": "Exploiter les différents types de thermiques",
+              "done": false
+            },
+            {
+              "text": "Maîtriser la précision des trajectoires en vol de groupe",
+              "done": false
+            },
+            {
+              "text": "Prospecter le thermique (identifier les sources potentielles, repérer l'orientation et la force du flux, se positionner par rapport au relief et aux nuages)",
+              "done": false
+            },
+            {
+              "text": "Adapter son mode de déplacement à la situation (transiter, cheminer, se mettre en attente)",
+              "done": false
+            },
+            {
+              "text": "Savoir utiliser l'accélérateur pour améliorer les performances en vol",
+              "done": false
+            },
+            {
+              "text": "Utiliser la technique de descente rapide adaptée à la situation (conditions, proximité relief)",
+              "done": false
+            },
+            {
+              "text": "Utiliser les basses vitesses près du sol à bon escient",
+              "done": false
+            },
+            {
+              "text": "Créer un scénario de vol et savoir l'adapter",
+              "done": false
+            },
+            {
+              "text": "Se repérer lors de son déplacement et se positionner par rapport au relief, au sol et aux autres pilotes",
+              "done": false
+            },
+            {
+              "text": "Utiliser les données fournies par les instruments",
+              "done": false
+            },
+            {
+              "text": "Matériel : Suivre les signes de vieillissement (drisses de freins, état du tissu, des coutures, du suspentage)",
+              "done": false
+            },
+            {
+              "text": "Matériel : Adapter le réglage de sa sellette à son pilotage",
+              "done": false
+            },
+            {
+              "text": "Matériel : Gérer son parachute de secours (simulation d'utilisation, aérer, replier et réinstaller)",
+              "done": false
+            },
+            {
+              "text": "Matériel : Connaître le fonctionnement des instruments de vol (alti-vario, GPS)",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Le cadre de pratique",
+          "competences": [
+            {
+              "text": "Agir en commandant de bord, en respect de l'espace aérien et des zones protégées",
+              "done": false
+            },
+            {
+              "text": "S'inscrire dans une démarche de poursuite de progression (évolution du matériel, autres formes de pratique, compétition)",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "La théorie",
+          "competences": [
+            {
+              "text": "Météo-Aéro : Frontologie détaillée,",
+              "done": false
+            },
+            {
+              "text": "Météo-Aéro : Notion de stabilité et instabilité appliquées à la pratique",
+              "done": false
+            },
+            {
+              "text": "Météo-Aéro : Phénomènes particuliers liés à une région",
+              "done": false
+            },
+            {
+              "text": "Mécavol : Polaire des vitesses appliquée au vol (influence vent et rafales)",
+              "done": false
+            },
+            {
+              "text": "Mécavol : Incidents de vols et sortie du domaine de vol",
+              "done": false
+            },
+            {
+              "text": "Pilotage : Exploiter les ascendances",
+              "done": false
+            },
+            {
+              "text": "Pilotage : Régimes de vol en transition",
+              "done": false
+            },
+            {
+              "text": "Pilotage : Méthodes de descentes rapides",
+              "done": false
+            },
+            {
+              "text": "Matériel : Homologation",
+              "done": false
+            },
+            {
+              "text": "Matériel : Exigences liées à la mise en oeuvre d'un matériel de vol plus performant (ailes, sellettes, secours)",
+              "done": false
+            },
+            {
+              "text": "Réglementation : Connaissance des différents cadres réglementaires (interlocuteur, institutions)",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Brevet de pilote confirmé",
+      "color": "#6d4c41",
+      "competences": [
+        {
+          "name": "Théorique",
+          "competences": [
+            {
+              "text": "QCM FFVL BPC 30 questions > 75%",
+              "done": false
+            },
+            {
+              "text": "2 questions ouvertes à développer avec la moyenne sur chaque question ouverte",
+              "done": false
+            }
+          ]
+        },
+        {
+          "name": "Pratique",
+          "competences": [
+            {
+              "text": "??",
+              "done": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

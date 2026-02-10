@@ -1,16 +1,52 @@
 const EVAL_STORAGE_KEY = "parapente_eval";
+const VERSION_STORAGE_KEY = "parapente_eval_version";
 
 // Chargement des données (localStorage > fichier json)
 async function loadEvalData() {
-    const localData = localStorage.getItem(EVAL_STORAGE_KEY);
-    if (localData) {
-        return JSON.parse(localData);
-    }
-
     const response = await fetch("eval.json?_=" + Date.now());
-    const data = await response.json();
-    localStorage.setItem(EVAL_STORAGE_KEY, JSON.stringify(data));
-    return data;
+    const json = await response.json();
+
+    const versionData = localStorage.getItem(VERSION_STORAGE_KEY);
+    if (versionData) {
+        const localData = localStorage.getItem(EVAL_STORAGE_KEY);
+        if (localData) {
+            oldData = JSON.parse(localData);
+            if (versionData == json.version) {
+                console.log("same version : " + json.version);
+                return oldData;
+            }
+            // check if element in new json are same in old and set done value
+            json.data = checkNewWithOld(json.data, oldData);
+            console.log("new version : " + json.version);
+            console.log("old version : " + versionData);
+        }
+    }
+    localStorage.setItem(EVAL_STORAGE_KEY, JSON.stringify(json.data));
+    localStorage.setItem(VERSION_STORAGE_KEY, JSON.stringify(json.version));
+    return json.data;
+}
+
+function checkNewWithOld(newData, oldData) {
+    oldData.forEach(oldItem => {
+        newData.forEach(newItem => {
+            if (oldItem.name == newItem.name) {
+                oldItem.competences.forEach(oldComp => {
+                    newItem.competences.forEach(newComp => {
+                        if (oldComp.name == newComp.name) {
+                            oldComp.competences.forEach(oldC => {
+                                newComp.competences.forEach(newC => {
+                                    if (oldC.text == newC.text) {
+                                        newC.done = oldC.done;
+                                    }
+                                });
+                            });
+                        }
+                    });
+                });
+            }
+        });
+    });
+    return newData;
 }
 
 // Sauvegarde
@@ -34,7 +70,6 @@ function buildEvaluation(data) {
         level.competences.forEach((category, catIndex) => {
             const categoryDiv = document.createElement("div");
             categoryDiv.className = "category";
-            console.log("level.color : " + level.color);
             if (level.color) {
                 categoryDiv.style.borderLeftColor = level.color;
             }
