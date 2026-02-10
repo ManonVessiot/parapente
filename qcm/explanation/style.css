@@ -3,7 +3,6 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     max-width: 900px;
     margin: 40px auto;
-    padding: 0 15px;
     text-align: center;
     line-height: 1.5;
     background-color: #f9f9f9;
@@ -206,14 +205,6 @@ footer {
     #explanationInput {
         font-size: 0.95em;
     }
-}
-
-
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-    body {
-        margin: 20px 10px;
-    }
 
     .titlePage h1 {
         font-size: 1.5em;
@@ -221,7 +212,6 @@ footer {
 
     .question {
         font-size: 1.2em;
-        padding: 12px 14px;
     }
 
     .answers {

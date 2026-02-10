@@ -20,7 +20,7 @@ async function start() {
     level = levelSelect.value;
 
     if (dataSource === "server") {
-        const res = await fetch("qcm.json?_=" + Date.now());
+        const res = await fetch("./qcm.json?_=" + Date.now());
         const json = res.json ? await res.json() : []; // get json
         questions = json.data; // get data
     }

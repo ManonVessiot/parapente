@@ -1,0 +1,88 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+    background: #f6f7f9;
+    color: #222;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.title {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title h1 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+p.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#evalList {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.level {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.level h2 {
+    margin-top: 0;
+}
+
+.category {
+    margin-top: 15px;
+    padding-left: 10px;
+    border-left: 3px solid #ddd;
+}
+
+.category h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.competence {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0;
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.competence input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+.competence span {
+    line-height: 1.4;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}

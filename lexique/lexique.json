@@ -545,7 +545,7 @@
   },
   {
     "nom": "Venturi",
-    "definition": "Accélération du vent dans un resserrement."
+    "definition": "Le Venturi est un accélération du vent qui se produit lorsque l’air est contraint de passer dans un rétrécissement (vallée étroite, col, gorge, entre deux reliefs).\nComme le passage est plus étroit, l’air doit accélérer pour conserver le débit."
   },
   {
     "nom": "Virage à plat",
@@ -866,5 +866,17 @@
   {
     "nom": "Brevet de Pilote Confirmé",
     "definition": "Le Brevet de Pilote Confirmé est la certification FFVL de niveau avancé.\nIl atteste qu’un pilote est capable de voler en autonomie complète, y compris dans des conditions thermiques actives, sur des sites variés, en maîtrisant les manœuvres de descente, le pilotage actif et l’analyse fine de l’aérologie."
+  },
+  {
+    "nom": "Cellule de Hadley",
+    "definition": "La cellule de Hadley est une grande boucle de circulation atmosphérique située entre l’équateur et environ 30° de latitude dans chaque hémisphère.\nElle transporte la chaleur des régions équatoriales vers les latitudes subtropicales grâce à un mouvement d’air ascendant à l’équateur et descendant vers 30°.\nC’est la cellule qui explique les alizés, les zones équatoriales humides, les déserts subtropicaux."
+  },
+  {
+    "nom": "Alizés",
+    "definition": "Les alizés sont des vents réguliers et persistants qui soufflent des hautes pressions subtropicales (vers 30° de latitude) vers la zone équatoriale.\nSous l’effet de la rotation de la Terre (force de Coriolis), ils s’orientent : Nord‑Est vers Sud‑Ouest dans l’hémisphère Nord et Sud‑Est vers Nord‑Ouest dans l’hémisphère Sud.\nCe sont les vents dominants des régions tropicales."
+  },
+  {
+    "nom": "Subsidence",
+    "definition": "La subsidence est un mouvement d’air descendant à grande échelle dans l’atmosphère.\nQuand l’air descend, il se comprime, se réchauffe et devient plus sec, ce qui stabilise la masse d’air et limite la formation de nuages.\nC’est un phénomène typique des anticyclones.\nPour un pilote : journée stable, plafonds bas, thermiques faibles ou hachés."
   }
 ]
