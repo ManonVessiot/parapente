@@ -1,10 +1,15 @@
-[
-    {
-        "questions": "Défini l'incidence",
-        "answer": "L'angle entre la corde et le vend relatif ou la trajectoire"
-    },
-    {
-        "questions": "Défini la corde",
-        "answer": "L'axe imaginaire passant par le bord d'attaque et le bord de fuite"
-    }
-]
+{
+    "version": 1,
+    "questions": [
+        {
+            "id": 1,
+            "question": "Défini la corde",
+            "correction": "L'axe imaginaire passant par le bord d'attaque et le bord de fuite"
+        },
+        {
+            "id": 2,
+            "question": "Défini l'incidence",
+            "correction": "L'angle entre la corde et le vend relatif ou la trajectoire"
+        }
+    ]
+}
