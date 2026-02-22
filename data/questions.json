@@ -1,0 +1,10 @@
+[
+    {
+        "questions": "Défini l'incidence",
+        "answer": "L'angle entre la corde et le vend relatif ou la trajectoire"
+    },
+    {
+        "questions": "Défini la corde",
+        "answer": "L'axe imaginaire passant par le bord d'attaque et le bord de fuite"
+    }
+]
