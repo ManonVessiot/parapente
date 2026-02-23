@@ -1,15 +1,105 @@
 {
-    "version": 1,
+    "version": 2,
     "questions": [
         {
             "id": 1,
             "question": "Défini la corde",
-            "correction": "L'axe imaginaire passant par le bord d'attaque et le bord de fuite"
+            "correction": "L'axe imaginaire reliant le bord d'attaque au bord de fuite."
         },
         {
             "id": 2,
             "question": "Défini l'incidence",
-            "correction": "L'angle entre la corde et le vend relatif ou la trajectoire"
+            "correction": "L'angle entre la corde et le vent relatif (ou la trajectoire)."
+        },
+        {
+            "id": 3,
+            "question": "Défini le vent relatif",
+            "correction": "Le vent perçu par le profil, résultant de sa vitesse dans l'air."
+        },
+        {
+            "id": 4,
+            "question": "Défini le point de décrochage",
+            "correction": "L'incidence à partir de laquelle le profil ne génère plus assez de portance."
+        },
+        {
+            "id": 5,
+            "question": "Défini la vitesse de finesse max",
+            "correction": "La vitesse où le rapport distance parcourue / altitude perdue est maximal."
+        },
+        {
+            "id": 6,
+            "question": "Défini la vitesse minimale",
+            "correction": "La vitesse la plus faible permettant un vol stabilisé sans décrochage."
+        },
+        {
+            "id": 7,
+            "question": "Défini le roulis",
+            "correction": "Le mouvement de l'aile autour de l'axe longitudinal (gauche-droite)."
+        },
+        {
+            "id": 8,
+            "question": "Défini le tangage",
+            "correction": "Le mouvement avant-arrière de l'aile autour de l'axe transversal."
+        },
+        {
+            "id": 9,
+            "question": "Défini le lacet",
+            "correction": "La rotation de l'aile autour de l'axe vertical."
+        },
+        {
+            "id": 10,
+            "question": "Défini la masse d'air",
+            "correction": "Un volume d'air ayant des caractéristiques homogènes (température, humidité, mouvement)."
+        },
+        {
+            "id": 11,
+            "question": "Défini un thermique",
+            "correction": "Une colonne d'air chaud qui monte par différence de densité avec l'air environnant."
+        },
+        {
+            "id": 12,
+            "question": "Défini le gradient de vent",
+            "correction": "La variation de la vitesse du vent en fonction de l'altitude."
+        },
+        {
+            "id": 13,
+            "question": "Défini la brise de vallée",
+            "correction": "Un vent diurne montant la vallée, créé par le réchauffement des pentes."
+        },
+        {
+            "id": 14,
+            "question": "Défini la brise de pente",
+            "correction": "Un vent local montant la pente le jour, dû au réchauffement du relief."
+        },
+        {
+            "id": 15,
+            "question": "Défini le vent météo",
+            "correction": "Le vent synoptique généré par les systèmes de pression à grande échelle."
+        },
+        {
+            "id": 16,
+            "question": "Défini la zone sous le vent",
+            "correction": "La zone derrière un obstacle où l'air est turbulent et déventé."
+        },
+        {
+            "id": 17,
+            "question": "Défini l'effet Venturi",
+            "correction": "L'accélération du vent lorsqu'il passe dans un rétrécissement du relief."
+        },
+        {
+            "id": 18,
+            "question": "Défini la prévol",
+            "correction": "La vérification systématique du matériel, de l'aile, de la sellette et du pilote avant le décollage."
+        },
+        {
+            "id": 19,
+            "question": "Défini le pilotage actif",
+            "correction": "L'ensemble des actions permettant de contrôler les mouvements de l'aile pour maintenir la pression et éviter les fermetures."
+        },
+        {
+            "id": 20,
+            "question": "Défini une fermeture asymétrique",
+            "correction": "La perte de pression d'un côté de l'aile entraînant la fermeture d'une partie du bord d'attaque."
         }
     ]
 }
