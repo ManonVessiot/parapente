@@ -56,6 +56,10 @@ const STEPS = [
                 url: "https://meteo-parapente.com/#/Bouches-du-Rh%C3%B4ne/Cuges-les-Pins/43.2748,5.7015,11"
             },
             {
+                site: "Météociel: Emagramme - Sondage GFS",
+                url: "https://www.meteociel.fr/modeles/sondage_gfs.php"
+            },
+            {
                 site: "Météociel: prévision températures haute altitude",
                 url: "https://www.meteociel.fr/previsions-haute-altitude-arpege-1h/3501/cuges_les_pins.htm"
             }
