@@ -614,5 +614,37 @@
     "equipement": "Niviuk Hook 5 / Exence Woody Valley",
     "duree_minutes": "9 min",
     "commentaire": "Déco face voile, un peu poussé à droite mais reprise du cap rapidement.\nEn vol, assez agité mais quelques thermiques pris. Peur d'un autre pilote au meme étape et trop agité donc attero. Un peu trop long, rentré en vent arriere trop tot, de meme pour la finale"
+  },
+  {
+    "date": "02/05/2026",
+    "site": "Roquebrune Cap Martin",
+    "type_vol": "SIV",
+    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
+    "duree_minutes": "",
+    "commentaire": "Tanguage et autorotation"
+  },
+  {
+    "date": "02/05/2026",
+    "site": "Roquebrune Cap Martin",
+    "type_vol": "SIV plouf",
+    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
+    "duree_minutes": "",
+    "commentaire": "Pas de bateau donc petit plouf pour finir la journée"
+  },
+  {
+    "date": "03/05/2026",
+    "site": "Roquebrune Cap Martin",
+    "type_vol": "SIV",
+    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
+    "duree_minutes": "",
+    "commentaire": "Reprise du tanguage SIV puis frontale et autorotation avec toujours du mal à fermer la voile avec les avants"
+  },
+  {
+    "date": "03/05/2026",
+    "site": "Roquebrune Cap Martin",
+    "type_vol": "SIV",
+    "equipement": "Niviuk Hook 5 / Exence Woody Valley",
+    "duree_minutes": "",
+    "commentaire": "Autorotation et 360 sortie chandelle"
   }
 ]
