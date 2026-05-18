@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coach Parapente & Endurance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* ╔══════════════════════════════════════╗
+           ║          VARIABLES & RESET           ║
+           ╚══════════════════════════════════════╝ */
+        :root {
+            /* Palette */
+            --sky: #0284c7;
+            --sky-light: #e0f2fe;
+            --sky-mid: #7dd3fc;
+            --violet: #7c3aed;
+            --violet-light: #ede9fe;
+            --orange: #ea580c;
+            --orange-light: #fff7ed;
+            --green: #16a34a;
+            --green-light: #dcfce7;
+            --red: #dc2626;
+
+            /* Surfaces */
+            --bg: #eef2f7;
+            --surface: #ffffff;
+            --surface-2: #f8fafc;
+            --border: #e2e8f0;
+            --border-2: #cbd5e1;
+
+            /* Text */
+            --text: #1e293b;
+            --text-2: #475569;
+            --text-3: #94a3b8;
+
+            /* Misc */
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 1px 3px rgba(0, 0, 0, .06), 0 4px 12px rgba(0, 0, 0, .05);
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, .04);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--border);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--sky-mid);
+            border-radius: 99px;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║              LAYOUT                  ║
+           ╚══════════════════════════════════════╝ */
+        .header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .content {
+            padding: 20px 16px 100px;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║              HEADER                  ║
+           ╚══════════════════════════════════════╝ */
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 2px;
+        }
+
+        .title-emoji {
+            font-size: 28px;
+        }
+
+        .title h1 {
+            font-family: 'Syne', sans-serif;
+            color: var(--sky);
+            font-size: 24px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            color: var(--text-3);
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║               TABS                   ║
+           ╚══════════════════════════════════════╝ */
+        .tabs {
+            display: flex;
+        }
+
+        .tab {
+            border: none;
+            background: none;
+            color: var(--text-3);
+            padding: 10px 10px;
+            font-weight: 700;
+            font-size: 13px;
+            border-bottom: 2px solid transparent;
+            white-space: nowrap;
+            transition: color .2s, border-color .2s;
+        }
+
+        .tab:hover {
+            color: var(--text-2);
+        }
+
+        .tab.active {
+            color: var(--sky);
+            border-bottom-color: var(--sky);
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║             SECTIONS                 ║
+           ╚══════════════════════════════════════╝ */
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║               CARDS                  ║
+           ╚══════════════════════════════════════╝ */
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 18px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .card-accent-sky {
+            border-left: 3px solid var(--sky);
+            background: var(--sky-light);
+            border-color: #bae6fd;
+        }
+
+        .card-accent-violet {
+            border-left: 3px solid var(--violet);
+            background: var(--violet-light);
+            border-color: #ddd6fe;
+        }
+
+        .card-accent-orange {
+            border-left: 3px solid var(--orange);
+            background: var(--orange-light);
+            border-color: #fed7aa;
+        }
+
+        .info-box {
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 14px 18px;
+            margin-bottom: 14px;
+        }
+
+        .info-box p {
+            font-size: 13px;
+            color: var(--text-2);
+            line-height: 1.7;
+        }
+
+        .info-box strong {
+            color: var(--sky);
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║           PLANNING ITEMS             ║
+           ╚══════════════════════════════════════╝ */
+        .week-item {
+            display: flex;
+            gap: 14px;
+            padding: 14px 16px;
+            border-radius: var(--radius);
+            margin-bottom: 8px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            align-items: flex-start;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .week-item-para {
+            border-left: 3px solid var(--sky);
+        }
+
+        .week-item-renfo {
+            border-left: 3px solid var(--violet);
+        }
+
+        .week-item-rest {
+            border-left: 3px solid var(--green);
+        }
+
+        .week-item-dimanche {
+            border-left: 3px solid var(--border-2);
+            opacity: .7;
+        }
+
+        .week-icon {
+            width: 40px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .week-icon .emoji {
+            font-size: 20px;
+        }
+
+        .week-icon .day {
+            font-size: 9px;
+            font-weight: 700;
+            color: var(--text-3);
+            letter-spacing: .5px;
+            margin-top: 2px;
+        }
+
+        .week-title {
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .week-title-sky {
+            color: var(--sky);
+        }
+
+        .week-title-violet {
+            color: var(--violet);
+        }
+
+        .week-title-green {
+            color: var(--green);
+        }
+
+        .week-title-muted {
+            color: var(--text-3);
+        }
+
+        .week-desc {
+            font-size: 12px;
+            color: var(--text-2);
+            line-height: 1.5;
+        }
+
+        .weather-line {
+            margin-top: 6px;
+            font-size: 11px;
+            color: var(--sky);
+            font-weight: 500;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║              RULES                   ║
+           ╚══════════════════════════════════════╝ */
+        .rules-title {
+            font-size: 11px;
+            color: var(--sky);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .rule {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .rule:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .rule-q {
+            color: var(--text);
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .rule-a {
+            color: var(--text-2);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║           SELECTOR BUTTONS           ║
+           ╚══════════════════════════════════════╝ */
+        .button-group {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+        }
+
+        .selector {
+            flex: 1;
+            border-radius: var(--radius-sm);
+            padding: 10px 8px;
+            border: 1.5px solid var(--border);
+            background: var(--surface);
+            color: var(--text-3);
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all .2s;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .selector:hover {
+            border-color: var(--sky);
+            color: var(--sky);
+        }
+
+        .selector.active {
+            background: var(--sky-light);
+            color: var(--sky);
+            border-color: var(--sky);
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║           EXERCISE LIST              ║
+           ╚══════════════════════════════════════╝ */
+        .exercise {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            transition: opacity .2s;
+        }
+
+        .exercise:last-child {
+            border-bottom: none;
+        }
+
+        .exercise.done {
+            opacity: .35;
+        }
+
+        .exercise-title {
+            font-size: 13px;
+            color: var(--text);
+            flex: 1;
+        }
+
+        .exercise.done .exercise-title {
+            text-decoration: line-through;
+        }
+
+        .exercise-meta {
+            color: var(--text-3);
+            font-size: 12px;
+            min-width: 100px;
+            text-align: right;
+            font-weight: 500;
+        }
+
+        .checkbox {
+            width: 22px;
+            height: 22px;
+            border-radius: 999px;
+            border: 2px solid var(--border-2);
+            background: var(--surface);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all .2s;
+            color: transparent;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .checkbox.checked {
+            background: var(--sky);
+            border-color: var(--sky);
+            color: white;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║           EXERCISE PICKER            ║
+           ║   (sélection manœuvres vol/gonflage) ║
+           ╚══════════════════════════════════════╝ */
+        .picker-intro {
+            font-size: 12px;
+            color: var(--text-2);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .picker-group {
+            margin-bottom: 14px;
+        }
+
+        .picker-group-label {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-3);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .picker-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .pick-chip {
+            padding: 6px 12px;
+            border-radius: 99px;
+            border: 1.5px solid var(--border);
+            background: var(--surface);
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-2);
+            cursor: pointer;
+            transition: all .18s;
+            user-select: none;
+        }
+
+        .pick-chip:hover {
+            border-color: var(--sky-mid);
+            color: var(--sky);
+        }
+
+        .pick-chip.selected {
+            background: var(--sky-light);
+            border-color: var(--sky);
+            color: var(--sky);
+            font-weight: 700;
+        }
+
+        .pick-chip.level-inter {}
+
+        .pick-chip.level-avance {
+            border-style: dashed;
+        }
+
+        .picker-validate {
+            width: 100%;
+            padding: 10px;
+            border-radius: var(--radius-sm);
+            background: var(--sky);
+            color: white;
+            font-weight: 700;
+            font-size: 13px;
+            border: none;
+            margin-top: 4px;
+            transition: background .2s;
+        }
+
+        .picker-validate:hover {
+            background: #0369a1;
+        }
+
+        .picker-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 99px;
+            background: var(--sky);
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║              BULLETS                 ║
+           ╚══════════════════════════════════════╝ */
+        .bullet {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .bullet:last-child {
+            margin-bottom: 0;
+        }
+
+        .bullet-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 999px;
+            background: var(--sky);
+            margin-top: 7px;
+            flex-shrink: 0;
+        }
+
+        .bullet p {
+            color: var(--text-2);
+            line-height: 1.6;
+            font-size: 13px;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║           SECTION LABELS             ║
+           ╚══════════════════════════════════════╝ */
+        .para-title {
+            font-size: 10px;
+            color: var(--sky);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 12px;
+            font-family: 'Syne', sans-serif;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║          THEORY NAVIGATION           ║
+           ╚══════════════════════════════════════╝ */
+        .theory-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .theory-nav {
+            display: flex;
+            gap: 4px;
+        }
+
+        .theory-nav-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: var(--radius-sm);
+            border: 1.5px solid var(--border);
+            background: var(--surface-2);
+            color: var(--text-2);
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all .15s;
+        }
+
+        .theory-nav-btn:hover {
+            border-color: var(--sky);
+            color: var(--sky);
+        }
+
+        .theory-counter {
+            font-size: 11px;
+            color: var(--text-3);
+            font-weight: 600;
+            align-self: center;
+            padding: 0 4px;
+        }
+
+        .theory-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .theory-content {
+            font-size: 13px;
+            color: var(--text-2);
+            line-height: 1.7;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║               NOTE                   ║
+           ╚══════════════════════════════════════╝ */
+        .note {
+            border-radius: var(--radius);
+            padding: 14px 18px;
+            background: var(--sky-light);
+            border: 1px solid #bae6fd;
+        }
+
+        .note-title {
+            color: var(--sky);
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .note p {
+            color: #0c4a6e;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║            NUTRITION                 ║
+           ╚══════════════════════════════════════╝ */
+        .nutrition-card {
+            cursor: pointer;
+            transition: box-shadow .2s;
+        }
+
+        .nutrition-card:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .1);
+        }
+
+        .nutrition-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nutrition-header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nutrition-icon {
+            font-size: 22px;
+        }
+
+        .nutrition-label {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .nutrition-arrow {
+            color: var(--text-3);
+            font-size: 18px;
+            transition: transform .2s;
+        }
+
+        .nutrition-arrow.open {
+            transform: rotate(90deg);
+        }
+
+        .nutrition-content {
+            display: none;
+            border-top: 1px solid var(--border);
+            margin-top: 12px;
+            padding-top: 12px;
+        }
+
+        .nutrition-content.open {
+            display: block;
+        }
+
+        /* Assiette table */
+        .assiette-row {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .assiette-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .assiette-session {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--sky);
+            margin-bottom: 2px;
+        }
+
+        .assiette-desc {
+            font-size: 13px;
+            color: var(--text-2);
+            line-height: 1.5;
+        }
+
+        /* ╔══════════════════════════════════════╗
+           ║            RESPONSIVE                ║
+           ╚══════════════════════════════════════╝ */
+        @media (max-width: 600px) {
+            .title h1 {
+                font-size: 19px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .selector {
+                flex: none;
+                width: 100%;
+            }
+
+            .exercise {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+
+            .exercise-meta {
+                text-align: left;
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ═══════════════ HEADER ═══════════════ -->
+    <div class="header">
+        <div class="container">
+            <div class="title">
+                <span class="title-emoji">🪂</span>
+                <h1>Coach Parapente & Endurance</h1>
+            </div>
+            <div class="subtitle">Femme · < 30 ans · Débutante · Programme intégré parapente + renforcement </div>
+                    <div class="tabs">
+                        <button class="tab active" data-tab="planning">📅 Planning</button>
+                        <button class="tab" data-tab="para">🪂 Parapente</button>
+                        <button class="tab" data-tab="renfo">💪 Renfo</button>
+                        <button class="tab" data-tab="nutrition">🥗 Nutrition</button>
+                    </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════ CONTENT ═══════════════ -->
+        <div class="container content">
+
+            <!-- ─────────── PLANNING ─────────── -->
+            <section class="section active" id="planning">
+
+                <div class="info-box">
+                    <p>Ton programme respecte une règle simple : <strong>le parapente passe en premier</strong>.
+                        Les séances de renfo sont là pour te rendre meilleure pilote et prévenir les blessures.</p>
+                </div>
+
+                <div class="week-item week-item-renfo">
+                    <div class="week-icon">
+                        <div class="emoji">🏠</div>
+                        <div class="day">LUN</div>
+                    </div>
+                    <div>
+                        <div class="week-title week-title-violet">Renfo maison</div>
+                        <div class="week-desc">Renforcement ciblé parapente (30–40 min)</div>
+                    </div>
+                </div>
+
+                <div class="week-item week-item-para">
+                    <div class="week-icon">
+                        <div class="emoji">🪂</div>
+                        <div class="day">MAR</div>
+                    </div>
+                    <div>
+                        <div class="week-title week-title-sky">Session parapente</div>
+                        <div class="week-desc">30 min théorie + vol / gonflage / marche</div>
+                        <div class="weather-line">→ ☀️ Vol · 🌬️ Gonflage · 🌧️ Marche 15 kg</div>
+                    </div>
+                </div>
+
+                <div class="week-item week-item-renfo">
+                    <div class="week-icon">
+                        <div class="emoji">🏠</div>
+                        <div class="day">MER</div>
+                    </div>
+                    <div>
+                        <div class="week-title week-title-violet">Renfo maison</div>
+                        <div class="week-desc">Renforcement ciblé parapente (30–40 min)</div>
+                    </div>
+                </div>
+
+                <div class="week-item week-item-para">
+                    <div class="week-icon">
+                        <div class="emoji">🪂</div>
+                        <div class="day">JEU</div>
+                    </div>
+                    <div>
+                        <div class="week-title week-title-sky">Session parapente</div>
+                        <div class="week-desc">30 min théorie + vol / gonflage / marche</div>
+                        <div class="weather-line">→ ☀️ Vol · 🌬️ Gonflage · 🌧️ Marche 15 kg</div>
+                    </div>
+                </div>
+
+                <div class="week-item week-item-rest">
+                    <div class="week-icon">
+                        <div class="emoji">🌿</div>
+                        <div class="day">VEN</div>
+                    </div>
+                    <div>
+                        <div class="week-title week-title-green">Récupération active</div>
+                        <div class="week-desc">Marche légère 20 min ou yoga / mobilité</div>
+                    </div>
+                </div>
+
+                <div class="week-item week-item-para">
+                    <div class="week-icon">
+                        <div class="emoji">🪂</div>
+                        <div class="day">SAM</div>
+                    </div>
+                    <div>
+                        <div class="week-title week-title-sky">Session parapente</div>
+                        <div class="week-desc">Session longue — Priorité vol si météo ok</div>
+                        <div class="weather-line">→ ☀️ Vol · 🌬️ Gonflage · 🌧️ Marche 15 kg</div>
+                    </div>
+                </div>
+
+                <div class="week-item week-item-dimanche">
+                    <div class="week-icon">
+                        <div class="emoji">😴</div>
+                        <div class="day">DIM</div>
+                    </div>
+                    <div>
+                        <div class="week-title week-title-muted">Repos complet</div>
+                        <div class="week-desc">Récupération totale. Tu l'as mérité.</div>
+                    </div>
+                </div>
+
+                <div class="card card-accent-sky">
+                    <div class="rules-title">⚡ Règles d'or</div>
+                    <div class="rule">
+                        <div class="rule-q">→ Météo parfaite en semaine ?</div>
+                        <div class="rule-a">Décale le renfo, va voler. L'aile passe avant la salle.</div>
+                    </div>
+                    <div class="rule">
+                        <div class="rule-q">→ Tu rentres épuisée du boulot ?</div>
+                        <div class="rule-a">Fais quand même les 30 min de théorie. Le sport peut attendre demain.</div>
+                    </div>
+                    <div class="rule">
+                        <div class="rule-q">→ Journée de marche 15 kg ?</div>
+                        <div class="rule-a">Ça compte comme ta séance cardio — pas de renfo le même soir.</div>
+                    </div>
+                    <div class="rule">
+                        <div class="rule-q">→ Deux vols dans la semaine ?</div>
+                        <div class="rule-a">Réduis à 1 séance de renfo. La récupération fait partie du programme.</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─────────── PARAPENTE ─────────── -->
+            <section class="section" id="para">
+
+                <div class="button-group">
+                    <button class="selector para-selector active" data-para="vol">☀️ Beau temps — Vol</button>
+                    <button class="selector para-selector" data-para="gonflage">🌬️ Vent — Gonflage</button>
+                    <button class="selector para-selector" data-para="marche">🌧️ Mauvais temps — Marche</button>
+                </div>
+
+                <!-- Théorie -->
+                <div class="card" id="para-theory">
+                    <div class="theory-header">
+                        <div class="para-title">📖 30 min théorie</div>
+                        <div class="theory-nav">
+                            <button class="theory-nav-btn" id="theory-prev">‹</button>
+                            <span class="theory-counter" id="theory-counter">1 / 4</span>
+                            <button class="theory-nav-btn" id="theory-next">›</button>
+                        </div>
+                    </div>
+                    <div class="theory-title" id="theory-title"></div>
+                    <div class="theory-content" id="theory-content"></div>
+                </div>
+
+                <!-- Préparation -->
+                <div class="card" id="para-prep"></div>
+
+                <!-- Sélecteur d'exercices (vol & gonflage) -->
+                <div id="para-picker-wrapper"></div>
+
+                <!-- Exercices validés -->
+                <div class="card" id="para-exercises"></div>
+
+                <!-- Note coach -->
+                <div class="note">
+                    <div class="note-title">💬 Note du coach</div>
+                    <p id="para-note"></p>
+                </div>
+
+            </section>
+
+            <!-- ─────────── RENFO ─────────── -->
+            <section class="section" id="renfo">
+
+                <div class="info-box">
+                    <p>Ces séances sont conçues pour le parapente. Chaque exercice a un lien direct avec le pilotage et
+                        la
+                        marche montagne.</p>
+                </div>
+
+                <div class="button-group">
+                    <button class="selector renfo-selector active" data-renfo="a">💪 Renfo A — Épaules</button>
+                    <button class="selector renfo-selector" data-renfo="b">🦵 Renfo B — Jambes</button>
+                </div>
+
+                <div class="card">
+                    <div class="para-title">🌡️ Échauffement</div>
+                    <div class="bullet">
+                        <p id="renfo-warmup"></p>
+                    </div>
+                </div>
+
+                <div class="card" id="renfo-exercises"></div>
+
+                <div class="card">
+                    <div class="para-title">🧘‍♀️ Récupération</div>
+                    <div class="bullet">
+                        <p id="renfo-recovery"></p>
+                    </div>
+                </div>
+
+                <div class="note">
+                    <div class="note-title">🪂 Lien parapente</div>
+                    <p id="renfo-note"></p>
+                </div>
+
+            </section>
+
+            <!-- ─────────── NUTRITION ─────────── -->
+            <section class="section" id="nutrition">
+
+                <div class="card nutrition-card" data-nut="0">
+                    <div class="nutrition-header">
+                        <div class="nutrition-header-left">
+                            <span class="nutrition-icon">🥤</span>
+                            <span class="nutrition-label">Hydratation au quotidien</span>
+                        </div>
+                        <span class="nutrition-arrow">›</span>
+                    </div>
+                    <div class="nutrition-content">
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>Objectif : 2 L/jour minimum, 2,5 L les jours de marche ou de vol.</p>
+                        </div>
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>La déshydratation réduit la concentration — risqué en vol. Bois avant d'avoir soif.</p>
+                        </div>
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>En marche avec le sac : 200 ml toutes les 25–30 min. Utilise une poche à eau dans le sac.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card nutrition-card" data-nut="1">
+                    <div class="nutrition-header">
+                        <div class="nutrition-header-left">
+                            <span class="nutrition-icon">⛰️</span>
+                            <span class="nutrition-label">Avant une session terrain</span>
+                        </div>
+                        <span class="nutrition-arrow">›</span>
+                    </div>
+                    <div class="nutrition-content">
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>2 h avant : repas normal (riz, pâtes, légumes, protéines légères). Pas de gras lourd.</p>
+                        </div>
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>45 min avant : une banane ou une barre de céréales. Pas à jeun, jamais.</p>
+                        </div>
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>Évite les aliments qui fermentent (légumineuses, choux) avant le vol — inconfort en
+                                sellette.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card nutrition-card" data-nut="2">
+                    <div class="nutrition-header">
+                        <div class="nutrition-header-left">
+                            <span class="nutrition-icon">🎒</span>
+                            <span class="nutrition-label">Pendant la marche / session</span>
+                        </div>
+                        <span class="nutrition-arrow">›</span>
+                    </div>
+                    <div class="nutrition-content">
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>Emporte toujours : eau + une collation (barre, fruit sec, amandes).</p>
+                        </div>
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>En montée longue : 1 gel énergétique ou quelques dattes après 45 min d'effort.</p>
+                        </div>
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>Pas de soda, pas de jus sucré — pic glycémique suivi d'une hypoglycémie.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card nutrition-card" data-nut="3">
+                    <div class="nutrition-header">
+                        <div class="nutrition-header-left">
+                            <span class="nutrition-icon">🍎</span>
+                            <span class="nutrition-label">Grignotage & bureau</span>
+                        </div>
+                        <span class="nutrition-arrow">›</span>
+                    </div>
+                    <div class="nutrition-content">
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>Le grignotage vient souvent de la fatigue mentale. Prends une collation à 10h30 et 16h.
+                            </p>
+                        </div>
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>Collations idéales : yaourt grec + noix, pomme + beurre d'amande, œufs durs.</p>
+                        </div>
+                        <div class="bullet">
+                            <div class="bullet-dot"></div>
+                            <p>Un grand verre d'eau avant de grignoter — la faim et la soif se confondent souvent.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="para-title">🍽️ Assiette selon la session du soir</div>
+                    <div class="assiette-row">
+                        <div class="assiette-session">☀️ Vol prévu</div>
+                        <div class="assiette-desc">Déjeuner copieux · dîner très léger après (soupe, œufs). Pas de repas
+                            lourd 2 h avant de voler.</div>
+                    </div>
+                    <div class="assiette-row">
+                        <div class="assiette-session">🌬️ Gonflage</div>
+                        <div class="assiette-desc">Normal. Évite les légumineuses et choux au déjeuner (ballonnements en
+                            effort physique).</div>
+                    </div>
+                    <div class="assiette-row">
+                        <div class="assiette-session">🌧️ Marche 15 kg</div>
+                        <div class="assiette-desc">Glucides complexes au déjeuner (riz, patate douce). Emporte une
+                            collation
+                            et de l'eau pour la marche.</div>
+                    </div>
+                    <div class="assiette-row">
+                        <div class="assiette-session">🏠 Renfo maison</div>
+                        <div class="assiette-desc">Protéines au dîner (poulet, œufs, légumineuses) pour la récupération
+                            musculaire.</div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- ═══════════════ SCRIPTS ═══════════════ -->
+        <script>
+            /* ╔══════════════════════════════════════════════════╗
+               ║                    DONNÉES                      ║
+               ║  ✏️  Modifiez les tableaux ci-dessous           ║
+               ╚══════════════════════════════════════════════════╝ */
+
+            /* ── PARAPENTE ── */
+            const paraData = {
+
+                vol: {
+                    theory: [
+                        { title: "Météo de base", content: "Lecture des bulletins (METEO60, XC-meteo). Comprendre vent anabatique / katabatique. Reconnaître une journée pilotable." },
+                        { title: "Aérologie locale", content: "Identifier les thermiques visuellement (cumulus, zones ensoleillées). Comprendre les zones d'ombre. Cartographier ton site de vol." },
+                        { title: "Sécurité en vol", content: "Protocoles : check pré-vol, radio, zones de vol. Procédures d'urgence (parachute de secours, atterrissage d'urgence)." },
+                        { title: "Progression & planification", content: "Analyser tes vols (XContest, Leonardo). Fixer des objectifs progressifs. Préparer la saison." }
+                    ],
+                    prep: [
+                        "5 min d'échauffement : rotations épaules + hanches",
+                        "Gainage 2×30 s avant le vol — stabilise la position assis en sellette",
+                        "Hydrate-toi bien avant de monter sur le décollage"
+                    ],
+                    /* ── EXERCICES DISPONIBLES AU VOL ──────────────────────────────
+                       Ajoute / retire librement des exercices dans chaque groupe.
+                       Chaque exercice : { nom, meta, niveau }
+                       niveau : "débutant" | "intermédiaire" | "avancé"
+                    ───────────────────────────────────────────────────────────────── */
+                    exerciceGroups: [
+                        {
+                            label: "🛫 Décollage",
+                            items: [
+                                { nom: "Gonflage face voile", meta: "controle de la montée + stabilisation sans fixer la voile", niveau: "débutant" },
+                                { nom: "Gonflage dos voile", meta: "controle de l'impulsion + stabilisation", niveau: "débutant" },
+                                { nom: "Gonflage cobra", meta: "vent fort", niveau: "intermédiaire" },
+                                { nom: "Recentrage", meta: "sans surpiloter ni courir dans tous les sens", niveau: "débutant" },
+                                { nom: "Gestion du CAP", meta: "garder un axe propre", niveau: "débutant" },
+                                { nom: "Arrêt de déco volontaire", meta: "simuler un abandon", niveau: "débutant" },
+                                { nom: "Course d’engagement", meta: "progressive", niveau: "débutant" },
+                                { nom: "Contrôle visuel minimal", meta: "rapidement", niveau: "débutant" },
+                            ]
+                        },
+                        {
+                            label: "🔄 Pilotage & trajectoire",
+                            items: [
+                                { nom: "Virages à plat", meta: "poids du corps + frein intérieur léger", niveau: "débutant" },
+                                { nom: "Virage dynamique", meta: "utilisation des mouvements pendulaires", niveau: "intermédiaire" },
+                                { nom: "Tanguage", meta: "controle des mouvements pendulaires", niveau: "intermédiaire" },
+                                { nom: "Roulis", meta: "controle des mouvements pendulaires", niveau: "intermédiaire" },
+                                { nom: "Maintien de cap accéléré", meta: "trajectoire stable sous accélérateur", niveau: "intermédiaire" },
+                                { nom: "Pilotage sellette", meta: "petits changements de direction à la sellette", niveau: "débutant" },
+                                { nom: "8 symétriques", meta: "virages réguliers avec même inclinaison et même timing", niveau: "débutant" },
+                                { nom: "Variation d’inclinaison", meta: "virage faible, moyen et appuyé pour comprendre rayon/vitesse", niveau: "intermédiaire" },
+                                { nom: "Pilotage actif en air calme", meta: "Travailler les automatismes", niveau: "intermédiaire" },
+                                { nom: "Pilotage actif en thermique léger", meta: "limiter fermetures/mouvements parasites", niveau: "intermédiaire" },
+                                { nom: "Transitions propres", meta: "Passer d’un axe à un autre sans mouvements brusques", niveau: "intermédiaire" },
+                                { nom: "Gestion du regard", meta: "Regarder loin sur la trajectoire", niveau: "débutant" },
+                            ]
+                        },
+                        {
+                            label: "🛡️ Sécurité active",
+                            items: [
+                                { nom: "Poignée témoin", meta: "sécurité", niveau: "débutant" },
+                                { nom: "Oreilles", meta: "réduction voilure", niveau: "intermédiaire" },
+                                { nom: "Oreilles accélérées", meta: "descente rapide", niveau: "intermédiaire" },
+                                { nom: "Pilotage aux arrières accéléré", meta: "pour les transitions", niveau: "intermédiaire" },
+                                { nom: "Analyse aérologie en vol", meta: "Identifier zones sous le vent, ascendances, turbulences et cycles", niveau: "intermédiaire" },
+                            ]
+                        },
+                        {
+                            label: "🛫 Atterrissage",
+                            items: [
+                                { nom: "PT U/S/8", meta: "Approche construite", niveau: "débutant" },
+                                { nom: "Atterrissage de précision", meta: "cible définie", niveau: "intermédiaire" },
+                                { nom: "Finale stabilisée", meta: "vitesse et axe constants", niveau: "intermédiaire" },
+                                { nom: "Regard loin en finale", meta: "Éviter de fixer le sol juste devant les pieds", niveau: "intermédiaire" },
+                                { nom: "Arrondi progressif", meta: "transformer vitesse en douceur", niveau: "intermédiaire" },
+                                { nom: "Gestion vent travers", meta: "Corriger dérive sans surpiloter proche du sol", niveau: "intermédiaire" },
+                            ]
+                        },
+                        {
+                            label: "📋 Bilan",
+                            items: [
+                                { nom: "Débriefing déco", meta: "voile était centrée, la décision correcte, le timing bon ?", niveau: "débutant" },
+                                { nom: "Débriefing vol", meta: "trajectoires? sécurité? ...", niveau: "débutant" },
+                                { nom: "Débriefing attéro", meta: "approche propre? sécurité? ...", niveau: "débutant" },
+                                { nom: "Débriefing mental", meta: "état? sécurité? ...", niveau: "débutant" },
+                                { nom: "Débriefing objectifs", meta: "atteints? ...", niveau: "débutant" },
+                            ]
+                        }
+                    ],
+                    note: "En vol, travaille activement ta position : dos droit, bras relâchés le long du corps, regard horizon. C'est ton gainage en action."
+                },
+
+                gonflage: {
+                    theory: [
+                        { title: "Les commandes", content: "Anatomie de l'aile : intrados, extrados, caissons. Fonctionnement des commandes et des élévateurs. Visualiser les actions avant gonflage." },
+                        { title: "Gonflage face voile", content: "Technique du gonflage face voile (vent fort). Gestion des A, contrôle de la montée, arrêt de l'aile." },
+                        { title: "Gonflage dos voile", content: "Technique dos voile (vent faible). Coordination corps / aile. Exercices de mémorisation des gestes." },
+                        { title: "Sensations & régulation", content: "Lire les informations de l'aile dans les mains. Anticiper les départs parasites. Régulation automatique." }
+                    ],
+                    prep: [
+                        "Étirements épaules et poignets (5 min) — le gonflage sollicite beaucoup les bras",
+                        "Travail de la posture : dos droit, genoux légèrement fléchis",
+                        "Boire 500 ml d'eau avant la séance"
+                    ],
+                    /* ── EXERCICES DISPONIBLES AU GONFLAGE ─────────────────────────
+                       Groupés par condition de vent.
+                    ───────────────────────────────────────────────────────────────── */
+                    exerciceGroups: [
+                        {
+                            label: "🌬️ Vent faible — Dos voile",
+                            items: [
+                                { nom: "Gonflage dos voile classique", meta: "technique de base", niveau: "débutant" },
+                                { nom: "Déplacement latéral dos voile", meta: "déplacement", niveau: "débutant" },
+                                { nom: "Prise de vitesse", meta: "course", niveau: "débutant" },
+                                { nom: "Maintien zénithal dos voile", meta: "15–20 s sans freins", niveau: "intermédiaire" },
+                                { nom: "Affalement", meta: "reposer proprement", niveau: "intermédiaire" },
+                            ]
+                        },
+                        {
+                            label: "💨 Vent moyen — Face voile",
+                            items: [
+                                { nom: "Gonflage face voile classique", meta: "gestion des A", niveau: "débutant" },
+                                { nom: "Gonflage travers", meta: "voile parallèle au vent", niveau: "intermédiaire" },
+                                { nom: "Gonflage cravaté", meta: "coincé stabilo dans la voile", niveau: "intermédiaire" },
+                                { nom: "Gonflage d'un coté", meta: "utiliser A & freins que d'un coté", niveau: "intermédiaire" },
+                                { nom: "Maintien zénithal face voile", meta: "régulation fine", niveau: "intermédiaire" },
+                                { nom: "Retournement", meta: "rester symétrique", niveau: "intermédiaire" },
+                                { nom: "Maintien zénithal sans les freins", meta: "recentrage & poids", niveau: "intermédiaire" },
+                                { nom: "Maintien zénithal sans regarder la voile", meta: "ressenti", niveau: "intermédiaire" },
+                                { nom: "Maintien zénithal allongé", meta: "vent calme & linéaire", niveau: "intermédiaire" },
+                                { nom: "Déplacement avant/arrière", meta: "déplacement", niveau: "débutant" },
+                                { nom: "Fermeture asymétrique 30%", meta: "tirer les A et garder l'aile en l'air", niveau: "intermédiaire" },
+                                { nom: "Affalement latérale", meta: "affaler parallèle au vent", niveau: "intermédiaire" },
+                                { nom: "Neutralisation au C", meta: "affaler", niveau: "intermédiaire" },
+                                { nom: "Neutralisation au A", meta: "affaler", niveau: "intermédiaire" },
+                                { nom: "Neutralisation au B", meta: "affaler en tacos", niveau: "intermédiaire" },
+                                { nom: "Remettre le bord d'attaque en haut", meta: "suspente & déplacement", niveau: "intermédiaire" },
+                                { nom: "Garder au point de décrochage", meta: "rapide et précis", niveau: "intermédiaire" },
+                                { nom: "Toucher stabilo", meta: "descendre la voile d'un coté puis de l'autre", niveau: "intermédiaire" },
+                                { nom: "Pompage", meta: "féquence & intensité, sans faire tomber la voile", niveau: "intermédiaire" },
+                                { nom: "Fermeture asymétrique 50%", meta: "tirer les A et garder l'aile en l'air jusqu'à réouverture", niveau: "intermédiaire" },
+                                { nom: "Fermeture asymétrique 80%", meta: "tirer les A sauf une extrémité et garder l'aile en l'air jusqu'à réouverture", niveau: "intermédiaire" },
+                                { nom: "Hélicoptère", meta: "360 de la voile", niveau: "intermédiaire" },
+                            ]
+                        },
+                        {
+                            label: "💨 Vent fort — Face voile",
+                            items: [
+                                { nom: "Gonflage en bouchon", meta: "exposer caissons centrals", niveau: "intermédiaire" },
+                                { nom: "Cobra", meta: "gonflage d'un stabilo, parrallèle au vent", niveau: "intermédiaire" },
+                                { nom: "Gonflage lancé", meta: "bouchon dans une mains, A dans l'autre", niveau: "intermédiaire" },
+                                { nom: "Tracté controlé", meta: "trouver la position pour être tiré", niveau: "intermédiaire" },
+                                { nom: "Escalade d'une dune", meta: "se faire tracter et monter en zigzag", niveau: "intermédiaire" },
+                                { nom: "Gonflage retourné", meta: "A affale et frein monte", niveau: "intermédiaire" },
+                                { nom: "Escalade d'un mur", meta: "spiderman", niveau: "intermédiaire" },
+                            ]
+                        },
+                        {
+                            label: "📋 Bilan",
+                            items: [
+                                { nom: "Débriefing de séance", meta: "sensations, points à retravailler", niveau: "débutant" },
+                            ]
+                        }
+                    ],
+                    note: "Les gonflages répétés = vrai travail musculaire pour les épaules et le core. Compte-les comme ta séance cardio du jour."
+                },
+
+                marche: {
+                    theory: [
+                        { title: "Réglementation aérienne", content: "Espaces aériens en France (classes A–G). CTR, zones réglementées. Application SIA / Géoportail. Altitude et calage altimétrique." },
+                        { title: "Matériel & entretien", content: "Vérification de l'aile (lignes, caissons, suspentes). Pliage et empaquetage correct. Carnet d'entretien, visites périodiques." },
+                        { title: "Médical & forme physique", content: "Impact de la fatigue sur le pilotage. Déshydratation en altitude. Gestion du stress avant le vol. Pourquoi ton renfo t'aide à mieux piloter." },
+                        { title: "Navigation & cartographie", content: "Lire une carte IGN. Calculer un cap. Utiliser un GPS / Kobo. Planifier un vol de campagne simple." }
+                    ],
+                    prep: [
+                        "Chaussures de rando adaptées — le sac de 15 kg change l'équilibre",
+                        "Bâtons de marche si disponibles pour préserver les genoux en descente",
+                        "Boire 200 ml toutes les 25–30 min pendant la marche"
+                    ],
+                    /* Marche : pas de picker, liste fixe */
+                    exercises: [
+                        { nom: "Marche en montée avec sac 15 kg", meta: "30–60 min selon terrain" },
+                        { nom: "Gainage naturel (terrain accidenté)", meta: "continu" },
+                        { nom: "Étirements en cours de route", meta: "mollets, hanches" },
+                    ],
+                    note: "La marche avec sac 15 kg = l'entraînement d'endurance le plus efficace. Elle remplace entièrement une séance cardio classique. Ne la sous-estime pas."
+                }
+            };
+
+            /* ── RENFO ── */
+            const renfoData = {
+                a: {
+                    warmup: "Rotations épaules 2 min + mobilité thoracique 1 min",
+                    recovery: "Étirements épaules + bras en croix au sol — 4 min",
+                    note: "Améliore le contrôle des commandes, le maintien en gonflage et la résistance aux départs parasites.",
+                    exercises: [
+                        { nom: "Élévations latérales (élastique ou bouteilles)", meta: "3×15 · 45 s repos" },
+                        { nom: "Rowing inversé (sous une table)", meta: "3×12 · 45 s repos" },
+                        { nom: "Gainage avant", meta: "4×35 s · 25 s repos" },
+                        { nom: "Gainage latéral", meta: "3×25 s/côté · 30 s repos" },
+                        { nom: "Superman (lever bras + jambe opposée)", meta: "3×12 · 40 s repos" }
+                    ]
+                },
+                b: {
+                    warmup: "Marche rapide sur place 3 min + fentes légères",
+                    recovery: "Étirements quadriceps, mollets, fléchisseurs de hanche — 4 min",
+                    note: "Améliore le décollage en courant, la montée au col avec le sac et l'atterrissage sur terrain accidenté.",
+                    exercises: [
+                        { nom: "Squats (sac à dos lesté si possible)", meta: "4×15 · 45 s repos" },
+                        { nom: "Fentes avant alternées", meta: "3×12/côté · 40 s repos" },
+                        { nom: "Montée de marches ou step", meta: "3×3 min · 1 min repos" },
+                        { nom: "Mollets debout", meta: "3×20 · 30 s repos" },
+                        { nom: "Jumping Jacks", meta: "3×30 s · 30 s repos" }
+                    ]
+                }
+            };
+
+            /* ╔══════════════════════════════════════════════════╗
+               ║                     ÉTAT                        ║
+               ╚══════════════════════════════════════════════════╝ */
+            let paraType = 'vol';
+            let theoryIndex = 0;
+            let selectedChips = {};   // { "vol": Set(noms), "gonflage": Set(noms) }
+            let pickerConfirmed = {};   // { "vol": bool, "gonflage": bool }
+
+            /* ╔══════════════════════════════════════════════════╗
+               ║                  NAVIGATION TABS                ║
+               ╚══════════════════════════════════════════════════╝ */
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            /* ╔══════════════════════════════════════════════════╗
+               ║                    THÉORIE                      ║
+               ╚══════════════════════════════════════════════════╝ */
+            function renderTheory() {
+                const d = paraData[paraType];
+                const t = d.theory[theoryIndex];
+                document.getElementById('theory-title').textContent = `${theoryIndex + 1}. ${t.title}`;
+                document.getElementById('theory-content').textContent = t.content;
+                document.getElementById('theory-counter').textContent = `${theoryIndex + 1} / ${d.theory.length}`;
+            }
+
+            document.getElementById('theory-prev').addEventListener('click', () => {
+                const len = paraData[paraType].theory.length;
+                theoryIndex = (theoryIndex - 1 + len) % len;
+                renderTheory();
+            });
+            document.getElementById('theory-next').addEventListener('click', () => {
+                theoryIndex = (theoryIndex + 1) % paraData[paraType].theory.length;
+                renderTheory();
+            });
+
+            /* ╔══════════════════════════════════════════════════╗
+               ║                RENDER PARAPENTE                 ║
+               ╚══════════════════════════════════════════════════╝ */
+            function renderPara(type) {
+                paraType = type;
+                theoryIndex = 0;
+                const d = paraData[type];
+
+                /* Théorie */
+                renderTheory();
+
+                /* Préparation */
+                const prep = document.getElementById('para-prep');
+                prep.innerHTML = '<div class="para-title">⚡ Préparation physique</div>';
+                d.prep.forEach(p => {
+                    prep.innerHTML += `<div class="bullet"><div class="bullet-dot"></div><p>${p}</p></div>`;
+                });
+
+                /* Note */
+                document.getElementById('para-note').textContent = d.note;
+
+                /* Picker ou liste fixe */
+                const pickerWrapper = document.getElementById('para-picker-wrapper');
+                const exercisesCard = document.getElementById('para-exercises');
+
+                if (d.exerciceGroups) {
+                    /* Initialiser la sélection si vide */
+                    if (!selectedChips[type]) selectedChips[type] = new Set();
+
+                    if (!pickerConfirmed[type]) {
+                        renderPicker(type, pickerWrapper, exercisesCard);
+                        exercisesCard.style.display = 'none';
+                    } else {
+                        pickerWrapper.innerHTML = '';
+                        renderExercisesFromPicker(type, exercisesCard);
+                        exercisesCard.style.display = '';
+                    }
+                } else {
+                    /* Marche : liste fixe */
+                    pickerWrapper.innerHTML = '';
+                    exercisesCard.innerHTML = '<div class="para-title">🪂 Exercices</div>';
+                    d.exercises.forEach(e => {
+                        exercisesCard.innerHTML += buildExerciseRow(e.nom, e.meta);
+                    });
+                    exercisesCard.style.display = '';
+                }
+
+                bindCheckboxes();
+
+                /* Boutons sélecteurs */
+                document.querySelectorAll('.para-selector').forEach(b => b.classList.remove('active'));
+                document.querySelector(`[data-para="${type}"]`).classList.add('active');
+            }
+
+            /* ── PICKER UI ── */
+            function renderPicker(type, wrapper, exercisesCard) {
+                const d = paraData[type];
+                const sel = selectedChips[type];
+                const total = sel.size;
+                const label = type === 'vol' ? 'manœuvres à travailler' : 'exercices de gonflage';
+                const legend = type === 'vol'
+                    ? 'Coche les manœuvres que tu veux travailler aujourd\'hui. Les avancés (---) sont en pointillés.'
+                    : 'Choisis tes exercices selon les conditions du jour.';
+
+                let html = `<div class="card">
+            <div class="para-title">🎯 Choix des exercices <span id="chip-count-badge" ${total ? '' : 'style="display:none"'} class="picker-badge">${total}</span></div>
+            <p class="picker-intro">${legend}</p>`;
+
+                d.exerciceGroups.forEach(group => {
+                    html += `<div class="picker-group">
+                <div class="picker-group-label">${group.label}</div>
+                <div class="picker-grid">`;
+                    group.items.forEach(item => {
+                        const isSelected = sel.has(item.nom);
+                        const cls = `pick-chip level-${item.niveau}${isSelected ? ' selected' : ''}`;
+                        html += `<button class="${cls}" data-para-type="${type}" data-name="${escHtml(item.nom)}" title="${escHtml(item.meta)}">${escHtml(item.nom)}</button>`;
+                    });
+                    html += `</div></div>`;
+                });
+
+                html += `<button class="picker-validate" id="picker-validate-btn">
+            Valider la sélection${total ? ` (${total} exercice${total > 1 ? 's' : ''})` : ''}
+        </button></div>`;
+
+                wrapper.innerHTML = html;
+
+                /* Chips toggle */
+                wrapper.querySelectorAll('.pick-chip').forEach(chip => {
+                    chip.addEventListener('click', () => {
+                        const name = chip.dataset.name;
+                        const t = chip.dataset.paraType;
+                        if (selectedChips[t].has(name)) {
+                            selectedChips[t].delete(name);
+                            chip.classList.remove('selected');
+                        } else {
+                            selectedChips[t].add(name);
+                            chip.classList.add('selected');
+                        }
+                        updatePickerBadge(t, wrapper);
+                    });
+                });
+
+                /* Valider */
+                document.getElementById('picker-validate-btn').addEventListener('click', () => {
+                    pickerConfirmed[type] = true;
+                    wrapper.innerHTML = '';
+                    renderExercisesFromPicker(type, exercisesCard);
+                    exercisesCard.style.display = '';
+
+                    /* Bouton "Modifier" */
+                    const editBtn = document.createElement('button');
+                    editBtn.className = 'selector';
+                    editBtn.style.cssText = 'width:100%;margin-bottom:12px;font-size:12px';
+                    editBtn.textContent = '✏️ Modifier la sélection';
+                    editBtn.addEventListener('click', () => {
+                        pickerConfirmed[type] = false;
+                        exercisesCard.style.display = 'none';
+                        editBtn.remove();
+                        renderPicker(type, wrapper, exercisesCard);
+                        bindCheckboxes();
+                    });
+                    exercisesCard.parentElement.insertBefore(editBtn, exercisesCard);
+                    bindCheckboxes();
+                });
+            }
+
+            function updatePickerBadge(type, wrapper) {
+                const total = selectedChips[type].size;
+                const badge = wrapper.querySelector('#chip-count-badge');
+                const btn = wrapper.querySelector('#picker-validate-btn');
+                if (badge) {
+                    badge.textContent = total;
+                    badge.style.display = total ? '' : 'none';
+                }
+                if (btn) btn.textContent = `Valider la sélection${total ? ` (${total} exercice${total > 1 ? 's' : ''})` : ''}`;
+            }
+
+            function renderExercisesFromPicker(type, card) {
+                const d = paraData[type];
+                const sel = selectedChips[type];
+                card.innerHTML = '<div class="para-title">🪂 Exercices de la session</div>';
+
+                let count = 0;
+                d.exerciceGroups.forEach(group => {
+                    group.items.forEach(item => {
+                        if (sel.has(item.nom)) {
+                            card.innerHTML += buildExerciseRow(item.nom, item.meta);
+                            count++;
+                        }
+                    });
+                });
+
+                if (count === 0) {
+                    card.innerHTML += `<p style="color:var(--text-3);font-size:13px;padding:8px 0">Aucun exercice sélectionné. Clique sur "Modifier" pour en choisir.</p>`;
+                }
+            }
+
+            /* ── EXERCICE ROW ── */
+            function buildExerciseRow(nom, meta) {
+                return `<div class="exercise">
+            <div class="checkbox"></div>
+            <div class="exercise-title">${escHtml(nom)}</div>
+            <div class="exercise-meta">${escHtml(meta)}</div>
+        </div>`;
+            }
+
+            function escHtml(str) {
+                return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+            }
+
+            /* ── CHECKBOXES ── */
+            function bindCheckboxes() {
+                document.querySelectorAll('.checkbox').forEach(box => {
+                    if (box._bound) return;
+                    box._bound = true;
+                    box.addEventListener('click', () => {
+                        box.classList.toggle('checked');
+                        box.textContent = box.classList.contains('checked') ? '✓' : '';
+                        box.closest('.exercise').classList.toggle('done', box.classList.contains('checked'));
+                    });
+                });
+            }
+
+            /* ╔══════════════════════════════════════════════════╗
+               ║                  RENDER RENFO                   ║
+               ╚══════════════════════════════════════════════════╝ */
+            function renderRenfo(type) {
+                const d = renfoData[type];
+                document.getElementById('renfo-warmup').textContent = d.warmup;
+                document.getElementById('renfo-recovery').textContent = d.recovery;
+                document.getElementById('renfo-note').textContent = d.note;
+
+                const ex = document.getElementById('renfo-exercises');
+                ex.innerHTML = '<div class="para-title">💪 Exercices</div>';
+                d.exercises.forEach(e => { ex.innerHTML += buildExerciseRow(e.nom, e.meta); });
+
+                bindCheckboxes();
+
+                document.querySelectorAll('.renfo-selector').forEach(b => b.classList.remove('active'));
+                document.querySelector(`[data-renfo="${type}"]`).classList.add('active');
+            }
+
+            /* ╔══════════════════════════════════════════════════╗
+               ║                   NUTRITION                     ║
+               ╚══════════════════════════════════════════════════╝ */
+            document.querySelectorAll('.nutrition-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const content = card.querySelector('.nutrition-content');
+                    const arrow = card.querySelector('.nutrition-arrow');
+                    content.classList.toggle('open');
+                    arrow.classList.toggle('open');
+                });
+            });
+
+            /* ╔══════════════════════════════════════════════════╗
+               ║              EVENT LISTENERS                    ║
+               ╚══════════════════════════════════════════════════╝ */
+            document.querySelectorAll('.para-selector').forEach(btn => {
+                btn.addEventListener('click', () => renderPara(btn.dataset.para));
+            });
+
+            document.querySelectorAll('.renfo-selector').forEach(btn => {
+                btn.addEventListener('click', () => renderRenfo(btn.dataset.renfo));
+            });
+
+            /* ╔══════════════════════════════════════════════════╗
+               ║                     INIT                        ║
+               ╚══════════════════════════════════════════════════╝ */
+            renderPara('vol');
+            renderRenfo('a');
+
+        </script>
+</body>
+
+</html>
