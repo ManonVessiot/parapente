@@ -28,7 +28,7 @@ function render() {
         const li = document.createElement("li");
         li.innerHTML = `<strong>${index + 1}. ${gonflages[index].date}<br></strong>`
         if (gonflages[index].equipement) li.innerHTML += `<span>Equipement :</span> ${gonflages[index].equipement}<br>`
-        if (gonflages[index].duree_minutes) li.innerHTML += `<span>Durée :</span> ${gonflages[index].duree_minutes}<br><br>`
+        if (gonflages[index].duree) li.innerHTML += `<span>Durée :</span> ${gonflages[index].duree}<br><br>`
         li.innerHTML += `${gonflages[index].commentaire}<br>`
         li.innerHTML += `<button onclick="edit(${index})">✏ Modifier</button>
             <button onclick="removeDef(${index})">✖ Supprimer</button>`;
@@ -52,7 +52,7 @@ function edit(i) {
     editIndex = i;
     popupDate.value = gonflages[i].date;
     popupEquip.value = gonflages[i].equipement;
-    popupTime.value = gonflages[i].duree_minutes;
+    popupTime.value = gonflages[i].duree;
     popupCom.value = gonflages[i].commentaire;
     openPopup();
 }
@@ -60,7 +60,7 @@ function edit(i) {
 function saveGonflage() {
     const date = popupDate.value.trim();
     equipement = popupEquip.value.trim();
-    const duree_minutes = popupTime.value.trim();
+    const duree = popupTime.value.trim();
     const commentaire = popupCom.value.trim();
 
     if (!date || !commentaire) {
@@ -69,9 +69,9 @@ function saveGonflage() {
     }
 
     if (editIndex !== null) {
-        gonflages[editIndex] = { date: date, equipement: equipement, duree_minutes: duree_minutes, commentaire: commentaire };
+        gonflages[editIndex] = { date: date, equipement: equipement, duree: duree, commentaire: commentaire };
     } else {
-        gonflages.push({ date: date, equipement: equipement, duree_minutes: duree_minutes, commentaire: commentaire });
+        gonflages.push({ date: date, equipement: equipement, duree: duree, commentaire: commentaire });
     }
 
     persist();
