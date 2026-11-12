@@ -29753,17 +29753,17 @@ var od = (e) => `/parapente/${e.replace(/^\/+/, ``)}`,
     {
       title: `Licence 2026`,
       meta: `Carte de licence`,
-      url: `/files/2026/attestation_2026_licence_2403345F.pdf`,
+      url: `/files/attestation_licence.pdf`,
     },
     {
       title: `Assurance 2026`,
       meta: `Attestation française`,
-      url: `/files/2026/attestation_assurance_2026.pdf`,
+      url: `/files/attestation_assurance.pdf`,
     },
     {
       title: `Assurance 2026`,
       meta: `English certificate`,
-      url: `/files/2026/attestation_assurance_2026_en.pdf`,
+      url: `/files/attestation_assurance_en.pdf`,
     },
   ].map((e) => ({ ...e, url: od(e.url) })),
   cd = [

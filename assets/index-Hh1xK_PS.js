@@ -28842,13 +28842,11 @@ var W = new (class {
   async uploadCourseImage(e, t, n) {
     let r = `${e}/${crypto.randomUUID()}.${n}`;
     U(
-      await V.storage
-        .from(`course-images`)
-        .upload(r, t, {
-          cacheControl: `31536000`,
-          contentType: t.type,
-          upsert: !1,
-        }),
+      await V.storage.from(`course-images`).upload(r, t, {
+        cacheControl: `31536000`,
+        contentType: t.type,
+        upsert: !1,
+      }),
     );
     let { data: i } = V.storage.from(`course-images`).getPublicUrl(r);
     return { path: r, url: i.publicUrl };
@@ -29842,17 +29840,17 @@ var cd = (e) => `/parapente/${e.replace(/^\/+/, ``)}`,
     {
       title: `Licence 2026`,
       meta: `Carte de licence`,
-      url: `/files/2026/attestation_2026_licence_2403345F.pdf`,
+      url: `/files/attestation_licence.pdf`,
     },
     {
       title: `Assurance 2026`,
       meta: `Attestation française`,
-      url: `/files/2026/attestation_assurance_2026.pdf`,
+      url: `/files/attestation_assurance.pdf`,
     },
     {
       title: `Assurance 2026`,
       meta: `English certificate`,
-      url: `/files/2026/attestation_assurance_2026_en.pdf`,
+      url: `/files/attestation_assurance_en.pdf`,
     },
   ].map((e) => ({ ...e, url: cd(e.url) })),
   ud = [
